@@ -1,0 +1,21 @@
+{
+  "name": "x402-unfairness-audit",
+  "version": "1.0.0",
+  "private": false,
+  "description": "Reproducible evidence base for an empirical audit of merchant discovery ranking in the x402 ecosystem.",
+  "author": "Zaryab",
+  "license": "MIT",
+  "type": "module",
+  "scripts": {
+    "analyze": "tsx scripts/analyze.ts",
+    "recut": "tsx scripts/recut.ts",
+    "verify": "tsx scripts/verify.ts",
+    "probe": "tsx scripts/probe-cdp.ts",
+    "all": "npm run analyze && npm run recut && npm run verify"
+  },
+  "devDependencies": {
+    "@types/node": "24.10.1",
+    "tsx": "4.20.6",
+    "typescript": "5.9.3"
+  }
+}

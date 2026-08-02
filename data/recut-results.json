@@ -1,0 +1,533 @@
+{
+  "snapshotCollectedAt": "2026-07-25T11:41:43.541Z",
+  "quartileBoundariesFrom": "data/analysis-results.json",
+  "analyzedCategories": [
+    "Crypto & DeFi",
+    "AI & Agents",
+    "Data & Enrichment",
+    "Finance & Markets"
+  ],
+  "aggregationRules": {
+    "primary": "First resource per merchant. The figures cited in the report.",
+    "pooled": "Every resource per merchant, pooled. Multi-listing merchants weigh more.",
+    "max": "One row per merchant, best value per field. A merchant counts as documented if any listing is."
+  },
+  "fields": {
+    "inputSchemaPct": "% of sampled listings publishing an input schema",
+    "outputExamplePct": "% of sampled listings publishing an output example",
+    "meanDescriptionLength": "mean description length in characters",
+    "meanTagCount": "mean number of tags"
+  },
+  "byRule": {
+    "primary": {
+      "Crypto & DeFi": [
+        {
+          "label": "Q1",
+          "rankRange": "1–76",
+          "merchantCount": 76,
+          "sampleSize": 76,
+          "inputSchemaPct": 100,
+          "outputExamplePct": 94.7,
+          "meanDescriptionLength": 270.5,
+          "meanTagCount": 4.42
+        },
+        {
+          "label": "Q2",
+          "rankRange": "77–152",
+          "merchantCount": 76,
+          "sampleSize": 76,
+          "inputSchemaPct": 100,
+          "outputExamplePct": 93.4,
+          "meanDescriptionLength": 191.7,
+          "meanTagCount": 4.38
+        },
+        {
+          "label": "Q3",
+          "rankRange": "153–228",
+          "merchantCount": 76,
+          "sampleSize": 76,
+          "inputSchemaPct": 100,
+          "outputExamplePct": 14.5,
+          "meanDescriptionLength": 330.4,
+          "meanTagCount": 4.83
+        },
+        {
+          "label": "Q4",
+          "rankRange": "229–303",
+          "merchantCount": 75,
+          "sampleSize": 75,
+          "inputSchemaPct": 100,
+          "outputExamplePct": 5.3,
+          "meanDescriptionLength": 331.7,
+          "meanTagCount": 4.88
+        }
+      ],
+      "AI & Agents": [
+        {
+          "label": "Q1",
+          "rankRange": "1–32",
+          "merchantCount": 32,
+          "sampleSize": 32,
+          "inputSchemaPct": 100,
+          "outputExamplePct": 84.4,
+          "meanDescriptionLength": 260.8,
+          "meanTagCount": 4.28
+        },
+        {
+          "label": "Q2",
+          "rankRange": "33–64",
+          "merchantCount": 32,
+          "sampleSize": 32,
+          "inputSchemaPct": 100,
+          "outputExamplePct": 56.3,
+          "meanDescriptionLength": 241.4,
+          "meanTagCount": 4.38
+        },
+        {
+          "label": "Q3",
+          "rankRange": "65–96",
+          "merchantCount": 32,
+          "sampleSize": 32,
+          "inputSchemaPct": 100,
+          "outputExamplePct": 0,
+          "meanDescriptionLength": 320.8,
+          "meanTagCount": 4
+        },
+        {
+          "label": "Q4",
+          "rankRange": "97–128",
+          "merchantCount": 32,
+          "sampleSize": 32,
+          "inputSchemaPct": 100,
+          "outputExamplePct": 0,
+          "meanDescriptionLength": 106,
+          "meanTagCount": 4
+        }
+      ],
+      "Data & Enrichment": [
+        {
+          "label": "Q1",
+          "rankRange": "1–9",
+          "merchantCount": 9,
+          "sampleSize": 9,
+          "inputSchemaPct": 100,
+          "outputExamplePct": 88.9,
+          "meanDescriptionLength": 130.3,
+          "meanTagCount": 3.89
+        },
+        {
+          "label": "Q2",
+          "rankRange": "10–18",
+          "merchantCount": 9,
+          "sampleSize": 9,
+          "inputSchemaPct": 100,
+          "outputExamplePct": 66.7,
+          "meanDescriptionLength": 206,
+          "meanTagCount": 3.67
+        },
+        {
+          "label": "Q3",
+          "rankRange": "19–27",
+          "merchantCount": 9,
+          "sampleSize": 9,
+          "inputSchemaPct": 100,
+          "outputExamplePct": 88.9,
+          "meanDescriptionLength": 259,
+          "meanTagCount": 4.78
+        },
+        {
+          "label": "Q4",
+          "rankRange": "28–34",
+          "merchantCount": 7,
+          "sampleSize": 7,
+          "inputSchemaPct": 100,
+          "outputExamplePct": 57.1,
+          "meanDescriptionLength": 224.4,
+          "meanTagCount": 4.86
+        }
+      ],
+      "Finance & Markets": [
+        {
+          "label": "Q1",
+          "rankRange": "1–8",
+          "merchantCount": 8,
+          "sampleSize": 8,
+          "inputSchemaPct": 100,
+          "outputExamplePct": 87.5,
+          "meanDescriptionLength": 119.9,
+          "meanTagCount": 3.5
+        },
+        {
+          "label": "Q2",
+          "rankRange": "9–16",
+          "merchantCount": 8,
+          "sampleSize": 8,
+          "inputSchemaPct": 100,
+          "outputExamplePct": 100,
+          "meanDescriptionLength": 267.4,
+          "meanTagCount": 4.38
+        },
+        {
+          "label": "Q3",
+          "rankRange": "17–24",
+          "merchantCount": 8,
+          "sampleSize": 8,
+          "inputSchemaPct": 100,
+          "outputExamplePct": 100,
+          "meanDescriptionLength": 224.5,
+          "meanTagCount": 4.38
+        },
+        {
+          "label": "Q4",
+          "rankRange": "25–31",
+          "merchantCount": 7,
+          "sampleSize": 7,
+          "inputSchemaPct": 100,
+          "outputExamplePct": 71.4,
+          "meanDescriptionLength": 171.4,
+          "meanTagCount": 4.14
+        }
+      ]
+    },
+    "pooled": {
+      "Crypto & DeFi": [
+        {
+          "label": "Q1",
+          "rankRange": "1–76",
+          "merchantCount": 76,
+          "sampleSize": 5954,
+          "inputSchemaPct": 100,
+          "outputExamplePct": 83.9,
+          "meanDescriptionLength": 255.1,
+          "meanTagCount": 4.5
+        },
+        {
+          "label": "Q2",
+          "rankRange": "77–152",
+          "merchantCount": 76,
+          "sampleSize": 345,
+          "inputSchemaPct": 100,
+          "outputExamplePct": 80.3,
+          "meanDescriptionLength": 165.2,
+          "meanTagCount": 4.25
+        },
+        {
+          "label": "Q3",
+          "rankRange": "153–228",
+          "merchantCount": 76,
+          "sampleSize": 87,
+          "inputSchemaPct": 100,
+          "outputExamplePct": 16.1,
+          "meanDescriptionLength": 299.1,
+          "meanTagCount": 4.43
+        },
+        {
+          "label": "Q4",
+          "rankRange": "229–303",
+          "merchantCount": 75,
+          "sampleSize": 118,
+          "inputSchemaPct": 100,
+          "outputExamplePct": 8.5,
+          "meanDescriptionLength": 319.2,
+          "meanTagCount": 3.61
+        }
+      ],
+      "AI & Agents": [
+        {
+          "label": "Q1",
+          "rankRange": "1–32",
+          "merchantCount": 32,
+          "sampleSize": 678,
+          "inputSchemaPct": 100,
+          "outputExamplePct": 64.9,
+          "meanDescriptionLength": 167.5,
+          "meanTagCount": 4.1
+        },
+        {
+          "label": "Q2",
+          "rankRange": "33–64",
+          "merchantCount": 32,
+          "sampleSize": 55,
+          "inputSchemaPct": 100,
+          "outputExamplePct": 74.5,
+          "meanDescriptionLength": 194.4,
+          "meanTagCount": 4.36
+        },
+        {
+          "label": "Q3",
+          "rankRange": "65–96",
+          "merchantCount": 32,
+          "sampleSize": 32,
+          "inputSchemaPct": 100,
+          "outputExamplePct": 0,
+          "meanDescriptionLength": 320.8,
+          "meanTagCount": 4
+        },
+        {
+          "label": "Q4",
+          "rankRange": "97–128",
+          "merchantCount": 32,
+          "sampleSize": 32,
+          "inputSchemaPct": 100,
+          "outputExamplePct": 0,
+          "meanDescriptionLength": 106,
+          "meanTagCount": 4
+        }
+      ],
+      "Data & Enrichment": [
+        {
+          "label": "Q1",
+          "rankRange": "1–9",
+          "merchantCount": 9,
+          "sampleSize": 274,
+          "inputSchemaPct": 100,
+          "outputExamplePct": 84.3,
+          "meanDescriptionLength": 102.4,
+          "meanTagCount": 2.57
+        },
+        {
+          "label": "Q2",
+          "rankRange": "10–18",
+          "merchantCount": 9,
+          "sampleSize": 112,
+          "inputSchemaPct": 100,
+          "outputExamplePct": 78.6,
+          "meanDescriptionLength": 165,
+          "meanTagCount": 4.04
+        },
+        {
+          "label": "Q3",
+          "rankRange": "19–27",
+          "merchantCount": 9,
+          "sampleSize": 35,
+          "inputSchemaPct": 100,
+          "outputExamplePct": 97.1,
+          "meanDescriptionLength": 222.5,
+          "meanTagCount": 4.2
+        },
+        {
+          "label": "Q4",
+          "rankRange": "28–34",
+          "merchantCount": 7,
+          "sampleSize": 9,
+          "inputSchemaPct": 100,
+          "outputExamplePct": 44.4,
+          "meanDescriptionLength": 240.9,
+          "meanTagCount": 4.89
+        }
+      ],
+      "Finance & Markets": [
+        {
+          "label": "Q1",
+          "rankRange": "1–8",
+          "merchantCount": 8,
+          "sampleSize": 316,
+          "inputSchemaPct": 100,
+          "outputExamplePct": 66.1,
+          "meanDescriptionLength": 130.4,
+          "meanTagCount": 2.04
+        },
+        {
+          "label": "Q2",
+          "rankRange": "9–16",
+          "merchantCount": 8,
+          "sampleSize": 59,
+          "inputSchemaPct": 100,
+          "outputExamplePct": 100,
+          "meanDescriptionLength": 198.7,
+          "meanTagCount": 2.9
+        },
+        {
+          "label": "Q3",
+          "rankRange": "17–24",
+          "merchantCount": 8,
+          "sampleSize": 33,
+          "inputSchemaPct": 100,
+          "outputExamplePct": 100,
+          "meanDescriptionLength": 151.4,
+          "meanTagCount": 3.24
+        },
+        {
+          "label": "Q4",
+          "rankRange": "25–31",
+          "merchantCount": 7,
+          "sampleSize": 26,
+          "inputSchemaPct": 100,
+          "outputExamplePct": 80.8,
+          "meanDescriptionLength": 284.8,
+          "meanTagCount": 4.38
+        }
+      ]
+    },
+    "max": {
+      "Crypto & DeFi": [
+        {
+          "label": "Q1",
+          "rankRange": "1–76",
+          "merchantCount": 76,
+          "sampleSize": 76,
+          "inputSchemaPct": 100,
+          "outputExamplePct": 97.4,
+          "meanDescriptionLength": 404.5,
+          "meanTagCount": 4.71
+        },
+        {
+          "label": "Q2",
+          "rankRange": "77–152",
+          "merchantCount": 76,
+          "sampleSize": 76,
+          "inputSchemaPct": 100,
+          "outputExamplePct": 94.7,
+          "meanDescriptionLength": 233,
+          "meanTagCount": 4.55
+        },
+        {
+          "label": "Q3",
+          "rankRange": "153–228",
+          "merchantCount": 76,
+          "sampleSize": 76,
+          "inputSchemaPct": 100,
+          "outputExamplePct": 14.5,
+          "meanDescriptionLength": 331.3,
+          "meanTagCount": 4.83
+        },
+        {
+          "label": "Q4",
+          "rankRange": "229–303",
+          "merchantCount": 75,
+          "sampleSize": 75,
+          "inputSchemaPct": 100,
+          "outputExamplePct": 5.3,
+          "meanDescriptionLength": 338,
+          "meanTagCount": 4.93
+        }
+      ],
+      "AI & Agents": [
+        {
+          "label": "Q1",
+          "rankRange": "1–32",
+          "merchantCount": 32,
+          "sampleSize": 32,
+          "inputSchemaPct": 100,
+          "outputExamplePct": 84.4,
+          "meanDescriptionLength": 316.7,
+          "meanTagCount": 4.44
+        },
+        {
+          "label": "Q2",
+          "rankRange": "33–64",
+          "merchantCount": 32,
+          "sampleSize": 32,
+          "inputSchemaPct": 100,
+          "outputExamplePct": 56.3,
+          "meanDescriptionLength": 243.2,
+          "meanTagCount": 4.38
+        },
+        {
+          "label": "Q3",
+          "rankRange": "65–96",
+          "merchantCount": 32,
+          "sampleSize": 32,
+          "inputSchemaPct": 100,
+          "outputExamplePct": 0,
+          "meanDescriptionLength": 320.8,
+          "meanTagCount": 4
+        },
+        {
+          "label": "Q4",
+          "rankRange": "97–128",
+          "merchantCount": 32,
+          "sampleSize": 32,
+          "inputSchemaPct": 100,
+          "outputExamplePct": 0,
+          "meanDescriptionLength": 106,
+          "meanTagCount": 4
+        }
+      ],
+      "Data & Enrichment": [
+        {
+          "label": "Q1",
+          "rankRange": "1–9",
+          "merchantCount": 9,
+          "sampleSize": 9,
+          "inputSchemaPct": 100,
+          "outputExamplePct": 100,
+          "meanDescriptionLength": 208.3,
+          "meanTagCount": 4
+        },
+        {
+          "label": "Q2",
+          "rankRange": "10–18",
+          "merchantCount": 9,
+          "sampleSize": 9,
+          "inputSchemaPct": 100,
+          "outputExamplePct": 66.7,
+          "meanDescriptionLength": 293.9,
+          "meanTagCount": 3.67
+        },
+        {
+          "label": "Q3",
+          "rankRange": "19–27",
+          "merchantCount": 9,
+          "sampleSize": 9,
+          "inputSchemaPct": 100,
+          "outputExamplePct": 100,
+          "meanDescriptionLength": 323.9,
+          "meanTagCount": 5
+        },
+        {
+          "label": "Q4",
+          "rankRange": "28–34",
+          "merchantCount": 7,
+          "sampleSize": 7,
+          "inputSchemaPct": 100,
+          "outputExamplePct": 57.1,
+          "meanDescriptionLength": 224.4,
+          "meanTagCount": 4.86
+        }
+      ],
+      "Finance & Markets": [
+        {
+          "label": "Q1",
+          "rankRange": "1–8",
+          "merchantCount": 8,
+          "sampleSize": 8,
+          "inputSchemaPct": 100,
+          "outputExamplePct": 100,
+          "meanDescriptionLength": 291,
+          "meanTagCount": 4.25
+        },
+        {
+          "label": "Q2",
+          "rankRange": "9–16",
+          "merchantCount": 8,
+          "sampleSize": 8,
+          "inputSchemaPct": 100,
+          "outputExamplePct": 100,
+          "meanDescriptionLength": 362.3,
+          "meanTagCount": 4.5
+        },
+        {
+          "label": "Q3",
+          "rankRange": "17–24",
+          "merchantCount": 8,
+          "sampleSize": 8,
+          "inputSchemaPct": 100,
+          "outputExamplePct": 100,
+          "meanDescriptionLength": 254.5,
+          "meanTagCount": 4.38
+        },
+        {
+          "label": "Q4",
+          "rankRange": "25–31",
+          "merchantCount": 7,
+          "sampleSize": 7,
+          "inputSchemaPct": 100,
+          "outputExamplePct": 71.4,
+          "meanDescriptionLength": 205.4,
+          "meanTagCount": 4.14
+        }
+      ]
+    }
+  }
+}

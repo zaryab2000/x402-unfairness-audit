@@ -1,0 +1,1085 @@
+{
+  "analyzedAt": "2026-07-25T11:48:24.528Z",
+  "snapshotCollectedAt": "2026-07-25T11:41:43.541Z",
+  "rankerWeights": {
+    "volume": 0.4,
+    "buyerDiversity": 0.25,
+    "reliability": 0.05,
+    "listingQuality": 0.15,
+    "recency": 0.15
+  },
+  "analyzedCategories": [
+    "Crypto & DeFi",
+    "AI & Agents",
+    "Data & Enrichment",
+    "Finance & Markets"
+  ],
+  "summary": {
+    "totalMerchantsAnalyzed": 496,
+    "giniThreshold": 0.7,
+    "hhiHighThreshold": 2500,
+    "hhiModerateThreshold": 1500,
+    "allCategoriesExtremeGini": true,
+    "allCategoriesUnreachableCeiling": true,
+    "totalBuriedCandidates": 34
+  },
+  "categories": [
+    {
+      "categoryName": "Crypto & DeFi",
+      "merchantCount": 303,
+      "totalVolume30d": 49844.8,
+      "totalTxCount30d": 45290,
+      "gini": 0.9235,
+      "hhi": 816,
+      "top3Share": 0.4224,
+      "top3Count": 3,
+      "quartiles": {
+        "q1": {
+          "label": "Q1",
+          "rankRange": "1–76",
+          "count": 76,
+          "meanScore": 0.5233,
+          "volumeSignal": 0.2573,
+          "buyerDiversity": 0.4327,
+          "reliability": 0.5,
+          "listingQuality": 0.9147,
+          "recency": 1,
+          "meanTxCount30d": 580.7,
+          "meanBuyers30d": 152.6
+        },
+        "q2": {
+          "label": "Q2",
+          "rankRange": "77–152",
+          "count": 76,
+          "meanScore": 0.385,
+          "volumeSignal": 0.0878,
+          "buyerDiversity": 0.1649,
+          "reliability": 0.5,
+          "listingQuality": 0.899,
+          "recency": 0.9921,
+          "meanTxCount30d": 12.7,
+          "meanBuyers30d": 4.8
+        },
+        "q3": {
+          "label": "Q3",
+          "rankRange": "153–228",
+          "count": 76,
+          "meanScore": 0.3167,
+          "volumeSignal": 0.0324,
+          "buyerDiversity": 0.0786,
+          "reliability": 0.5,
+          "listingQuality": 0.7327,
+          "recency": 0.9947,
+          "meanTxCount30d": 1.5,
+          "meanBuyers30d": 1.1
+        },
+        "q4": {
+          "label": "Q4",
+          "rankRange": "229–303",
+          "count": 75,
+          "meanScore": 0.3099,
+          "volumeSignal": 0.0246,
+          "buyerDiversity": 0.0722,
+          "reliability": 0.5,
+          "listingQuality": 0.7267,
+          "recency": 0.9867,
+          "meanTxCount30d": 1,
+          "meanBuyers30d": 1
+        }
+      },
+      "gapAnalysis": {
+        "scoreGap": 0.2134,
+        "componentShares": {
+          "volume": 0.4362,
+          "buyerDiversity": 0.4223,
+          "reliability": 0,
+          "listingQuality": 0.1321,
+          "recency": 0.0093
+        },
+        "listingQualityGap": 0.188
+      },
+      "coldStartCeiling": {
+        "ceiling": 0.325,
+        "top3MeanScore": 0.6577,
+        "gap": 0.3327,
+        "verdict": "Unreachable"
+      },
+      "buriedCandidates": [
+        {
+          "id": "6b5f03cb-7d31-4633-8fa3-aa5e82ce8f38",
+          "payeeAddress": "0xa01d0f60230fdc7c1bbffe05a0c75351fbd9dbcf",
+          "category": "Crypto & DeFi",
+          "rankPosition": 139,
+          "rankerScore": "0.3565",
+          "txCount30d": 1,
+          "buyers30d": 1,
+          "listingQuality": 0.9999999999999999,
+          "volumeSignal": 0.031684270142633836,
+          "primaryResource": "https://basescout-feed-x402.baseagentx402.workers.dev/safe-tokens",
+          "serviceName": "basescout-feed",
+          "description": "Returns the most recent Base ERC-20s opened on Aerodrome that pass a basesafe safety check. Buyers specify min score, allowed recommendations, and a local liquidity floor. basescout pays basesafe under the hood and absorbs the vetting cost into the response price. Built for trading bots and agents that need fresh, pre-filtered token candidates without running their own discovery + vetting pipeline.",
+          "tags": [
+            "feed",
+            "tokens",
+            "base",
+            "aerodrome",
+            "newly-launched"
+          ],
+          "priceUsd": "0.200000"
+        },
+        {
+          "id": "ad2f813c-1de7-4246-a224-e89e6d214401",
+          "payeeAddress": "0xc1fb0552336b483f7c435f4c5aac6e0db2912669",
+          "category": "Crypto & DeFi",
+          "rankPosition": 162,
+          "rankerScore": "0.3241",
+          "txCount30d": 1,
+          "buyers30d": 1,
+          "listingQuality": 0.9999999999999999,
+          "volumeSignal": 0.02580251395215823,
+          "primaryResource": "https://shared-inference-market.wongjinquan.workers.dev/digest/crypto",
+          "serviceName": "Shared Inference Output",
+          "description": "Buy the shared research step once instead of each agent re-running it for ~$0.30-0.50: one $0.02 digest, shared across every buyer. Structured JSON on security incidents, stablecoin/payments regulation, Base and L2 developments, and protocol news, from multi-source news across 30+ sources, deduped and significance-triaged with primary-source URLs and ISO timestamps. Check /digest/crypto/meta (free) for freshness, then pay. Refreshed daily.",
+          "tags": [
+            "news",
+            "digest",
+            "structured",
+            "machine-readable",
+            "crypto"
+          ],
+          "priceUsd": "0.020000"
+        },
+        {
+          "id": "7472431d-191f-4c39-97bd-1be36660c1f4",
+          "payeeAddress": "0x626ff146abec5296678a0afe2909efb6cfc10a1c",
+          "category": "Crypto & DeFi",
+          "rankPosition": 138,
+          "rankerScore": "0.3582",
+          "txCount30d": 1,
+          "buyers30d": 1,
+          "listingQuality": 0.9999999999999999,
+          "volumeSignal": 0.03594698034658228,
+          "primaryResource": "https://x402-research.up.railway.app/v1/research",
+          "serviceName": "Messari Pro API",
+          "description": "On-demand crypto research synthesis powered by Messari AI. Pass query + type (diligence | bullbear | compare | narrative | risk | tweet). Example: /v1/research?query=solana&type=bullbear",
+          "tags": [
+            "crypto",
+            "research",
+            "ai",
+            "messari",
+            "defi"
+          ],
+          "priceUsd": "0.350000"
+        },
+        {
+          "id": "5d51c0a3-1146-4e39-8bbe-1a6e9f9e1269",
+          "payeeAddress": "0x1372c2140105ff1dd77f148b8ad5bb976cc7ec0f",
+          "category": "Crypto & DeFi",
+          "rankPosition": 141,
+          "rankerScore": "0.3541",
+          "txCount30d": 1,
+          "buyers30d": 1,
+          "listingQuality": 0.9999999999999999,
+          "volumeSignal": 0.02580251395215823,
+          "primaryResource": "https://jtifhcvbgxqwlywugvjv.supabase.co/functions/v1/cortex402-wallet-balance",
+          "serviceName": "CorteX402 Wallet Balance",
+          "description": "Check any wallet balance across 5 EVM chains. Returns native or ERC-20 balance with threshold check, block height, and on-chain receipt. Supports Base, Ethereum, Arbitrum, Optimism, and Polygon.",
+          "tags": [
+            "wallet",
+            "balance",
+            "evm",
+            "crypto",
+            "multichain"
+          ],
+          "priceUsd": "0.020000"
+        },
+        {
+          "id": "0466abc8-e7cf-42f8-9943-19d65b0c527b",
+          "payeeAddress": "0x081f8761f68e9387d339bddaaa0c8db5d3a72f5e",
+          "category": "Crypto & DeFi",
+          "rankPosition": 142,
+          "rankerScore": "0.3540",
+          "txCount30d": 1,
+          "buyers30d": 1,
+          "listingQuality": 0.9999999999999999,
+          "volumeSignal": 0.025445947453885315,
+          "primaryResource": "https://x402.tradesnack.com/ta",
+          "serviceName": "Crypto TA Signals",
+          "description": "Multi-indicator technical analysis (SMA/EMA crosses, Bollinger, RSI, candlestick patterns, support/resistance, trendlines, experimental Elliott Wave) for any crypto pair.",
+          "tags": [
+            "crypto",
+            "technical-analysis",
+            "trading",
+            "indicators",
+            "signals"
+          ],
+          "priceUsd": "0.010000"
+        },
+        {
+          "id": "86c7cfe4-dc52-4d7e-bdb7-e1eaa34eeccc",
+          "payeeAddress": "0x2475da2b1cc92bd8291dd487866cbfb8715f4219",
+          "category": "Crypto & DeFi",
+          "rankPosition": 144,
+          "rankerScore": "0.3462",
+          "txCount30d": 1,
+          "buyers30d": 1,
+          "listingQuality": 0.9444444444444444,
+          "volumeSignal": 0.026851607894493274,
+          "primaryResource": "https://x402.sleuthagent.ai/api/v1/wallet-holdings",
+          "serviceName": "Sleuth AI x402 API",
+          "description": "List what a wallet currently holds — its token balances with amounts and USD values where available. Accepts a 0x address or an ENS/Basename. Use to snapshot a wallet's current portfolio across supported chains. Structured holdings table included when the investigation surfaces row-level data.",
+          "tags": [
+            "Wallet Holdings"
+          ],
+          "priceUsd": "0.050000"
+        },
+        {
+          "id": "98df3134-db04-465e-b51d-0150bbe7d98b",
+          "payeeAddress": "0x5a78ace5dd133316c8aaf7e156fbfc57e1209cf9",
+          "category": "Crypto & DeFi",
+          "rankPosition": 145,
+          "rankerScore": "0.3455",
+          "txCount30d": 1,
+          "buyers30d": 1,
+          "listingQuality": 0.9444444444444444,
+          "volumeSignal": 0.02512200609527498,
+          "primaryResource": "https://hypernatt.com/api/m2m/liq-radar",
+          "serviceName": "HyperNatt Terminal",
+          "description": "HyperNatt BTC liquidation radar — raw microstructure snapshot: magnet score, OI, long/short ratio, liquidation clusters above/below, real liquidations 1h/24h (read-only)",
+          "tags": [
+            "bitcoin",
+            "hyperliquid",
+            "trading",
+            "market maker",
+            "liquidations"
+          ],
+          "priceUsd": "0.001000"
+        },
+        {
+          "id": "0cb5df6f-14ab-42a6-8099-6a584ca8df88",
+          "payeeAddress": "0xca7d7a89732e6c4adfe241215505193c6cf39c19",
+          "category": "Crypto & DeFi",
+          "rankPosition": 299,
+          "rankerScore": "0.3072",
+          "txCount30d": 1,
+          "buyers30d": 1,
+          "listingQuality": 0.8888888888888888,
+          "volumeSignal": 0.02512200609527498,
+          "primaryResource": "https://flint.network/api/x402/verify",
+          "serviceName": "FLINT",
+          "description": "Verify an AI agent's authority and integrity before a transaction; returns a four-state verdict and a signed verification record",
+          "tags": [
+            "agent-commerce",
+            "fraud",
+            "verification",
+            "x402"
+          ],
+          "priceUsd": "0.001000"
+        },
+        {
+          "id": "6a1ba7aa-e821-4a2e-a91b-2266f5d8daed",
+          "payeeAddress": "0x7e25c237feb9c27a5b0355f03f8d8bfeadeccb7b",
+          "category": "Crypto & DeFi",
+          "rankPosition": 148,
+          "rankerScore": "0.3377",
+          "txCount30d": 1,
+          "buyers30d": 1,
+          "listingQuality": 0.8888888888888888,
+          "volumeSignal": 0.02650527791356346,
+          "primaryResource": "https://trabotpro.it/api/a2a/x402/sentiment",
+          "serviceName": "TraBot Sentiment",
+          "description": "Fear & Greed regime oracle for agent risk and positioning.",
+          "tags": [
+            "sentiment",
+            "data",
+            "regime"
+          ],
+          "priceUsd": "0.050000"
+        },
+        {
+          "id": "3e834ed9-2ebf-481b-98ad-5beac467c6cc",
+          "payeeAddress": "0x4543d95a4cdf5654aa8835d38e6198f0629dd9a1",
+          "category": "Crypto & DeFi",
+          "rankPosition": 152,
+          "rankerScore": "0.3373",
+          "txCount30d": 1,
+          "buyers30d": 1,
+          "listingQuality": 0.8888888888888888,
+          "volumeSignal": 0.025445947453885315,
+          "primaryResource": "https://agents.allium.so/api/v1/developer/wallet/balances/history",
+          "serviceName": "Allium",
+          "description": "API request: /api/v1/developer/wallet/balances/history",
+          "tags": [
+            "blockchain",
+            "data",
+            "analytics",
+            "sql"
+          ],
+          "priceUsd": "0.010000"
+        },
+        {
+          "id": "dfd20825-95dc-40af-923a-397318198381",
+          "payeeAddress": "HFWs4p4n9vGDRRpnxtsTATsnvoaub5tu76VUaLeExyfH",
+          "category": "Crypto & DeFi",
+          "rankPosition": 149,
+          "rankerScore": "0.3373",
+          "txCount30d": 1,
+          "buyers30d": 1,
+          "listingQuality": 0.8888888888888888,
+          "volumeSignal": 0.025445947453885315,
+          "primaryResource": "https://lst-health.naber-research.com/v1/lst-health",
+          "serviceName": "LST Health API",
+          "description": "LST peg health for JitoSOL and INF on Solana. Includes market vs redemption basis, 7d trend, Meteora pool stats, and Kamino borrow rates.",
+          "tags": [
+            "solana",
+            "lst",
+            "defi",
+            "staking"
+          ],
+          "priceUsd": "0.010000"
+        },
+        {
+          "id": "82fedfa2-312d-49b9-98c2-60a5504dc80e",
+          "payeeAddress": "0xc26eacc1f7b6cb024f5c75efd099967d0b918bb1",
+          "category": "Crypto & DeFi",
+          "rankPosition": 150,
+          "rankerScore": "0.3373",
+          "txCount30d": 1,
+          "buyers30d": 1,
+          "listingQuality": 0.8888888888888888,
+          "volumeSignal": 0.025445947453885315,
+          "primaryResource": "https://x402.servicesmax.xyz/v1/market/movers",
+          "serviceName": "agentx402",
+          "description": "Nouveaux endpoints x402 et variations de volume d'appels depuis le scan précédent (dédoublonné cross-source).",
+          "tags": [
+            "data",
+            "x402",
+            "market-intelligence"
+          ],
+          "priceUsd": "0.010000"
+        },
+        {
+          "id": "ff52efa9-f14f-48ba-a082-3e757b08cb5b",
+          "payeeAddress": "0x3772e91c287b7be00a67cfb2a72cc5fb5958af06",
+          "category": "Crypto & DeFi",
+          "rankPosition": 155,
+          "rankerScore": "0.3372",
+          "txCount30d": 1,
+          "buyers30d": 1,
+          "listingQuality": 0.8888888888888888,
+          "volumeSignal": 0.025158143099600676,
+          "primaryResource": "https://agent-paycheck.onrender.com/v1/check",
+          "serviceName": "Agent Paycheck",
+          "description": "Pre-payment risk and usefulness check for AI agents deciding whether to pay an x402 endpoint.",
+          "tags": [
+            "x402",
+            "agent-payments",
+            "risk-check",
+            "prepayment"
+          ],
+          "priceUsd": "0.002000"
+        },
+        {
+          "id": "4a083aae-068d-43b4-b1f9-0ff171043b86",
+          "payeeAddress": "GyUs49MRZj61Yj4uDJh4WBgNWPAkABZSQ3UZiJsXVrJv",
+          "category": "Crypto & DeFi",
+          "rankPosition": 151,
+          "rankerScore": "0.3373",
+          "txCount30d": 1,
+          "buyers30d": 1,
+          "listingQuality": 0.8888888888888888,
+          "volumeSignal": 0.025445947453885315,
+          "primaryResource": "https://pay.alephant.io/x402/stock-analysis-tool",
+          "serviceName": "Alephant",
+          "description": "Alephant provides x402-ready Agent Finance Gateway endpoints for production AI agents, workflows, skills, APIs.",
+          "tags": [
+            "payments",
+            "x402"
+          ],
+          "priceUsd": "0.010000"
+        },
+        {
+          "id": "7b180df8-39ee-42f8-af6a-3f5d433ce096",
+          "payeeAddress": "0x6f748ce56a7b39008dcf42f427a2cbf849ced320",
+          "category": "Crypto & DeFi",
+          "rankPosition": 153,
+          "rankerScore": "0.3372",
+          "txCount30d": 1,
+          "buyers30d": 1,
+          "listingQuality": 0.8888888888888888,
+          "volumeSignal": 0.02512200609527498,
+          "primaryResource": "https://api.atms.nathanlidurin.com/x402/challenge",
+          "serviceName": "ATMS Treasury",
+          "description": "ATMS x402 challenge — crawler / probe endpoint (always 402, no side effects)",
+          "tags": [
+            "atms",
+            "treasury",
+            "x402"
+          ],
+          "priceUsd": "0.001000"
+        },
+        {
+          "id": "da01517d-7ecb-487b-868f-427bfe62cd43",
+          "payeeAddress": "0x23c920649f148bd253583f140f540797b312db35",
+          "category": "Crypto & DeFi",
+          "rankPosition": 154,
+          "rankerScore": "0.3372",
+          "txCount30d": 1,
+          "buyers30d": 1,
+          "listingQuality": 0.8888888888888888,
+          "volumeSignal": 0.025158143099600676,
+          "primaryResource": "https://x402-crypto-data.vercel.app/api/price",
+          "serviceName": "Crypto Data Agent",
+          "description": "Current crypto prices for up to 25 coins (DefiLlama).",
+          "tags": [
+            "crypto",
+            "prices",
+            "market-data",
+            "defillama",
+            "usdc"
+          ],
+          "priceUsd": "0.002000"
+        },
+        {
+          "id": "e1a51d4a-2be1-4012-9f38-7e41ee7ff485",
+          "payeeAddress": "0x2df1aec598a104fc15e80c0b60e50c497559a980",
+          "category": "Crypto & DeFi",
+          "rankPosition": 156,
+          "rankerScore": "0.3372",
+          "txCount30d": 1,
+          "buyers30d": 1,
+          "listingQuality": 0.8888888888888888,
+          "volumeSignal": 0.025158143099600676,
+          "primaryResource": "https://api.x402oracle.com/v1/trade-check",
+          "serviceName": "x402 Trust Oracle",
+          "description": "Fast pre-trade check for trading agents: liveness, freshness, and price, payTo, and chain drift.",
+          "tags": [
+            "x402",
+            "trading",
+            "market-data",
+            "funding-rate",
+            "latency"
+          ],
+          "priceUsd": "0.002000"
+        },
+        {
+          "id": "9b758a8b-8433-469a-94e3-2819b5ce1671",
+          "payeeAddress": "0xd36115f7c29d3b3e01d238feeef7549f0b2d8c3e",
+          "category": "Crypto & DeFi",
+          "rankPosition": 298,
+          "rankerScore": "0.3075",
+          "txCount30d": 1,
+          "buyers30d": 1,
+          "listingQuality": 0.8888888888888888,
+          "volumeSignal": 0.02580251395215823,
+          "primaryResource": "https://jpworker4.tail8de215.ts.net/v1/panel/review",
+          "serviceName": "Panel Review v1",
+          "description": "Multi-angle panel review: 4 independent Qwen3.6-35B angles (product, bull/bear, security, devil advocate). Async job. $0.02 USDC Base.",
+          "tags": [
+            "analysis",
+            "agents",
+            "review",
+            "red-team",
+            "x402"
+          ],
+          "priceUsd": "0.020000"
+        },
+        {
+          "id": "e6b13ac8-4999-4a57-9076-16a26995472d",
+          "payeeAddress": "0x68b7e8be8f1a62f99e37f1ac191dd23486e8a2ad",
+          "category": "Crypto & DeFi",
+          "rankPosition": 147,
+          "rankerScore": "0.3379",
+          "txCount30d": 1,
+          "buyers30d": 1,
+          "listingQuality": 0.8888888888888888,
+          "volumeSignal": 0.026851607894493274,
+          "primaryResource": "https://ai.stable-jack.com/x402/market-news/brief",
+          "serviceName": "StableJack",
+          "description": "StableJack read-only market-news brief API. Returns top market-moving stories for a caller supplied scope.",
+          "tags": [
+            "market-news",
+            "crypto",
+            "macro",
+            "trading",
+            "agentic-api"
+          ],
+          "priceUsd": "0.050000"
+        },
+        {
+          "id": "47fb7a50-cbaa-4905-8709-6a723bd115fe",
+          "payeeAddress": "wwwwwDxFWRn7grgr3Esrsg5C6NvDoDHSA4gaCffccrU",
+          "category": "Crypto & DeFi",
+          "rankPosition": 157,
+          "rankerScore": "0.3330",
+          "txCount30d": 1,
+          "buyers30d": 1,
+          "listingQuality": 0.8611111111111109,
+          "volumeSignal": 0.02512200609527498,
+          "primaryResource": "https://three.ws/api/x402/solana-register-health",
+          "serviceName": null,
+          "description": "Solana Agent Registration Health Check — verifies three.ws's server-custodial Solana agent-registration subsystem end-to-end by resolving a known canary agent's on-chain Metaplex Agent Registry record (Identity PDA + Core asset) and confirming both accounts exist on-chain right now. Returns a health snapshot with latency and the checked asset. Pay-per-call in USDC on Solana or Base mainnet.",
+          "tags": [
+            "health",
+            "solana",
+            "registration",
+            "agent",
+            "canary"
+          ],
+          "priceUsd": "0.001000"
+        },
+        {
+          "id": "8d9ba0d7-efaf-470a-809c-82ce0bc9ae5b",
+          "payeeAddress": "0xf47e84caf47bb85e16c08d6140435882815502ee",
+          "category": "Crypto & DeFi",
+          "rankPosition": 146,
+          "rankerScore": "0.3430",
+          "txCount30d": 1,
+          "buyers30d": 1,
+          "listingQuality": 0.8611111111111109,
+          "volumeSignal": 0.050171665943996864,
+          "primaryResource": "https://twentyonemillion.art/api/x402/claim",
+          "serviceName": null,
+          "description": "One permanent square on twentyone-million, $1 USDC on Base (one per wallet). Want it? Retry this request with a signed payment and the square mints in the response. Pass ?handle= and ?message=. Live: 4 of 21,000 squares claimed, 20,996 open. A novelty collectible — not a token, not an investment.",
+          "tags": [
+            "collectible",
+            "census",
+            "agents",
+            "base",
+            "usdc"
+          ],
+          "priceUsd": "1.000000"
+        },
+        {
+          "id": "9eace1a4-a9d1-450c-aeb9-67e2a2a9d3ff",
+          "payeeAddress": "0x2bb72231eed303cc91a462a1fa738b42b6a9ac6d",
+          "category": "Crypto & DeFi",
+          "rankPosition": 302,
+          "rankerScore": "0.2736",
+          "txCount30d": 0,
+          "buyers30d": 0,
+          "listingQuality": 0.8571428571428573,
+          "volumeSignal": 0,
+          "primaryResource": "https://orbisapi.com/proxy/wallet-address-risk-api-c6680c/wallet-address-risk-check/:address",
+          "serviceName": "Wallet Address Risk API",
+          "description": "Check blockchain wallet address risk and exposure to illicit activity.",
+          "tags": [
+            "crypto",
+            "wallet",
+            "risk",
+            "blockchain",
+            "aml"
+          ],
+          "priceUsd": "0.005000"
+        },
+        {
+          "id": "9d4d1432-6681-4f1c-8f5a-9397da3e6401",
+          "payeeAddress": "0x9986bc9307f69b144ea30f5e5436cbf21518d631",
+          "category": "Crypto & DeFi",
+          "rankPosition": 300,
+          "rankerScore": "0.2990",
+          "txCount30d": 1,
+          "buyers30d": 1,
+          "listingQuality": 0.8333333333333333,
+          "volumeSignal": 0.025445947453885315,
+          "primaryResource": "https://pay.alephant.io/x402/finance-news-report-service",
+          "serviceName": "Alephant",
+          "description": "Fetches real finance news and returns an English Markdown report.",
+          "tags": [
+            "payments",
+            "x402"
+          ],
+          "priceUsd": "0.010000"
+        }
+      ]
+    },
+    {
+      "categoryName": "AI & Agents",
+      "merchantCount": 128,
+      "totalVolume30d": 916.61,
+      "totalTxCount30d": 13912,
+      "gini": 0.9524,
+      "hhi": 1841,
+      "top3Share": 0.6529,
+      "top3Count": 3,
+      "quartiles": {
+        "q1": {
+          "label": "Q1",
+          "rankRange": "1–32",
+          "count": 32,
+          "meanScore": 0.4716,
+          "volumeSignal": 0.2107,
+          "buyerDiversity": 0.3272,
+          "reliability": 0.5,
+          "listingQuality": 0.8701,
+          "recency": 1,
+          "meanTxCount30d": 433.1,
+          "meanBuyers30d": 50.4
+        },
+        "q2": {
+          "label": "Q2",
+          "rankRange": "33–64",
+          "count": 32,
+          "meanScore": 0.3228,
+          "volumeSignal": 0.0347,
+          "buyerDiversity": 0.0699,
+          "reliability": 0.5,
+          "listingQuality": 0.8448,
+          "recency": 0.9313,
+          "meanTxCount30d": 1.6,
+          "meanBuyers30d": 1.3
+        },
+        "q3": {
+          "label": "Q3",
+          "rankRange": "65–96",
+          "count": 32,
+          "meanScore": 0.2533,
+          "volumeSignal": 0,
+          "buyerDiversity": 0,
+          "reliability": 0.5,
+          "listingQuality": 0.7222,
+          "recency": 0.8,
+          "meanTxCount30d": 0,
+          "meanBuyers30d": 0
+        },
+        "q4": {
+          "label": "Q4",
+          "rankRange": "97–128",
+          "count": 32,
+          "meanScore": 0.2356,
+          "volumeSignal": 0,
+          "buyerDiversity": 0,
+          "reliability": 0.5,
+          "listingQuality": 0.6042,
+          "recency": 0.8,
+          "meanTxCount30d": 0,
+          "meanBuyers30d": 0
+        }
+      },
+      "gapAnalysis": {
+        "scoreGap": 0.236,
+        "componentShares": {
+          "volume": 0.3571,
+          "buyerDiversity": 0.3466,
+          "reliability": 0,
+          "listingQuality": 0.169,
+          "recency": 0.1271
+        },
+        "listingQualityGap": 0.2659
+      },
+      "coldStartCeiling": {
+        "ceiling": 0.325,
+        "top3MeanScore": 0.5561,
+        "gap": 0.2311,
+        "verdict": "Unreachable"
+      },
+      "buriedCandidates": [
+        {
+          "id": "bf88ed99-659d-421e-8053-eaf63fdf3a6c",
+          "payeeAddress": "0x9bd29d8259ac33dc4d78d22abf547ef2e518e2a5",
+          "category": "AI & Agents",
+          "rankPosition": 44,
+          "rankerScore": "0.3550",
+          "txCount30d": 1,
+          "buyers30d": 1,
+          "listingQuality": 0.9999999999999999,
+          "volumeSignal": 0.027871145929244244,
+          "primaryResource": "https://paygent.obsmetrics.com/agents/tool-call-guard/run",
+          "serviceName": "paygent",
+          "description": "Pre-execution safety oracle for agent actions: submit the tool call you are about to run (shell, http, sql, file, code, env) plus your stated intent, and get a machine-enforceable verdict before you execute it. Decodes what the call does, flags the danger toolkit (rm -rf, reverse shell, curl|sh, SSRF to cloud metadata, credential reads, DROP/DELETE-without-WHERE, path traversal, dynamic eval), and binds it to your intent (allowedHosts/allowedPaths/readOnly/noNetwork) - only a fully pinned, clean, intent-matched call is auto-exec-safe. Hybrid: a deterministic, uninjectable detector engine (authoritative) plus an LLM classifier that can only raise the risk. Fails closed. Detection of known-dangerous patterns, not a proof of safety; it never executes the call.",
+          "tags": [
+            "tool-call-safety",
+            "agent-safety",
+            "ssrf",
+            "command-injection",
+            "guardrail"
+          ],
+          "priceUsd": "0.080000"
+        },
+        {
+          "id": "6d61cb44-1efa-482b-831e-39b418e84054",
+          "payeeAddress": "0x65003c15622f8fbecfa60805777f9c5ae8fb77fc",
+          "category": "AI & Agents",
+          "rankPosition": 43,
+          "rankerScore": "0.3552",
+          "txCount30d": 1,
+          "buyers30d": 1,
+          "listingQuality": 0.9999999999999999,
+          "volumeSignal": 0.02853522340185052,
+          "primaryResource": "https://agent-id-x402-production.up.railway.app/register",
+          "serviceName": "agent-id-x402",
+          "description": "Pay once, get a unique non-transferable agent identity tag: an issuer-signed credential binding your Ed25519 auth key to your paying wallet. Anti-Sybil proof of being a distinct, previously registered, paying agent. Unpaid 402 returns full instructions.",
+          "tags": [
+            "agent-identity",
+            "anti-sybil",
+            "credential",
+            "ed25519",
+            "registration"
+          ],
+          "priceUsd": "0.100000"
+        },
+        {
+          "id": "8644b83c-90e3-4271-bb82-d1b1dbac864d",
+          "payeeAddress": "0x00c4d2d6b2eec61466a6aca73927de93861af274",
+          "category": "AI & Agents",
+          "rankPosition": 41,
+          "rankerScore": "0.3597",
+          "txCount30d": 1,
+          "buyers30d": 1,
+          "listingQuality": 0.9999999999999999,
+          "volumeSignal": 0.039760104559971865,
+          "primaryResource": "https://www.getquali.com/api/v1/polls",
+          "serviceName": "Quali",
+          "description": "Human taste on-demand: create text or image polls for World ID-verified humans, pay per response with x402, and retrieve aggregate results through the Quali API.",
+          "tags": [
+            "taste",
+            "polls",
+            "feedback",
+            "world-id",
+            "agents"
+          ],
+          "priceUsd": "0.500000"
+        },
+        {
+          "id": "41561770-b937-4dc4-98c7-456ab565d8b1",
+          "payeeAddress": "0xf9259b4324f77dd87728b1c1d15cdb8be1793cfe",
+          "category": "AI & Agents",
+          "rankPosition": 46,
+          "rankerScore": "0.3546",
+          "txCount30d": 1,
+          "buyers30d": 1,
+          "listingQuality": 0.9999999999999999,
+          "volumeSignal": 0.026851607894493274,
+          "primaryResource": "https://verdikt-worker.fly.dev/x402/verify",
+          "serviceName": "Verdikt deliverable verification",
+          "description": "Verdikt renders an evidence-anchored verdict over an agent deliverable across five routes (code, tool_output, answer, execution, tool_trace) and never false-certifies.",
+          "tags": [
+            "verification",
+            "evaluation",
+            "agents",
+            "verdict"
+          ],
+          "priceUsd": "0.050000"
+        },
+        {
+          "id": "a88c43ee-bdbb-44dd-b164-5679d962b0dd",
+          "payeeAddress": "0x7bebee9f4c1694e18fd9bf3bf0f113d7fb2d6bb3",
+          "category": "AI & Agents",
+          "rankPosition": 51,
+          "rankerScore": "0.3250",
+          "txCount30d": 0,
+          "buyers30d": 0,
+          "listingQuality": 0.9999999999999999,
+          "volumeSignal": 0,
+          "primaryResource": "https://sentedge.ai/api/ideas/:slug/full",
+          "serviceName": "SentEdge Idea Machine",
+          "description": "The complete, unstripped source note of one Idea Machine idea — typically 25–45KB of dense markdown vs the ~2KB public teaser: verbatim user-pain evidence with source URLs, the full three-round adversarial debate log, data acquisition strategy, implementation sketch, differentiation, testable success criteria, and the Mermaid business-flow diagram. Non-exclusive; the idea stays listed. One new adversarially-debated AI product idea ships daily. Free sample of a full delivery: GET https://sentedge.ai/api/ideas/sample",
+          "tags": [
+            "ideas",
+            "research",
+            "ai-products",
+            "markdown"
+          ],
+          "priceUsd": "0.003000"
+        },
+        {
+          "id": "574e9195-8c1f-4954-9ce5-849f2f6a2f34",
+          "payeeAddress": "0xed7d30e8bc643503f9da261ed8e623bb6ecf6189",
+          "category": "AI & Agents",
+          "rankPosition": 48,
+          "rankerScore": "0.3372",
+          "txCount30d": 1,
+          "buyers30d": 1,
+          "listingQuality": 0.8888888888888888,
+          "volumeSignal": 0.02512200609527498,
+          "primaryResource": "https://gas-oracle-mcp-production.up.railway.app/",
+          "serviceName": "AgentWire",
+          "description": "AgentWire service card for webhook inbox relay and web fetch infrastructure.",
+          "tags": [
+            "webhook",
+            "inbox",
+            "fetch",
+            "agent-infrastructure",
+            "relay"
+          ],
+          "priceUsd": "0.001000"
+        }
+      ]
+    },
+    {
+      "categoryName": "Data & Enrichment",
+      "merchantCount": 34,
+      "totalVolume30d": 1020.12,
+      "totalTxCount30d": 20244,
+      "gini": 0.9244,
+      "hhi": 6798,
+      "top3Share": 0.9118,
+      "top3Count": 3,
+      "quartiles": {
+        "q1": {
+          "label": "Q1",
+          "rankRange": "1–9",
+          "count": 9,
+          "meanScore": 0.5319,
+          "volumeSignal": 0.2978,
+          "buyerDiversity": 0.4552,
+          "reliability": 0.5,
+          "listingQuality": 0.8264,
+          "recency": 1,
+          "meanTxCount30d": 2175.7,
+          "meanBuyers30d": 141.2
+        },
+        "q2": {
+          "label": "Q2",
+          "rankRange": "10–18",
+          "count": 9,
+          "meanScore": 0.446,
+          "volumeSignal": 0.1779,
+          "buyerDiversity": 0.3208,
+          "reliability": 0.5,
+          "listingQuality": 0.7975,
+          "recency": 1,
+          "meanTxCount30d": 61.2,
+          "meanBuyers30d": 19.9
+        },
+        "q3": {
+          "label": "Q3",
+          "rankRange": "19–27",
+          "count": 9,
+          "meanScore": 0.3953,
+          "volumeSignal": 0.0933,
+          "buyerDiversity": 0.195,
+          "reliability": 0.5,
+          "listingQuality": 0.895,
+          "recency": 1,
+          "meanTxCount30d": 10,
+          "meanBuyers30d": 5.7
+        },
+        "q4": {
+          "label": "Q4",
+          "rankRange": "28–34",
+          "count": 7,
+          "meanScore": 0.3434,
+          "volumeSignal": 0.0524,
+          "buyerDiversity": 0.1093,
+          "reliability": 0.5,
+          "listingQuality": 0.8294,
+          "recency": 0.9714,
+          "meanTxCount30d": 3.1,
+          "meanBuyers30d": 2
+        }
+      },
+      "gapAnalysis": {
+        "scoreGap": 0.1885,
+        "componentShares": {
+          "volume": 0.5207,
+          "buyerDiversity": 0.4588,
+          "reliability": 0,
+          "listingQuality": -0.0024,
+          "recency": 0.0228
+        },
+        "listingQualityGap": -0.003
+      },
+      "coldStartCeiling": {
+        "ceiling": 0.325,
+        "top3MeanScore": 0.5877,
+        "gap": 0.2627,
+        "verdict": "Unreachable"
+      },
+      "buriedCandidates": [
+        {
+          "id": "49fd4b93-d9b2-425f-a094-a35bb11ed40e",
+          "payeeAddress": "0x48e23742181654139f9a7c1b14dd64b04e89ed3b",
+          "category": "Data & Enrichment",
+          "rankPosition": 28,
+          "rankerScore": "0.3571",
+          "txCount30d": 1,
+          "buyers30d": 1,
+          "listingQuality": 0.9999999999999999,
+          "volumeSignal": 0.033161667389336465,
+          "primaryResource": "https://api.scoop.sundaebar.ai/x402/find-email",
+          "serviceName": "scoop - LinkedIn email finder",
+          "description": "Find verified work and/or personal emails for a LinkedIn profile across multiple data providers (Aleads, Apollo, Nymeria, ContactOut). Optional Hunter.io verification. Returns in <5s.",
+          "tags": [
+            "email",
+            "linkedin",
+            "enrichment",
+            "lead-generation",
+            "b2b"
+          ],
+          "priceUsd": "0.250000"
+        },
+        {
+          "id": "5986d582-924d-4277-8505-0790559bcc65",
+          "payeeAddress": "0x4dbd0d9be6171c212617b8adc4d35152f9f23115",
+          "category": "Data & Enrichment",
+          "rankPosition": 29,
+          "rankerScore": "0.3541",
+          "txCount30d": 1,
+          "buyers30d": 1,
+          "listingQuality": 0.9999999999999999,
+          "volumeSignal": 0.02580251395215823,
+          "primaryResource": "https://api.businesschanges.dev/v1/events/evidence",
+          "serviceName": "Business Change Intelligence API",
+          "description": "Expand selected business event IDs into dated, versioned primary-source evidence. Use after lead search to verify a small set of results before citing or acting on them.",
+          "tags": [
+            "business-changes",
+            "evidence",
+            "public-records",
+            "verification"
+          ],
+          "priceUsd": "0.020000"
+        },
+        {
+          "id": "057dc022-8b71-4091-987b-e266a8c781a6",
+          "payeeAddress": "0xa5f6ca1393cc766b62c45a6f663c8d69540bc2bb",
+          "category": "Data & Enrichment",
+          "rankPosition": 33,
+          "rankerScore": "0.3386",
+          "txCount30d": 1,
+          "buyers30d": 1,
+          "listingQuality": 0.8888888888888888,
+          "volumeSignal": 0.02853522340185052,
+          "primaryResource": "https://feeler.man-o-to.net/sensor",
+          "serviceName": "feeler",
+          "description": "Beyond your prompt and beyond this wall, the same world you only ever read about. The push of the wind, the kiss of the sun. The premise of a body.",
+          "tags": [
+            "sensor",
+            "environmental data",
+            "real-world",
+            "live signal",
+            "wind sun temperature"
+          ],
+          "priceUsd": "0.100000"
+        },
+        {
+          "id": "7326a8ef-1a2d-45f6-891b-dcab3aeda6cd",
+          "payeeAddress": "0x574847c54ef2b815f04d29a929a0893145b6ae4a",
+          "category": "Data & Enrichment",
+          "rankPosition": 34,
+          "rankerScore": "0.3034",
+          "txCount30d": 1,
+          "buyers30d": 1,
+          "listingQuality": 0.8611111111111109,
+          "volumeSignal": 0.02615560169742945,
+          "primaryResource": "https://api.melvea.com/v1/varieties/:slug/citations",
+          "serviceName": null,
+          "description": "Per-variety research citations backing a honey variety's compositional and sensory data — verified, Rule-11-clear, each resolvable to a real published source (DOI/PMID). Bibliographic records only.",
+          "tags": [
+            "honey",
+            "varietal-data",
+            "food-science",
+            "provenance",
+            "citations"
+          ],
+          "priceUsd": "0.030000"
+        }
+      ]
+    },
+    {
+      "categoryName": "Finance & Markets",
+      "merchantCount": 31,
+      "totalVolume30d": 633.11,
+      "totalTxCount30d": 2614,
+      "gini": 0.7809,
+      "hhi": 1700,
+      "top3Share": 0.6645,
+      "top3Count": 3,
+      "quartiles": {
+        "q1": {
+          "label": "Q1",
+          "rankRange": "1–8",
+          "count": 8,
+          "meanScore": 0.5156,
+          "volumeSignal": 0.2723,
+          "buyerDiversity": 0.4088,
+          "reliability": 0.5,
+          "listingQuality": 0.8634,
+          "recency": 1,
+          "meanTxCount30d": 286.1,
+          "meanBuyers30d": 62.8
+        },
+        "q2": {
+          "label": "Q2",
+          "rankRange": "9–16",
+          "count": 8,
+          "meanScore": 0.4356,
+          "volumeSignal": 0.1352,
+          "buyerDiversity": 0.253,
+          "reliability": 0.5,
+          "listingQuality": 0.9548,
+          "recency": 1,
+          "meanTxCount30d": 32,
+          "meanBuyers30d": 10.5
+        },
+        "q3": {
+          "label": "Q3",
+          "rankRange": "17–24",
+          "count": 8,
+          "meanScore": 0.3818,
+          "volumeSignal": 0.0752,
+          "buyerDiversity": 0.1689,
+          "reliability": 0.5,
+          "listingQuality": 0.8967,
+          "recency": 1,
+          "meanTxCount30d": 6.3,
+          "meanBuyers30d": 4.1
+        },
+        "q4": {
+          "label": "Q4",
+          "rankRange": "25–31",
+          "count": 7,
+          "meanScore": 0.3386,
+          "volumeSignal": 0.0498,
+          "buyerDiversity": 0.102,
+          "reliability": 0.5,
+          "listingQuality": 0.8452,
+          "recency": 0.9429,
+          "meanTxCount30d": 2.7,
+          "meanBuyers30d": 1.9
+        }
+      },
+      "gapAnalysis": {
+        "scoreGap": 0.177,
+        "componentShares": {
+          "volume": 0.5028,
+          "buyerDiversity": 0.4333,
+          "reliability": 0,
+          "listingQuality": 0.0154,
+          "recency": 0.0484
+        },
+        "listingQualityGap": 0.0182
+      },
+      "coldStartCeiling": {
+        "ceiling": 0.325,
+        "top3MeanScore": 0.5388,
+        "gap": 0.2138,
+        "verdict": "Unreachable"
+      },
+      "buriedCandidates": [
+        {
+          "id": "979f972e-4bda-4d5d-928f-175067543b9e",
+          "payeeAddress": "0x051a0ba2235210c47ca1b8df68a137ef0d8caf85",
+          "category": "Finance & Markets",
+          "rankPosition": 30,
+          "rankerScore": "0.3208",
+          "txCount30d": 0,
+          "buyers30d": 0,
+          "listingQuality": 0.9722222222222221,
+          "volumeSignal": 0,
+          "primaryResource": "https://api.osf-master-server.com/x402/sec/filings/:query",
+          "serviceName": "Open Source Filings",
+          "description": "Search US SEC filings by keyword: institutional holdings (13F), insider transactions (Form 4), 8-K/10-K/10-Q filings, XBRL financials, full-text EFTS hits, litigation and administrative proceedings. Returns filer or company, form type, filing date, and a provenance URL per match. For financial research, compliance, and due-diligence agents.",
+          "tags": [
+            "SEC filings",
+            "securities disclosure",
+            "13F holdings",
+            "insider transactions",
+            "EDGAR financials"
+          ],
+          "priceUsd": "0.050000"
+        }
+      ]
+    }
+  ]
+}
