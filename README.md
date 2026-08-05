@@ -115,22 +115,6 @@ Three things to be clear about:
 
 ---
 
-## How to disagree
-
-The formula encodes a judgement call, and the judgement is in exactly one place. If you think the weights are wrong, change them and see what happens:
-
-1. Open **`src/ranker.ts`**, line **26** — the `RANKER_WEIGHTS` constant.
-2. Change the numbers. They should sum to 1.0.
-3. Run `npm run analyze` and compare.
-
-For example, setting `volume: 0.15` and `listingQuality: 0.40` — the strongest plausible "documentation should matter most" position — reorders Data & Enrichment so that well-documented low-volume merchants take the top places (rank 12 → 5, rank 9 → 3), displacing the volume incumbent. That is the honest result of that assumption, and it demonstrates the finding is a consequence of weighting volume highly, not an artifact of arithmetic.
-
-What re-weighting does **not** do is close the cold-start gap, unless you drive the volume and buyerDiversity weights to near zero. That is the report's actual claim, and it is the thing to attack if you want to falsify it.
-
-Other useful attacks: recut the quartiles under a different aggregation rule (all three are already emitted in `data/recut-results.json`), or challenge the category exclusions in METHODOLOGY.md §2.
-
----
-
 ## Known limitations
 
 Carried over from the report rather than re-litigated here:
