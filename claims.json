@@ -413,6 +413,63 @@
       "cited_in": "Section 4.2"
     },
     {
+      "id": "quartiles.data-enrichment.q1.meanTxCount30d",
+      "value": 2175.7,
+      "source": "data/analysis-results.json",
+      "derivation": "categories[categoryName=Data & Enrichment].quartiles.q1.meanTxCount30d",
+      "cited_in": "Section 4.2 Figure 4.2"
+    },
+    {
+      "id": "quartiles.data-enrichment.q2.meanTxCount30d",
+      "value": 61.2,
+      "source": "data/analysis-results.json",
+      "derivation": "categories[categoryName=Data & Enrichment].quartiles.q2.meanTxCount30d",
+      "cited_in": "Section 4.2 Figure 4.2"
+    },
+    {
+      "id": "quartiles.data-enrichment.q3.meanTxCount30d",
+      "value": 10,
+      "source": "data/analysis-results.json",
+      "derivation": "categories[categoryName=Data & Enrichment].quartiles.q3.meanTxCount30d",
+      "cited_in": "Section 4.2 Figure 4.2"
+    },
+    {
+      "id": "quartiles.data-enrichment.q4.meanTxCount30d",
+      "value": 3.1,
+      "source": "data/analysis-results.json",
+      "derivation": "categories[categoryName=Data & Enrichment].quartiles.q4.meanTxCount30d",
+      "cited_in": "Section 4.2 Figure 4.2",
+      "note": "Mean 30-day settled transactions fall from 2175.7 in Q1 to 3.1 in Q4 — the separation the score is actually reading."
+    },
+    {
+      "id": "quartiles.data-enrichment.q1.meanBuyers30d",
+      "value": 141.2,
+      "source": "data/analysis-results.json",
+      "derivation": "categories[categoryName=Data & Enrichment].quartiles.q1.meanBuyers30d",
+      "cited_in": "Section 4.2 Figure 4.2"
+    },
+    {
+      "id": "quartiles.data-enrichment.q2.meanBuyers30d",
+      "value": 19.9,
+      "source": "data/analysis-results.json",
+      "derivation": "categories[categoryName=Data & Enrichment].quartiles.q2.meanBuyers30d",
+      "cited_in": "Section 4.2 Figure 4.2"
+    },
+    {
+      "id": "quartiles.data-enrichment.q3.meanBuyers30d",
+      "value": 5.7,
+      "source": "data/analysis-results.json",
+      "derivation": "categories[categoryName=Data & Enrichment].quartiles.q3.meanBuyers30d",
+      "cited_in": "Section 4.2 Figure 4.2"
+    },
+    {
+      "id": "quartiles.data-enrichment.q4.meanBuyers30d",
+      "value": 2,
+      "source": "data/analysis-results.json",
+      "derivation": "categories[categoryName=Data & Enrichment].quartiles.q4.meanBuyers30d",
+      "cited_in": "Section 4.2 Figure 4.2"
+    },
+    {
       "id": "gap.crypto-defi.volume",
       "value": 0.4362,
       "source": "data/analysis-results.json",

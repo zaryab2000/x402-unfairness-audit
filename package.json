@@ -11,7 +11,8 @@
     "recut": "tsx scripts/recut.ts",
     "verify": "tsx scripts/verify.ts",
     "probe": "tsx scripts/probe-cdp.ts",
-    "all": "npm run analyze && npm run recut && npm run verify"
+    "all": "npm run analyze && npm run recut && npm run verify",
+    "charts": "python3 charts/d3a_lorenz_curves.py && python3 charts/d3b_data_enrichment_cliff.py && python3 charts/d4_quality_rank_disconnect.py && python3 charts/d5_gap_decomposition.py && python3 charts/d7_ceiling_and_gap.py && python3 charts/d9_circular_dependency.py && python3 charts/d10_ceiling_observed.py"
   },
   "devDependencies": {
     "@types/node": "24.10.1",
