@@ -3,7 +3,7 @@
 Reproducible evidence base for an empirical audit of merchant discovery ranking in the x402 ecosystem.
 Frozen snapshot, published scoring code, and a machine-checkable manifest of every figure the report cites.
 
-**Report:** *The Unfairness Report* — [read it here](REPORT_URL)
+**Report:** *The x402 Unfairness Report — A Study of 1,212 merchants in an unfair x402 agentic market* — [read it here](https://zaryab2000.notion.site/x402-Unfairness-Report-A-Study-of-1212-merchants-in-an-unfair-x402-agentic-market-3b3a13cdb21f80179d7ee9ed6a20f9fb)
 **Snapshot:** 2026-07-25 · 1,212 merchants · 496 analysed across four categories
 **Verify:** `npm install && npm run all` — no configuration, no network, no API keys
 
