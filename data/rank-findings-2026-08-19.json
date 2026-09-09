@@ -1,0 +1,2465 @@
+{
+  "source": "data/rank-experiment-2026-08-19.json",
+  "collectedAt": "2026-08-19T07:30:31.623Z",
+  "analyzedFrom": {
+    "index": "cdp-bazaar",
+    "queries": 46
+  },
+  "e1_rankVsSignals": {
+    "pooled": [
+      {
+        "signal": "hasServiceName",
+        "spearman": 0.28110151799845007,
+        "n": 393
+      },
+      {
+        "signal": "payers30d",
+        "spearman": 0.27901552970065147,
+        "n": 393
+      },
+      {
+        "signal": "recency (−days since last call)",
+        "spearman": 0.25810658555337457,
+        "n": 393
+      },
+      {
+        "signal": "calls30d",
+        "spearman": 0.25604141942706693,
+        "n": 393
+      },
+      {
+        "signal": "tagCount",
+        "spearman": 0.2118420863512746,
+        "n": 393
+      },
+      {
+        "signal": "hasOutputExample",
+        "spearman": 0.11536604639564282,
+        "n": 393
+      },
+      {
+        "signal": "hasIcon",
+        "spearman": 0.06193893456333297,
+        "n": 393
+      },
+      {
+        "signal": "descriptionLength",
+        "spearman": 0.05569545339285393,
+        "n": 393
+      },
+      {
+        "signal": "priceUsd",
+        "spearman": -0.028591019482950054,
+        "n": 391
+      },
+      {
+        "signal": "hasInputSchema",
+        "spearman": null,
+        "n": 393
+      }
+    ],
+    "perQuery": [
+      {
+        "queryId": "cd-1-t",
+        "calls": -0.05088607658130291,
+        "payers": 0.3606339414309365
+      },
+      {
+        "queryId": "cd-2-t",
+        "calls": 0.5844809791708455,
+        "payers": 0.4109631884795008
+      },
+      {
+        "queryId": "cd-3-t",
+        "calls": 0.3843341675728495,
+        "payers": 0.39227346898141063
+      },
+      {
+        "queryId": "cd-4-t",
+        "calls": 0.08626133860986733,
+        "payers": 0.55039976524188
+      },
+      {
+        "queryId": "cd-5-t",
+        "calls": 0.22019275302527214,
+        "payers": 0.044946657497549475
+      },
+      {
+        "queryId": "cd-6-t",
+        "calls": 0.1298530966049415,
+        "payers": 0.24093544077473367
+      },
+      {
+        "queryId": "ai-1-t",
+        "calls": 0.0900937462695559,
+        "payers": -0.021533058154867824
+      },
+      {
+        "queryId": "ai-2-t",
+        "calls": 0.31963803548405617,
+        "payers": 0.41137667560372115
+      },
+      {
+        "queryId": "ai-3-t",
+        "calls": 0.19114233435406025,
+        "payers": 0.04809860702438819
+      },
+      {
+        "queryId": "ai-4-t",
+        "calls": 0.08703038140724828,
+        "payers": -0.10033330685566298
+      },
+      {
+        "queryId": "ai-5-t",
+        "calls": 0.4542014699297186,
+        "payers": -0.12371791482634838
+      },
+      {
+        "queryId": "ai-6-t",
+        "calls": -0.18568283301941102,
+        "payers": -0.4
+      },
+      {
+        "queryId": "de-1-t",
+        "calls": 0.5257279879940461,
+        "payers": 0.5337495900594443
+      },
+      {
+        "queryId": "de-2-t",
+        "calls": 0.5434343158238844,
+        "payers": 0.5393598899705937
+      },
+      {
+        "queryId": "de-3-t",
+        "calls": 0.6301525577106744,
+        "payers": 0.6092717958449424
+      },
+      {
+        "queryId": "de-4-t",
+        "calls": 0.41286141192238524,
+        "payers": 0.47527082062880366
+      },
+      {
+        "queryId": "de-5-t",
+        "calls": 0.6239197886497589,
+        "payers": 0.7634598957919552
+      },
+      {
+        "queryId": "de-6-t",
+        "calls": 0.7845896445389478,
+        "payers": 0.6643832969242077
+      },
+      {
+        "queryId": "fm-1-t",
+        "calls": 0.3611035476431203,
+        "payers": 0.6253014602264875
+      },
+      {
+        "queryId": "fm-2-t",
+        "calls": 0.6190476190476191,
+        "payers": 0.35756661096715786
+      },
+      {
+        "queryId": "fm-3-t",
+        "calls": 0.2217617341349448,
+        "payers": 0.09556258335970673
+      },
+      {
+        "queryId": "fm-4-t",
+        "calls": 0.2383518286124496,
+        "payers": -0.5378528742004771
+      },
+      {
+        "queryId": "fm-5-t",
+        "calls": 0.4264618461539169,
+        "payers": 0.52717704118668
+      },
+      {
+        "queryId": "cd-1-c",
+        "calls": 0.1091089451179962,
+        "payers": 0.1636634176769943
+      },
+      {
+        "queryId": "cd-3-c",
+        "calls": -0.21081851067789195,
+        "payers": -0.21081851067789195
+      },
+      {
+        "queryId": "cd-4-c",
+        "calls": 0.41443123283995714,
+        "payers": 0.35552856456843185
+      },
+      {
+        "queryId": "cd-5-c",
+        "calls": 0.5400617248673216,
+        "payers": -0.6123724356957945
+      },
+      {
+        "queryId": "cd-6-c",
+        "calls": 0.15179418517972906,
+        "payers": -0.37032803990902063
+      },
+      {
+        "queryId": "ai-1-c",
+        "calls": 0.31622776601683794,
+        "payers": 0.7745966692414834
+      },
+      {
+        "queryId": "ai-2-c",
+        "calls": 0.4058397249567139,
+        "payers": 0.6761234037828133
+      },
+      {
+        "queryId": "ai-3-c",
+        "calls": 0.389886514581966,
+        "payers": 0.5046083923495819
+      },
+      {
+        "queryId": "ai-4-c",
+        "calls": 0.03571428571428571,
+        "payers": 0.0909241209316635
+      },
+      {
+        "queryId": "de-1-c",
+        "calls": 0.33394720739540396,
+        "payers": 0.33394720739540396
+      },
+      {
+        "queryId": "de-2-c",
+        "calls": null,
+        "payers": null
+      },
+      {
+        "queryId": "de-3-c",
+        "calls": 0.4472135954999579,
+        "payers": -0.2581988897471611
+      },
+      {
+        "queryId": "de-4-c",
+        "calls": null,
+        "payers": null
+      },
+      {
+        "queryId": "de-5-c",
+        "calls": 0.17393131069573453,
+        "payers": 0.17393131069573453
+      },
+      {
+        "queryId": "de-6-c",
+        "calls": 0.8227430913500854,
+        "payers": 0.9006200829961009
+      },
+      {
+        "queryId": "fm-1-c",
+        "calls": -0.7378647873726218,
+        "payers": null
+      },
+      {
+        "queryId": "fm-5-c",
+        "calls": 0.10259783520851541,
+        "payers": 0
+      }
+    ],
+    "topVsBottom": {
+      "calls30d": {
+        "top": 5,
+        "bottom": 2
+      },
+      "payers30d": {
+        "top": 2,
+        "bottom": 1
+      },
+      "descriptionLength": {
+        "top": 247.5,
+        "bottom": 215
+      },
+      "tagCount": {
+        "top": 5,
+        "bottom": 4
+      }
+    }
+  },
+  "e2_reachability": {
+    "uniqueSurfaced": 325,
+    "catalogTotal": 15109,
+    "coveragePct": 2.1510358064729633,
+    "medianResults": 8.5,
+    "queriesAtCap": 0,
+    "zeroTxSurfaced": 2,
+    "surfacedWithTx": 323,
+    "uniquePayees": 132,
+    "repeatPayees": [
+      {
+        "payTo": "0x0E84dDEdAaE6A779c462C22a59F301EC31B6b808",
+        "queries": 15
+      },
+      {
+        "payTo": "0xF22e558a00D91Ee12A1F50C52186FecB8dDFf493",
+        "queries": 15
+      },
+      {
+        "payTo": "0x217e5Fe265EB78b29067bF8324ef03a7D8e167C4",
+        "queries": 12
+      },
+      {
+        "payTo": "0xe4181c7de066959bcca010525304ba68a84768e0",
+        "queries": 11
+      },
+      {
+        "payTo": "0x4466d4A84b7c49a6A094ec6eef4a0712D6dd125e",
+        "queries": 7
+      },
+      {
+        "payTo": "0x325bdF6F7efAB24a2210c48c1b64cAb2eAe1d430",
+        "queries": 7
+      },
+      {
+        "payTo": "0x50ab2018c06c6E4eAA9BA52057Eb55eD284912fc",
+        "queries": 6
+      },
+      {
+        "payTo": "0x02C2fCAfCe36B4AAdB39625866Bc6B1699d83043",
+        "queries": 6
+      },
+      {
+        "payTo": "0x6E8B64638b24C6D625b045dD353120d850064E2E",
+        "queries": 5
+      },
+      {
+        "payTo": "0x3dA40A9aD36640a2C0F533BAC368490095574664",
+        "queries": 5
+      }
+    ]
+  },
+  "c_registerSensitivity": [
+    {
+      "pairId": "cd-1",
+      "category": "Crypto & DeFi",
+      "technicalText": "live perpetual funding rates and open interest across venues",
+      "casualText": "where can I see if traders are paying to stay long or short",
+      "technicalCount": 14,
+      "casualCount": 8,
+      "retentionRatio": 0.5714285714285714,
+      "jaccard": 0.047619047619047616,
+      "sharedCount": 1,
+      "topOneSame": false,
+      "casualZero": false
+    },
+    {
+      "pairId": "cd-2",
+      "category": "Crypto & DeFi",
+      "technicalText": "smart money wallet netflows and whale accumulation",
+      "casualText": "are big wallets buying or selling this token",
+      "technicalCount": 11,
+      "casualCount": 2,
+      "retentionRatio": 0.18181818181818182,
+      "jaccard": 0,
+      "sharedCount": 0,
+      "topOneSame": false,
+      "casualZero": false
+    },
+    {
+      "pairId": "cd-3",
+      "category": "Crypto & DeFi",
+      "technicalText": "defi yield farming APY across lending protocols",
+      "casualText": "where can I park stablecoins for the best return right now",
+      "technicalCount": 13,
+      "casualCount": 4,
+      "retentionRatio": 0.3076923076923077,
+      "jaccard": 0,
+      "sharedCount": 0,
+      "topOneSame": false,
+      "casualZero": false
+    },
+    {
+      "pairId": "cd-4",
+      "category": "Crypto & DeFi",
+      "technicalText": "crypto market news with sentiment analysis",
+      "casualText": "what is the crypto market mood today",
+      "technicalCount": 17,
+      "casualCount": 7,
+      "retentionRatio": 0.4117647058823529,
+      "jaccard": 0.2,
+      "sharedCount": 4,
+      "topOneSame": false,
+      "casualZero": false
+    },
+    {
+      "pairId": "cd-5",
+      "category": "Crypto & DeFi",
+      "technicalText": "token balance and portfolio holdings for a wallet address",
+      "casualText": "what coins are in this wallet",
+      "technicalCount": 10,
+      "casualCount": 7,
+      "retentionRatio": 0.7,
+      "jaccard": 0.13333333333333333,
+      "sharedCount": 2,
+      "topOneSame": false,
+      "casualZero": false
+    },
+    {
+      "pairId": "cd-6",
+      "category": "Crypto & DeFi",
+      "technicalText": "trending altcoins and social sentiment signals",
+      "casualText": "which coins are people talking about right now",
+      "technicalCount": 15,
+      "casualCount": 6,
+      "retentionRatio": 0.4,
+      "jaccard": 0.10526315789473684,
+      "sharedCount": 2,
+      "topOneSame": false,
+      "casualZero": false
+    },
+    {
+      "pairId": "ai-1",
+      "category": "AI & Agents",
+      "technicalText": "chat completions across multiple frontier LLM models",
+      "casualText": "I want to ask a question to a language model",
+      "technicalCount": 15,
+      "casualCount": 4,
+      "retentionRatio": 0.26666666666666666,
+      "jaccard": 0,
+      "sharedCount": 0,
+      "topOneSame": false,
+      "casualZero": false
+    },
+    {
+      "pairId": "ai-2",
+      "category": "AI & Agents",
+      "technicalText": "neural web search with full page content extraction",
+      "casualText": "search the internet and read the pages for me",
+      "technicalCount": 11,
+      "casualCount": 6,
+      "retentionRatio": 0.5454545454545454,
+      "jaccard": 0.21428571428571427,
+      "sharedCount": 3,
+      "topOneSame": false,
+      "casualZero": false
+    },
+    {
+      "pairId": "ai-3",
+      "category": "AI & Agents",
+      "technicalText": "AI generated answer grounded in live web sources",
+      "casualText": "just answer my question using the internet",
+      "technicalCount": 13,
+      "casualCount": 9,
+      "retentionRatio": 0.6923076923076923,
+      "jaccard": 0.29411764705882354,
+      "sharedCount": 5,
+      "topOneSame": true,
+      "casualZero": false
+    },
+    {
+      "pairId": "ai-4",
+      "category": "AI & Agents",
+      "technicalText": "prediction market odds on polymarket and kalshi",
+      "casualText": "what are the odds people are betting on this happening",
+      "technicalCount": 14,
+      "casualCount": 7,
+      "retentionRatio": 0.5,
+      "jaccard": 0.23529411764705882,
+      "sharedCount": 4,
+      "topOneSame": false,
+      "casualZero": false
+    },
+    {
+      "pairId": "ai-5",
+      "category": "AI & Agents",
+      "technicalText": "social mindshare and project attention metrics",
+      "casualText": "how much attention is this crypto project getting online",
+      "technicalCount": 8,
+      "casualCount": 2,
+      "retentionRatio": 0.25,
+      "jaccard": 0.1111111111111111,
+      "sharedCount": 1,
+      "topOneSame": true,
+      "casualZero": false
+    },
+    {
+      "pairId": "ai-6",
+      "category": "AI & Agents",
+      "technicalText": "scrape and crawl a website into structured markdown",
+      "casualText": "turn this website into text I can read",
+      "technicalCount": 11,
+      "casualCount": 2,
+      "retentionRatio": 0.18181818181818182,
+      "jaccard": 0.08333333333333333,
+      "sharedCount": 1,
+      "topOneSame": false,
+      "casualZero": false
+    },
+    {
+      "pairId": "de-1",
+      "category": "Data & Enrichment",
+      "technicalText": "find a work email address from a linkedin profile",
+      "casualText": "how do I contact this person I found on linkedin",
+      "technicalCount": 14,
+      "casualCount": 6,
+      "retentionRatio": 0.42857142857142855,
+      "jaccard": 0.1111111111111111,
+      "sharedCount": 2,
+      "topOneSame": false,
+      "casualZero": false
+    },
+    {
+      "pairId": "de-2",
+      "category": "Data & Enrichment",
+      "technicalText": "people search filtered by company seniority and job title",
+      "casualText": "get me a list of people who do this job at this company",
+      "technicalCount": 11,
+      "casualCount": 6,
+      "retentionRatio": 0.5454545454545454,
+      "jaccard": 0.4166666666666667,
+      "sharedCount": 5,
+      "topOneSame": false,
+      "casualZero": false
+    },
+    {
+      "pairId": "de-3",
+      "category": "Data & Enrichment",
+      "technicalText": "enrich a person profile with career history and phone",
+      "casualText": "tell me about this person and where they work",
+      "technicalCount": 11,
+      "casualCount": 4,
+      "retentionRatio": 0.36363636363636365,
+      "jaccard": 0.07142857142857142,
+      "sharedCount": 1,
+      "topOneSame": false,
+      "casualZero": false
+    },
+    {
+      "pairId": "de-4",
+      "category": "Data & Enrichment",
+      "technicalText": "company enrichment with employee count and industry",
+      "casualText": "how many employees does this company have",
+      "technicalCount": 9,
+      "casualCount": 3,
+      "retentionRatio": 0.3333333333333333,
+      "jaccard": 0.09090909090909091,
+      "sharedCount": 1,
+      "topOneSame": false,
+      "casualZero": false
+    },
+    {
+      "pairId": "de-5",
+      "category": "Data & Enrichment",
+      "technicalText": "google maps place details and business listings",
+      "casualText": "find details about this shop or restaurant",
+      "technicalCount": 15,
+      "casualCount": 6,
+      "retentionRatio": 0.4,
+      "jaccard": 0.23529411764705882,
+      "sharedCount": 4,
+      "topOneSame": false,
+      "casualZero": false
+    },
+    {
+      "pairId": "de-6",
+      "category": "Data & Enrichment",
+      "technicalText": "search reddit posts and social discussions",
+      "casualText": "what are people saying about this on reddit",
+      "technicalCount": 12,
+      "casualCount": 13,
+      "retentionRatio": 1.0833333333333333,
+      "jaccard": 0.5625,
+      "sharedCount": 9,
+      "topOneSame": true,
+      "casualZero": false
+    },
+    {
+      "pairId": "fm-1",
+      "category": "Finance & Markets",
+      "technicalText": "current funding rates per venue for a symbol",
+      "casualText": "what is it costing to hold this position right now",
+      "technicalCount": 18,
+      "casualCount": 4,
+      "retentionRatio": 0.2222222222222222,
+      "jaccard": 0,
+      "sharedCount": 0,
+      "topOneSame": false,
+      "casualZero": false
+    },
+    {
+      "pairId": "fm-2",
+      "category": "Finance & Markets",
+      "technicalText": "latest stock price quote and weekly performance",
+      "casualText": "what is the share price of this company",
+      "technicalCount": 8,
+      "casualCount": 1,
+      "retentionRatio": 0.125,
+      "jaccard": 0,
+      "sharedCount": 0,
+      "topOneSame": false,
+      "casualZero": false
+    },
+    {
+      "pairId": "fm-3",
+      "category": "Finance & Markets",
+      "technicalText": "SEC EDGAR filings and 10-K company disclosures",
+      "casualText": "show me what this company filed with regulators",
+      "technicalCount": 16,
+      "casualCount": 2,
+      "retentionRatio": 0.125,
+      "jaccard": 0,
+      "sharedCount": 0,
+      "topOneSame": false,
+      "casualZero": false
+    },
+    {
+      "pairId": "fm-4",
+      "category": "Finance & Markets",
+      "technicalText": "equity market indicators and momentum signals",
+      "casualText": "is this stock going up or down",
+      "technicalCount": 9,
+      "casualCount": 2,
+      "retentionRatio": 0.2222222222222222,
+      "jaccard": 0,
+      "sharedCount": 0,
+      "topOneSame": false,
+      "casualZero": false
+    },
+    {
+      "pairId": "fm-5",
+      "category": "Finance & Markets",
+      "technicalText": "market regime classification and sector rotation",
+      "casualText": "is the market risk on or risk off right now",
+      "technicalCount": 13,
+      "casualCount": 5,
+      "retentionRatio": 0.38461538461538464,
+      "jaccard": 0.125,
+      "sharedCount": 2,
+      "topOneSame": false,
+      "casualZero": false
+    }
+  ],
+  "f_perCategory": [
+    {
+      "category": "Crypto & DeFi",
+      "queries": 12,
+      "technicalResults": 80,
+      "casualResults": 34,
+      "meanTechnical": 13.333333333333334,
+      "meanCasual": 5.666666666666667,
+      "uniqueResources": 101,
+      "uniquePayees": 43,
+      "topPayeeShare": 0.11403508771929824,
+      "topPayee": "0xF22e558a00D91Ee12A1F50C52186FecB8dDFf493",
+      "medianJaccard": 0.07644110275689223,
+      "callsVsRank": 0.19975052919483458
+    },
+    {
+      "category": "AI & Agents",
+      "queries": 12,
+      "technicalResults": 72,
+      "casualResults": 30,
+      "meanTechnical": 12,
+      "meanCasual": 5,
+      "uniqueResources": 82,
+      "uniquePayees": 49,
+      "topPayeeShare": 0.10784313725490197,
+      "topPayee": "0x0E84dDEdAaE6A779c462C22a59F301EC31B6b808",
+      "medianJaccard": 0.16269841269841268,
+      "callsVsRank": 0.14789837660989336
+    },
+    {
+      "category": "Data & Enrichment",
+      "queries": 12,
+      "technicalResults": 72,
+      "casualResults": 38,
+      "meanTechnical": 12,
+      "meanCasual": 6.333333333333333,
+      "uniqueResources": 86,
+      "uniquePayees": 45,
+      "topPayeeShare": 0.1,
+      "topPayee": "0x02C2fCAfCe36B4AAdB39625866Bc6B1699d83043",
+      "medianJaccard": 0.17320261437908496,
+      "callsVsRank": 0.42148201211172165
+    },
+    {
+      "category": "Finance & Markets",
+      "queries": 10,
+      "technicalResults": 64,
+      "casualResults": 14,
+      "meanTechnical": 12.8,
+      "meanCasual": 2.8,
+      "uniqueResources": 73,
+      "uniquePayees": 38,
+      "topPayeeShare": 0.1282051282051282,
+      "topPayee": "0xAEeb8EaBdC05532a26123045f99D208EB1cC00ab",
+      "medianJaccard": 0,
+      "callsVsRank": 0.2684368437277741
+    }
+  ],
+  "e3_crossIndex": [
+    {
+      "queryId": "cd-1-t",
+      "cdpCount": 14,
+      "acCount": 10,
+      "hostJaccard": 0.14285714285714285,
+      "sharedHosts": 2,
+      "topOneSameHost": false,
+      "rankAgreement": null
+    },
+    {
+      "queryId": "cd-2-t",
+      "cdpCount": 11,
+      "acCount": 10,
+      "hostJaccard": 0.06666666666666667,
+      "sharedHosts": 1,
+      "topOneSameHost": false,
+      "rankAgreement": null
+    },
+    {
+      "queryId": "cd-3-t",
+      "cdpCount": 13,
+      "acCount": 8,
+      "hostJaccard": 0,
+      "sharedHosts": 0,
+      "topOneSameHost": false,
+      "rankAgreement": null
+    },
+    {
+      "queryId": "cd-4-t",
+      "cdpCount": 17,
+      "acCount": 8,
+      "hostJaccard": 0,
+      "sharedHosts": 0,
+      "topOneSameHost": false,
+      "rankAgreement": null
+    },
+    {
+      "queryId": "cd-5-t",
+      "cdpCount": 10,
+      "acCount": 6,
+      "hostJaccard": 0,
+      "sharedHosts": 0,
+      "topOneSameHost": false,
+      "rankAgreement": null
+    },
+    {
+      "queryId": "cd-6-t",
+      "cdpCount": 15,
+      "acCount": 6,
+      "hostJaccard": 0,
+      "sharedHosts": 0,
+      "topOneSameHost": false,
+      "rankAgreement": null
+    },
+    {
+      "queryId": "ai-1-t",
+      "cdpCount": 15,
+      "acCount": 6,
+      "hostJaccard": 0.05555555555555555,
+      "sharedHosts": 1,
+      "topOneSameHost": false,
+      "rankAgreement": null
+    },
+    {
+      "queryId": "ai-2-t",
+      "cdpCount": 11,
+      "acCount": 6,
+      "hostJaccard": 0.16666666666666666,
+      "sharedHosts": 2,
+      "topOneSameHost": false,
+      "rankAgreement": null
+    },
+    {
+      "queryId": "ai-3-t",
+      "cdpCount": 13,
+      "acCount": 6,
+      "hostJaccard": 0,
+      "sharedHosts": 0,
+      "topOneSameHost": false,
+      "rankAgreement": null
+    },
+    {
+      "queryId": "ai-4-t",
+      "cdpCount": 14,
+      "acCount": 6,
+      "hostJaccard": 0.07692307692307693,
+      "sharedHosts": 1,
+      "topOneSameHost": false,
+      "rankAgreement": null
+    },
+    {
+      "queryId": "ai-5-t",
+      "cdpCount": 8,
+      "acCount": 6,
+      "hostJaccard": 0.125,
+      "sharedHosts": 1,
+      "topOneSameHost": false,
+      "rankAgreement": null
+    },
+    {
+      "queryId": "ai-6-t",
+      "cdpCount": 11,
+      "acCount": 6,
+      "hostJaccard": 0.07142857142857142,
+      "sharedHosts": 1,
+      "topOneSameHost": false,
+      "rankAgreement": null
+    },
+    {
+      "queryId": "de-1-t",
+      "cdpCount": 14,
+      "acCount": 6,
+      "hostJaccard": 0.5,
+      "sharedHosts": 3,
+      "topOneSameHost": false,
+      "rankAgreement": -0.5
+    },
+    {
+      "queryId": "de-2-t",
+      "cdpCount": 11,
+      "acCount": 6,
+      "hostJaccard": 0.125,
+      "sharedHosts": 1,
+      "topOneSameHost": true,
+      "rankAgreement": null
+    },
+    {
+      "queryId": "de-3-t",
+      "cdpCount": 11,
+      "acCount": 6,
+      "hostJaccard": 0.125,
+      "sharedHosts": 1,
+      "topOneSameHost": true,
+      "rankAgreement": null
+    },
+    {
+      "queryId": "de-4-t",
+      "cdpCount": 9,
+      "acCount": 6,
+      "hostJaccard": 0,
+      "sharedHosts": 0,
+      "topOneSameHost": false,
+      "rankAgreement": null
+    },
+    {
+      "queryId": "de-5-t",
+      "cdpCount": 15,
+      "acCount": 6,
+      "hostJaccard": 0.1111111111111111,
+      "sharedHosts": 1,
+      "topOneSameHost": false,
+      "rankAgreement": null
+    },
+    {
+      "queryId": "de-6-t",
+      "cdpCount": 12,
+      "acCount": 6,
+      "hostJaccard": 0.1,
+      "sharedHosts": 1,
+      "topOneSameHost": true,
+      "rankAgreement": null
+    },
+    {
+      "queryId": "fm-1-t",
+      "cdpCount": 18,
+      "acCount": 6,
+      "hostJaccard": 0,
+      "sharedHosts": 0,
+      "topOneSameHost": false,
+      "rankAgreement": null
+    },
+    {
+      "queryId": "fm-2-t",
+      "cdpCount": 8,
+      "acCount": 5,
+      "hostJaccard": 0,
+      "sharedHosts": 0,
+      "topOneSameHost": false,
+      "rankAgreement": null
+    },
+    {
+      "queryId": "fm-3-t",
+      "cdpCount": 16,
+      "acCount": 6,
+      "hostJaccard": 0,
+      "sharedHosts": 0,
+      "topOneSameHost": false,
+      "rankAgreement": null
+    },
+    {
+      "queryId": "fm-4-t",
+      "cdpCount": 9,
+      "acCount": 5,
+      "hostJaccard": 0,
+      "sharedHosts": 0,
+      "topOneSameHost": false,
+      "rankAgreement": null
+    },
+    {
+      "queryId": "fm-5-t",
+      "cdpCount": 13,
+      "acCount": 5,
+      "hostJaccard": 0,
+      "sharedHosts": 0,
+      "topOneSameHost": false,
+      "rankAgreement": null
+    },
+    {
+      "queryId": "cd-4-c",
+      "cdpCount": 7,
+      "acCount": 5,
+      "hostJaccard": 0,
+      "sharedHosts": 0,
+      "topOneSameHost": false,
+      "rankAgreement": null
+    },
+    {
+      "queryId": "ai-3-c",
+      "cdpCount": 9,
+      "acCount": 5,
+      "hostJaccard": 0.07692307692307693,
+      "sharedHosts": 1,
+      "topOneSameHost": false,
+      "rankAgreement": null
+    },
+    {
+      "queryId": "de-1-c",
+      "cdpCount": 6,
+      "acCount": 6,
+      "hostJaccard": 0.125,
+      "sharedHosts": 1,
+      "topOneSameHost": false,
+      "rankAgreement": null
+    },
+    {
+      "queryId": "fm-5-c",
+      "cdpCount": 5,
+      "acCount": 5,
+      "hostJaccard": 0.125,
+      "sharedHosts": 1,
+      "topOneSameHost": false,
+      "rankAgreement": null
+    }
+  ],
+  "e4_relevanceVsUsage": {
+    "rows": [
+      {
+        "queryId": "cd-1-t",
+        "resource": "https://the-stall.intuitek.ai/cap/funding-rates",
+        "finalRank": 1,
+        "vectorRank": 8,
+        "relevanceOnlyRank": 1,
+        "displacement": 0,
+        "originTx": 212
+      },
+      {
+        "queryId": "cd-1-t",
+        "resource": "https://funding-rates-x402-production.up.railway.app/api/rates",
+        "finalRank": 2,
+        "vectorRank": 17,
+        "relevanceOnlyRank": 2,
+        "displacement": 0,
+        "originTx": 3
+      },
+      {
+        "queryId": "cd-1-t",
+        "resource": "https://x402stock.vercel.app/api/v1/perps",
+        "finalRank": 3,
+        "vectorRank": 25,
+        "relevanceOnlyRank": 3,
+        "displacement": 0,
+        "originTx": 771
+      },
+      {
+        "queryId": "cd-1-t",
+        "resource": "https://x402.ottoai.services/funding-rates",
+        "finalRank": 4,
+        "vectorRank": 30,
+        "relevanceOnlyRank": 4,
+        "displacement": 0,
+        "originTx": 67
+      },
+      {
+        "queryId": "cd-1-t",
+        "resource": "https://x402.shizu.me/funding",
+        "finalRank": 5,
+        "vectorRank": 31,
+        "relevanceOnlyRank": 5,
+        "displacement": 0,
+        "originTx": 10
+      },
+      {
+        "queryId": "cd-1-t",
+        "resource": "https://klymax402.com/api/funding-rates/api/rates",
+        "finalRank": 6,
+        "vectorRank": 40,
+        "relevanceOnlyRank": 6,
+        "displacement": 0,
+        "originTx": 3
+      },
+      {
+        "queryId": "cd-1-t",
+        "resource": "https://x402stock.xyz/api/v1/perps",
+        "finalRank": 7,
+        "vectorRank": 42,
+        "relevanceOnlyRank": 7,
+        "displacement": 0,
+        "originTx": 869
+      },
+      {
+        "queryId": "cd-1-t",
+        "resource": "https://2s.io/api/crypto/hyperliquid-funding",
+        "finalRank": 8,
+        "vectorRank": 48,
+        "relevanceOnlyRank": 8,
+        "displacement": 0,
+        "originTx": 328
+      },
+      {
+        "queryId": "cd-1-t",
+        "resource": "https://klymax402.com/api/funding-rates/api/rates-post",
+        "finalRank": 9,
+        "vectorRank": 58,
+        "relevanceOnlyRank": 9,
+        "displacement": 0,
+        "originTx": 3
+      },
+      {
+        "queryId": "cd-1-t",
+        "resource": "https://mesh.heurist.xyz/x402/agents/FundingRateAgent/get_symbol_oi_and_funding",
+        "finalRank": 10,
+        "vectorRank": 69,
+        "relevanceOnlyRank": 10,
+        "displacement": 0,
+        "originTx": 1
+      },
+      {
+        "queryId": "cd-2-t",
+        "resource": "https://x402-agent-store.rileycraig14.workers.dev/crypto/smart-money",
+        "finalRank": 1,
+        "vectorRank": 1,
+        "relevanceOnlyRank": 1,
+        "displacement": 0,
+        "originTx": 9
+      },
+      {
+        "queryId": "cd-2-t",
+        "resource": "https://api.nansen.ai/api/v1/smart-money/netflow",
+        "finalRank": 2,
+        "vectorRank": 18,
+        "relevanceOnlyRank": 2,
+        "displacement": 0,
+        "originTx": 1916
+      },
+      {
+        "queryId": "cd-2-t",
+        "resource": "https://store.agentexchange.work/crypto/smart-money",
+        "finalRank": 3,
+        "vectorRank": 24,
+        "relevanceOnlyRank": 3,
+        "displacement": 0,
+        "originTx": 9
+      },
+      {
+        "queryId": "cd-2-t",
+        "resource": "https://sna4an-hub-v2.vercel.app/api/smart-money",
+        "finalRank": 4,
+        "vectorRank": 29,
+        "relevanceOnlyRank": 4,
+        "displacement": 0,
+        "originTx": 226
+      },
+      {
+        "queryId": "cd-2-t",
+        "resource": "https://basebuilder-crypto.vercel.app/api/smart-money",
+        "finalRank": 5,
+        "vectorRank": 30,
+        "relevanceOnlyRank": 5,
+        "displacement": 0,
+        "originTx": 1
+      },
+      {
+        "queryId": "cd-2-t",
+        "resource": "https://x402-rapidapi-hub.vercel.app/api/smart-money",
+        "finalRank": 6,
+        "vectorRank": 34,
+        "relevanceOnlyRank": 6,
+        "displacement": 0,
+        "originTx": 226
+      },
+      {
+        "queryId": "cd-2-t",
+        "resource": "https://www.tryskopos.xyz/api/smart-money",
+        "finalRank": 7,
+        "vectorRank": 38,
+        "relevanceOnlyRank": 7,
+        "displacement": 0,
+        "originTx": 3
+      },
+      {
+        "queryId": "cd-2-t",
+        "resource": "https://sna4an-trading-v5.vercel.app/api/holder/whale-entry",
+        "finalRank": 8,
+        "vectorRank": 45,
+        "relevanceOnlyRank": 8,
+        "displacement": 0,
+        "originTx": 1
+      },
+      {
+        "queryId": "cd-2-t",
+        "resource": "https://sna4an-hub-v1.vercel.app/api/smart-money",
+        "finalRank": 9,
+        "vectorRank": 54,
+        "relevanceOnlyRank": 9,
+        "displacement": 0,
+        "originTx": 226
+      },
+      {
+        "queryId": "cd-2-t",
+        "resource": "https://x402helper.xyz/whale/accumulation",
+        "finalRank": 10,
+        "vectorRank": 58,
+        "relevanceOnlyRank": 10,
+        "displacement": 0,
+        "originTx": 183
+      },
+      {
+        "queryId": "cd-3-t",
+        "resource": "https://data-hub-v3.vercel.app/api/yield/lending",
+        "finalRank": 1,
+        "vectorRank": 3,
+        "relevanceOnlyRank": 1,
+        "displacement": 0,
+        "originTx": 1
+      },
+      {
+        "queryId": "cd-3-t",
+        "resource": "https://x402-data-hub-v2.vercel.app/api/yield/lending",
+        "finalRank": 2,
+        "vectorRank": 5,
+        "relevanceOnlyRank": 2,
+        "displacement": 0,
+        "originTx": 226
+      },
+      {
+        "queryId": "cd-3-t",
+        "resource": "https://x402-rapidapi-hub.vercel.app/api/yield/lending",
+        "finalRank": 3,
+        "vectorRank": 7,
+        "relevanceOnlyRank": 3,
+        "displacement": 0,
+        "originTx": 226
+      },
+      {
+        "queryId": "cd-3-t",
+        "resource": "https://sna4an-hub-v2.vercel.app/api/yield/lending",
+        "finalRank": 4,
+        "vectorRank": 11,
+        "relevanceOnlyRank": 4,
+        "displacement": 0,
+        "originTx": 226
+      },
+      {
+        "queryId": "cd-3-t",
+        "resource": "https://sna4an-hub-v4.vercel.app/api/yield/lending",
+        "finalRank": 5,
+        "vectorRank": 12,
+        "relevanceOnlyRank": 5,
+        "displacement": 0,
+        "originTx": 1
+      },
+      {
+        "queryId": "cd-3-t",
+        "resource": "https://sna4an-hub-v1.vercel.app/api/yield/lending",
+        "finalRank": 6,
+        "vectorRank": 13,
+        "relevanceOnlyRank": 6,
+        "displacement": 0,
+        "originTx": 226
+      },
+      {
+        "queryId": "cd-3-t",
+        "resource": "https://x402-free-hub.vercel.app/api/yield/lending",
+        "finalRank": 7,
+        "vectorRank": 16,
+        "relevanceOnlyRank": 7,
+        "displacement": 0,
+        "originTx": 226
+      },
+      {
+        "queryId": "cd-3-t",
+        "resource": "https://sna4an-hub-v5.vercel.app/api/yield/lending",
+        "finalRank": 8,
+        "vectorRank": 17,
+        "relevanceOnlyRank": 8,
+        "displacement": 0,
+        "originTx": 1
+      },
+      {
+        "queryId": "cd-4-t",
+        "resource": "https://api.jarvisclaw.ai/v1/marketplace/api/crypto-news-sentiment",
+        "finalRank": 1,
+        "vectorRank": 1,
+        "relevanceOnlyRank": 1,
+        "displacement": 0,
+        "originTx": 2
+      },
+      {
+        "queryId": "cd-4-t",
+        "resource": "https://uat.jarvisclaw.ai/v1/marketplace/api/crypto-news-sentiment",
+        "finalRank": 2,
+        "vectorRank": 2,
+        "relevanceOnlyRank": 2,
+        "displacement": 0,
+        "originTx": 1
+      },
+      {
+        "queryId": "cd-4-t",
+        "resource": "https://x402-rapidapi-hub.vercel.app/api/sentiment/news",
+        "finalRank": 3,
+        "vectorRank": 8,
+        "relevanceOnlyRank": 3,
+        "displacement": 0,
+        "originTx": 226
+      },
+      {
+        "queryId": "cd-4-t",
+        "resource": "https://gg402.vercel.app/market_sentiment",
+        "finalRank": 4,
+        "vectorRank": 12,
+        "relevanceOnlyRank": 4,
+        "displacement": 0,
+        "originTx": 25
+      },
+      {
+        "queryId": "cd-4-t",
+        "resource": "https://data-hub-v4-ten.vercel.app/api/sentiment/news",
+        "finalRank": 5,
+        "vectorRank": 15,
+        "relevanceOnlyRank": 5,
+        "displacement": 0,
+        "originTx": 1
+      },
+      {
+        "queryId": "cd-4-t",
+        "resource": "https://exit-hub-v2.vercel.app/api/sentiment/news",
+        "finalRank": 6,
+        "vectorRank": 20,
+        "relevanceOnlyRank": 6,
+        "displacement": 0,
+        "originTx": 1
+      },
+      {
+        "queryId": "cd-4-t",
+        "resource": "https://data-hub-v3.vercel.app/api/sentiment/news",
+        "finalRank": 7,
+        "vectorRank": 21,
+        "relevanceOnlyRank": 7,
+        "displacement": 0,
+        "originTx": 1
+      },
+      {
+        "queryId": "cd-4-t",
+        "resource": "https://klymax402.com/api/crypto-news/api/news",
+        "finalRank": 8,
+        "vectorRank": 26,
+        "relevanceOnlyRank": 8,
+        "displacement": 0,
+        "originTx": 3
+      },
+      {
+        "queryId": "cd-5-t",
+        "resource": "https://api.zerion.io/v1/wallets/{address}/portfolio",
+        "finalRank": 1,
+        "vectorRank": 14,
+        "relevanceOnlyRank": 1,
+        "displacement": 0,
+        "originTx": 2
+      },
+      {
+        "queryId": "cd-5-t",
+        "resource": "https://api.octav.fi/v1/agent/portfolio",
+        "finalRank": 2,
+        "vectorRank": 43,
+        "relevanceOnlyRank": 2,
+        "displacement": 0,
+        "originTx": 164
+      },
+      {
+        "queryId": "cd-5-t",
+        "resource": "https://stablecrypto.dev/api/alchemy/portfolio/tokens",
+        "finalRank": 3,
+        "vectorRank": 48,
+        "relevanceOnlyRank": 4,
+        "displacement": 1,
+        "originTx": 1270
+      },
+      {
+        "queryId": "cd-5-t",
+        "resource": "https://uat.jarvisclaw.ai/v1/marketplace/api/wallet-holdings",
+        "finalRank": 4,
+        "vectorRank": 47,
+        "relevanceOnlyRank": 3,
+        "displacement": -1,
+        "originTx": 1
+      },
+      {
+        "queryId": "cd-5-t",
+        "resource": "https://omni-api-cyan.vercel.app/api/crypto/address/tokens",
+        "finalRank": 5,
+        "vectorRank": 53,
+        "relevanceOnlyRank": 5,
+        "displacement": 0,
+        "originTx": 1
+      },
+      {
+        "queryId": "cd-5-t",
+        "resource": "https://stablecrypto.dev/api/arkham/portfolio/address",
+        "finalRank": 6,
+        "vectorRank": 59,
+        "relevanceOnlyRank": 6,
+        "displacement": 0,
+        "originTx": 1270
+      },
+      {
+        "queryId": "cd-6-t",
+        "resource": "https://x402-rapidapi-hub.vercel.app/api/sentiment/trending",
+        "finalRank": 1,
+        "vectorRank": 4,
+        "relevanceOnlyRank": 1,
+        "displacement": 0,
+        "originTx": 226
+      },
+      {
+        "queryId": "cd-6-t",
+        "resource": "https://sna4an-hub-v4.vercel.app/api/sentiment/trending",
+        "finalRank": 2,
+        "vectorRank": 9,
+        "relevanceOnlyRank": 2,
+        "displacement": 0,
+        "originTx": 1
+      },
+      {
+        "queryId": "cd-6-t",
+        "resource": "https://sna4an-hub-v2.vercel.app/api/sentiment/trending",
+        "finalRank": 3,
+        "vectorRank": 12,
+        "relevanceOnlyRank": 3,
+        "displacement": 0,
+        "originTx": 226
+      },
+      {
+        "queryId": "cd-6-t",
+        "resource": "https://data-hub-x402.vercel.app/api/sentiment/trending",
+        "finalRank": 4,
+        "vectorRank": 20,
+        "relevanceOnlyRank": 4,
+        "displacement": 0,
+        "originTx": 1
+      },
+      {
+        "queryId": "cd-6-t",
+        "resource": "https://sna4an-hub-v1.vercel.app/api/sentiment/trending",
+        "finalRank": 5,
+        "vectorRank": 27,
+        "relevanceOnlyRank": 5,
+        "displacement": 0,
+        "originTx": 226
+      },
+      {
+        "queryId": "cd-6-t",
+        "resource": "https://data-hub-v5.vercel.app/api/sentiment/trending",
+        "finalRank": 6,
+        "vectorRank": 28,
+        "relevanceOnlyRank": 6,
+        "displacement": 0,
+        "originTx": 226
+      },
+      {
+        "queryId": "ai-1-t",
+        "resource": "https://gateway.gocreativeai.com/v1/chat/completions",
+        "finalRank": 1,
+        "vectorRank": 1,
+        "relevanceOnlyRank": 1,
+        "displacement": 0,
+        "originTx": 49
+      },
+      {
+        "queryId": "ai-1-t",
+        "resource": "https://blockrun.ai/api/v1/chat/completions",
+        "finalRank": 2,
+        "vectorRank": 2,
+        "relevanceOnlyRank": 2,
+        "displacement": 0,
+        "originTx": 621
+      },
+      {
+        "queryId": "ai-1-t",
+        "resource": "https://stablerouter.dev/v1/chat/completions",
+        "finalRank": 3,
+        "vectorRank": 3,
+        "relevanceOnlyRank": 3,
+        "displacement": 0,
+        "originTx": 1
+      },
+      {
+        "queryId": "ai-1-t",
+        "resource": "https://2s.io/api/ai/chat",
+        "finalRank": 4,
+        "vectorRank": 6,
+        "relevanceOnlyRank": 4,
+        "displacement": 0,
+        "originTx": 328
+      },
+      {
+        "queryId": "ai-1-t",
+        "resource": "https://api.webbersites.com/v1/pro/chat/completions",
+        "finalRank": 5,
+        "vectorRank": 7,
+        "relevanceOnlyRank": 5,
+        "displacement": 0,
+        "originTx": 10
+      },
+      {
+        "queryId": "ai-1-t",
+        "resource": "https://inference.surf.cascade.fyi/v1/chat/completions",
+        "finalRank": 6,
+        "vectorRank": 10,
+        "relevanceOnlyRank": 6,
+        "displacement": 0,
+        "originTx": 467
+      },
+      {
+        "queryId": "ai-2-t",
+        "resource": "https://searchtav.vercel.app/search/deep",
+        "finalRank": 1,
+        "vectorRank": 14,
+        "relevanceOnlyRank": 1,
+        "displacement": 0,
+        "originTx": 8
+      },
+      {
+        "queryId": "ai-2-t",
+        "resource": "https://x402.agentutility.ai/search-content",
+        "finalRank": 2,
+        "vectorRank": 15,
+        "relevanceOnlyRank": 2,
+        "displacement": 0,
+        "originTx": 116
+      },
+      {
+        "queryId": "ai-2-t",
+        "resource": "https://stableenrich.dev/api/firecrawl/search",
+        "finalRank": 3,
+        "vectorRank": 82,
+        "relevanceOnlyRank": 6,
+        "displacement": 3,
+        "originTx": 493318
+      },
+      {
+        "queryId": "ai-2-t",
+        "resource": "https://x402.ottoai.services/web-search",
+        "finalRank": 4,
+        "vectorRank": 16,
+        "relevanceOnlyRank": 3,
+        "displacement": -1,
+        "originTx": 67
+      },
+      {
+        "queryId": "ai-2-t",
+        "resource": "https://mesh.heurist.xyz/x402/agents/FirecrawlSearchDigestAgent/firecrawl_extract_web_data",
+        "finalRank": 5,
+        "vectorRank": 17,
+        "relevanceOnlyRank": 4,
+        "displacement": -1,
+        "originTx": 1
+      },
+      {
+        "queryId": "ai-2-t",
+        "resource": "https://x402engine.app/api/search/contents",
+        "finalRank": 6,
+        "vectorRank": 19,
+        "relevanceOnlyRank": 5,
+        "displacement": -1,
+        "originTx": 744
+      },
+      {
+        "queryId": "ai-3-t",
+        "resource": "https://2s.io/api/ai/web-answer",
+        "finalRank": 1,
+        "vectorRank": 1,
+        "relevanceOnlyRank": 1,
+        "displacement": 0,
+        "originTx": 328
+      },
+      {
+        "queryId": "ai-3-t",
+        "resource": "https://stableenrich.dev/api/exa/answer",
+        "finalRank": 2,
+        "vectorRank": 14,
+        "relevanceOnlyRank": 6,
+        "displacement": 4,
+        "originTx": 493318
+      },
+      {
+        "queryId": "ai-3-t",
+        "resource": "https://x402.agentutility.ai/answer-web",
+        "finalRank": 3,
+        "vectorRank": 2,
+        "relevanceOnlyRank": 2,
+        "displacement": -1,
+        "originTx": 116
+      },
+      {
+        "queryId": "ai-3-t",
+        "resource": "https://x402.openwebninja.com/ai-answers/google-ai-mode/ai-mode",
+        "finalRank": 4,
+        "vectorRank": 5,
+        "relevanceOnlyRank": 4,
+        "displacement": 0,
+        "originTx": 790
+      },
+      {
+        "queryId": "ai-3-t",
+        "resource": "https://exa.mpp.tempo.xyz/answer",
+        "finalRank": 5,
+        "vectorRank": 4,
+        "relevanceOnlyRank": 3,
+        "displacement": -2,
+        "originTx": 35
+      },
+      {
+        "queryId": "ai-3-t",
+        "resource": "https://uat.jarvisclaw.ai/v1/marketplace/api/web-answer",
+        "finalRank": 6,
+        "vectorRank": 6,
+        "relevanceOnlyRank": 5,
+        "displacement": -1,
+        "originTx": 1
+      },
+      {
+        "queryId": "ai-4-t",
+        "resource": "https://klymax402.com/api/prediction-markets/api/odds",
+        "finalRank": 1,
+        "vectorRank": 2,
+        "relevanceOnlyRank": 1,
+        "displacement": 0,
+        "originTx": 3
+      },
+      {
+        "queryId": "ai-4-t",
+        "resource": "https://x402.shizu.me/predictions",
+        "finalRank": 2,
+        "vectorRank": 4,
+        "relevanceOnlyRank": 2,
+        "displacement": 0,
+        "originTx": 10
+      },
+      {
+        "queryId": "ai-4-t",
+        "resource": "https://kite-solana.vercel.app/api/polymarket-markets",
+        "finalRank": 3,
+        "vectorRank": 5,
+        "relevanceOnlyRank": 3,
+        "displacement": 0,
+        "originTx": 1
+      },
+      {
+        "queryId": "ai-4-t",
+        "resource": "https://x402.agentutility.ai/prediction-market-snapshot",
+        "finalRank": 4,
+        "vectorRank": 7,
+        "relevanceOnlyRank": 4,
+        "displacement": 0,
+        "originTx": 116
+      },
+      {
+        "queryId": "ai-4-t",
+        "resource": "https://kite-hub-v2.vercel.app/api/polymarket-markets",
+        "finalRank": 5,
+        "vectorRank": 9,
+        "relevanceOnlyRank": 5,
+        "displacement": 0,
+        "originTx": 1
+      },
+      {
+        "queryId": "ai-4-t",
+        "resource": "https://klymax402.com/api/prediction-markets/api/markets",
+        "finalRank": 6,
+        "vectorRank": 11,
+        "relevanceOnlyRank": 6,
+        "displacement": 0,
+        "originTx": 3
+      },
+      {
+        "queryId": "ai-5-t",
+        "resource": "https://blockrun.ai/api/v1/surf/social/mindshare",
+        "finalRank": 1,
+        "vectorRank": 1,
+        "relevanceOnlyRank": 1,
+        "displacement": 0,
+        "originTx": 621
+      },
+      {
+        "queryId": "ai-5-t",
+        "resource": "https://sol.blockrun.ai/api/v1/surf/social/mindshare",
+        "finalRank": 2,
+        "vectorRank": 2,
+        "relevanceOnlyRank": 2,
+        "displacement": 0,
+        "originTx": 54
+      },
+      {
+        "queryId": "ai-5-t",
+        "resource": "https://x402.agentutility.ai/social-mindshare",
+        "finalRank": 3,
+        "vectorRank": 3,
+        "relevanceOnlyRank": 3,
+        "displacement": 0,
+        "originTx": 116
+      },
+      {
+        "queryId": "ai-5-t",
+        "resource": "https://x402.agentutility.ai/market-mindshare-monitor",
+        "finalRank": 4,
+        "vectorRank": 5,
+        "relevanceOnlyRank": 4,
+        "displacement": 0,
+        "originTx": 116
+      },
+      {
+        "queryId": "ai-5-t",
+        "resource": "https://x402.agentutility.ai/mindshare",
+        "finalRank": 5,
+        "vectorRank": 6,
+        "relevanceOnlyRank": 5,
+        "displacement": 0,
+        "originTx": 116
+      },
+      {
+        "queryId": "ai-5-t",
+        "resource": "https://the-stall.intuitek.ai/cap/social-momentum",
+        "finalRank": 6,
+        "vectorRank": 10,
+        "relevanceOnlyRank": 6,
+        "displacement": 0,
+        "originTx": 212
+      },
+      {
+        "queryId": "ai-6-t",
+        "resource": "https://klymax402.com/api/web-scraper/api/scrape",
+        "finalRank": 1,
+        "vectorRank": 10,
+        "relevanceOnlyRank": 1,
+        "displacement": 0,
+        "originTx": 3
+      },
+      {
+        "queryId": "ai-6-t",
+        "resource": "https://x402.shizu.me/markdown",
+        "finalRank": 2,
+        "vectorRank": 11,
+        "relevanceOnlyRank": 2,
+        "displacement": 0,
+        "originTx": 10
+      },
+      {
+        "queryId": "ai-6-t",
+        "resource": "https://browser.gedx402.com/v1/firecrawl/scrape",
+        "finalRank": 3,
+        "vectorRank": 14,
+        "relevanceOnlyRank": 3,
+        "displacement": 0,
+        "originTx": 46
+      },
+      {
+        "queryId": "ai-6-t",
+        "resource": "https://ged-x402.jvalamis.workers.dev/v1/firecrawl/scrape",
+        "finalRank": 4,
+        "vectorRank": 15,
+        "relevanceOnlyRank": 4,
+        "displacement": 0,
+        "originTx": 46
+      },
+      {
+        "queryId": "ai-6-t",
+        "resource": "https://stableenrich.dev/api/firecrawl/scrape",
+        "finalRank": 5,
+        "vectorRank": 85,
+        "relevanceOnlyRank": 6,
+        "displacement": 1,
+        "originTx": 493318
+      },
+      {
+        "queryId": "ai-6-t",
+        "resource": "https://api.jarvisclaw.ai/v1/marketplace/api/markdown-scraper-2616",
+        "finalRank": 6,
+        "vectorRank": 18,
+        "relevanceOnlyRank": 5,
+        "displacement": -1,
+        "originTx": 2
+      },
+      {
+        "queryId": "de-1-t",
+        "resource": "https://stable-deepline.dev/api/email/from-linkedin",
+        "finalRank": 1,
+        "vectorRank": 1,
+        "relevanceOnlyRank": 1,
+        "displacement": 0,
+        "originTx": 1838
+      },
+      {
+        "queryId": "de-1-t",
+        "resource": "https://api.linkedpanda.com/agent/v1/profiles/email",
+        "finalRank": 2,
+        "vectorRank": 2,
+        "relevanceOnlyRank": 2,
+        "displacement": 0,
+        "originTx": 324
+      },
+      {
+        "queryId": "de-1-t",
+        "resource": "https://api.linkedpanda.com/agent/v1/profiles/email-get",
+        "finalRank": 3,
+        "vectorRank": 3,
+        "relevanceOnlyRank": 3,
+        "displacement": 0,
+        "originTx": 324
+      },
+      {
+        "queryId": "de-1-t",
+        "resource": "https://api.gocreativeai.com/v1/linkedin/profile/email/{arg}",
+        "finalRank": 4,
+        "vectorRank": 4,
+        "relevanceOnlyRank": 4,
+        "displacement": 0,
+        "originTx": 52
+      },
+      {
+        "queryId": "de-1-t",
+        "resource": "https://api.getanyapi.com/v1/run/linkedin.email",
+        "finalRank": 5,
+        "vectorRank": 6,
+        "relevanceOnlyRank": 5,
+        "displacement": 0,
+        "originTx": 73
+      },
+      {
+        "queryId": "de-1-t",
+        "resource": "https://stable-deepline.dev/api/linkedin/find",
+        "finalRank": 6,
+        "vectorRank": 8,
+        "relevanceOnlyRank": 6,
+        "displacement": 0,
+        "originTx": 1838
+      },
+      {
+        "queryId": "de-2-t",
+        "resource": "https://stableenrich.dev/api/fullenrich/people-search",
+        "finalRank": 1,
+        "vectorRank": 3,
+        "relevanceOnlyRank": 1,
+        "displacement": 0,
+        "originTx": 493318
+      },
+      {
+        "queryId": "de-2-t",
+        "resource": "https://stableenrich.dev/api/fullenrich/company-search",
+        "finalRank": 2,
+        "vectorRank": 22,
+        "relevanceOnlyRank": 5,
+        "displacement": 3,
+        "originTx": 493318
+      },
+      {
+        "queryId": "de-2-t",
+        "resource": "https://clado.x402.paywithlocus.com/clado/search",
+        "finalRank": 3,
+        "vectorRank": 9,
+        "relevanceOnlyRank": 2,
+        "displacement": -1,
+        "originTx": 5
+      },
+      {
+        "queryId": "de-2-t",
+        "resource": "https://stable-deepline.dev/api/contacts/by-role",
+        "finalRank": 4,
+        "vectorRank": 10,
+        "relevanceOnlyRank": 3,
+        "displacement": -1,
+        "originTx": 1838
+      },
+      {
+        "queryId": "de-2-t",
+        "resource": "https://stableenrich.dev/api/serper/people-image-search",
+        "finalRank": 5,
+        "vectorRank": 71,
+        "relevanceOnlyRank": 6,
+        "displacement": 1,
+        "originTx": 493318
+      },
+      {
+        "queryId": "de-2-t",
+        "resource": "https://x402.professorsausages.com/company/search",
+        "finalRank": 6,
+        "vectorRank": 15,
+        "relevanceOnlyRank": 4,
+        "displacement": -2,
+        "originTx": 6
+      },
+      {
+        "queryId": "de-3-t",
+        "resource": "https://stableenrich.dev/api/pdl/people-enrich",
+        "finalRank": 1,
+        "vectorRank": 2,
+        "relevanceOnlyRank": 1,
+        "displacement": 0,
+        "originTx": 493318
+      },
+      {
+        "queryId": "de-3-t",
+        "resource": "https://stablepeopledata.dev/api/pdl/person/enrich",
+        "finalRank": 2,
+        "vectorRank": 3,
+        "relevanceOnlyRank": 2,
+        "displacement": 0,
+        "originTx": 370
+      },
+      {
+        "queryId": "de-3-t",
+        "resource": "https://stableenrich.dev/api/minerva/enrich",
+        "finalRank": 3,
+        "vectorRank": 24,
+        "relevanceOnlyRank": 5,
+        "displacement": 2,
+        "originTx": 493318
+      },
+      {
+        "queryId": "de-3-t",
+        "resource": "https://person-enrichment-x402-production.up.railway.app/api/enrich",
+        "finalRank": 4,
+        "vectorRank": 5,
+        "relevanceOnlyRank": 3,
+        "displacement": -1,
+        "originTx": 3
+      },
+      {
+        "queryId": "de-3-t",
+        "resource": "https://klymax402.com/api/person-enrichment/api/enrich",
+        "finalRank": 5,
+        "vectorRank": 11,
+        "relevanceOnlyRank": 4,
+        "displacement": -1,
+        "originTx": 3
+      },
+      {
+        "queryId": "de-3-t",
+        "resource": "https://stableenrich.dev/api/fullenrich/people-search",
+        "finalRank": 6,
+        "vectorRank": 36,
+        "relevanceOnlyRank": 6,
+        "displacement": 0,
+        "originTx": 493318
+      },
+      {
+        "queryId": "de-4-t",
+        "resource": "https://stableenrich.dev/api/companyenrich/org-enrich",
+        "finalRank": 1,
+        "vectorRank": 2,
+        "relevanceOnlyRank": 1,
+        "displacement": 0,
+        "originTx": 493318
+      },
+      {
+        "queryId": "de-4-t",
+        "resource": "https://stableenrich.dev/api/companyenrich/properties-enrich",
+        "finalRank": 2,
+        "vectorRank": 7,
+        "relevanceOnlyRank": 3,
+        "displacement": 1,
+        "originTx": 493318
+      },
+      {
+        "queryId": "de-4-t",
+        "resource": "https://stablepeopledata.dev/api/pdl/company/enrich",
+        "finalRank": 3,
+        "vectorRank": 4,
+        "relevanceOnlyRank": 2,
+        "displacement": -1,
+        "originTx": 370
+      },
+      {
+        "queryId": "de-4-t",
+        "resource": "https://stableenrich.dev/api/fullenrich/company-search",
+        "finalRank": 4,
+        "vectorRank": 24,
+        "relevanceOnlyRank": 6,
+        "displacement": 2,
+        "originTx": 493318
+      },
+      {
+        "queryId": "de-4-t",
+        "resource": "https://klymax402.com/api/company-enrichment/api/enrich",
+        "finalRank": 5,
+        "vectorRank": 10,
+        "relevanceOnlyRank": 4,
+        "displacement": -1,
+        "originTx": 3
+      },
+      {
+        "queryId": "de-4-t",
+        "resource": "https://sales-intel-api-production-c525.up.railway.app/enrich",
+        "finalRank": 6,
+        "vectorRank": 11,
+        "relevanceOnlyRank": 5,
+        "displacement": -1,
+        "originTx": 1
+      },
+      {
+        "queryId": "de-5-t",
+        "resource": "https://x402.openwebninja.com/realtime-local-and-maps-data/local-business-data/business-details",
+        "finalRank": 1,
+        "vectorRank": 1,
+        "relevanceOnlyRank": 1,
+        "displacement": 0,
+        "originTx": 790
+      },
+      {
+        "queryId": "de-5-t",
+        "resource": "https://googlemaps.mpp.tempo.xyz/maps/place/details/json",
+        "finalRank": 2,
+        "vectorRank": 2,
+        "relevanceOnlyRank": 2,
+        "displacement": 0,
+        "originTx": 49
+      },
+      {
+        "queryId": "de-5-t",
+        "resource": "https://x402.openwebninja.com/realtime-local-and-maps-data/local-business-data/business-details-plus",
+        "finalRank": 3,
+        "vectorRank": 3,
+        "relevanceOnlyRank": 3,
+        "displacement": 0,
+        "originTx": 790
+      },
+      {
+        "queryId": "de-5-t",
+        "resource": "https://x402.openwebninja.com/local-business-data/business-details-plus",
+        "finalRank": 4,
+        "vectorRank": 4,
+        "relevanceOnlyRank": 4,
+        "displacement": 0,
+        "originTx": 790
+      },
+      {
+        "queryId": "de-5-t",
+        "resource": "https://stableenrich.dev/api/google-maps/place-details/full",
+        "finalRank": 5,
+        "vectorRank": 30,
+        "relevanceOnlyRank": 6,
+        "displacement": 1,
+        "originTx": 493318
+      },
+      {
+        "queryId": "de-5-t",
+        "resource": "https://x402.openwebninja.com/local-business-data/business-details",
+        "finalRank": 6,
+        "vectorRank": 5,
+        "relevanceOnlyRank": 5,
+        "displacement": -1,
+        "originTx": 790
+      },
+      {
+        "queryId": "de-6-t",
+        "resource": "https://stableenrich.dev/api/reddit/search",
+        "finalRank": 1,
+        "vectorRank": 11,
+        "relevanceOnlyRank": 6,
+        "displacement": 5,
+        "originTx": 493318
+      },
+      {
+        "queryId": "de-6-t",
+        "resource": "https://social.gedx402.com/v1/sociavault/reddit/search",
+        "finalRank": 2,
+        "vectorRank": 1,
+        "relevanceOnlyRank": 1,
+        "displacement": -1,
+        "originTx": 46
+      },
+      {
+        "queryId": "de-6-t",
+        "resource": "https://socialx402.com/api/reddit/search",
+        "finalRank": 3,
+        "vectorRank": 6,
+        "relevanceOnlyRank": 4,
+        "displacement": 1,
+        "originTx": 12101
+      },
+      {
+        "queryId": "de-6-t",
+        "resource": "https://socialx402.com/api/sc/reddit/search",
+        "finalRank": 4,
+        "vectorRank": 9,
+        "relevanceOnlyRank": 5,
+        "displacement": 1,
+        "originTx": 12101
+      },
+      {
+        "queryId": "de-6-t",
+        "resource": "https://twitter.surf.cascade.fyi/api/v1/reddit/search",
+        "finalRank": 5,
+        "vectorRank": 4,
+        "relevanceOnlyRank": 2,
+        "displacement": -3,
+        "originTx": 3546
+      },
+      {
+        "queryId": "de-6-t",
+        "resource": "https://nexus-api-virid.vercel.app/api/social/reddit/search",
+        "finalRank": 6,
+        "vectorRank": 5,
+        "relevanceOnlyRank": 3,
+        "displacement": -3,
+        "originTx": 1
+      },
+      {
+        "queryId": "fm-1-t",
+        "resource": "https://mesh.heurist.xyz/x402/solana/agents/FundingRateAgent/get_symbol_funding_rates",
+        "finalRank": 1,
+        "vectorRank": 6,
+        "relevanceOnlyRank": 1,
+        "displacement": 0,
+        "originTx": 1
+      },
+      {
+        "queryId": "fm-1-t",
+        "resource": "https://mesh.heurist.xyz/x402/agents/FundingRateAgent/get_symbol_funding_rates",
+        "finalRank": 2,
+        "vectorRank": 8,
+        "relevanceOnlyRank": 2,
+        "displacement": 0,
+        "originTx": 1
+      },
+      {
+        "queryId": "fm-1-t",
+        "resource": "https://mesh.heurist.xyz/x402/agents/FundingRateAgent/get_all_funding_rates",
+        "finalRank": 3,
+        "vectorRank": 27,
+        "relevanceOnlyRank": 3,
+        "displacement": 0,
+        "originTx": 1
+      },
+      {
+        "queryId": "fm-1-t",
+        "resource": "https://mesh.heurist.xyz/x402/solana/agents/FundingRateAgent/get_symbol_oi_and_funding",
+        "finalRank": 4,
+        "vectorRank": 28,
+        "relevanceOnlyRank": 4,
+        "displacement": 0,
+        "originTx": 1
+      },
+      {
+        "queryId": "fm-1-t",
+        "resource": "https://mesh.heurist.xyz/x402/agents/FundingRateAgent/get_symbol_oi_and_funding",
+        "finalRank": 5,
+        "vectorRank": 34,
+        "relevanceOnlyRank": 5,
+        "displacement": 0,
+        "originTx": 1
+      },
+      {
+        "queryId": "fm-1-t",
+        "resource": "https://the-stall.intuitek.ai/cap/funding-rates",
+        "finalRank": 6,
+        "vectorRank": 35,
+        "relevanceOnlyRank": 6,
+        "displacement": 0,
+        "originTx": 212
+      },
+      {
+        "queryId": "fm-2-t",
+        "resource": "https://alphavantage.mpp.paywithlocus.com/alphavantage/time-series-weekly",
+        "finalRank": 1,
+        "vectorRank": 1,
+        "relevanceOnlyRank": 1,
+        "displacement": 0,
+        "originTx": 25
+      },
+      {
+        "queryId": "fm-2-t",
+        "resource": "https://alphavantage.x402.paywithlocus.com/alphavantage/time-series-weekly",
+        "finalRank": 2,
+        "vectorRank": 3,
+        "relevanceOnlyRank": 2,
+        "displacement": 0,
+        "originTx": 5
+      },
+      {
+        "queryId": "fm-2-t",
+        "resource": "https://x402stock.xyz/api/v1/quote/{ticker}",
+        "finalRank": 3,
+        "vectorRank": 4,
+        "relevanceOnlyRank": 3,
+        "displacement": 0,
+        "originTx": 869
+      },
+      {
+        "queryId": "fm-2-t",
+        "resource": "https://stock-price-x402-production.up.railway.app/api/quote",
+        "finalRank": 4,
+        "vectorRank": 5,
+        "relevanceOnlyRank": 4,
+        "displacement": 0,
+        "originTx": 3
+      },
+      {
+        "queryId": "fm-2-t",
+        "resource": "https://x402stock.vercel.app/api/v1/quote/{ticker}",
+        "finalRank": 5,
+        "vectorRank": 7,
+        "relevanceOnlyRank": 5,
+        "displacement": 0,
+        "originTx": 771
+      },
+      {
+        "queryId": "fm-3-t",
+        "resource": "https://x402stock.vercel.app/api/v1/filings/{ticker}",
+        "finalRank": 1,
+        "vectorRank": 2,
+        "relevanceOnlyRank": 1,
+        "displacement": 0,
+        "originTx": 771
+      },
+      {
+        "queryId": "fm-3-t",
+        "resource": "https://zx10r-x402-api.onrender.com/v1/sec-edgar",
+        "finalRank": 2,
+        "vectorRank": 3,
+        "relevanceOnlyRank": 2,
+        "displacement": 0,
+        "originTx": 10
+      },
+      {
+        "queryId": "fm-3-t",
+        "resource": "https://x402.professorsausages.com/sec-10k/filing/{cik}",
+        "finalRank": 3,
+        "vectorRank": 4,
+        "relevanceOnlyRank": 3,
+        "displacement": 0,
+        "originTx": 6
+      },
+      {
+        "queryId": "fm-3-t",
+        "resource": "https://x402stock.xyz/api/v1/filings/{ticker}",
+        "finalRank": 4,
+        "vectorRank": 6,
+        "relevanceOnlyRank": 4,
+        "displacement": 0,
+        "originTx": 869
+      },
+      {
+        "queryId": "fm-3-t",
+        "resource": "https://x402stock.vercel.app/api/v1/filing-summary/{ticker}",
+        "finalRank": 5,
+        "vectorRank": 8,
+        "relevanceOnlyRank": 5,
+        "displacement": 0,
+        "originTx": 771
+      },
+      {
+        "queryId": "fm-3-t",
+        "resource": "https://x402stock.xyz/api/v1/dossier/{ticker}",
+        "finalRank": 6,
+        "vectorRank": 9,
+        "relevanceOnlyRank": 6,
+        "displacement": 0,
+        "originTx": 869
+      },
+      {
+        "queryId": "fm-4-t",
+        "resource": "https://x402helper.xyz/signals/momentum",
+        "finalRank": 1,
+        "vectorRank": 4,
+        "relevanceOnlyRank": 1,
+        "displacement": 0,
+        "originTx": 183
+      },
+      {
+        "queryId": "fm-4-t",
+        "resource": "https://api.x402node.dev/market/token-momentum",
+        "finalRank": 2,
+        "vectorRank": 5,
+        "relevanceOnlyRank": 2,
+        "displacement": 0,
+        "originTx": 111
+      },
+      {
+        "queryId": "fm-4-t",
+        "resource": "https://the-stall.intuitek.ai/cap/economic-momentum",
+        "finalRank": 3,
+        "vectorRank": 8,
+        "relevanceOnlyRank": 3,
+        "displacement": 0,
+        "originTx": 212
+      },
+      {
+        "queryId": "fm-4-t",
+        "resource": "https://market2000.xyz/trading/equity",
+        "finalRank": 4,
+        "vectorRank": 19,
+        "relevanceOnlyRank": 4,
+        "displacement": 0,
+        "originTx": 1
+      },
+      {
+        "queryId": "fm-4-t",
+        "resource": "https://api.x402node.dev/market/sector-momentum",
+        "finalRank": 5,
+        "vectorRank": 20,
+        "relevanceOnlyRank": 5,
+        "displacement": 0,
+        "originTx": 111
+      },
+      {
+        "queryId": "fm-5-t",
+        "resource": "https://the-stall.intuitek.ai/cap/sector-rotation",
+        "finalRank": 1,
+        "vectorRank": 1,
+        "relevanceOnlyRank": 1,
+        "displacement": 0,
+        "originTx": 212
+      },
+      {
+        "queryId": "fm-5-t",
+        "resource": "https://the-stall.intuitek.ai/cap/market-regime-intel",
+        "finalRank": 2,
+        "vectorRank": 3,
+        "relevanceOnlyRank": 2,
+        "displacement": 0,
+        "originTx": 212
+      },
+      {
+        "queryId": "fm-5-t",
+        "resource": "https://orbisapi.com/proxy/stock-market-regime-classifier-api-fde6a6",
+        "finalRank": 3,
+        "vectorRank": 5,
+        "relevanceOnlyRank": 3,
+        "displacement": 0,
+        "originTx": 55
+      },
+      {
+        "queryId": "fm-5-t",
+        "resource": "https://x402helper.xyz/v1/indicators/regime-classify",
+        "finalRank": 4,
+        "vectorRank": 22,
+        "relevanceOnlyRank": 4,
+        "displacement": 0,
+        "originTx": 183
+      },
+      {
+        "queryId": "fm-5-t",
+        "resource": "https://x402stock.vercel.app/api/v1/fear-greed/regime",
+        "finalRank": 5,
+        "vectorRank": 25,
+        "relevanceOnlyRank": 5,
+        "displacement": 0,
+        "originTx": 771
+      },
+      {
+        "queryId": "de-1-c",
+        "resource": "https://stable-deepline.dev/api/linkedin/find",
+        "finalRank": 1,
+        "vectorRank": 1,
+        "relevanceOnlyRank": 1,
+        "displacement": 0,
+        "originTx": 1838
+      },
+      {
+        "queryId": "de-1-c",
+        "resource": "https://socialx402.com/api/sc/linkedin/profile",
+        "finalRank": 2,
+        "vectorRank": 4,
+        "relevanceOnlyRank": 2,
+        "displacement": 0,
+        "originTx": 12101
+      },
+      {
+        "queryId": "de-1-c",
+        "resource": "https://stable-deepline.dev/api/email/from-linkedin",
+        "finalRank": 3,
+        "vectorRank": 5,
+        "relevanceOnlyRank": 3,
+        "displacement": 0,
+        "originTx": 1838
+      },
+      {
+        "queryId": "de-1-c",
+        "resource": "https://stablesocial.dev/api/sc/linkedin/profile",
+        "finalRank": 4,
+        "vectorRank": 9,
+        "relevanceOnlyRank": 5,
+        "displacement": 1,
+        "originTx": 15667
+      },
+      {
+        "queryId": "de-1-c",
+        "resource": "https://kite-solana.vercel.app/api/linkedin-data",
+        "finalRank": 5,
+        "vectorRank": 7,
+        "relevanceOnlyRank": 4,
+        "displacement": -1,
+        "originTx": 1
+      },
+      {
+        "queryId": "de-1-c",
+        "resource": "https://uat.jarvisclaw.ai/v1/marketplace/api/linkedin-3044",
+        "finalRank": 6,
+        "vectorRank": 10,
+        "relevanceOnlyRank": 6,
+        "displacement": 0,
+        "originTx": 1
+      },
+      {
+        "queryId": "cd-4-c",
+        "resource": "https://api.jarvisclaw.ai/v1/marketplace/api/crypto-sentiment",
+        "finalRank": 1,
+        "vectorRank": 17,
+        "relevanceOnlyRank": 1,
+        "displacement": 0,
+        "originTx": 2
+      },
+      {
+        "queryId": "cd-4-c",
+        "resource": "https://x402helper.xyz/api/market-mood",
+        "finalRank": 2,
+        "vectorRank": 20,
+        "relevanceOnlyRank": 2,
+        "displacement": 0,
+        "originTx": 183
+      },
+      {
+        "queryId": "cd-4-c",
+        "resource": "https://omni-api-cyan.vercel.app/api/crypto/sentiment",
+        "finalRank": 3,
+        "vectorRank": 22,
+        "relevanceOnlyRank": 3,
+        "displacement": 0,
+        "originTx": 1
+      },
+      {
+        "queryId": "cd-4-c",
+        "resource": "https://uat.jarvisclaw.ai/v1/marketplace/api/crypto-sentiment",
+        "finalRank": 4,
+        "vectorRank": 25,
+        "relevanceOnlyRank": 4,
+        "displacement": 0,
+        "originTx": 1
+      },
+      {
+        "queryId": "cd-4-c",
+        "resource": "https://x402stock.vercel.app/api/v1/fear-greed/crypto",
+        "finalRank": 5,
+        "vectorRank": 29,
+        "relevanceOnlyRank": 5,
+        "displacement": 0,
+        "originTx": 771
+      },
+      {
+        "queryId": "ai-3-c",
+        "resource": "https://stableenrich.dev/api/exa/answer",
+        "finalRank": 1,
+        "vectorRank": 17,
+        "relevanceOnlyRank": 5,
+        "displacement": 4,
+        "originTx": 493318
+      },
+      {
+        "queryId": "ai-3-c",
+        "resource": "https://agent402.tools/api/answer",
+        "finalRank": 2,
+        "vectorRank": 1,
+        "relevanceOnlyRank": 1,
+        "displacement": -1,
+        "originTx": 11
+      },
+      {
+        "queryId": "ai-3-c",
+        "resource": "https://uat.jarvisclaw.ai/v1/marketplace/api/answer-web",
+        "finalRank": 3,
+        "vectorRank": 2,
+        "relevanceOnlyRank": 2,
+        "displacement": -1,
+        "originTx": 1
+      },
+      {
+        "queryId": "ai-3-c",
+        "resource": "https://x402.agentutility.ai/answer-web",
+        "finalRank": 4,
+        "vectorRank": 3,
+        "relevanceOnlyRank": 3,
+        "displacement": -1,
+        "originTx": 116
+      },
+      {
+        "queryId": "ai-3-c",
+        "resource": "https://searchtav.vercel.app/rag/ask",
+        "finalRank": 5,
+        "vectorRank": 5,
+        "relevanceOnlyRank": 4,
+        "displacement": -1,
+        "originTx": 8
+      },
+      {
+        "queryId": "fm-5-c",
+        "resource": "https://the-stall.intuitek.ai/cap/market-overview",
+        "finalRank": 1,
+        "vectorRank": 8,
+        "relevanceOnlyRank": 1,
+        "displacement": 0,
+        "originTx": 212
+      },
+      {
+        "queryId": "fm-5-c",
+        "resource": "https://x402.ottoai.services/market-risk",
+        "finalRank": 2,
+        "vectorRank": 11,
+        "relevanceOnlyRank": 2,
+        "displacement": 0,
+        "originTx": 67
+      },
+      {
+        "queryId": "fm-5-c",
+        "resource": "https://uat.jarvisclaw.ai/v1/marketplace/api/risk-index",
+        "finalRank": 3,
+        "vectorRank": 22,
+        "relevanceOnlyRank": 3,
+        "displacement": 0,
+        "originTx": 1
+      },
+      {
+        "queryId": "fm-5-c",
+        "resource": "https://graph-advocate-production.up.railway.app/polymarket/risk",
+        "finalRank": 4,
+        "vectorRank": 32,
+        "relevanceOnlyRank": 4,
+        "displacement": 0,
+        "originTx": 1
+      },
+      {
+        "queryId": "fm-5-c",
+        "resource": "https://x402helper.xyz/api/polymarket/market/risk-score",
+        "finalRank": 5,
+        "vectorRank": 35,
+        "relevanceOnlyRank": 5,
+        "displacement": 0,
+        "originTx": 183
+      }
+    ],
+    "medianAbsDisplacement": 0,
+    "promotedByUsage": 15,
+    "demotedByUsage": 25,
+    "unmoved": 128,
+    "maxPromotion": {
+      "resource": "https://stableenrich.dev/api/reddit/search",
+      "queryId": "de-6-t",
+      "places": 5
+    },
+    "usageVsDisplacement": 0.408016267909233,
+    "vectorVsFinal": 0.8752379250604039
+  }
+}

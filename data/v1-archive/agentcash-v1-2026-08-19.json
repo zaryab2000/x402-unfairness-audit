@@ -1,0 +1,1404 @@
+{
+  "collectedAt": "2026-08-19T00:00:00.000Z",
+  "index": "agentcash",
+  "note": "Collected via the AgentCash MCP search tool (free discovery, no x402 payment). Ranks are as returned; vectorSimilarityRank is the pre-rerank semantic position AgentCash publishes alongside the final position.",
+  "runs": [
+    {
+      "queryId": "head-weather",
+      "queryText": "weather forecast for a city",
+      "resultCount": 10,
+      "results": [
+        {
+          "position": 1,
+          "resource": "https://weather-dx.hugen.tokyo/weather/forecast",
+          "score": 0.317,
+          "vectorSimilarityScore": 0.527935,
+          "vectorSimilarityRank": 8,
+          "originTransactionCount": 71,
+          "originUniqueUsers": 7,
+          "originVolumeUsd": 5.59,
+          "trustedUserUsageRatio": 0.002053
+        },
+        {
+          "position": 2,
+          "resource": "https://uat.jarvisclaw.ai/v1/marketplace/api/city-weather",
+          "score": 0.315,
+          "vectorSimilarityScore": 0.524891,
+          "vectorSimilarityRank": 9,
+          "originTransactionCount": 1,
+          "originUniqueUsers": 1,
+          "originVolumeUsd": 0.001,
+          "trustedUserUsageRatio": 0.000293
+        },
+        {
+          "position": 3,
+          "resource": "https://api.x402node.dev/weather/forecast",
+          "score": 0.312,
+          "vectorSimilarityScore": 0.519063,
+          "vectorSimilarityRank": 11,
+          "originTransactionCount": 111,
+          "originUniqueUsers": 3,
+          "originVolumeUsd": 2.205,
+          "trustedUserUsageRatio": 0.00088
+        },
+        {
+          "position": 4,
+          "resource": "https://x402.professorsausages.com/weather/forecast",
+          "score": 0.309,
+          "vectorSimilarityScore": 0.51522,
+          "vectorSimilarityRank": 14,
+          "originTransactionCount": 6,
+          "originUniqueUsers": 1,
+          "originVolumeUsd": 0.03,
+          "trustedUserUsageRatio": 0.000293
+        },
+        {
+          "position": 5,
+          "resource": "https://x402.agentutility.ai/city-weather",
+          "score": 0.308,
+          "vectorSimilarityScore": 0.512444,
+          "vectorSimilarityRank": 17,
+          "originTransactionCount": 116,
+          "originUniqueUsers": 17,
+          "originVolumeUsd": 1.524,
+          "trustedUserUsageRatio": 0.004987
+        },
+        {
+          "position": 6,
+          "resource": "https://uat.jarvisclaw.ai/v1/marketplace/api/weather-forecast",
+          "score": 0.308,
+          "vectorSimilarityScore": 0.513133,
+          "vectorSimilarityRank": 16,
+          "originTransactionCount": 1,
+          "originUniqueUsers": 1,
+          "originVolumeUsd": 0.001,
+          "trustedUserUsageRatio": 0.000293
+        },
+        {
+          "position": 7,
+          "resource": "https://uat.jarvisclaw.ai/v1/marketplace/api/weather-current-city",
+          "score": 0.305,
+          "vectorSimilarityScore": 0.507967,
+          "vectorSimilarityRank": 22,
+          "originTransactionCount": 1,
+          "originUniqueUsers": 1,
+          "originVolumeUsd": 0.001,
+          "trustedUserUsageRatio": 0.000293
+        },
+        {
+          "position": 8,
+          "resource": "https://uat.jarvisclaw.ai/v1/marketplace/api/current-weather-city",
+          "score": 0.304,
+          "vectorSimilarityScore": 0.506324,
+          "vectorSimilarityRank": 24,
+          "originTransactionCount": 1,
+          "originUniqueUsers": 1,
+          "originVolumeUsd": 0.001,
+          "trustedUserUsageRatio": 0.000293
+        },
+        {
+          "position": 9,
+          "resource": "https://weather-api-x402-production.up.railway.app/api/weather",
+          "score": 0.304,
+          "vectorSimilarityScore": 0.506192,
+          "vectorSimilarityRank": 25,
+          "originTransactionCount": 3,
+          "originUniqueUsers": 2,
+          "originVolumeUsd": 0.021,
+          "trustedUserUsageRatio": 0.000587
+        },
+        {
+          "position": 10,
+          "resource": "https://weather.hugen.tokyo/weather/forecast",
+          "score": 0.303,
+          "vectorSimilarityScore": 0.505109,
+          "vectorSimilarityRank": 27,
+          "originTransactionCount": 132,
+          "originUniqueUsers": 8,
+          "originVolumeUsd": 6.2,
+          "trustedUserUsageRatio": 0.002347
+        }
+      ]
+    },
+    {
+      "queryId": "head-token-price",
+      "queryText": "current price of a crypto token",
+      "resultCount": 15,
+      "results": [
+        {
+          "position": 1,
+          "resource": "https://api.jarvisclaw.ai/v1/marketplace/api/crypto-token-price",
+          "score": 0.344,
+          "vectorSimilarityScore": 0.572535,
+          "vectorSimilarityRank": 1,
+          "originTransactionCount": 2,
+          "originUniqueUsers": 2,
+          "originVolumeUsd": 0.005647,
+          "trustedUserUsageRatio": 0.000587
+        },
+        {
+          "position": 2,
+          "resource": "https://uat.jarvisclaw.ai/v1/marketplace/api/token-price-62",
+          "score": 0.342,
+          "vectorSimilarityScore": 0.570269,
+          "vectorSimilarityRank": 2,
+          "originTransactionCount": 1,
+          "originUniqueUsers": 1,
+          "originVolumeUsd": 0.001,
+          "trustedUserUsageRatio": 0.000293
+        },
+        {
+          "position": 3,
+          "resource": "https://uat.jarvisclaw.ai/v1/marketplace/api/crypto-price",
+          "score": 0.335,
+          "vectorSimilarityScore": 0.557882,
+          "vectorSimilarityRank": 4,
+          "originTransactionCount": 1,
+          "originUniqueUsers": 1,
+          "originVolumeUsd": 0.001,
+          "trustedUserUsageRatio": 0.000293
+        },
+        {
+          "position": 4,
+          "resource": "https://2s.io/api/crypto/token-price",
+          "score": 0.333,
+          "vectorSimilarityScore": 0.554278,
+          "vectorSimilarityRank": 6,
+          "originTransactionCount": 328,
+          "originUniqueUsers": 12,
+          "originVolumeUsd": 0.8909,
+          "trustedUserUsageRatio": 0.00352
+        },
+        {
+          "position": 5,
+          "resource": "https://x402.onchainexpat.com/api/x402-tools/crypto/price",
+          "score": 0.33,
+          "vectorSimilarityScore": 0.548994,
+          "vectorSimilarityRank": 8,
+          "originTransactionCount": 87,
+          "originUniqueUsers": 10,
+          "originVolumeUsd": 30.02,
+          "trustedUserUsageRatio": 0.002933
+        },
+        {
+          "position": 6,
+          "resource": "https://agent402.tools/api/crypto-price",
+          "score": 0.324,
+          "vectorSimilarityScore": 0.539584,
+          "vectorSimilarityRank": 12,
+          "originTransactionCount": 11,
+          "originUniqueUsers": 4,
+          "originVolumeUsd": 0.02,
+          "trustedUserUsageRatio": 0.001173
+        },
+        {
+          "position": 7,
+          "resource": "https://api.x402node.dev/crypto/price",
+          "score": 0.323,
+          "vectorSimilarityScore": 0.538819,
+          "vectorSimilarityRank": 14,
+          "originTransactionCount": 111,
+          "originUniqueUsers": 3,
+          "originVolumeUsd": 2.205,
+          "trustedUserUsageRatio": 0.00088
+        },
+        {
+          "position": 8,
+          "resource": "https://api.x402node.dev/token/price",
+          "score": 0.322,
+          "vectorSimilarityScore": 0.53574,
+          "vectorSimilarityRank": 16,
+          "originTransactionCount": 111,
+          "originUniqueUsers": 3,
+          "originVolumeUsd": 2.205,
+          "trustedUserUsageRatio": 0.00088
+        },
+        {
+          "position": 9,
+          "resource": "https://api.jarvisclaw.ai/v1/marketplace/surf/exchange/price",
+          "score": 0.321,
+          "vectorSimilarityScore": 0.534402,
+          "vectorSimilarityRank": 18,
+          "originTransactionCount": 2,
+          "originUniqueUsers": 2,
+          "originVolumeUsd": 0.005647,
+          "trustedUserUsageRatio": 0.000587
+        },
+        {
+          "position": 10,
+          "resource": "https://token-price-production-f72e.up.railway.app/api/price",
+          "score": 0.32,
+          "vectorSimilarityScore": 0.533867,
+          "vectorSimilarityRank": 19,
+          "originTransactionCount": 3,
+          "originUniqueUsers": 2,
+          "originVolumeUsd": 0.021,
+          "trustedUserUsageRatio": 0.000587
+        },
+        {
+          "position": 11,
+          "resource": "https://agent402.tools/api/token-price",
+          "score": 0.32,
+          "vectorSimilarityScore": 0.532503,
+          "vectorSimilarityRank": 23,
+          "originTransactionCount": 11,
+          "originUniqueUsers": 4,
+          "originVolumeUsd": 0.02,
+          "trustedUserUsageRatio": 0.001173
+        },
+        {
+          "position": 12,
+          "resource": "https://api.jarvisclaw.ai/v1/marketplace/api/crypto-prices-2608",
+          "score": 0.318,
+          "vectorSimilarityScore": 0.530141,
+          "vectorSimilarityRank": 27,
+          "originTransactionCount": 2,
+          "originUniqueUsers": 2,
+          "originVolumeUsd": 0.005647,
+          "trustedUserUsageRatio": 0.000587
+        },
+        {
+          "position": 13,
+          "resource": "https://www.tryskopos.xyz/api/price",
+          "score": 0.318,
+          "vectorSimilarityScore": 0.529197,
+          "vectorSimilarityRank": 29,
+          "originTransactionCount": 3,
+          "originUniqueUsers": 1,
+          "originVolumeUsd": 0.03,
+          "trustedUserUsageRatio": 0.000293
+        },
+        {
+          "position": 14,
+          "resource": "https://x402helper.xyz/api/crypto/price",
+          "score": 0.313,
+          "vectorSimilarityScore": 0.520694,
+          "vectorSimilarityRank": 43,
+          "originTransactionCount": 183,
+          "originUniqueUsers": 32,
+          "originVolumeUsd": 5.9785,
+          "trustedUserUsageRatio": 0.009387
+        },
+        {
+          "position": 15,
+          "resource": "https://api.strale.io/x402/v2/crypto-price",
+          "score": 0.311,
+          "vectorSimilarityScore": 0.518897,
+          "vectorSimilarityRank": 46,
+          "originTransactionCount": 29,
+          "originUniqueUsers": 1,
+          "originVolumeUsd": 2.035425,
+          "trustedUserUsageRatio": 0.000293
+        }
+      ]
+    },
+    {
+      "queryId": "head-wallet",
+      "queryText": "wallet balance and onchain activity for an address",
+      "resultCount": 15,
+      "results": [
+        {
+          "position": 1,
+          "resource": "https://x402helper.xyz/onchain/activity",
+          "score": 0.323,
+          "vectorSimilarityScore": 0.536653,
+          "vectorSimilarityRank": 2,
+          "originTransactionCount": 183,
+          "originUniqueUsers": 32,
+          "originVolumeUsd": 5.9785,
+          "trustedUserUsageRatio": 0.009387
+        },
+        {
+          "position": 2,
+          "resource": "https://api.x402node.dev/chain/wallet-activity",
+          "score": 0.32,
+          "vectorSimilarityScore": 0.533845,
+          "vectorSimilarityRank": 3,
+          "originTransactionCount": 111,
+          "originUniqueUsers": 3,
+          "originVolumeUsd": 2.205,
+          "trustedUserUsageRatio": 0.00088
+        },
+        {
+          "position": 3,
+          "resource": "https://x402-agent-store.rileycraig14.workers.dev/chain/balance",
+          "score": 0.303,
+          "vectorSimilarityScore": 0.504693,
+          "vectorSimilarityRank": 10,
+          "originTransactionCount": 9,
+          "originUniqueUsers": 2,
+          "originVolumeUsd": 0.087,
+          "trustedUserUsageRatio": 0.000587
+        },
+        {
+          "position": 4,
+          "resource": "https://mpp.mobula.io/api/2/wallet/activity",
+          "score": 0.299,
+          "vectorSimilarityScore": 0.498111,
+          "vectorSimilarityRank": 29,
+          "originTransactionCount": 8825,
+          "originUniqueUsers": 2,
+          "originVolumeUsd": 4.0864,
+          "trustedUserUsageRatio": 0.000587
+        },
+        {
+          "position": 5,
+          "resource": "https://api.x402node.dev/chain/btc-balance",
+          "score": 0.297,
+          "vectorSimilarityScore": 0.495638,
+          "vectorSimilarityRank": 36,
+          "originTransactionCount": 111,
+          "originUniqueUsers": 3,
+          "originVolumeUsd": 2.205,
+          "trustedUserUsageRatio": 0.00088
+        },
+        {
+          "position": 6,
+          "resource": "https://store.agentexchange.work/chain/balance",
+          "score": 0.297,
+          "vectorSimilarityScore": 0.495429,
+          "vectorSimilarityRank": 38,
+          "originTransactionCount": 9,
+          "originUniqueUsers": 2,
+          "originVolumeUsd": 0.087,
+          "trustedUserUsageRatio": 0.000587
+        },
+        {
+          "position": 7,
+          "resource": "https://uat.jarvisclaw.ai/v1/marketplace/api/crypto-address-activity",
+          "score": 0.296,
+          "vectorSimilarityScore": 0.494032,
+          "vectorSimilarityRank": 42,
+          "originTransactionCount": 1,
+          "originUniqueUsers": 1,
+          "originVolumeUsd": 0.001,
+          "trustedUserUsageRatio": 0.000293
+        },
+        {
+          "position": 8,
+          "resource": "https://api.x402node.dev/chain/balance",
+          "score": 0.296,
+          "vectorSimilarityScore": 0.492636,
+          "vectorSimilarityRank": 46,
+          "originTransactionCount": 111,
+          "originUniqueUsers": 3,
+          "originVolumeUsd": 2.205,
+          "trustedUserUsageRatio": 0.00088
+        },
+        {
+          "position": 9,
+          "resource": "https://api.x402node.dev/chain/wallet-balance",
+          "score": 0.292,
+          "vectorSimilarityScore": 0.487231,
+          "vectorSimilarityRank": 56,
+          "originTransactionCount": 111,
+          "originUniqueUsers": 3,
+          "originVolumeUsd": 2.205,
+          "trustedUserUsageRatio": 0.00088
+        },
+        {
+          "position": 10,
+          "resource": "https://api.nansen.ai/api/v1/profiler/address/current-balance",
+          "score": 0.291,
+          "vectorSimilarityScore": 0.484683,
+          "vectorSimilarityRank": 60,
+          "originTransactionCount": 1916,
+          "originUniqueUsers": 17,
+          "originVolumeUsd": 34.36,
+          "trustedUserUsageRatio": 0.004987
+        },
+        {
+          "position": 11,
+          "resource": "https://x402-store-v2.rileycraig14.workers.dev/chain/balance",
+          "score": 0.29,
+          "vectorSimilarityScore": 0.483135,
+          "vectorSimilarityRank": 64,
+          "originTransactionCount": 9,
+          "originUniqueUsers": 2,
+          "originVolumeUsd": 0.087,
+          "trustedUserUsageRatio": 0.000587
+        },
+        {
+          "position": 12,
+          "resource": "https://api.x402node.dev/wallet/age-activity",
+          "score": 0.289,
+          "vectorSimilarityScore": 0.482002,
+          "vectorSimilarityRank": 66,
+          "originTransactionCount": 111,
+          "originUniqueUsers": 3,
+          "originVolumeUsd": 2.205,
+          "trustedUserUsageRatio": 0.00088
+        },
+        {
+          "position": 13,
+          "resource": "https://nexus-api-virid.vercel.app/api/crypto/address/balance",
+          "score": 0.289,
+          "vectorSimilarityScore": 0.481763,
+          "vectorSimilarityRank": 67,
+          "originTransactionCount": 1,
+          "originUniqueUsers": 1,
+          "originVolumeUsd": 0.12,
+          "trustedUserUsageRatio": 0.000293
+        },
+        {
+          "position": 14,
+          "resource": "https://api.blockscout.com/{chain_id}/api/v2/addresses/{address_hash_param}/counters",
+          "score": 0.289,
+          "vectorSimilarityScore": 0.481458,
+          "vectorSimilarityRank": 69,
+          "originTransactionCount": 133,
+          "originUniqueUsers": 1,
+          "originVolumeUsd": 0.269,
+          "trustedUserUsageRatio": 0.000293
+        },
+        {
+          "position": 15,
+          "resource": "https://omni-api-cyan.vercel.app/api/crypto/address/balance",
+          "score": 0.289,
+          "vectorSimilarityScore": 0.481124,
+          "vectorSimilarityRank": 70,
+          "originTransactionCount": 1,
+          "originUniqueUsers": 1,
+          "originVolumeUsd": 0.12,
+          "trustedUserUsageRatio": 0.000293
+        }
+      ]
+    },
+    {
+      "queryId": "head-llm",
+      "queryText": "run an LLM completion or chat model",
+      "resultCount": 12,
+      "results": [
+        {
+          "position": 1,
+          "resource": "https://gateway.gocreativeai.com/v1/chat/completions",
+          "score": 0.336,
+          "vectorSimilarityScore": 0.559301,
+          "vectorSimilarityRank": 3,
+          "originTransactionCount": 49,
+          "originUniqueUsers": 6,
+          "originVolumeUsd": 2.45,
+          "trustedUserUsageRatio": 0.00176
+        },
+        {
+          "position": 2,
+          "resource": "https://stablerouter.dev/v1/chat/completions",
+          "score": 0.331,
+          "vectorSimilarityScore": 0.552261,
+          "vectorSimilarityRank": 5,
+          "originTransactionCount": 1,
+          "originUniqueUsers": 1,
+          "originVolumeUsd": 0.001,
+          "trustedUserUsageRatio": 0.000293
+        },
+        {
+          "position": 3,
+          "resource": "https://groq.x402.paywithlocus.com/groq/chat",
+          "score": 0.32,
+          "vectorSimilarityScore": 0.533127,
+          "vectorSimilarityRank": 19,
+          "originTransactionCount": 5,
+          "originUniqueUsers": 2,
+          "originVolumeUsd": 0.0315,
+          "trustedUserUsageRatio": 0.000587
+        },
+        {
+          "position": 4,
+          "resource": "https://mistral.mpp.paywithlocus.com/mistral/chat",
+          "score": 0.317,
+          "vectorSimilarityScore": 0.528672,
+          "vectorSimilarityRank": 24,
+          "originTransactionCount": 6,
+          "originUniqueUsers": 2,
+          "originVolumeUsd": 0.039,
+          "trustedUserUsageRatio": 0.000587
+        },
+        {
+          "position": 5,
+          "resource": "https://openrouter.mpp.tempo.xyz/v1/chat/completions",
+          "score": 0.316,
+          "vectorSimilarityScore": 0.526089,
+          "vectorSimilarityRank": 29,
+          "originTransactionCount": 4,
+          "originUniqueUsers": 1,
+          "originVolumeUsd": 0.004,
+          "trustedUserUsageRatio": 0.000293
+        },
+        {
+          "position": 6,
+          "resource": "https://chat.gedx402.com/v1/chat/completions",
+          "score": 0.315,
+          "vectorSimilarityScore": 0.525064,
+          "vectorSimilarityRank": 30,
+          "originTransactionCount": 46,
+          "originUniqueUsers": 4,
+          "originVolumeUsd": 0.64,
+          "trustedUserUsageRatio": 0.001173
+        },
+        {
+          "position": 7,
+          "resource": "https://blockrun.ai/api/v1/chat/completions",
+          "score": 0.314,
+          "vectorSimilarityScore": 0.522183,
+          "vectorSimilarityRank": 35,
+          "originTransactionCount": 621,
+          "originUniqueUsers": 20,
+          "originVolumeUsd": 12.140231,
+          "trustedUserUsageRatio": 0.005867
+        },
+        {
+          "position": 8,
+          "resource": "https://groq.mpp.paywithlocus.com/groq/chat",
+          "score": 0.314,
+          "vectorSimilarityScore": 0.522904,
+          "vectorSimilarityRank": 33,
+          "originTransactionCount": 56,
+          "originUniqueUsers": 4,
+          "originVolumeUsd": 0.483658,
+          "trustedUserUsageRatio": 0.001173
+        },
+        {
+          "position": 9,
+          "resource": "https://inference.surf.cascade.fyi/v1/chat/completions",
+          "score": 0.313,
+          "vectorSimilarityScore": 0.521809,
+          "vectorSimilarityRank": 38,
+          "originTransactionCount": 467,
+          "originUniqueUsers": 8,
+          "originVolumeUsd": 1.849,
+          "trustedUserUsageRatio": 0.002347
+        },
+        {
+          "position": 10,
+          "resource": "https://sol.blockrun.ai/api/v1/chat/completions",
+          "score": 0.312,
+          "vectorSimilarityScore": 0.52009,
+          "vectorSimilarityRank": 41,
+          "originTransactionCount": 54,
+          "originUniqueUsers": 1,
+          "originVolumeUsd": 15.224268,
+          "trustedUserUsageRatio": 0.000293
+        },
+        {
+          "position": 11,
+          "resource": "https://openrouter.x402.paywithlocus.com/openrouter/chat",
+          "score": 0.311,
+          "vectorSimilarityScore": 0.517525,
+          "vectorSimilarityRank": 43,
+          "originTransactionCount": 5,
+          "originUniqueUsers": 2,
+          "originVolumeUsd": 0.0315,
+          "trustedUserUsageRatio": 0.000587
+        },
+        {
+          "position": 12,
+          "resource": "https://mistral.x402.paywithlocus.com/mistral/chat",
+          "score": 0.309,
+          "vectorSimilarityScore": 0.515323,
+          "vectorSimilarityRank": 45,
+          "originTransactionCount": 5,
+          "originUniqueUsers": 2,
+          "originVolumeUsd": 0.0315,
+          "trustedUserUsageRatio": 0.000587
+        }
+      ]
+    },
+    {
+      "queryId": "head-websearch",
+      "queryText": "search the web and return results",
+      "resultCount": 12,
+      "results": [
+        {
+          "position": 1,
+          "resource": "https://2s.io/api/search/web",
+          "score": 0.319,
+          "vectorSimilarityScore": 0.530508,
+          "vectorSimilarityRank": 3,
+          "originTransactionCount": 328,
+          "originUniqueUsers": 12,
+          "originVolumeUsd": 0.8909,
+          "trustedUserUsageRatio": 0.00352
+        },
+        {
+          "position": 2,
+          "resource": "https://uat.jarvisclaw.ai/v1/marketplace/api/search-web",
+          "score": 0.318,
+          "vectorSimilarityScore": 0.529744,
+          "vectorSimilarityRank": 4,
+          "originTransactionCount": 1,
+          "originUniqueUsers": 1,
+          "originVolumeUsd": 0.001,
+          "trustedUserUsageRatio": 0.000293
+        },
+        {
+          "position": 3,
+          "resource": "https://web-search-production-7393.up.railway.app/api/search",
+          "score": 0.317,
+          "vectorSimilarityScore": 0.528614,
+          "vectorSimilarityRank": 5,
+          "originTransactionCount": 3,
+          "originUniqueUsers": 2,
+          "originVolumeUsd": 0.021,
+          "trustedUserUsageRatio": 0.000587
+        },
+        {
+          "position": 4,
+          "resource": "https://searchtav.vercel.app/search",
+          "score": 0.311,
+          "vectorSimilarityScore": 0.518848,
+          "vectorSimilarityRank": 11,
+          "originTransactionCount": 8,
+          "originUniqueUsers": 3,
+          "originVolumeUsd": 0.41,
+          "trustedUserUsageRatio": 0.00088
+        },
+        {
+          "position": 5,
+          "resource": "https://klymax402.com/api/web-search/api/search",
+          "score": 0.31,
+          "vectorSimilarityScore": 0.517283,
+          "vectorSimilarityRank": 13,
+          "originTransactionCount": 3,
+          "originUniqueUsers": 2,
+          "originVolumeUsd": 0.021,
+          "trustedUserUsageRatio": 0.000587
+        },
+        {
+          "position": 6,
+          "resource": "https://api.jarvisclaw.ai/v1/marketplace/api/search-web-596",
+          "score": 0.308,
+          "vectorSimilarityScore": 0.513894,
+          "vectorSimilarityRank": 18,
+          "originTransactionCount": 2,
+          "originUniqueUsers": 2,
+          "originVolumeUsd": 0.005647,
+          "trustedUserUsageRatio": 0.000587
+        },
+        {
+          "position": 7,
+          "resource": "https://uat.jarvisclaw.ai/v1/marketplace/api/web-search-584",
+          "score": 0.308,
+          "vectorSimilarityScore": 0.513261,
+          "vectorSimilarityRank": 20,
+          "originTransactionCount": 1,
+          "originUniqueUsers": 1,
+          "originVolumeUsd": 0.001,
+          "trustedUserUsageRatio": 0.000293
+        },
+        {
+          "position": 8,
+          "resource": "https://omnicall.gocreativeai.com/v1/search/web/{arg}",
+          "score": 0.308,
+          "vectorSimilarityScore": 0.512935,
+          "vectorSimilarityRank": 21,
+          "originTransactionCount": 50,
+          "originUniqueUsers": 7,
+          "originVolumeUsd": 2.46,
+          "trustedUserUsageRatio": 0.002053
+        },
+        {
+          "position": 9,
+          "resource": "https://gateway.gocreativeai.com/v1/search/web/{arg}",
+          "score": 0.307,
+          "vectorSimilarityScore": 0.511005,
+          "vectorSimilarityRank": 25,
+          "originTransactionCount": 49,
+          "originUniqueUsers": 6,
+          "originVolumeUsd": 2.45,
+          "trustedUserUsageRatio": 0.00176
+        },
+        {
+          "position": 10,
+          "resource": "https://websearch--gw.swerver.net/search",
+          "score": 0.305,
+          "vectorSimilarityScore": 0.508429,
+          "vectorSimilarityRank": 31,
+          "originTransactionCount": 2,
+          "originUniqueUsers": 1,
+          "originVolumeUsd": 0.02,
+          "trustedUserUsageRatio": 0.000293
+        },
+        {
+          "position": 11,
+          "resource": "https://cheap-search--gw.swerver.net/search",
+          "score": 0.305,
+          "vectorSimilarityScore": 0.50748,
+          "vectorSimilarityRank": 38,
+          "originTransactionCount": 2,
+          "originUniqueUsers": 1,
+          "originVolumeUsd": 0.02,
+          "trustedUserUsageRatio": 0.000293
+        },
+        {
+          "position": 12,
+          "resource": "https://api.jarvisclaw.ai/v1/marketplace/api/web-search-584",
+          "score": 0.303,
+          "vectorSimilarityScore": 0.505517,
+          "vectorSimilarityRank": 43,
+          "originTransactionCount": 2,
+          "originUniqueUsers": 2,
+          "originVolumeUsd": 0.005647,
+          "trustedUserUsageRatio": 0.000587
+        }
+      ]
+    },
+    {
+      "queryId": "head-company",
+      "queryText": "look up company information by domain",
+      "resultCount": 10,
+      "results": [
+        {
+          "position": 1,
+          "resource": "https://api.x402node.dev/finance/company",
+          "score": 0.331,
+          "vectorSimilarityScore": 0.551237,
+          "vectorSimilarityRank": 5,
+          "originTransactionCount": 111,
+          "originUniqueUsers": 3,
+          "originVolumeUsd": 2.205,
+          "trustedUserUsageRatio": 0.00088
+        },
+        {
+          "position": 2,
+          "resource": "https://hunter.x402.paywithlocus.com/hunter/domain-search",
+          "score": 0.321,
+          "vectorSimilarityScore": 0.535086,
+          "vectorSimilarityRank": 11,
+          "originTransactionCount": 7,
+          "originUniqueUsers": 3,
+          "originVolumeUsd": 0.1775,
+          "trustedUserUsageRatio": 0.00088
+        },
+        {
+          "position": 3,
+          "resource": "https://stableenrich.dev/api/companyenrich/org-enrich",
+          "score": 0.311,
+          "vectorSimilarityScore": 0.474885,
+          "vectorSimilarityRank": 98,
+          "originTransactionCount": 493318,
+          "originUniqueUsers": 850,
+          "originVolumeUsd": 19354.5848,
+          "trustedUserUsageRatio": 0.24934
+        },
+        {
+          "position": 4,
+          "resource": "https://hunter.mpp.paywithlocus.com/hunter/domain-search",
+          "score": 0.308,
+          "vectorSimilarityScore": 0.513079,
+          "vectorSimilarityRank": 26,
+          "originTransactionCount": 846,
+          "originUniqueUsers": 11,
+          "originVolumeUsd": 62.443041,
+          "trustedUserUsageRatio": 0.003227
+        },
+        {
+          "position": 5,
+          "resource": "https://x402.agentutility.ai/domain-enrich",
+          "score": 0.304,
+          "vectorSimilarityScore": 0.506508,
+          "vectorSimilarityRank": 37,
+          "originTransactionCount": 116,
+          "originUniqueUsers": 17,
+          "originVolumeUsd": 1.524,
+          "trustedUserUsageRatio": 0.004987
+        },
+        {
+          "position": 6,
+          "resource": "https://x402helper.xyz/api/osint/company",
+          "score": 0.302,
+          "vectorSimilarityScore": 0.501706,
+          "vectorSimilarityRank": 42,
+          "originTransactionCount": 183,
+          "originUniqueUsers": 32,
+          "originVolumeUsd": 5.9785,
+          "trustedUserUsageRatio": 0.009387
+        },
+        {
+          "position": 7,
+          "resource": "https://api.gocreativeai.com/v1/enrich/company/{arg}",
+          "score": 0.301,
+          "vectorSimilarityScore": 0.500457,
+          "vectorSimilarityRank": 44,
+          "originTransactionCount": 52,
+          "originUniqueUsers": 9,
+          "originVolumeUsd": 2.56,
+          "trustedUserUsageRatio": 0.00264
+        },
+        {
+          "position": 8,
+          "resource": "https://x402helper.xyz/x402/company-enrich",
+          "score": 0.298,
+          "vectorSimilarityScore": 0.495273,
+          "vectorSimilarityRank": 47,
+          "originTransactionCount": 183,
+          "originUniqueUsers": 32,
+          "originVolumeUsd": 5.9785,
+          "trustedUserUsageRatio": 0.009387
+        },
+        {
+          "position": 9,
+          "resource": "https://uat.jarvisclaw.ai/v1/marketplace/api/domain-info-4213",
+          "score": 0.297,
+          "vectorSimilarityScore": 0.49428,
+          "vectorSimilarityRank": 49,
+          "originTransactionCount": 1,
+          "originUniqueUsers": 1,
+          "originVolumeUsd": 0.001,
+          "trustedUserUsageRatio": 0.000293
+        },
+        {
+          "position": 10,
+          "resource": "https://x402helper.xyz/api/domain/lookup/{domain}",
+          "score": 0.297,
+          "vectorSimilarityScore": 0.492809,
+          "vectorSimilarityRank": 54,
+          "originTransactionCount": 183,
+          "originUniqueUsers": 32,
+          "originVolumeUsd": 5.9785,
+          "trustedUserUsageRatio": 0.009387
+        }
+      ]
+    },
+    {
+      "queryId": "head-news",
+      "queryText": "latest financial news headlines",
+      "resultCount": 10,
+      "results": [
+        {
+          "position": 1,
+          "resource": "https://social-hub-v3.vercel.app/api/news/latest",
+          "score": 0.291,
+          "vectorSimilarityScore": 0.485666,
+          "vectorSimilarityRank": 9,
+          "originTransactionCount": 1,
+          "originUniqueUsers": 1,
+          "originVolumeUsd": 0.12,
+          "trustedUserUsageRatio": 0.000293
+        },
+        {
+          "position": 2,
+          "resource": "https://kite-hub-v3.vercel.app/api/share-market-news",
+          "score": 0.291,
+          "vectorSimilarityScore": 0.484938,
+          "vectorSimilarityRank": 10,
+          "originTransactionCount": 1,
+          "originUniqueUsers": 1,
+          "originVolumeUsd": 0.12,
+          "trustedUserUsageRatio": 0.000293
+        },
+        {
+          "position": 3,
+          "resource": "https://x402-social-hub-new.vercel.app/api/news/latest",
+          "score": 0.289,
+          "vectorSimilarityScore": 0.482346,
+          "vectorSimilarityRank": 11,
+          "originTransactionCount": 1,
+          "originUniqueUsers": 1,
+          "originVolumeUsd": 0.12,
+          "trustedUserUsageRatio": 0.000293
+        },
+        {
+          "position": 4,
+          "resource": "https://x402-social-hub-new.vercel.app/api/news/latest-get",
+          "score": 0.289,
+          "vectorSimilarityScore": 0.48194,
+          "vectorSimilarityRank": 12,
+          "originTransactionCount": 1,
+          "originUniqueUsers": 1,
+          "originVolumeUsd": 0.12,
+          "trustedUserUsageRatio": 0.000293
+        },
+        {
+          "position": 5,
+          "resource": "https://stablefinance.dev/api/news",
+          "score": 0.288,
+          "vectorSimilarityScore": 0.479247,
+          "vectorSimilarityRank": 14,
+          "originTransactionCount": 535,
+          "originUniqueUsers": 8,
+          "originVolumeUsd": 10.7,
+          "trustedUserUsageRatio": 0.002347
+        },
+        {
+          "position": 6,
+          "resource": "https://x402.professorsausages.com/news/headlines",
+          "score": 0.286,
+          "vectorSimilarityScore": 0.477079,
+          "vectorSimilarityRank": 15,
+          "originTransactionCount": 6,
+          "originUniqueUsers": 1,
+          "originVolumeUsd": 0.03,
+          "trustedUserUsageRatio": 0.000293
+        },
+        {
+          "position": 7,
+          "resource": "https://x402stock.xyz/api/v1/news",
+          "score": 0.284,
+          "vectorSimilarityScore": 0.472447,
+          "vectorSimilarityRank": 18,
+          "originTransactionCount": 869,
+          "originUniqueUsers": 7,
+          "originVolumeUsd": 20.17,
+          "trustedUserUsageRatio": 0.002053
+        },
+        {
+          "position": 8,
+          "resource": "https://social-hub-v3.vercel.app/api/news/latest-get",
+          "score": 0.283,
+          "vectorSimilarityScore": 0.471652,
+          "vectorSimilarityRank": 20,
+          "originTransactionCount": 1,
+          "originUniqueUsers": 1,
+          "originVolumeUsd": 0.12,
+          "trustedUserUsageRatio": 0.000293
+        },
+        {
+          "position": 9,
+          "resource": "https://x402-social-hub-new.vercel.app/api/news/top-headlines",
+          "score": 0.283,
+          "vectorSimilarityScore": 0.470889,
+          "vectorSimilarityRank": 21,
+          "originTransactionCount": 1,
+          "originUniqueUsers": 1,
+          "originVolumeUsd": 0.12,
+          "trustedUserUsageRatio": 0.000293
+        },
+        {
+          "position": 10,
+          "resource": "https://kite-hub-v2.vercel.app/api/share-market-news",
+          "score": 0.281,
+          "vectorSimilarityScore": 0.469081,
+          "vectorSimilarityRank": 23,
+          "originTransactionCount": 1,
+          "originUniqueUsers": 1,
+          "originVolumeUsd": 0.12,
+          "trustedUserUsageRatio": 0.000293
+        }
+      ]
+    },
+    {
+      "queryId": "head-image",
+      "queryText": "generate an image from a text prompt",
+      "resultCount": 10,
+      "results": [
+        {
+          "position": 1,
+          "resource": "https://gg402.vercel.app/image_generator",
+          "score": 0.369,
+          "vectorSimilarityScore": 0.61502,
+          "vectorSimilarityRank": 1,
+          "originTransactionCount": 25,
+          "originUniqueUsers": 9,
+          "originVolumeUsd": 0.25,
+          "trustedUserUsageRatio": 0.00264
+        },
+        {
+          "position": 2,
+          "resource": "https://api.webbersites.com/api/generate-image",
+          "score": 0.349,
+          "vectorSimilarityScore": 0.581122,
+          "vectorSimilarityRank": 6,
+          "originTransactionCount": 10,
+          "originUniqueUsers": 3,
+          "originVolumeUsd": 0.131,
+          "trustedUserUsageRatio": 0.00088
+        },
+        {
+          "position": 3,
+          "resource": "https://x402.agentutility.ai/image-generate",
+          "score": 0.346,
+          "vectorSimilarityScore": 0.576074,
+          "vectorSimilarityRank": 9,
+          "originTransactionCount": 116,
+          "originUniqueUsers": 17,
+          "originVolumeUsd": 1.524,
+          "trustedUserUsageRatio": 0.004987
+        },
+        {
+          "position": 4,
+          "resource": "https://gg402.vercel.app/splash-image",
+          "score": 0.345,
+          "vectorSimilarityScore": 0.574972,
+          "vectorSimilarityRank": 10,
+          "originTransactionCount": 25,
+          "originUniqueUsers": 9,
+          "originVolumeUsd": 0.25,
+          "trustedUserUsageRatio": 0.00264
+        },
+        {
+          "position": 5,
+          "resource": "https://gg402.vercel.app/icon",
+          "score": 0.345,
+          "vectorSimilarityScore": 0.574652,
+          "vectorSimilarityRank": 11,
+          "originTransactionCount": 25,
+          "originUniqueUsers": 9,
+          "originVolumeUsd": 0.25,
+          "trustedUserUsageRatio": 0.00264
+        },
+        {
+          "position": 6,
+          "resource": "https://image-generator-production-ba4e.up.railway.app/api/generate",
+          "score": 0.345,
+          "vectorSimilarityScore": 0.574574,
+          "vectorSimilarityRank": 12,
+          "originTransactionCount": 3,
+          "originUniqueUsers": 2,
+          "originVolumeUsd": 0.021,
+          "trustedUserUsageRatio": 0.000587
+        },
+        {
+          "position": 7,
+          "resource": "https://api.hypercli.com/api/x402/flow/text-to-image",
+          "score": 0.344,
+          "vectorSimilarityScore": 0.57327,
+          "vectorSimilarityRank": 13,
+          "originTransactionCount": 2,
+          "originUniqueUsers": 1,
+          "originVolumeUsd": 0.1,
+          "trustedUserUsageRatio": 0.000293
+        },
+        {
+          "position": 8,
+          "resource": "https://api.x-router.ai/v1/images/generate",
+          "score": 0.335,
+          "vectorSimilarityScore": 0.557641,
+          "vectorSimilarityRank": 24,
+          "originTransactionCount": 1,
+          "originUniqueUsers": 1,
+          "originVolumeUsd": 0.005694,
+          "trustedUserUsageRatio": 0.000293
+        },
+        {
+          "position": 9,
+          "resource": "https://x402helper.xyz/api/x402/flow/text-to-image",
+          "score": 0.333,
+          "vectorSimilarityScore": 0.552764,
+          "vectorSimilarityRank": 28,
+          "originTransactionCount": 183,
+          "originUniqueUsers": 32,
+          "originVolumeUsd": 5.9785,
+          "trustedUserUsageRatio": 0.009387
+        },
+        {
+          "position": 10,
+          "resource": "https://2s.io/api/ai/image",
+          "score": 0.332,
+          "vectorSimilarityScore": 0.552185,
+          "vectorSimilarityRank": 29,
+          "originTransactionCount": 328,
+          "originUniqueUsers": 12,
+          "originVolumeUsd": 0.8909,
+          "trustedUserUsageRatio": 0.00352
+        }
+      ]
+    },
+    {
+      "queryId": "para-person-a",
+      "queryText": "find someone's email address and job title",
+      "resultCount": 10,
+      "results": [
+        {
+          "position": 1,
+          "resource": "https://email-finder-x402-production.up.railway.app/api/find",
+          "score": 0.309,
+          "vectorSimilarityScore": 0.515382,
+          "vectorSimilarityRank": 1,
+          "originTransactionCount": 3,
+          "originUniqueUsers": 2,
+          "originVolumeUsd": 0.021,
+          "trustedUserUsageRatio": 0.000587
+        },
+        {
+          "position": 2,
+          "resource": "https://klymax402.com/api/email-finder/api/find",
+          "score": 0.296,
+          "vectorSimilarityScore": 0.494045,
+          "vectorSimilarityRank": 2,
+          "originTransactionCount": 3,
+          "originUniqueUsers": 2,
+          "originVolumeUsd": 0.021,
+          "trustedUserUsageRatio": 0.000587
+        },
+        {
+          "position": 3,
+          "resource": "https://klymax402.com/api/email-finder/api/find-get",
+          "score": 0.291,
+          "vectorSimilarityScore": 0.484193,
+          "vectorSimilarityRank": 3,
+          "originTransactionCount": 3,
+          "originUniqueUsers": 2,
+          "originVolumeUsd": 0.021,
+          "trustedUserUsageRatio": 0.000587
+        },
+        {
+          "position": 4,
+          "resource": "https://stable-deepline.dev/api/email/work",
+          "score": 0.283,
+          "vectorSimilarityScore": 0.46943,
+          "vectorSimilarityRank": 8,
+          "originTransactionCount": 1838,
+          "originUniqueUsers": 21,
+          "originVolumeUsd": 211.22,
+          "trustedUserUsageRatio": 0.00616
+        },
+        {
+          "position": 5,
+          "resource": "https://hunter.mpp.paywithlocus.com/hunter/email-finder",
+          "score": 0.283,
+          "vectorSimilarityScore": 0.470408,
+          "vectorSimilarityRank": 6,
+          "originTransactionCount": 846,
+          "originUniqueUsers": 11,
+          "originVolumeUsd": 62.443041,
+          "trustedUserUsageRatio": 0.003227
+        },
+        {
+          "position": 6,
+          "resource": "https://hunter.x402.paywithlocus.com/hunter/email-finder",
+          "score": 0.282,
+          "vectorSimilarityScore": 0.469847,
+          "vectorSimilarityRank": 7,
+          "originTransactionCount": 7,
+          "originUniqueUsers": 3,
+          "originVolumeUsd": 0.1775,
+          "trustedUserUsageRatio": 0.00088
+        },
+        {
+          "position": 7,
+          "resource": "https://api.getanyapi.com/v1/run/email.find",
+          "score": 0.281,
+          "vectorSimilarityScore": 0.468346,
+          "vectorSimilarityRank": 9,
+          "originTransactionCount": 73,
+          "originUniqueUsers": 4,
+          "originVolumeUsd": 2.59016,
+          "trustedUserUsageRatio": 0.001173
+        },
+        {
+          "position": 8,
+          "resource": "https://stable-deepline.dev/api/person/from-email",
+          "score": 0.28,
+          "vectorSimilarityScore": 0.465811,
+          "vectorSimilarityRank": 12,
+          "originTransactionCount": 1838,
+          "originUniqueUsers": 21,
+          "originVolumeUsd": 211.22,
+          "trustedUserUsageRatio": 0.00616
+        },
+        {
+          "position": 9,
+          "resource": "https://x402helper.xyz/v1/tools/email-find",
+          "score": 0.279,
+          "vectorSimilarityScore": 0.464014,
+          "vectorSimilarityRank": 13,
+          "originTransactionCount": 183,
+          "originUniqueUsers": 32,
+          "originVolumeUsd": 5.9785,
+          "trustedUserUsageRatio": 0.009387
+        },
+        {
+          "position": 10,
+          "resource": "https://stableenrich.dev/api/pdl/people-enrich",
+          "score": 0.277,
+          "vectorSimilarityScore": 0.418833,
+          "vectorSimilarityRank": 40,
+          "originTransactionCount": 493318,
+          "originUniqueUsers": 850,
+          "originVolumeUsd": 19354.5848,
+          "trustedUserUsageRatio": 0.24934
+        }
+      ]
+    },
+    {
+      "queryId": "para-person-b",
+      "queryText": "b2b contact enrichment and lead data",
+      "resultCount": 8,
+      "results": [
+        {
+          "position": 1,
+          "resource": "https://x402.agentutility.ai/b2b-lead-enrich",
+          "score": 0.397,
+          "vectorSimilarityScore": 0.661475,
+          "vectorSimilarityRank": 1,
+          "originTransactionCount": 116,
+          "originUniqueUsers": 17,
+          "originVolumeUsd": 1.524,
+          "trustedUserUsageRatio": 0.004987
+        },
+        {
+          "position": 2,
+          "resource": "https://uat.jarvisclaw.ai/v1/marketplace/api/b2b-lead-enrich",
+          "score": 0.389,
+          "vectorSimilarityScore": 0.647776,
+          "vectorSimilarityRank": 2,
+          "originTransactionCount": 1,
+          "originUniqueUsers": 1,
+          "originVolumeUsd": 0.001,
+          "trustedUserUsageRatio": 0.000293
+        },
+        {
+          "position": 3,
+          "resource": "https://orbisapi.com/proxy/lead-enrichment-api-1cbaf3",
+          "score": 0.354,
+          "vectorSimilarityScore": 0.588921,
+          "vectorSimilarityRank": 3,
+          "originTransactionCount": 55,
+          "originUniqueUsers": 8,
+          "originVolumeUsd": 0.346,
+          "trustedUserUsageRatio": 0.002347
+        },
+        {
+          "position": 4,
+          "resource": "https://x402.agentutility.ai/contact-enrich",
+          "score": 0.353,
+          "vectorSimilarityScore": 0.588152,
+          "vectorSimilarityRank": 4,
+          "originTransactionCount": 116,
+          "originUniqueUsers": 17,
+          "originVolumeUsd": 1.524,
+          "trustedUserUsageRatio": 0.004987
+        },
+        {
+          "position": 5,
+          "resource": "https://api.x402node.dev/app/lead-enrich",
+          "score": 0.343,
+          "vectorSimilarityScore": 0.57162,
+          "vectorSimilarityRank": 9,
+          "originTransactionCount": 111,
+          "originUniqueUsers": 3,
+          "originVolumeUsd": 2.205,
+          "trustedUserUsageRatio": 0.00088
+        },
+        {
+          "position": 6,
+          "resource": "https://x402.agentutility.ai/lead-enrich",
+          "score": 0.341,
+          "vectorSimilarityScore": 0.567452,
+          "vectorSimilarityRank": 10,
+          "originTransactionCount": 116,
+          "originUniqueUsers": 17,
+          "originVolumeUsd": 1.524,
+          "trustedUserUsageRatio": 0.004987
+        },
+        {
+          "position": 7,
+          "resource": "https://orbisapi.com/proxy/ai-lead-enrichment-company-data-api-1b09e6",
+          "score": 0.337,
+          "vectorSimilarityScore": 0.561882,
+          "vectorSimilarityRank": 13,
+          "originTransactionCount": 55,
+          "originUniqueUsers": 8,
+          "originVolumeUsd": 0.346,
+          "trustedUserUsageRatio": 0.002347
+        },
+        {
+          "position": 8,
+          "resource": "https://stableenrich.dev/api/clado/contacts-enrich",
+          "score": 0.337,
+          "vectorSimilarityScore": 0.517758,
+          "vectorSimilarityRank": 59,
+          "originTransactionCount": 493318,
+          "originUniqueUsers": 850,
+          "originVolumeUsd": 19354.5848,
+          "trustedUserUsageRatio": 0.24934
+        }
+      ]
+    },
+    {
+      "queryId": "tail-tides",
+      "queryText": "tide times for a coastal harbour",
+      "resultCount": 8,
+      "results": [
+        {
+          "position": 1,
+          "resource": "https://marine.x402.press/marine/tides",
+          "score": 0.307,
+          "vectorSimilarityScore": 0.510819,
+          "vectorSimilarityRank": 2,
+          "originTransactionCount": 1,
+          "originUniqueUsers": 1,
+          "originVolumeUsd": 0.0025,
+          "trustedUserUsageRatio": 0.000293
+        },
+        {
+          "position": 2,
+          "resource": "https://kite-hub-v3.vercel.app/api/tidecheck",
+          "score": 0.305,
+          "vectorSimilarityScore": 0.507911,
+          "vectorSimilarityRank": 5,
+          "originTransactionCount": 1,
+          "originUniqueUsers": 1,
+          "originVolumeUsd": 0.12,
+          "trustedUserUsageRatio": 0.000293
+        },
+        {
+          "position": 3,
+          "resource": "https://kite-solana.vercel.app/api/tidecheck",
+          "score": 0.297,
+          "vectorSimilarityScore": 0.495552,
+          "vectorSimilarityRank": 7,
+          "originTransactionCount": 1,
+          "originUniqueUsers": 1,
+          "originVolumeUsd": 0.12,
+          "trustedUserUsageRatio": 0.000293
+        },
+        {
+          "position": 4,
+          "resource": "https://kite-hub-v2.vercel.app/api/tidecheck",
+          "score": 0.297,
+          "vectorSimilarityScore": 0.495419,
+          "vectorSimilarityRank": 8,
+          "originTransactionCount": 1,
+          "originUniqueUsers": 1,
+          "originVolumeUsd": 0.12,
+          "trustedUserUsageRatio": 0.000293
+        },
+        {
+          "position": 5,
+          "resource": "https://nexus-api-peach-nine.vercel.app/api/weather/tides",
+          "score": 0.292,
+          "vectorSimilarityScore": 0.486376,
+          "vectorSimilarityRank": 10,
+          "originTransactionCount": 1,
+          "originUniqueUsers": 1,
+          "originVolumeUsd": 0.12,
+          "trustedUserUsageRatio": 0.000293
+        },
+        {
+          "position": 6,
+          "resource": "https://nexus-api-virid.vercel.app/api/weather/tides",
+          "score": 0.291,
+          "vectorSimilarityScore": 0.484439,
+          "vectorSimilarityRank": 11,
+          "originTransactionCount": 1,
+          "originUniqueUsers": 1,
+          "originVolumeUsd": 0.12,
+          "trustedUserUsageRatio": 0.000293
+        },
+        {
+          "position": 7,
+          "resource": "https://omni-api-cyan.vercel.app/api/weather/tides",
+          "score": 0.289,
+          "vectorSimilarityScore": 0.481757,
+          "vectorSimilarityRank": 12,
+          "originTransactionCount": 1,
+          "originUniqueUsers": 1,
+          "originVolumeUsd": 0.12,
+          "trustedUserUsageRatio": 0.000293
+        },
+        {
+          "position": 8,
+          "resource": "https://2s.io/api/tides/now",
+          "score": 0.281,
+          "vectorSimilarityScore": 0.467381,
+          "vectorSimilarityRank": 15,
+          "originTransactionCount": 328,
+          "originUniqueUsers": 12,
+          "originVolumeUsd": 0.8909,
+          "trustedUserUsageRatio": 0.00352
+        }
+      ]
+    }
+  ]
+}

@@ -92,6 +92,12 @@ The 716 merchants outside the analysed set break down as 636 in the uncategorise
 | `claims.json`                | Every number cited in the report, with the artifact and path that produces it.                                                                              |
 | `src/ranker.ts`              | The scoring formula, dependency-free.                                                                                                                       |
 | `docs/METHODOLOGY.md`        | Definitions, assumptions, and the known reproduction gap.                                                                                                   |
+| `scripts/queries.ts`         | The 19-query set for the live experiment, shared by every index probed.                                                                                     |
+| `data/rank-experiment-*.json`| Live ranked results, dated per run. Collected by `npm run rank:collect`.                                                                                    |
+| `data/agentcash-*.json`      | AgentCash results for the same queries — see RANKING-EXPERIMENT.md on how it is produced.                                                                   |
+| `data/rank-findings-*.json`  | Computed findings. Regenerated deterministically by `npm run rank:analyze`.                                                                                 |
+| `docs/RANKING-EXPERIMENT.md` | The live experiment: design, the four tests, results, and limits.                                                                                           |
+| `baazar_research.md`         | Full narrative report on the live experiment — every query, every finding.                                                                                   |
 
 ---
 
@@ -136,6 +142,31 @@ One reproduction gap is disclosed in full: four of five score components reprodu
 It queries a live catalog, so it is non-deterministic: re-running will **not** reproduce the committed `data/cdp-probes.json`.
 
 It never writes to that file. Output goes to `data/probes-<UTC date>.json`, so the frozen 2026-07-25 record survives any number of probe runs — compare a fresh run against it rather than replacing it. The endpoint is free, unauthenticated and read-only; no credentials, payments, or API keys are involved.
+
+---
+
+## The live ranking experiment
+
+The audit above measures a frozen snapshot against a published formula. A second, separate test asks the question first-hand: **type a query an agent would type, and see who comes back.**
+
+```bash
+npm run rank:collect                                    # queries the live CDP index
+npm run rank:analyze -- data/rank-experiment-<date>.json
+```
+
+19 capability-phrased queries across three tiers (dense head domains, sparse tail niches, and paraphrase pairs), run against CDP Bazaar and AgentCash. Full write-up in [`baazar_research.md`](baazar_research.md); method reference in [`docs/RANKING-EXPERIMENT.md`](docs/RANKING-EXPERIMENT.md). Four findings from the 2026-08-19 run:
+
+**1 — Retrieval, not the result cap, is what hides the catalog.** 19 queries surfaced 177 of 15,101 resources — **1.172%**. No query hit the 20-result cap; the median was 9. And search exposes no offset parameter, so there is no page 2.
+
+**2 — Discoverability depends on the buyer's phrasing more than on the merchant.** Two of three paraphrase pairs share *zero* results. "How much is this token worth right now" and "cryptocurrency spot quote and market data" return completely disjoint sets. This quantifies the single-query limitation the report already discloses — and it is larger than expected.
+
+**3 — The two indices barely agree.** Median host-level overlap between CDP and AgentCash on identical queries is **0.000**, and no query produced the same top result. Visibility is a property of the index the agent happens to use.
+
+**4 — Usage leads on CDP, but less than the formula implies, and the top signal is a listing field.** 30-day calls correlate ρ=0.32 with placement, but `hasServiceName` correlates 0.33 — higher. Per-query correlations run from +0.81 to −0.95, going negative in sparse niches: usage dominates only where there is usage to dominate with. Meanwhile `hasInputSchema` has no variance at all — every surfaced result has one, confirming it gates indexing rather than ranking.
+
+On AgentCash, which publishes its pre-rerank semantic rank, the reranking measures gentler than expected: 105 of 120 results sit exactly where relevance alone would place them (relevance~final ρ=0.97). The incumbency premium is concentrated in the tail — the largest single promotion is **+7 places**, for a merchant carrying 493,318 origin transactions against a semantic rank of 98.
+
+Findings 1–3 sharpen the report's case; finding 4 partly cuts against it, and is published as measured.
 
 ---
 

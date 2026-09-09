@@ -1,0 +1,2044 @@
+{
+  "collectedAt": "2026-08-19T08:00:00.000Z",
+  "index": "agentcash",
+  "note": "v2. Collected via AgentCash MCP search (free discovery, no x402 payment). 23 technical + 4 casual queries. vectorSimilarityRank is the pre-rerank semantic position in the full candidate pool, published by AgentCash alongside the final position.",
+  "runs": [
+    {
+      "queryId": "cd-1-t",
+      "queryText": "live perpetual funding rates and open interest across venues",
+      "resultCount": 10,
+      "results": [
+        {
+          "position": 1,
+          "resource": "https://the-stall.intuitek.ai/cap/funding-rates",
+          "score": 0.337,
+          "vectorSimilarityScore": 0.561244,
+          "vectorSimilarityRank": 8,
+          "originTransactionCount": 212,
+          "originUniqueUsers": 6,
+          "originVolumeUsd": 9.029,
+          "trustedUserUsageRatio": 0.00176
+        },
+        {
+          "position": 2,
+          "resource": "https://funding-rates-x402-production.up.railway.app/api/rates",
+          "score": 0.328,
+          "vectorSimilarityScore": 0.545777,
+          "vectorSimilarityRank": 17,
+          "originTransactionCount": 3,
+          "originUniqueUsers": 2,
+          "originVolumeUsd": 0.021,
+          "trustedUserUsageRatio": 0.000587
+        },
+        {
+          "position": 3,
+          "resource": "https://x402stock.vercel.app/api/v1/perps",
+          "score": 0.323,
+          "vectorSimilarityScore": 0.538617,
+          "vectorSimilarityRank": 25,
+          "originTransactionCount": 771,
+          "originUniqueUsers": 5,
+          "originVolumeUsd": 17.88,
+          "trustedUserUsageRatio": 0.001467
+        },
+        {
+          "position": 4,
+          "resource": "https://x402.ottoai.services/funding-rates",
+          "score": 0.321,
+          "vectorSimilarityScore": 0.53433,
+          "vectorSimilarityRank": 30,
+          "originTransactionCount": 67,
+          "originUniqueUsers": 6,
+          "originVolumeUsd": 1.085,
+          "trustedUserUsageRatio": 0.00176
+        },
+        {
+          "position": 5,
+          "resource": "https://x402.shizu.me/funding",
+          "score": 0.32,
+          "vectorSimilarityScore": 0.532779,
+          "vectorSimilarityRank": 31,
+          "originTransactionCount": 10,
+          "originUniqueUsers": 4,
+          "originVolumeUsd": 0.081,
+          "trustedUserUsageRatio": 0.001173
+        },
+        {
+          "position": 6,
+          "resource": "https://klymax402.com/api/funding-rates/api/rates",
+          "score": 0.317,
+          "vectorSimilarityScore": 0.528946,
+          "vectorSimilarityRank": 40,
+          "originTransactionCount": 3,
+          "originUniqueUsers": 2,
+          "originVolumeUsd": 0.021,
+          "trustedUserUsageRatio": 0.000587
+        },
+        {
+          "position": 7,
+          "resource": "https://x402stock.xyz/api/v1/perps",
+          "score": 0.317,
+          "vectorSimilarityScore": 0.527415,
+          "vectorSimilarityRank": 42,
+          "originTransactionCount": 869,
+          "originUniqueUsers": 7,
+          "originVolumeUsd": 20.17,
+          "trustedUserUsageRatio": 0.002053
+        },
+        {
+          "position": 8,
+          "resource": "https://2s.io/api/crypto/hyperliquid-funding",
+          "score": 0.315,
+          "vectorSimilarityScore": 0.523759,
+          "vectorSimilarityRank": 48,
+          "originTransactionCount": 328,
+          "originUniqueUsers": 12,
+          "originVolumeUsd": 0.8909,
+          "trustedUserUsageRatio": 0.00352
+        },
+        {
+          "position": 9,
+          "resource": "https://klymax402.com/api/funding-rates/api/rates-post",
+          "score": 0.31,
+          "vectorSimilarityScore": 0.516691,
+          "vectorSimilarityRank": 58,
+          "originTransactionCount": 3,
+          "originUniqueUsers": 2,
+          "originVolumeUsd": 0.021,
+          "trustedUserUsageRatio": 0.000587
+        },
+        {
+          "position": 10,
+          "resource": "https://mesh.heurist.xyz/x402/agents/FundingRateAgent/get_symbol_oi_and_funding",
+          "score": 0.307,
+          "vectorSimilarityScore": 0.511934,
+          "vectorSimilarityRank": 69,
+          "originTransactionCount": 1,
+          "originUniqueUsers": 1,
+          "originVolumeUsd": 0.01,
+          "trustedUserUsageRatio": 0.000293
+        }
+      ]
+    },
+    {
+      "queryId": "cd-2-t",
+      "queryText": "smart money wallet netflows and whale accumulation",
+      "resultCount": 10,
+      "results": [
+        {
+          "position": 1,
+          "resource": "https://x402-agent-store.rileycraig14.workers.dev/crypto/smart-money",
+          "score": 0.351,
+          "vectorSimilarityScore": 0.585515,
+          "vectorSimilarityRank": 1,
+          "originTransactionCount": 9,
+          "originUniqueUsers": 2,
+          "originVolumeUsd": 0.087,
+          "trustedUserUsageRatio": 0.000587
+        },
+        {
+          "position": 2,
+          "resource": "https://api.nansen.ai/api/v1/smart-money/netflow",
+          "score": 0.337,
+          "vectorSimilarityScore": 0.560917,
+          "vectorSimilarityRank": 18,
+          "originTransactionCount": 1916,
+          "originUniqueUsers": 17,
+          "originVolumeUsd": 34.36,
+          "trustedUserUsageRatio": 0.004987
+        },
+        {
+          "position": 3,
+          "resource": "https://store.agentexchange.work/crypto/smart-money",
+          "score": 0.33,
+          "vectorSimilarityScore": 0.549689,
+          "vectorSimilarityRank": 24,
+          "originTransactionCount": 9,
+          "originUniqueUsers": 2,
+          "originVolumeUsd": 0.087,
+          "trustedUserUsageRatio": 0.000587
+        },
+        {
+          "position": 4,
+          "resource": "https://sna4an-hub-v2.vercel.app/api/smart-money",
+          "score": 0.328,
+          "vectorSimilarityScore": 0.546752,
+          "vectorSimilarityRank": 29,
+          "originTransactionCount": 226,
+          "originUniqueUsers": 4,
+          "originVolumeUsd": 14.76,
+          "trustedUserUsageRatio": 0.001173
+        },
+        {
+          "position": 5,
+          "resource": "https://basebuilder-crypto.vercel.app/api/smart-money",
+          "score": 0.328,
+          "vectorSimilarityScore": 0.545981,
+          "vectorSimilarityRank": 30,
+          "originTransactionCount": 1,
+          "originUniqueUsers": 1,
+          "originVolumeUsd": 0.12,
+          "trustedUserUsageRatio": 0.000293
+        },
+        {
+          "position": 6,
+          "resource": "https://x402-rapidapi-hub.vercel.app/api/smart-money",
+          "score": 0.327,
+          "vectorSimilarityScore": 0.544984,
+          "vectorSimilarityRank": 34,
+          "originTransactionCount": 226,
+          "originUniqueUsers": 4,
+          "originVolumeUsd": 14.76,
+          "trustedUserUsageRatio": 0.001173
+        },
+        {
+          "position": 7,
+          "resource": "https://www.tryskopos.xyz/api/smart-money",
+          "score": 0.326,
+          "vectorSimilarityScore": 0.543325,
+          "vectorSimilarityRank": 38,
+          "originTransactionCount": 3,
+          "originUniqueUsers": 1,
+          "originVolumeUsd": 0.03,
+          "trustedUserUsageRatio": 0.000293
+        },
+        {
+          "position": 8,
+          "resource": "https://sna4an-trading-v5.vercel.app/api/holder/whale-entry",
+          "score": 0.322,
+          "vectorSimilarityScore": 0.537123,
+          "vectorSimilarityRank": 45,
+          "originTransactionCount": 1,
+          "originUniqueUsers": 1,
+          "originVolumeUsd": 0.12,
+          "trustedUserUsageRatio": 0.000293
+        },
+        {
+          "position": 9,
+          "resource": "https://sna4an-hub-v1.vercel.app/api/smart-money",
+          "score": 0.32,
+          "vectorSimilarityScore": 0.532679,
+          "vectorSimilarityRank": 54,
+          "originTransactionCount": 226,
+          "originUniqueUsers": 4,
+          "originVolumeUsd": 14.76,
+          "trustedUserUsageRatio": 0.001173
+        },
+        {
+          "position": 10,
+          "resource": "https://x402helper.xyz/whale/accumulation",
+          "score": 0.319,
+          "vectorSimilarityScore": 0.530685,
+          "vectorSimilarityRank": 58,
+          "originTransactionCount": 183,
+          "originUniqueUsers": 32,
+          "originVolumeUsd": 5.9785,
+          "trustedUserUsageRatio": 0.009387
+        }
+      ]
+    },
+    {
+      "queryId": "cd-3-t",
+      "queryText": "defi yield farming APY across lending protocols",
+      "resultCount": 8,
+      "results": [
+        {
+          "position": 1,
+          "resource": "https://data-hub-v3.vercel.app/api/yield/lending",
+          "score": 0.377,
+          "vectorSimilarityScore": 0.627487,
+          "vectorSimilarityRank": 3,
+          "originTransactionCount": 1,
+          "originUniqueUsers": 1,
+          "originVolumeUsd": 0.12,
+          "trustedUserUsageRatio": 0.000293
+        },
+        {
+          "position": 2,
+          "resource": "https://x402-data-hub-v2.vercel.app/api/yield/lending",
+          "score": 0.375,
+          "vectorSimilarityScore": 0.625525,
+          "vectorSimilarityRank": 5,
+          "originTransactionCount": 226,
+          "originUniqueUsers": 4,
+          "originVolumeUsd": 14.76,
+          "trustedUserUsageRatio": 0.001173
+        },
+        {
+          "position": 3,
+          "resource": "https://x402-rapidapi-hub.vercel.app/api/yield/lending",
+          "score": 0.375,
+          "vectorSimilarityScore": 0.625113,
+          "vectorSimilarityRank": 7,
+          "originTransactionCount": 226,
+          "originUniqueUsers": 4,
+          "originVolumeUsd": 14.76,
+          "trustedUserUsageRatio": 0.001173
+        },
+        {
+          "position": 4,
+          "resource": "https://sna4an-hub-v2.vercel.app/api/yield/lending",
+          "score": 0.371,
+          "vectorSimilarityScore": 0.618882,
+          "vectorSimilarityRank": 11,
+          "originTransactionCount": 226,
+          "originUniqueUsers": 4,
+          "originVolumeUsd": 14.76,
+          "trustedUserUsageRatio": 0.001173
+        },
+        {
+          "position": 5,
+          "resource": "https://sna4an-hub-v4.vercel.app/api/yield/lending",
+          "score": 0.371,
+          "vectorSimilarityScore": 0.618585,
+          "vectorSimilarityRank": 12,
+          "originTransactionCount": 1,
+          "originUniqueUsers": 1,
+          "originVolumeUsd": 0.12,
+          "trustedUserUsageRatio": 0.000293
+        },
+        {
+          "position": 6,
+          "resource": "https://sna4an-hub-v1.vercel.app/api/yield/lending",
+          "score": 0.371,
+          "vectorSimilarityScore": 0.61755,
+          "vectorSimilarityRank": 13,
+          "originTransactionCount": 226,
+          "originUniqueUsers": 4,
+          "originVolumeUsd": 14.76,
+          "trustedUserUsageRatio": 0.001173
+        },
+        {
+          "position": 7,
+          "resource": "https://x402-free-hub.vercel.app/api/yield/lending",
+          "score": 0.37,
+          "vectorSimilarityScore": 0.617103,
+          "vectorSimilarityRank": 16,
+          "originTransactionCount": 226,
+          "originUniqueUsers": 4,
+          "originVolumeUsd": 14.76,
+          "trustedUserUsageRatio": 0.001173
+        },
+        {
+          "position": 8,
+          "resource": "https://sna4an-hub-v5.vercel.app/api/yield/lending",
+          "score": 0.37,
+          "vectorSimilarityScore": 0.616611,
+          "vectorSimilarityRank": 17,
+          "originTransactionCount": 1,
+          "originUniqueUsers": 1,
+          "originVolumeUsd": 0.12,
+          "trustedUserUsageRatio": 0.000293
+        }
+      ]
+    },
+    {
+      "queryId": "cd-4-t",
+      "queryText": "crypto market news with sentiment analysis",
+      "resultCount": 8,
+      "results": [
+        {
+          "position": 1,
+          "resource": "https://api.jarvisclaw.ai/v1/marketplace/api/crypto-news-sentiment",
+          "score": 0.36,
+          "vectorSimilarityScore": 0.599639,
+          "vectorSimilarityRank": 1,
+          "originTransactionCount": 2,
+          "originUniqueUsers": 2,
+          "originVolumeUsd": 0.005647,
+          "trustedUserUsageRatio": 0.000587
+        },
+        {
+          "position": 2,
+          "resource": "https://uat.jarvisclaw.ai/v1/marketplace/api/crypto-news-sentiment",
+          "score": 0.359,
+          "vectorSimilarityScore": 0.599065,
+          "vectorSimilarityRank": 2,
+          "originTransactionCount": 1,
+          "originUniqueUsers": 1,
+          "originVolumeUsd": 0.001,
+          "trustedUserUsageRatio": 0.000293
+        },
+        {
+          "position": 3,
+          "resource": "https://x402-rapidapi-hub.vercel.app/api/sentiment/news",
+          "score": 0.35,
+          "vectorSimilarityScore": 0.582389,
+          "vectorSimilarityRank": 8,
+          "originTransactionCount": 226,
+          "originUniqueUsers": 4,
+          "originVolumeUsd": 14.76,
+          "trustedUserUsageRatio": 0.001173
+        },
+        {
+          "position": 4,
+          "resource": "https://gg402.vercel.app/market_sentiment",
+          "score": 0.347,
+          "vectorSimilarityScore": 0.578368,
+          "vectorSimilarityRank": 12,
+          "originTransactionCount": 25,
+          "originUniqueUsers": 9,
+          "originVolumeUsd": 0.25,
+          "trustedUserUsageRatio": 0.00264
+        },
+        {
+          "position": 5,
+          "resource": "https://data-hub-v4-ten.vercel.app/api/sentiment/news",
+          "score": 0.345,
+          "vectorSimilarityScore": 0.574538,
+          "vectorSimilarityRank": 15,
+          "originTransactionCount": 1,
+          "originUniqueUsers": 1,
+          "originVolumeUsd": 0.12,
+          "trustedUserUsageRatio": 0.000293
+        },
+        {
+          "position": 6,
+          "resource": "https://exit-hub-v2.vercel.app/api/sentiment/news",
+          "score": 0.344,
+          "vectorSimilarityScore": 0.573297,
+          "vectorSimilarityRank": 20,
+          "originTransactionCount": 1,
+          "originUniqueUsers": 1,
+          "originVolumeUsd": 0.12,
+          "trustedUserUsageRatio": 0.000293
+        },
+        {
+          "position": 7,
+          "resource": "https://data-hub-v3.vercel.app/api/sentiment/news",
+          "score": 0.344,
+          "vectorSimilarityScore": 0.572749,
+          "vectorSimilarityRank": 21,
+          "originTransactionCount": 1,
+          "originUniqueUsers": 1,
+          "originVolumeUsd": 0.12,
+          "trustedUserUsageRatio": 0.000293
+        },
+        {
+          "position": 8,
+          "resource": "https://klymax402.com/api/crypto-news/api/news",
+          "score": 0.343,
+          "vectorSimilarityScore": 0.570901,
+          "vectorSimilarityRank": 26,
+          "originTransactionCount": 3,
+          "originUniqueUsers": 2,
+          "originVolumeUsd": 0.021,
+          "trustedUserUsageRatio": 0.000587
+        }
+      ]
+    },
+    {
+      "queryId": "cd-5-t",
+      "queryText": "token balance and portfolio holdings for a wallet address",
+      "resultCount": 6,
+      "results": [
+        {
+          "position": 1,
+          "resource": "https://api.zerion.io/v1/wallets/{address}/portfolio",
+          "score": 0.359,
+          "vectorSimilarityScore": 0.597604,
+          "vectorSimilarityRank": 14,
+          "originTransactionCount": 2,
+          "originUniqueUsers": 1,
+          "originVolumeUsd": 0.02,
+          "trustedUserUsageRatio": 0.000293
+        },
+        {
+          "position": 2,
+          "resource": "https://api.octav.fi/v1/agent/portfolio",
+          "score": 0.343,
+          "vectorSimilarityScore": 0.570997,
+          "vectorSimilarityRank": 43,
+          "originTransactionCount": 164,
+          "originUniqueUsers": 1,
+          "originVolumeUsd": 4.1,
+          "trustedUserUsageRatio": 0.000293
+        },
+        {
+          "position": 3,
+          "resource": "https://stablecrypto.dev/api/alchemy/portfolio/tokens",
+          "score": 0.34,
+          "vectorSimilarityScore": 0.565967,
+          "vectorSimilarityRank": 48,
+          "originTransactionCount": 1270,
+          "originUniqueUsers": 19,
+          "originVolumeUsd": 19.58,
+          "trustedUserUsageRatio": 0.005573
+        },
+        {
+          "position": 4,
+          "resource": "https://uat.jarvisclaw.ai/v1/marketplace/api/wallet-holdings",
+          "score": 0.34,
+          "vectorSimilarityScore": 0.566348,
+          "vectorSimilarityRank": 47,
+          "originTransactionCount": 1,
+          "originUniqueUsers": 1,
+          "originVolumeUsd": 0.001,
+          "trustedUserUsageRatio": 0.000293
+        },
+        {
+          "position": 5,
+          "resource": "https://omni-api-cyan.vercel.app/api/crypto/address/tokens",
+          "score": 0.339,
+          "vectorSimilarityScore": 0.565084,
+          "vectorSimilarityRank": 53,
+          "originTransactionCount": 1,
+          "originUniqueUsers": 1,
+          "originVolumeUsd": 0.12,
+          "trustedUserUsageRatio": 0.000293
+        },
+        {
+          "position": 6,
+          "resource": "https://stablecrypto.dev/api/arkham/portfolio/address",
+          "score": 0.337,
+          "vectorSimilarityScore": 0.560557,
+          "vectorSimilarityRank": 59,
+          "originTransactionCount": 1270,
+          "originUniqueUsers": 19,
+          "originVolumeUsd": 19.58,
+          "trustedUserUsageRatio": 0.005573
+        }
+      ]
+    },
+    {
+      "queryId": "cd-6-t",
+      "queryText": "trending altcoins and social sentiment signals",
+      "resultCount": 6,
+      "results": [
+        {
+          "position": 1,
+          "resource": "https://x402-rapidapi-hub.vercel.app/api/sentiment/trending",
+          "score": 0.366,
+          "vectorSimilarityScore": 0.609883,
+          "vectorSimilarityRank": 4,
+          "originTransactionCount": 226,
+          "originUniqueUsers": 4,
+          "originVolumeUsd": 14.76,
+          "trustedUserUsageRatio": 0.001173
+        },
+        {
+          "position": 2,
+          "resource": "https://sna4an-hub-v4.vercel.app/api/sentiment/trending",
+          "score": 0.36,
+          "vectorSimilarityScore": 0.600499,
+          "vectorSimilarityRank": 9,
+          "originTransactionCount": 1,
+          "originUniqueUsers": 1,
+          "originVolumeUsd": 0.12,
+          "trustedUserUsageRatio": 0.000293
+        },
+        {
+          "position": 3,
+          "resource": "https://sna4an-hub-v2.vercel.app/api/sentiment/trending",
+          "score": 0.358,
+          "vectorSimilarityScore": 0.59676,
+          "vectorSimilarityRank": 12,
+          "originTransactionCount": 226,
+          "originUniqueUsers": 4,
+          "originVolumeUsd": 14.76,
+          "trustedUserUsageRatio": 0.001173
+        },
+        {
+          "position": 4,
+          "resource": "https://data-hub-x402.vercel.app/api/sentiment/trending",
+          "score": 0.356,
+          "vectorSimilarityScore": 0.593466,
+          "vectorSimilarityRank": 20,
+          "originTransactionCount": 1,
+          "originUniqueUsers": 1,
+          "originVolumeUsd": 0.12,
+          "trustedUserUsageRatio": 0.000293
+        },
+        {
+          "position": 5,
+          "resource": "https://sna4an-hub-v1.vercel.app/api/sentiment/trending",
+          "score": 0.354,
+          "vectorSimilarityScore": 0.589455,
+          "vectorSimilarityRank": 27,
+          "originTransactionCount": 226,
+          "originUniqueUsers": 4,
+          "originVolumeUsd": 14.76,
+          "trustedUserUsageRatio": 0.001173
+        },
+        {
+          "position": 6,
+          "resource": "https://data-hub-v5.vercel.app/api/sentiment/trending",
+          "score": 0.354,
+          "vectorSimilarityScore": 0.589399,
+          "vectorSimilarityRank": 28,
+          "originTransactionCount": 226,
+          "originUniqueUsers": 4,
+          "originVolumeUsd": 14.76,
+          "trustedUserUsageRatio": 0.001173
+        }
+      ]
+    },
+    {
+      "queryId": "ai-1-t",
+      "queryText": "chat completions across multiple frontier LLM models",
+      "resultCount": 6,
+      "results": [
+        {
+          "position": 1,
+          "resource": "https://gateway.gocreativeai.com/v1/chat/completions",
+          "score": 0.324,
+          "vectorSimilarityScore": 0.53891,
+          "vectorSimilarityRank": 1,
+          "originTransactionCount": 49,
+          "originUniqueUsers": 6,
+          "originVolumeUsd": 2.45,
+          "trustedUserUsageRatio": 0.00176
+        },
+        {
+          "position": 2,
+          "resource": "https://blockrun.ai/api/v1/chat/completions",
+          "score": 0.302,
+          "vectorSimilarityScore": 0.501958,
+          "vectorSimilarityRank": 2,
+          "originTransactionCount": 621,
+          "originUniqueUsers": 20,
+          "originVolumeUsd": 12.140231,
+          "trustedUserUsageRatio": 0.005867
+        },
+        {
+          "position": 3,
+          "resource": "https://stablerouter.dev/v1/chat/completions",
+          "score": 0.3,
+          "vectorSimilarityScore": 0.500695,
+          "vectorSimilarityRank": 3,
+          "originTransactionCount": 1,
+          "originUniqueUsers": 1,
+          "originVolumeUsd": 0.001,
+          "trustedUserUsageRatio": 0.000293
+        },
+        {
+          "position": 4,
+          "resource": "https://2s.io/api/ai/chat",
+          "score": 0.296,
+          "vectorSimilarityScore": 0.493412,
+          "vectorSimilarityRank": 6,
+          "originTransactionCount": 328,
+          "originUniqueUsers": 12,
+          "originVolumeUsd": 0.8909,
+          "trustedUserUsageRatio": 0.00352
+        },
+        {
+          "position": 5,
+          "resource": "https://api.webbersites.com/v1/pro/chat/completions",
+          "score": 0.295,
+          "vectorSimilarityScore": 0.491798,
+          "vectorSimilarityRank": 7,
+          "originTransactionCount": 10,
+          "originUniqueUsers": 3,
+          "originVolumeUsd": 0.131,
+          "trustedUserUsageRatio": 0.00088
+        },
+        {
+          "position": 6,
+          "resource": "https://inference.surf.cascade.fyi/v1/chat/completions",
+          "score": 0.295,
+          "vectorSimilarityScore": 0.491041,
+          "vectorSimilarityRank": 10,
+          "originTransactionCount": 467,
+          "originUniqueUsers": 8,
+          "originVolumeUsd": 1.849,
+          "trustedUserUsageRatio": 0.002347
+        }
+      ]
+    },
+    {
+      "queryId": "ai-2-t",
+      "queryText": "neural web search with full page content extraction",
+      "resultCount": 6,
+      "results": [
+        {
+          "position": 1,
+          "resource": "https://searchtav.vercel.app/search/deep",
+          "score": 0.318,
+          "vectorSimilarityScore": 0.529106,
+          "vectorSimilarityRank": 14,
+          "originTransactionCount": 8,
+          "originUniqueUsers": 3,
+          "originVolumeUsd": 0.41,
+          "trustedUserUsageRatio": 0.00088
+        },
+        {
+          "position": 2,
+          "resource": "https://x402.agentutility.ai/search-content",
+          "score": 0.314,
+          "vectorSimilarityScore": 0.521906,
+          "vectorSimilarityRank": 15,
+          "originTransactionCount": 116,
+          "originUniqueUsers": 17,
+          "originVolumeUsd": 1.524,
+          "trustedUserUsageRatio": 0.004987
+        },
+        {
+          "position": 3,
+          "resource": "https://stableenrich.dev/api/firecrawl/search",
+          "score": 0.313,
+          "vectorSimilarityScore": 0.475489,
+          "vectorSimilarityRank": 82,
+          "originTransactionCount": 493318,
+          "originUniqueUsers": 850,
+          "originVolumeUsd": 19354.5848,
+          "trustedUserUsageRatio": 0.24934
+        },
+        {
+          "position": 4,
+          "resource": "https://x402.ottoai.services/web-search",
+          "score": 0.308,
+          "vectorSimilarityScore": 0.512753,
+          "vectorSimilarityRank": 16,
+          "originTransactionCount": 67,
+          "originUniqueUsers": 6,
+          "originVolumeUsd": 1.085,
+          "trustedUserUsageRatio": 0.00176
+        },
+        {
+          "position": 5,
+          "resource": "https://mesh.heurist.xyz/x402/agents/FirecrawlSearchDigestAgent/firecrawl_extract_web_data",
+          "score": 0.305,
+          "vectorSimilarityScore": 0.507671,
+          "vectorSimilarityRank": 17,
+          "originTransactionCount": 1,
+          "originUniqueUsers": 1,
+          "originVolumeUsd": 0.01,
+          "trustedUserUsageRatio": 0.000293
+        },
+        {
+          "position": 6,
+          "resource": "https://x402engine.app/api/search/contents",
+          "score": 0.304,
+          "vectorSimilarityScore": 0.506727,
+          "vectorSimilarityRank": 19,
+          "originTransactionCount": 744,
+          "originUniqueUsers": 5,
+          "originVolumeUsd": 11.878,
+          "trustedUserUsageRatio": 0.001467
+        }
+      ]
+    },
+    {
+      "queryId": "ai-3-t",
+      "queryText": "AI generated answer grounded in live web sources",
+      "resultCount": 6,
+      "results": [
+        {
+          "position": 1,
+          "resource": "https://2s.io/api/ai/web-answer",
+          "score": 0.385,
+          "vectorSimilarityScore": 0.640885,
+          "vectorSimilarityRank": 1,
+          "originTransactionCount": 328,
+          "originUniqueUsers": 12,
+          "originVolumeUsd": 0.8909,
+          "trustedUserUsageRatio": 0.00352
+        },
+        {
+          "position": 2,
+          "resource": "https://stableenrich.dev/api/exa/answer",
+          "score": 0.368,
+          "vectorSimilarityScore": 0.567773,
+          "vectorSimilarityRank": 14,
+          "originTransactionCount": 493318,
+          "originUniqueUsers": 850,
+          "originVolumeUsd": 19354.5848,
+          "trustedUserUsageRatio": 0.24934
+        },
+        {
+          "position": 3,
+          "resource": "https://x402.agentutility.ai/answer-web",
+          "score": 0.357,
+          "vectorSimilarityScore": 0.594701,
+          "vectorSimilarityRank": 2,
+          "originTransactionCount": 116,
+          "originUniqueUsers": 17,
+          "originVolumeUsd": 1.524,
+          "trustedUserUsageRatio": 0.004987
+        },
+        {
+          "position": 4,
+          "resource": "https://x402.openwebninja.com/ai-answers/google-ai-mode/ai-mode",
+          "score": 0.35,
+          "vectorSimilarityScore": 0.583082,
+          "vectorSimilarityRank": 5,
+          "originTransactionCount": 790,
+          "originUniqueUsers": 16,
+          "originVolumeUsd": 2.37,
+          "trustedUserUsageRatio": 0.004693
+        },
+        {
+          "position": 5,
+          "resource": "https://exa.mpp.tempo.xyz/answer",
+          "score": 0.35,
+          "vectorSimilarityScore": 0.583138,
+          "vectorSimilarityRank": 4,
+          "originTransactionCount": 35,
+          "originUniqueUsers": 4,
+          "originVolumeUsd": 0.18,
+          "trustedUserUsageRatio": 0.001173
+        },
+        {
+          "position": 6,
+          "resource": "https://uat.jarvisclaw.ai/v1/marketplace/api/web-answer",
+          "score": 0.35,
+          "vectorSimilarityScore": 0.582981,
+          "vectorSimilarityRank": 6,
+          "originTransactionCount": 1,
+          "originUniqueUsers": 1,
+          "originVolumeUsd": 0.001,
+          "trustedUserUsageRatio": 0.000293
+        }
+      ]
+    },
+    {
+      "queryId": "ai-4-t",
+      "queryText": "prediction market odds on polymarket and kalshi",
+      "resultCount": 6,
+      "results": [
+        {
+          "position": 1,
+          "resource": "https://klymax402.com/api/prediction-markets/api/odds",
+          "score": 0.362,
+          "vectorSimilarityScore": 0.603347,
+          "vectorSimilarityRank": 2,
+          "originTransactionCount": 3,
+          "originUniqueUsers": 2,
+          "originVolumeUsd": 0.021,
+          "trustedUserUsageRatio": 0.000587
+        },
+        {
+          "position": 2,
+          "resource": "https://x402.shizu.me/predictions",
+          "score": 0.358,
+          "vectorSimilarityScore": 0.596053,
+          "vectorSimilarityRank": 4,
+          "originTransactionCount": 10,
+          "originUniqueUsers": 4,
+          "originVolumeUsd": 0.081,
+          "trustedUserUsageRatio": 0.001173
+        },
+        {
+          "position": 3,
+          "resource": "https://kite-solana.vercel.app/api/polymarket-markets",
+          "score": 0.357,
+          "vectorSimilarityScore": 0.594155,
+          "vectorSimilarityRank": 5,
+          "originTransactionCount": 1,
+          "originUniqueUsers": 1,
+          "originVolumeUsd": 0.12,
+          "trustedUserUsageRatio": 0.000293
+        },
+        {
+          "position": 4,
+          "resource": "https://x402.agentutility.ai/prediction-market-snapshot",
+          "score": 0.348,
+          "vectorSimilarityScore": 0.578744,
+          "vectorSimilarityRank": 7,
+          "originTransactionCount": 116,
+          "originUniqueUsers": 17,
+          "originVolumeUsd": 1.524,
+          "trustedUserUsageRatio": 0.004987
+        },
+        {
+          "position": 5,
+          "resource": "https://kite-hub-v2.vercel.app/api/polymarket-markets",
+          "score": 0.346,
+          "vectorSimilarityScore": 0.576491,
+          "vectorSimilarityRank": 9,
+          "originTransactionCount": 1,
+          "originUniqueUsers": 1,
+          "originVolumeUsd": 0.12,
+          "trustedUserUsageRatio": 0.000293
+        },
+        {
+          "position": 6,
+          "resource": "https://klymax402.com/api/prediction-markets/api/markets",
+          "score": 0.345,
+          "vectorSimilarityScore": 0.574626,
+          "vectorSimilarityRank": 11,
+          "originTransactionCount": 3,
+          "originUniqueUsers": 2,
+          "originVolumeUsd": 0.021,
+          "trustedUserUsageRatio": 0.000587
+        }
+      ]
+    },
+    {
+      "queryId": "ai-5-t",
+      "queryText": "social mindshare and project attention metrics",
+      "resultCount": 6,
+      "results": [
+        {
+          "position": 1,
+          "resource": "https://blockrun.ai/api/v1/surf/social/mindshare",
+          "score": 0.321,
+          "vectorSimilarityScore": 0.534124,
+          "vectorSimilarityRank": 1,
+          "originTransactionCount": 621,
+          "originUniqueUsers": 20,
+          "originVolumeUsd": 12.140231,
+          "trustedUserUsageRatio": 0.005867
+        },
+        {
+          "position": 2,
+          "resource": "https://sol.blockrun.ai/api/v1/surf/social/mindshare",
+          "score": 0.313,
+          "vectorSimilarityScore": 0.52185,
+          "vectorSimilarityRank": 2,
+          "originTransactionCount": 54,
+          "originUniqueUsers": 1,
+          "originVolumeUsd": 15.224268,
+          "trustedUserUsageRatio": 0.000293
+        },
+        {
+          "position": 3,
+          "resource": "https://x402.agentutility.ai/social-mindshare",
+          "score": 0.313,
+          "vectorSimilarityScore": 0.520545,
+          "vectorSimilarityRank": 3,
+          "originTransactionCount": 116,
+          "originUniqueUsers": 17,
+          "originVolumeUsd": 1.524,
+          "trustedUserUsageRatio": 0.004987
+        },
+        {
+          "position": 4,
+          "resource": "https://x402.agentutility.ai/market-mindshare-monitor",
+          "score": 0.29,
+          "vectorSimilarityScore": 0.482629,
+          "vectorSimilarityRank": 5,
+          "originTransactionCount": 116,
+          "originUniqueUsers": 17,
+          "originVolumeUsd": 1.524,
+          "trustedUserUsageRatio": 0.004987
+        },
+        {
+          "position": 5,
+          "resource": "https://x402.agentutility.ai/mindshare",
+          "score": 0.277,
+          "vectorSimilarityScore": 0.461051,
+          "vectorSimilarityRank": 6,
+          "originTransactionCount": 116,
+          "originUniqueUsers": 17,
+          "originVolumeUsd": 1.524,
+          "trustedUserUsageRatio": 0.004987
+        },
+        {
+          "position": 6,
+          "resource": "https://the-stall.intuitek.ai/cap/social-momentum",
+          "score": 0.263,
+          "vectorSimilarityScore": 0.437462,
+          "vectorSimilarityRank": 10,
+          "originTransactionCount": 212,
+          "originUniqueUsers": 6,
+          "originVolumeUsd": 9.029,
+          "trustedUserUsageRatio": 0.00176
+        }
+      ]
+    },
+    {
+      "queryId": "ai-6-t",
+      "queryText": "scrape and crawl a website into structured markdown",
+      "resultCount": 6,
+      "results": [
+        {
+          "position": 1,
+          "resource": "https://klymax402.com/api/web-scraper/api/scrape",
+          "score": 0.334,
+          "vectorSimilarityScore": 0.556864,
+          "vectorSimilarityRank": 10,
+          "originTransactionCount": 3,
+          "originUniqueUsers": 2,
+          "originVolumeUsd": 0.021,
+          "trustedUserUsageRatio": 0.000587
+        },
+        {
+          "position": 2,
+          "resource": "https://x402.shizu.me/markdown",
+          "score": 0.333,
+          "vectorSimilarityScore": 0.554395,
+          "vectorSimilarityRank": 11,
+          "originTransactionCount": 10,
+          "originUniqueUsers": 4,
+          "originVolumeUsd": 0.081,
+          "trustedUserUsageRatio": 0.001173
+        },
+        {
+          "position": 3,
+          "resource": "https://browser.gedx402.com/v1/firecrawl/scrape",
+          "score": 0.33,
+          "vectorSimilarityScore": 0.54945,
+          "vectorSimilarityRank": 14,
+          "originTransactionCount": 46,
+          "originUniqueUsers": 4,
+          "originVolumeUsd": 0.64,
+          "trustedUserUsageRatio": 0.001173
+        },
+        {
+          "position": 4,
+          "resource": "https://ged-x402.jvalamis.workers.dev/v1/firecrawl/scrape",
+          "score": 0.329,
+          "vectorSimilarityScore": 0.548121,
+          "vectorSimilarityRank": 15,
+          "originTransactionCount": 46,
+          "originUniqueUsers": 4,
+          "originVolumeUsd": 0.64,
+          "trustedUserUsageRatio": 0.001173
+        },
+        {
+          "position": 5,
+          "resource": "https://stableenrich.dev/api/firecrawl/scrape",
+          "score": 0.321,
+          "vectorSimilarityScore": 0.486467,
+          "vectorSimilarityRank": 85,
+          "originTransactionCount": 493318,
+          "originUniqueUsers": 850,
+          "originVolumeUsd": 19354.5848,
+          "trustedUserUsageRatio": 0.24934
+        },
+        {
+          "position": 6,
+          "resource": "https://api.jarvisclaw.ai/v1/marketplace/api/markdown-scraper-2616",
+          "score": 0.319,
+          "vectorSimilarityScore": 0.531479,
+          "vectorSimilarityRank": 18,
+          "originTransactionCount": 2,
+          "originUniqueUsers": 2,
+          "originVolumeUsd": 0.005647,
+          "trustedUserUsageRatio": 0.000587
+        }
+      ]
+    },
+    {
+      "queryId": "de-1-t",
+      "queryText": "find a work email address from a linkedin profile",
+      "resultCount": 6,
+      "results": [
+        {
+          "position": 1,
+          "resource": "https://stable-deepline.dev/api/email/from-linkedin",
+          "score": 0.372,
+          "vectorSimilarityScore": 0.618832,
+          "vectorSimilarityRank": 1,
+          "originTransactionCount": 1838,
+          "originUniqueUsers": 21,
+          "originVolumeUsd": 211.22,
+          "trustedUserUsageRatio": 0.00616
+        },
+        {
+          "position": 2,
+          "resource": "https://api.linkedpanda.com/agent/v1/profiles/email",
+          "score": 0.357,
+          "vectorSimilarityScore": 0.595087,
+          "vectorSimilarityRank": 2,
+          "originTransactionCount": 324,
+          "originUniqueUsers": 11,
+          "originVolumeUsd": 51.25,
+          "trustedUserUsageRatio": 0.003227
+        },
+        {
+          "position": 3,
+          "resource": "https://api.linkedpanda.com/agent/v1/profiles/email-get",
+          "score": 0.356,
+          "vectorSimilarityScore": 0.592272,
+          "vectorSimilarityRank": 3,
+          "originTransactionCount": 324,
+          "originUniqueUsers": 11,
+          "originVolumeUsd": 51.25,
+          "trustedUserUsageRatio": 0.003227
+        },
+        {
+          "position": 4,
+          "resource": "https://api.gocreativeai.com/v1/linkedin/profile/email/{arg}",
+          "score": 0.348,
+          "vectorSimilarityScore": 0.578841,
+          "vectorSimilarityRank": 4,
+          "originTransactionCount": 52,
+          "originUniqueUsers": 9,
+          "originVolumeUsd": 2.56,
+          "trustedUserUsageRatio": 0.00264
+        },
+        {
+          "position": 5,
+          "resource": "https://api.getanyapi.com/v1/run/linkedin.email",
+          "score": 0.329,
+          "vectorSimilarityScore": 0.548114,
+          "vectorSimilarityRank": 6,
+          "originTransactionCount": 73,
+          "originUniqueUsers": 4,
+          "originVolumeUsd": 2.59016,
+          "trustedUserUsageRatio": 0.001173
+        },
+        {
+          "position": 6,
+          "resource": "https://stable-deepline.dev/api/linkedin/find",
+          "score": 0.321,
+          "vectorSimilarityScore": 0.532303,
+          "vectorSimilarityRank": 8,
+          "originTransactionCount": 1838,
+          "originUniqueUsers": 21,
+          "originVolumeUsd": 211.22,
+          "trustedUserUsageRatio": 0.00616
+        }
+      ]
+    },
+    {
+      "queryId": "de-2-t",
+      "queryText": "people search filtered by company seniority and job title",
+      "resultCount": 6,
+      "results": [
+        {
+          "position": 1,
+          "resource": "https://stableenrich.dev/api/fullenrich/people-search",
+          "score": 0.316,
+          "vectorSimilarityScore": 0.482955,
+          "vectorSimilarityRank": 3,
+          "originTransactionCount": 493318,
+          "originUniqueUsers": 850,
+          "originVolumeUsd": 19354.5848,
+          "trustedUserUsageRatio": 0.24934
+        },
+        {
+          "position": 2,
+          "resource": "https://stableenrich.dev/api/fullenrich/company-search",
+          "score": 0.279,
+          "vectorSimilarityScore": 0.42216,
+          "vectorSimilarityRank": 22,
+          "originTransactionCount": 493318,
+          "originUniqueUsers": 850,
+          "originVolumeUsd": 19354.5848,
+          "trustedUserUsageRatio": 0.24934
+        },
+        {
+          "position": 3,
+          "resource": "https://clado.x402.paywithlocus.com/clado/search",
+          "score": 0.272,
+          "vectorSimilarityScore": 0.453729,
+          "vectorSimilarityRank": 9,
+          "originTransactionCount": 5,
+          "originUniqueUsers": 2,
+          "originVolumeUsd": 0.0315,
+          "trustedUserUsageRatio": 0.000587
+        },
+        {
+          "position": 4,
+          "resource": "https://stable-deepline.dev/api/contacts/by-role",
+          "score": 0.272,
+          "vectorSimilarityScore": 0.450959,
+          "vectorSimilarityRank": 10,
+          "originTransactionCount": 1838,
+          "originUniqueUsers": 21,
+          "originVolumeUsd": 211.22,
+          "trustedUserUsageRatio": 0.00616
+        },
+        {
+          "position": 5,
+          "resource": "https://stableenrich.dev/api/serper/people-image-search",
+          "score": 0.26,
+          "vectorSimilarityScore": 0.388815,
+          "vectorSimilarityRank": 71,
+          "originTransactionCount": 493318,
+          "originUniqueUsers": 850,
+          "originVolumeUsd": 19354.5848,
+          "trustedUserUsageRatio": 0.24934
+        },
+        {
+          "position": 6,
+          "resource": "https://x402.professorsausages.com/company/search",
+          "score": 0.258,
+          "vectorSimilarityScore": 0.42925,
+          "vectorSimilarityRank": 15,
+          "originTransactionCount": 6,
+          "originUniqueUsers": 1,
+          "originVolumeUsd": 0.03,
+          "trustedUserUsageRatio": 0.000293
+        }
+      ]
+    },
+    {
+      "queryId": "de-3-t",
+      "queryText": "enrich a person profile with career history and phone",
+      "resultCount": 6,
+      "results": [
+        {
+          "position": 1,
+          "resource": "https://stableenrich.dev/api/pdl/people-enrich",
+          "score": 0.369,
+          "vectorSimilarityScore": 0.571025,
+          "vectorSimilarityRank": 2,
+          "originTransactionCount": 493318,
+          "originUniqueUsers": 850,
+          "originVolumeUsd": 19354.5848,
+          "trustedUserUsageRatio": 0.24934
+        },
+        {
+          "position": 2,
+          "resource": "https://stablepeopledata.dev/api/pdl/person/enrich",
+          "score": 0.306,
+          "vectorSimilarityScore": 0.509207,
+          "vectorSimilarityRank": 3,
+          "originTransactionCount": 370,
+          "originUniqueUsers": 14,
+          "originVolumeUsd": 198.1,
+          "trustedUserUsageRatio": 0.004107
+        },
+        {
+          "position": 3,
+          "resource": "https://stableenrich.dev/api/minerva/enrich",
+          "score": 0.293,
+          "vectorSimilarityScore": 0.443211,
+          "vectorSimilarityRank": 24,
+          "originTransactionCount": 493318,
+          "originUniqueUsers": 850,
+          "originVolumeUsd": 19354.5848,
+          "trustedUserUsageRatio": 0.24934
+        },
+        {
+          "position": 4,
+          "resource": "https://person-enrichment-x402-production.up.railway.app/api/enrich",
+          "score": 0.29,
+          "vectorSimilarityScore": 0.483507,
+          "vectorSimilarityRank": 5,
+          "originTransactionCount": 3,
+          "originUniqueUsers": 2,
+          "originVolumeUsd": 0.021,
+          "trustedUserUsageRatio": 0.000587
+        },
+        {
+          "position": 5,
+          "resource": "https://klymax402.com/api/person-enrichment/api/enrich",
+          "score": 0.284,
+          "vectorSimilarityScore": 0.472662,
+          "vectorSimilarityRank": 11,
+          "originTransactionCount": 3,
+          "originUniqueUsers": 2,
+          "originVolumeUsd": 0.021,
+          "trustedUserUsageRatio": 0.000587
+        },
+        {
+          "position": 6,
+          "resource": "https://stableenrich.dev/api/fullenrich/people-search",
+          "score": 0.283,
+          "vectorSimilarityScore": 0.42893,
+          "vectorSimilarityRank": 36,
+          "originTransactionCount": 493318,
+          "originUniqueUsers": 850,
+          "originVolumeUsd": 19354.5848,
+          "trustedUserUsageRatio": 0.24934
+        }
+      ]
+    },
+    {
+      "queryId": "de-4-t",
+      "queryText": "company enrichment with employee count and industry",
+      "resultCount": 6,
+      "results": [
+        {
+          "position": 1,
+          "resource": "https://stableenrich.dev/api/companyenrich/org-enrich",
+          "score": 0.329,
+          "vectorSimilarityScore": 0.505204,
+          "vectorSimilarityRank": 2,
+          "originTransactionCount": 493318,
+          "originUniqueUsers": 850,
+          "originVolumeUsd": 19354.5848,
+          "trustedUserUsageRatio": 0.24934
+        },
+        {
+          "position": 2,
+          "resource": "https://stableenrich.dev/api/companyenrich/properties-enrich",
+          "score": 0.307,
+          "vectorSimilarityScore": 0.470337,
+          "vectorSimilarityRank": 7,
+          "originTransactionCount": 493318,
+          "originUniqueUsers": 850,
+          "originVolumeUsd": 19354.5848,
+          "trustedUserUsageRatio": 0.24934
+        },
+        {
+          "position": 3,
+          "resource": "https://stablepeopledata.dev/api/pdl/company/enrich",
+          "score": 0.287,
+          "vectorSimilarityScore": 0.477181,
+          "vectorSimilarityRank": 4,
+          "originTransactionCount": 370,
+          "originUniqueUsers": 14,
+          "originVolumeUsd": 198.1,
+          "trustedUserUsageRatio": 0.004107
+        },
+        {
+          "position": 4,
+          "resource": "https://stableenrich.dev/api/fullenrich/company-search",
+          "score": 0.28,
+          "vectorSimilarityScore": 0.424143,
+          "vectorSimilarityRank": 24,
+          "originTransactionCount": 493318,
+          "originUniqueUsers": 850,
+          "originVolumeUsd": 19354.5848,
+          "trustedUserUsageRatio": 0.24934
+        },
+        {
+          "position": 5,
+          "resource": "https://klymax402.com/api/company-enrichment/api/enrich",
+          "score": 0.277,
+          "vectorSimilarityScore": 0.462335,
+          "vectorSimilarityRank": 10,
+          "originTransactionCount": 3,
+          "originUniqueUsers": 2,
+          "originVolumeUsd": 0.021,
+          "trustedUserUsageRatio": 0.000587
+        },
+        {
+          "position": 6,
+          "resource": "https://sales-intel-api-production-c525.up.railway.app/enrich",
+          "score": 0.275,
+          "vectorSimilarityScore": 0.457502,
+          "vectorSimilarityRank": 11,
+          "originTransactionCount": 1,
+          "originUniqueUsers": 1,
+          "originVolumeUsd": 0.05,
+          "trustedUserUsageRatio": 0.000293
+        }
+      ]
+    },
+    {
+      "queryId": "de-5-t",
+      "queryText": "google maps place details and business listings",
+      "resultCount": 6,
+      "results": [
+        {
+          "position": 1,
+          "resource": "https://x402.openwebninja.com/realtime-local-and-maps-data/local-business-data/business-details",
+          "score": 0.372,
+          "vectorSimilarityScore": 0.619031,
+          "vectorSimilarityRank": 1,
+          "originTransactionCount": 790,
+          "originUniqueUsers": 16,
+          "originVolumeUsd": 2.37,
+          "trustedUserUsageRatio": 0.004693
+        },
+        {
+          "position": 2,
+          "resource": "https://googlemaps.mpp.tempo.xyz/maps/place/details/json",
+          "score": 0.371,
+          "vectorSimilarityScore": 0.617962,
+          "vectorSimilarityRank": 2,
+          "originTransactionCount": 49,
+          "originUniqueUsers": 10,
+          "originVolumeUsd": 0.56345,
+          "trustedUserUsageRatio": 0.002933
+        },
+        {
+          "position": 3,
+          "resource": "https://x402.openwebninja.com/realtime-local-and-maps-data/local-business-data/business-details-plus",
+          "score": 0.37,
+          "vectorSimilarityScore": 0.615705,
+          "vectorSimilarityRank": 3,
+          "originTransactionCount": 790,
+          "originUniqueUsers": 16,
+          "originVolumeUsd": 2.37,
+          "trustedUserUsageRatio": 0.004693
+        },
+        {
+          "position": 4,
+          "resource": "https://x402.openwebninja.com/local-business-data/business-details-plus",
+          "score": 0.362,
+          "vectorSimilarityScore": 0.602706,
+          "vectorSimilarityRank": 4,
+          "originTransactionCount": 790,
+          "originUniqueUsers": 16,
+          "originVolumeUsd": 2.37,
+          "trustedUserUsageRatio": 0.004693
+        },
+        {
+          "position": 5,
+          "resource": "https://stableenrich.dev/api/google-maps/place-details/full",
+          "score": 0.359,
+          "vectorSimilarityScore": 0.556137,
+          "vectorSimilarityRank": 30,
+          "originTransactionCount": 493318,
+          "originUniqueUsers": 850,
+          "originVolumeUsd": 19354.5848,
+          "trustedUserUsageRatio": 0.24934
+        },
+        {
+          "position": 6,
+          "resource": "https://x402.openwebninja.com/local-business-data/business-details",
+          "score": 0.356,
+          "vectorSimilarityScore": 0.593017,
+          "vectorSimilarityRank": 5,
+          "originTransactionCount": 790,
+          "originUniqueUsers": 16,
+          "originVolumeUsd": 2.37,
+          "trustedUserUsageRatio": 0.004693
+        }
+      ]
+    },
+    {
+      "queryId": "de-6-t",
+      "queryText": "search reddit posts and social discussions",
+      "resultCount": 6,
+      "results": [
+        {
+          "position": 1,
+          "resource": "https://stableenrich.dev/api/reddit/search",
+          "score": 0.381,
+          "vectorSimilarityScore": 0.59046,
+          "vectorSimilarityRank": 11,
+          "originTransactionCount": 493318,
+          "originUniqueUsers": 850,
+          "originVolumeUsd": 19354.5848,
+          "trustedUserUsageRatio": 0.24934
+        },
+        {
+          "position": 2,
+          "resource": "https://social.gedx402.com/v1/sociavault/reddit/search",
+          "score": 0.372,
+          "vectorSimilarityScore": 0.619063,
+          "vectorSimilarityRank": 1,
+          "originTransactionCount": 46,
+          "originUniqueUsers": 4,
+          "originVolumeUsd": 0.64,
+          "trustedUserUsageRatio": 0.001173
+        },
+        {
+          "position": 3,
+          "resource": "https://socialx402.com/api/reddit/search",
+          "score": 0.365,
+          "vectorSimilarityScore": 0.598958,
+          "vectorSimilarityRank": 6,
+          "originTransactionCount": 12101,
+          "originUniqueUsers": 186,
+          "originVolumeUsd": 718.383,
+          "trustedUserUsageRatio": 0.054561
+        },
+        {
+          "position": 4,
+          "resource": "https://socialx402.com/api/sc/reddit/search",
+          "score": 0.362,
+          "vectorSimilarityScore": 0.593729,
+          "vectorSimilarityRank": 9,
+          "originTransactionCount": 12101,
+          "originUniqueUsers": 186,
+          "originVolumeUsd": 718.383,
+          "trustedUserUsageRatio": 0.054561
+        },
+        {
+          "position": 5,
+          "resource": "https://twitter.surf.cascade.fyi/api/v1/reddit/search",
+          "score": 0.361,
+          "vectorSimilarityScore": 0.600997,
+          "vectorSimilarityRank": 4,
+          "originTransactionCount": 3546,
+          "originUniqueUsers": 15,
+          "originVolumeUsd": 9.985,
+          "trustedUserUsageRatio": 0.0044
+        },
+        {
+          "position": 6,
+          "resource": "https://nexus-api-virid.vercel.app/api/social/reddit/search",
+          "score": 0.36,
+          "vectorSimilarityScore": 0.600248,
+          "vectorSimilarityRank": 5,
+          "originTransactionCount": 1,
+          "originUniqueUsers": 1,
+          "originVolumeUsd": 0.12,
+          "trustedUserUsageRatio": 0.000293
+        }
+      ]
+    },
+    {
+      "queryId": "fm-1-t",
+      "queryText": "current funding rates per venue for a symbol",
+      "resultCount": 6,
+      "results": [
+        {
+          "position": 1,
+          "resource": "https://mesh.heurist.xyz/x402/solana/agents/FundingRateAgent/get_symbol_funding_rates",
+          "score": 0.296,
+          "vectorSimilarityScore": 0.493153,
+          "vectorSimilarityRank": 6,
+          "originTransactionCount": 1,
+          "originUniqueUsers": 1,
+          "originVolumeUsd": 0.01,
+          "trustedUserUsageRatio": 0.000293
+        },
+        {
+          "position": 2,
+          "resource": "https://mesh.heurist.xyz/x402/agents/FundingRateAgent/get_symbol_funding_rates",
+          "score": 0.287,
+          "vectorSimilarityScore": 0.477852,
+          "vectorSimilarityRank": 8,
+          "originTransactionCount": 1,
+          "originUniqueUsers": 1,
+          "originVolumeUsd": 0.01,
+          "trustedUserUsageRatio": 0.000293
+        },
+        {
+          "position": 3,
+          "resource": "https://mesh.heurist.xyz/x402/agents/FundingRateAgent/get_all_funding_rates",
+          "score": 0.268,
+          "vectorSimilarityScore": 0.446251,
+          "vectorSimilarityRank": 27,
+          "originTransactionCount": 1,
+          "originUniqueUsers": 1,
+          "originVolumeUsd": 0.01,
+          "trustedUserUsageRatio": 0.000293
+        },
+        {
+          "position": 4,
+          "resource": "https://mesh.heurist.xyz/x402/solana/agents/FundingRateAgent/get_symbol_oi_and_funding",
+          "score": 0.267,
+          "vectorSimilarityScore": 0.445454,
+          "vectorSimilarityRank": 28,
+          "originTransactionCount": 1,
+          "originUniqueUsers": 1,
+          "originVolumeUsd": 0.01,
+          "trustedUserUsageRatio": 0.000293
+        },
+        {
+          "position": 5,
+          "resource": "https://mesh.heurist.xyz/x402/agents/FundingRateAgent/get_symbol_oi_and_funding",
+          "score": 0.264,
+          "vectorSimilarityScore": 0.439681,
+          "vectorSimilarityRank": 34,
+          "originTransactionCount": 1,
+          "originUniqueUsers": 1,
+          "originVolumeUsd": 0.01,
+          "trustedUserUsageRatio": 0.000293
+        },
+        {
+          "position": 6,
+          "resource": "https://the-stall.intuitek.ai/cap/funding-rates",
+          "score": 0.264,
+          "vectorSimilarityScore": 0.439345,
+          "vectorSimilarityRank": 35,
+          "originTransactionCount": 212,
+          "originUniqueUsers": 6,
+          "originVolumeUsd": 9.029,
+          "trustedUserUsageRatio": 0.00176
+        }
+      ]
+    },
+    {
+      "queryId": "fm-2-t",
+      "queryText": "latest stock price quote and weekly performance",
+      "resultCount": 5,
+      "results": [
+        {
+          "position": 1,
+          "resource": "https://alphavantage.mpp.paywithlocus.com/alphavantage/time-series-weekly",
+          "score": 0.308,
+          "vectorSimilarityScore": 0.513503,
+          "vectorSimilarityRank": 1,
+          "originTransactionCount": 25,
+          "originUniqueUsers": 7,
+          "originVolumeUsd": 0.2,
+          "trustedUserUsageRatio": 0.002053
+        },
+        {
+          "position": 2,
+          "resource": "https://alphavantage.x402.paywithlocus.com/alphavantage/time-series-weekly",
+          "score": 0.302,
+          "vectorSimilarityScore": 0.502626,
+          "vectorSimilarityRank": 3,
+          "originTransactionCount": 5,
+          "originUniqueUsers": 2,
+          "originVolumeUsd": 0.0315,
+          "trustedUserUsageRatio": 0.000587
+        },
+        {
+          "position": 3,
+          "resource": "https://x402stock.xyz/api/v1/quote/{ticker}",
+          "score": 0.283,
+          "vectorSimilarityScore": 0.471506,
+          "vectorSimilarityRank": 4,
+          "originTransactionCount": 869,
+          "originUniqueUsers": 7,
+          "originVolumeUsd": 20.17,
+          "trustedUserUsageRatio": 0.002053
+        },
+        {
+          "position": 4,
+          "resource": "https://stock-price-x402-production.up.railway.app/api/quote",
+          "score": 0.283,
+          "vectorSimilarityScore": 0.471088,
+          "vectorSimilarityRank": 5,
+          "originTransactionCount": 3,
+          "originUniqueUsers": 2,
+          "originVolumeUsd": 0.021,
+          "trustedUserUsageRatio": 0.000587
+        },
+        {
+          "position": 5,
+          "resource": "https://x402stock.vercel.app/api/v1/quote/{ticker}",
+          "score": 0.279,
+          "vectorSimilarityScore": 0.465051,
+          "vectorSimilarityRank": 7,
+          "originTransactionCount": 771,
+          "originUniqueUsers": 5,
+          "originVolumeUsd": 17.88,
+          "trustedUserUsageRatio": 0.001467
+        }
+      ]
+    },
+    {
+      "queryId": "fm-3-t",
+      "queryText": "SEC EDGAR filings and 10-K company disclosures",
+      "resultCount": 6,
+      "results": [
+        {
+          "position": 1,
+          "resource": "https://x402stock.vercel.app/api/v1/filings/{ticker}",
+          "score": 0.38,
+          "vectorSimilarityScore": 0.633275,
+          "vectorSimilarityRank": 2,
+          "originTransactionCount": 771,
+          "originUniqueUsers": 5,
+          "originVolumeUsd": 17.88,
+          "trustedUserUsageRatio": 0.001467
+        },
+        {
+          "position": 2,
+          "resource": "https://zx10r-x402-api.onrender.com/v1/sec-edgar",
+          "score": 0.377,
+          "vectorSimilarityScore": 0.628272,
+          "vectorSimilarityRank": 3,
+          "originTransactionCount": 10,
+          "originUniqueUsers": 3,
+          "originVolumeUsd": 0.195,
+          "trustedUserUsageRatio": 0.00088
+        },
+        {
+          "position": 3,
+          "resource": "https://x402.professorsausages.com/sec-10k/filing/{cik}",
+          "score": 0.375,
+          "vectorSimilarityScore": 0.625272,
+          "vectorSimilarityRank": 4,
+          "originTransactionCount": 6,
+          "originUniqueUsers": 1,
+          "originVolumeUsd": 0.03,
+          "trustedUserUsageRatio": 0.000293
+        },
+        {
+          "position": 4,
+          "resource": "https://x402stock.xyz/api/v1/filings/{ticker}",
+          "score": 0.374,
+          "vectorSimilarityScore": 0.622218,
+          "vectorSimilarityRank": 6,
+          "originTransactionCount": 869,
+          "originUniqueUsers": 7,
+          "originVolumeUsd": 20.17,
+          "trustedUserUsageRatio": 0.002053
+        },
+        {
+          "position": 5,
+          "resource": "https://x402stock.vercel.app/api/v1/filing-summary/{ticker}",
+          "score": 0.371,
+          "vectorSimilarityScore": 0.61822,
+          "vectorSimilarityRank": 8,
+          "originTransactionCount": 771,
+          "originUniqueUsers": 5,
+          "originVolumeUsd": 17.88,
+          "trustedUserUsageRatio": 0.001467
+        },
+        {
+          "position": 6,
+          "resource": "https://x402stock.xyz/api/v1/dossier/{ticker}",
+          "score": 0.37,
+          "vectorSimilarityScore": 0.615846,
+          "vectorSimilarityRank": 9,
+          "originTransactionCount": 869,
+          "originUniqueUsers": 7,
+          "originVolumeUsd": 20.17,
+          "trustedUserUsageRatio": 0.002053
+        }
+      ]
+    },
+    {
+      "queryId": "fm-4-t",
+      "queryText": "equity market indicators and momentum signals",
+      "resultCount": 5,
+      "results": [
+        {
+          "position": 1,
+          "resource": "https://x402helper.xyz/signals/momentum",
+          "score": 0.31,
+          "vectorSimilarityScore": 0.51559,
+          "vectorSimilarityRank": 4,
+          "originTransactionCount": 183,
+          "originUniqueUsers": 32,
+          "originVolumeUsd": 5.9785,
+          "trustedUserUsageRatio": 0.009387
+        },
+        {
+          "position": 2,
+          "resource": "https://api.x402node.dev/market/token-momentum",
+          "score": 0.306,
+          "vectorSimilarityScore": 0.50912,
+          "vectorSimilarityRank": 5,
+          "originTransactionCount": 111,
+          "originUniqueUsers": 3,
+          "originVolumeUsd": 2.205,
+          "trustedUserUsageRatio": 0.00088
+        },
+        {
+          "position": 3,
+          "resource": "https://the-stall.intuitek.ai/cap/economic-momentum",
+          "score": 0.303,
+          "vectorSimilarityScore": 0.504707,
+          "vectorSimilarityRank": 8,
+          "originTransactionCount": 212,
+          "originUniqueUsers": 6,
+          "originVolumeUsd": 9.029,
+          "trustedUserUsageRatio": 0.00176
+        },
+        {
+          "position": 4,
+          "resource": "https://market2000.xyz/trading/equity",
+          "score": 0.29,
+          "vectorSimilarityScore": 0.484039,
+          "vectorSimilarityRank": 19,
+          "originTransactionCount": 1,
+          "originUniqueUsers": 1,
+          "originVolumeUsd": 0.01,
+          "trustedUserUsageRatio": 0.000293
+        },
+        {
+          "position": 5,
+          "resource": "https://api.x402node.dev/market/sector-momentum",
+          "score": 0.29,
+          "vectorSimilarityScore": 0.483424,
+          "vectorSimilarityRank": 20,
+          "originTransactionCount": 111,
+          "originUniqueUsers": 3,
+          "originVolumeUsd": 2.205,
+          "trustedUserUsageRatio": 0.00088
+        }
+      ]
+    },
+    {
+      "queryId": "fm-5-t",
+      "queryText": "market regime classification and sector rotation",
+      "resultCount": 5,
+      "results": [
+        {
+          "position": 1,
+          "resource": "https://the-stall.intuitek.ai/cap/sector-rotation",
+          "score": 0.323,
+          "vectorSimilarityScore": 0.538,
+          "vectorSimilarityRank": 1,
+          "originTransactionCount": 212,
+          "originUniqueUsers": 6,
+          "originVolumeUsd": 9.029,
+          "trustedUserUsageRatio": 0.00176
+        },
+        {
+          "position": 2,
+          "resource": "https://the-stall.intuitek.ai/cap/market-regime-intel",
+          "score": 0.313,
+          "vectorSimilarityScore": 0.52194,
+          "vectorSimilarityRank": 3,
+          "originTransactionCount": 212,
+          "originUniqueUsers": 6,
+          "originVolumeUsd": 9.029,
+          "trustedUserUsageRatio": 0.00176
+        },
+        {
+          "position": 3,
+          "resource": "https://orbisapi.com/proxy/stock-market-regime-classifier-api-fde6a6",
+          "score": 0.296,
+          "vectorSimilarityScore": 0.492583,
+          "vectorSimilarityRank": 5,
+          "originTransactionCount": 55,
+          "originUniqueUsers": 8,
+          "originVolumeUsd": 0.346,
+          "trustedUserUsageRatio": 0.002347
+        },
+        {
+          "position": 4,
+          "resource": "https://x402helper.xyz/v1/indicators/regime-classify",
+          "score": 0.272,
+          "vectorSimilarityScore": 0.451514,
+          "vectorSimilarityRank": 22,
+          "originTransactionCount": 183,
+          "originUniqueUsers": 32,
+          "originVolumeUsd": 5.9785,
+          "trustedUserUsageRatio": 0.009387
+        },
+        {
+          "position": 5,
+          "resource": "https://x402stock.vercel.app/api/v1/fear-greed/regime",
+          "score": 0.271,
+          "vectorSimilarityScore": 0.450722,
+          "vectorSimilarityRank": 25,
+          "originTransactionCount": 771,
+          "originUniqueUsers": 5,
+          "originVolumeUsd": 17.88,
+          "trustedUserUsageRatio": 0.001467
+        }
+      ]
+    },
+    {
+      "queryId": "de-1-c",
+      "queryText": "how do I contact this person I found on linkedin",
+      "resultCount": 6,
+      "results": [
+        {
+          "position": 1,
+          "resource": "https://stable-deepline.dev/api/linkedin/find",
+          "score": 0.272,
+          "vectorSimilarityScore": 0.45016,
+          "vectorSimilarityRank": 1,
+          "originTransactionCount": 1838,
+          "originUniqueUsers": 21,
+          "originVolumeUsd": 211.22,
+          "trustedUserUsageRatio": 0.00616
+        },
+        {
+          "position": 2,
+          "resource": "https://socialx402.com/api/sc/linkedin/profile",
+          "score": 0.251,
+          "vectorSimilarityScore": 0.408609,
+          "vectorSimilarityRank": 4,
+          "originTransactionCount": 12101,
+          "originUniqueUsers": 186,
+          "originVolumeUsd": 718.383,
+          "trustedUserUsageRatio": 0.054561
+        },
+        {
+          "position": 3,
+          "resource": "https://stable-deepline.dev/api/email/from-linkedin",
+          "score": 0.246,
+          "vectorSimilarityScore": 0.407811,
+          "vectorSimilarityRank": 5,
+          "originTransactionCount": 1838,
+          "originUniqueUsers": 21,
+          "originVolumeUsd": 211.22,
+          "trustedUserUsageRatio": 0.00616
+        },
+        {
+          "position": 4,
+          "resource": "https://stablesocial.dev/api/sc/linkedin/profile",
+          "score": 0.242,
+          "vectorSimilarityScore": 0.392576,
+          "vectorSimilarityRank": 9,
+          "originTransactionCount": 15667,
+          "originUniqueUsers": 208,
+          "originVolumeUsd": 932.223,
+          "trustedUserUsageRatio": 0.061015
+        },
+        {
+          "position": 5,
+          "resource": "https://kite-solana.vercel.app/api/linkedin-data",
+          "score": 0.237,
+          "vectorSimilarityScore": 0.39535,
+          "vectorSimilarityRank": 7,
+          "originTransactionCount": 1,
+          "originUniqueUsers": 1,
+          "originVolumeUsd": 0.12,
+          "trustedUserUsageRatio": 0.000293
+        },
+        {
+          "position": 6,
+          "resource": "https://uat.jarvisclaw.ai/v1/marketplace/api/linkedin-3044",
+          "score": 0.235,
+          "vectorSimilarityScore": 0.39231,
+          "vectorSimilarityRank": 10,
+          "originTransactionCount": 1,
+          "originUniqueUsers": 1,
+          "originVolumeUsd": 0.001,
+          "trustedUserUsageRatio": 0.000293
+        }
+      ]
+    },
+    {
+      "queryId": "cd-4-c",
+      "queryText": "what is the crypto market mood today",
+      "resultCount": 5,
+      "results": [
+        {
+          "position": 1,
+          "resource": "https://api.jarvisclaw.ai/v1/marketplace/api/crypto-sentiment",
+          "score": 0.296,
+          "vectorSimilarityScore": 0.493712,
+          "vectorSimilarityRank": 17,
+          "originTransactionCount": 2,
+          "originUniqueUsers": 2,
+          "originVolumeUsd": 0.005647,
+          "trustedUserUsageRatio": 0.000587
+        },
+        {
+          "position": 2,
+          "resource": "https://x402helper.xyz/api/market-mood",
+          "score": 0.294,
+          "vectorSimilarityScore": 0.488014,
+          "vectorSimilarityRank": 20,
+          "originTransactionCount": 183,
+          "originUniqueUsers": 32,
+          "originVolumeUsd": 5.9785,
+          "trustedUserUsageRatio": 0.009387
+        },
+        {
+          "position": 3,
+          "resource": "https://omni-api-cyan.vercel.app/api/crypto/sentiment",
+          "score": 0.292,
+          "vectorSimilarityScore": 0.486967,
+          "vectorSimilarityRank": 22,
+          "originTransactionCount": 1,
+          "originUniqueUsers": 1,
+          "originVolumeUsd": 0.12,
+          "trustedUserUsageRatio": 0.000293
+        },
+        {
+          "position": 4,
+          "resource": "https://uat.jarvisclaw.ai/v1/marketplace/api/crypto-sentiment",
+          "score": 0.291,
+          "vectorSimilarityScore": 0.484804,
+          "vectorSimilarityRank": 25,
+          "originTransactionCount": 1,
+          "originUniqueUsers": 1,
+          "originVolumeUsd": 0.001,
+          "trustedUserUsageRatio": 0.000293
+        },
+        {
+          "position": 5,
+          "resource": "https://x402stock.vercel.app/api/v1/fear-greed/crypto",
+          "score": 0.29,
+          "vectorSimilarityScore": 0.483332,
+          "vectorSimilarityRank": 29,
+          "originTransactionCount": 771,
+          "originUniqueUsers": 5,
+          "originVolumeUsd": 17.88,
+          "trustedUserUsageRatio": 0.001467
+        }
+      ]
+    },
+    {
+      "queryId": "ai-3-c",
+      "queryText": "just answer my question using the internet",
+      "resultCount": 5,
+      "results": [
+        {
+          "position": 1,
+          "resource": "https://stableenrich.dev/api/exa/answer",
+          "score": 0.232,
+          "vectorSimilarityScore": 0.34189,
+          "vectorSimilarityRank": 17,
+          "originTransactionCount": 493318,
+          "originUniqueUsers": 850,
+          "originVolumeUsd": 19354.5848,
+          "trustedUserUsageRatio": 0.24934
+        },
+        {
+          "position": 2,
+          "resource": "https://agent402.tools/api/answer",
+          "score": 0.229,
+          "vectorSimilarityScore": 0.38199,
+          "vectorSimilarityRank": 1,
+          "originTransactionCount": 11,
+          "originUniqueUsers": 4,
+          "originVolumeUsd": 0.02,
+          "trustedUserUsageRatio": 0.001173
+        },
+        {
+          "position": 3,
+          "resource": "https://uat.jarvisclaw.ai/v1/marketplace/api/answer-web",
+          "score": 0.225,
+          "vectorSimilarityScore": 0.375461,
+          "vectorSimilarityRank": 2,
+          "originTransactionCount": 1,
+          "originUniqueUsers": 1,
+          "originVolumeUsd": 0.001,
+          "trustedUserUsageRatio": 0.000293
+        },
+        {
+          "position": 4,
+          "resource": "https://x402.agentutility.ai/answer-web",
+          "score": 0.221,
+          "vectorSimilarityScore": 0.36743,
+          "vectorSimilarityRank": 3,
+          "originTransactionCount": 116,
+          "originUniqueUsers": 17,
+          "originVolumeUsd": 1.524,
+          "trustedUserUsageRatio": 0.004987
+        },
+        {
+          "position": 5,
+          "resource": "https://searchtav.vercel.app/rag/ask",
+          "score": 0.22,
+          "vectorSimilarityScore": 0.365875,
+          "vectorSimilarityRank": 5,
+          "originTransactionCount": 8,
+          "originUniqueUsers": 3,
+          "originVolumeUsd": 0.41,
+          "trustedUserUsageRatio": 0.00088
+        }
+      ]
+    },
+    {
+      "queryId": "fm-5-c",
+      "queryText": "is the market risk on or risk off right now",
+      "resultCount": 5,
+      "results": [
+        {
+          "position": 1,
+          "resource": "https://the-stall.intuitek.ai/cap/market-overview",
+          "score": 0.265,
+          "vectorSimilarityScore": 0.441808,
+          "vectorSimilarityRank": 8,
+          "originTransactionCount": 212,
+          "originUniqueUsers": 6,
+          "originVolumeUsd": 9.029,
+          "trustedUserUsageRatio": 0.00176
+        },
+        {
+          "position": 2,
+          "resource": "https://x402.ottoai.services/market-risk",
+          "score": 0.262,
+          "vectorSimilarityScore": 0.435685,
+          "vectorSimilarityRank": 11,
+          "originTransactionCount": 67,
+          "originUniqueUsers": 6,
+          "originVolumeUsd": 1.085,
+          "trustedUserUsageRatio": 0.00176
+        },
+        {
+          "position": 3,
+          "resource": "https://uat.jarvisclaw.ai/v1/marketplace/api/risk-index",
+          "score": 0.248,
+          "vectorSimilarityScore": 0.413827,
+          "vectorSimilarityRank": 22,
+          "originTransactionCount": 1,
+          "originUniqueUsers": 1,
+          "originVolumeUsd": 0.001,
+          "trustedUserUsageRatio": 0.000293
+        },
+        {
+          "position": 4,
+          "resource": "https://graph-advocate-production.up.railway.app/polymarket/risk",
+          "score": 0.24,
+          "vectorSimilarityScore": 0.399275,
+          "vectorSimilarityRank": 32,
+          "originTransactionCount": 1,
+          "originUniqueUsers": 1,
+          "originVolumeUsd": 0.01,
+          "trustedUserUsageRatio": 0.000293
+        },
+        {
+          "position": 5,
+          "resource": "https://x402helper.xyz/api/polymarket/market/risk-score",
+          "score": 0.237,
+          "vectorSimilarityScore": 0.394024,
+          "vectorSimilarityRank": 35,
+          "originTransactionCount": 183,
+          "originUniqueUsers": 32,
+          "originVolumeUsd": 5.9785,
+          "trustedUserUsageRatio": 0.009387
+        }
+      ]
+    }
+  ]
+}
