@@ -1,0 +1,982 @@
+{
+  "probedAt": "2026-09-09T08:23:51.192Z",
+  "cdpSearchEndpoint": "https://api.cdp.coinbase.com/platform/v2/x402/discovery/search",
+  "queries": {
+    "Crypto & DeFi": [
+      "crypto onchain defi token data wallet"
+    ],
+    "AI & Agents": [
+      "AI agent inference LLM embeddings"
+    ],
+    "Data & Enrichment": [
+      "data enrichment company people search"
+    ],
+    "Finance & Markets": [
+      "finance markets stock price news"
+    ]
+  },
+  "results": [
+    {
+      "category": "Crypto & DeFi",
+      "query": "crypto onchain defi token data wallet",
+      "cdpResultCount": 12,
+      "cdpSearchMethod": "hybrid",
+      "incumbent": {
+        "query": "crypto onchain defi token data wallet",
+        "merchant": {
+          "id": "6be45adb-27ec-47c0-be50-5584ff806c08",
+          "payeeAddress": "0x1f3f6191bea8a57dd7a1fe90a4249c706ad4fb46",
+          "referenceRank": 267,
+          "referenceScore": 0.3422,
+          "referenceListingQ": 0,
+          "referenceTxCount30d": 0,
+          "primaryResource": "https://404humans.xyz/blocks/next",
+          "serviceName": "The 402 Wall"
+        },
+        "incumbent": {
+          "id": "6be45adb-27ec-47c0-be50-5584ff806c08",
+          "payeeAddress": "0x1f3f6191bea8a57dd7a1fe90a4249c706ad4fb46",
+          "referenceRank": 267,
+          "referenceScore": 0.3422,
+          "primaryResource": "https://404humans.xyz/blocks/next",
+          "serviceName": "The 402 Wall"
+        },
+        "cdpMatch": {
+          "resourceUrl": null,
+          "position": null,
+          "cdpCalls30d": null,
+          "cdpPayers30d": null,
+          "cdpLastCalledAt": null
+        }
+      },
+      "buriedMerchants": [
+        {
+          "query": "crypto onchain defi token data wallet",
+          "merchant": {
+            "id": "0b5e95b2-01e0-4e11-a790-ceaeec3c3ec6",
+            "payeeAddress": "0x8331051bb822536d5e228433e7a5486f7169064d",
+            "referenceRank": 277,
+            "referenceScore": 0.3355,
+            "referenceListingQ": 0.8775999999999999,
+            "referenceTxCount30d": 1,
+            "primaryResource": "https://email-preflight-api.vercel.app/api/x402-preflight",
+            "serviceName": "x402 Endpoint Preflight"
+          },
+          "incumbent": {
+            "id": "6be45adb-27ec-47c0-be50-5584ff806c08",
+            "payeeAddress": "0x1f3f6191bea8a57dd7a1fe90a4249c706ad4fb46",
+            "referenceRank": 267,
+            "referenceScore": 0.3422,
+            "primaryResource": "https://404humans.xyz/blocks/next",
+            "serviceName": "The 402 Wall"
+          },
+          "cdpMatch": {
+            "resourceUrl": null,
+            "position": null,
+            "cdpCalls30d": null,
+            "cdpPayers30d": null,
+            "cdpLastCalledAt": null
+          },
+          "verdict": "Both absent from CDP top-20 ( query may not target this niche )"
+        },
+        {
+          "query": "crypto onchain defi token data wallet",
+          "merchant": {
+            "id": "86c7cfe4-dc52-4d7e-bdb7-e1eaa34eeccc",
+            "payeeAddress": "0x2475da2b1cc92bd8291dd487866cbfb8715f4219",
+            "referenceRank": 461,
+            "referenceScore": 0.2606,
+            "referenceListingQ": 0.8733333333333333,
+            "referenceTxCount30d": 1,
+            "primaryResource": "https://x402.sleuthagent.ai/api/v1/wallet-holdings",
+            "serviceName": "Sleuth AI x402 API"
+          },
+          "incumbent": {
+            "id": "6be45adb-27ec-47c0-be50-5584ff806c08",
+            "payeeAddress": "0x1f3f6191bea8a57dd7a1fe90a4249c706ad4fb46",
+            "referenceRank": 267,
+            "referenceScore": 0.3422,
+            "primaryResource": "https://404humans.xyz/blocks/next",
+            "serviceName": "The 402 Wall"
+          },
+          "cdpMatch": {
+            "resourceUrl": null,
+            "position": null,
+            "cdpCalls30d": null,
+            "cdpPayers30d": null,
+            "cdpLastCalledAt": null
+          },
+          "verdict": "Both absent from CDP top-20 ( query may not target this niche )"
+        },
+        {
+          "query": "crypto onchain defi token data wallet",
+          "merchant": {
+            "id": "7472431d-191f-4c39-97bd-1be36660c1f4",
+            "payeeAddress": "0x626ff146abec5296678a0afe2909efb6cfc10a1c",
+            "referenceRank": 485,
+            "referenceScore": 0.2189,
+            "referenceListingQ": 0.8712,
+            "referenceTxCount30d": 1,
+            "primaryResource": "https://x402-research.up.railway.app/v1/research",
+            "serviceName": "Messari Pro API"
+          },
+          "incumbent": {
+            "id": "6be45adb-27ec-47c0-be50-5584ff806c08",
+            "payeeAddress": "0x1f3f6191bea8a57dd7a1fe90a4249c706ad4fb46",
+            "referenceRank": 267,
+            "referenceScore": 0.3422,
+            "primaryResource": "https://404humans.xyz/blocks/next",
+            "serviceName": "The 402 Wall"
+          },
+          "cdpMatch": {
+            "resourceUrl": null,
+            "position": null,
+            "cdpCalls30d": null,
+            "cdpPayers30d": null,
+            "cdpLastCalledAt": null
+          },
+          "verdict": "Both absent from CDP top-20 ( query may not target this niche )"
+        },
+        {
+          "query": "crypto onchain defi token data wallet",
+          "merchant": {
+            "id": "3e834ed9-2ebf-481b-98ad-5beac467c6cc",
+            "payeeAddress": "0x4543d95a4cdf5654aa8835d38e6198f0629dd9a1",
+            "referenceRank": 281,
+            "referenceScore": 0.334,
+            "referenceListingQ": 0.8669333333333333,
+            "referenceTxCount30d": 1,
+            "primaryResource": "https://agents.allium.so/api/v1/developer/wallet/balances/history",
+            "serviceName": "Allium"
+          },
+          "incumbent": {
+            "id": "6be45adb-27ec-47c0-be50-5584ff806c08",
+            "payeeAddress": "0x1f3f6191bea8a57dd7a1fe90a4249c706ad4fb46",
+            "referenceRank": 267,
+            "referenceScore": 0.3422,
+            "primaryResource": "https://404humans.xyz/blocks/next",
+            "serviceName": "The 402 Wall"
+          },
+          "cdpMatch": {
+            "resourceUrl": null,
+            "position": null,
+            "cdpCalls30d": null,
+            "cdpPayers30d": null,
+            "cdpLastCalledAt": null
+          },
+          "verdict": "Both absent from CDP top-20 ( query may not target this niche )"
+        },
+        {
+          "query": "crypto onchain defi token data wallet",
+          "merchant": {
+            "id": "6be45adb-27ec-47c0-be50-5584ff806c08",
+            "payeeAddress": "0x1f3f6191bea8a57dd7a1fe90a4249c706ad4fb46",
+            "referenceRank": 267,
+            "referenceScore": 0.3422,
+            "referenceListingQ": 0.8557333333333333,
+            "referenceTxCount30d": 1,
+            "primaryResource": "https://404humans.xyz/blocks/next",
+            "serviceName": "The 402 Wall"
+          },
+          "incumbent": {
+            "id": "6be45adb-27ec-47c0-be50-5584ff806c08",
+            "payeeAddress": "0x1f3f6191bea8a57dd7a1fe90a4249c706ad4fb46",
+            "referenceRank": 267,
+            "referenceScore": 0.3422,
+            "primaryResource": "https://404humans.xyz/blocks/next",
+            "serviceName": "The 402 Wall"
+          },
+          "cdpMatch": {
+            "resourceUrl": null,
+            "position": null,
+            "cdpCalls30d": null,
+            "cdpPayers30d": null,
+            "cdpLastCalledAt": null
+          },
+          "verdict": "Both absent from CDP top-20 ( query may not target this niche )"
+        },
+        {
+          "query": "crypto onchain defi token data wallet",
+          "merchant": {
+            "id": "5d51c0a3-1146-4e39-8bbe-1a6e9f9e1269",
+            "payeeAddress": "0x1372c2140105ff1dd77f148b8ad5bb976cc7ec0f",
+            "referenceRank": 488,
+            "referenceScore": 0.2119,
+            "referenceListingQ": 0.8514666666666667,
+            "referenceTxCount30d": 1,
+            "primaryResource": "https://jtifhcvbgxqwlywugvjv.supabase.co/functions/v1/cortex402-wallet-balance",
+            "serviceName": "CorteX402 Wallet Balance"
+          },
+          "incumbent": {
+            "id": "6be45adb-27ec-47c0-be50-5584ff806c08",
+            "payeeAddress": "0x1f3f6191bea8a57dd7a1fe90a4249c706ad4fb46",
+            "referenceRank": 267,
+            "referenceScore": 0.3422,
+            "primaryResource": "https://404humans.xyz/blocks/next",
+            "serviceName": "The 402 Wall"
+          },
+          "cdpMatch": {
+            "resourceUrl": null,
+            "position": null,
+            "cdpCalls30d": null,
+            "cdpPayers30d": null,
+            "cdpLastCalledAt": null
+          },
+          "verdict": "Both absent from CDP top-20 ( query may not target this niche )"
+        },
+        {
+          "query": "crypto onchain defi token data wallet",
+          "merchant": {
+            "id": "427212e7-c065-4e50-bb5e-f56990b901a4",
+            "payeeAddress": "44QXKrTUzT1j5MPkZCQAE1y5jur6mxvugSrB7g61ERZ3",
+            "referenceRank": 289,
+            "referenceScore": 0.3301,
+            "referenceListingQ": 0.8413333333333333,
+            "referenceTxCount30d": 1,
+            "primaryResource": "https://inference.algono.co/v1/responses",
+            "serviceName": "Algono Inference"
+          },
+          "incumbent": {
+            "id": "6be45adb-27ec-47c0-be50-5584ff806c08",
+            "payeeAddress": "0x1f3f6191bea8a57dd7a1fe90a4249c706ad4fb46",
+            "referenceRank": 267,
+            "referenceScore": 0.3422,
+            "primaryResource": "https://404humans.xyz/blocks/next",
+            "serviceName": "The 402 Wall"
+          },
+          "cdpMatch": {
+            "resourceUrl": null,
+            "position": null,
+            "cdpCalls30d": null,
+            "cdpPayers30d": null,
+            "cdpLastCalledAt": null
+          },
+          "verdict": "Both absent from CDP top-20 ( query may not target this niche )"
+        }
+      ]
+    },
+    {
+      "category": "AI & Agents",
+      "query": "AI agent inference LLM embeddings",
+      "cdpResultCount": 13,
+      "cdpSearchMethod": "hybrid",
+      "incumbent": {
+        "query": "AI agent inference LLM embeddings",
+        "merchant": {
+          "id": "1fdc8efe-c6ce-4eb5-999a-3340dc0a6e94",
+          "payeeAddress": "0x08b11ea90aeb253ef0f954be108a12e6783d8189",
+          "referenceRank": 62,
+          "referenceScore": 0.3323,
+          "referenceListingQ": 0,
+          "referenceTxCount30d": 0,
+          "primaryResource": "https://context-relay.contextrelay.workers.dev/api/v1/context",
+          "serviceName": "Context Relay"
+        },
+        "incumbent": {
+          "id": "1fdc8efe-c6ce-4eb5-999a-3340dc0a6e94",
+          "payeeAddress": "0x08b11ea90aeb253ef0f954be108a12e6783d8189",
+          "referenceRank": 62,
+          "referenceScore": 0.3323,
+          "primaryResource": "https://context-relay.contextrelay.workers.dev/api/v1/context",
+          "serviceName": "Context Relay"
+        },
+        "cdpMatch": {
+          "resourceUrl": null,
+          "position": null,
+          "cdpCalls30d": null,
+          "cdpPayers30d": null,
+          "cdpLastCalledAt": null
+        }
+      },
+      "buriedMerchants": [
+        {
+          "query": "AI agent inference LLM embeddings",
+          "merchant": {
+            "id": "357e5736-71f2-42bb-a6d6-95d205790d16",
+            "payeeAddress": "0xd6b7e00fcd46966676f554fe0455bff739e85b1b",
+            "referenceRank": 98,
+            "referenceScore": 0.2633,
+            "referenceListingQ": 0.8954666666666667,
+            "referenceTxCount30d": 1,
+            "primaryResource": "https://goldkey-edge-storefront.noah-ing.workers.dev/v1/action-gate",
+            "serviceName": "GoldKey Action Gate"
+          },
+          "incumbent": {
+            "id": "1fdc8efe-c6ce-4eb5-999a-3340dc0a6e94",
+            "payeeAddress": "0x08b11ea90aeb253ef0f954be108a12e6783d8189",
+            "referenceRank": 62,
+            "referenceScore": 0.3323,
+            "primaryResource": "https://context-relay.contextrelay.workers.dev/api/v1/context",
+            "serviceName": "Context Relay"
+          },
+          "cdpMatch": {
+            "resourceUrl": null,
+            "position": null,
+            "cdpCalls30d": null,
+            "cdpPayers30d": null,
+            "cdpLastCalledAt": null
+          },
+          "verdict": "Both absent from CDP top-20 ( query may not target this niche )"
+        },
+        {
+          "query": "AI agent inference LLM embeddings",
+          "merchant": {
+            "id": "35f4692d-d4db-4b89-819f-f349dd444635",
+            "payeeAddress": "0xff4555af30a1066a889324a3fe88c76796159f15",
+            "referenceRank": 100,
+            "referenceScore": 0.2612,
+            "referenceListingQ": 0.8825333333333333,
+            "referenceTxCount30d": 1,
+            "primaryResource": "https://cloud.hyrule.host/v1/mx/bounce/parse",
+            "serviceName": "Hyrule Cloud"
+          },
+          "incumbent": {
+            "id": "1fdc8efe-c6ce-4eb5-999a-3340dc0a6e94",
+            "payeeAddress": "0x08b11ea90aeb253ef0f954be108a12e6783d8189",
+            "referenceRank": 62,
+            "referenceScore": 0.3323,
+            "primaryResource": "https://context-relay.contextrelay.workers.dev/api/v1/context",
+            "serviceName": "Context Relay"
+          },
+          "cdpMatch": {
+            "resourceUrl": null,
+            "position": null,
+            "cdpCalls30d": null,
+            "cdpPayers30d": null,
+            "cdpLastCalledAt": null
+          },
+          "verdict": "Both absent from CDP top-20 ( query may not target this niche )"
+        },
+        {
+          "query": "AI agent inference LLM embeddings",
+          "merchant": {
+            "id": "8c2da725-3c83-4e96-bce4-7c566c2b8c4d",
+            "payeeAddress": "0x46f297e342bc0b44b9f9c427e53c56e9f83bb660",
+            "referenceRank": 101,
+            "referenceScore": 0.2601,
+            "referenceListingQ": 0.8741333333333333,
+            "referenceTxCount30d": 1,
+            "primaryResource": "https://api.clawinabox.xyz/paid/v1/guard/check",
+            "serviceName": "Claw-in-a-Box"
+          },
+          "incumbent": {
+            "id": "1fdc8efe-c6ce-4eb5-999a-3340dc0a6e94",
+            "payeeAddress": "0x08b11ea90aeb253ef0f954be108a12e6783d8189",
+            "referenceRank": 62,
+            "referenceScore": 0.3323,
+            "primaryResource": "https://context-relay.contextrelay.workers.dev/api/v1/context",
+            "serviceName": "Context Relay"
+          },
+          "cdpMatch": {
+            "resourceUrl": null,
+            "position": null,
+            "cdpCalls30d": null,
+            "cdpPayers30d": null,
+            "cdpLastCalledAt": null
+          },
+          "verdict": "Both absent from CDP top-20 ( query may not target this niche )"
+        },
+        {
+          "query": "AI agent inference LLM embeddings",
+          "merchant": {
+            "id": "1fdc8efe-c6ce-4eb5-999a-3340dc0a6e94",
+            "payeeAddress": "0x08b11ea90aeb253ef0f954be108a12e6783d8189",
+            "referenceRank": 62,
+            "referenceScore": 0.3323,
+            "referenceListingQ": 0.8557333333333333,
+            "referenceTxCount30d": 1,
+            "primaryResource": "https://context-relay.contextrelay.workers.dev/api/v1/context",
+            "serviceName": "Context Relay"
+          },
+          "incumbent": {
+            "id": "1fdc8efe-c6ce-4eb5-999a-3340dc0a6e94",
+            "payeeAddress": "0x08b11ea90aeb253ef0f954be108a12e6783d8189",
+            "referenceRank": 62,
+            "referenceScore": 0.3323,
+            "primaryResource": "https://context-relay.contextrelay.workers.dev/api/v1/context",
+            "serviceName": "Context Relay"
+          },
+          "cdpMatch": {
+            "resourceUrl": null,
+            "position": null,
+            "cdpCalls30d": null,
+            "cdpPayers30d": null,
+            "cdpLastCalledAt": null
+          },
+          "verdict": "Both absent from CDP top-20 ( query may not target this niche )"
+        },
+        {
+          "query": "AI agent inference LLM embeddings",
+          "merchant": {
+            "id": "b7fbc2fb-d9e4-41c9-b4fe-de23e0489dc8",
+            "payeeAddress": "0x06d70f26ec2eefc6e5fcd3638049f87958ebd8b5",
+            "referenceRank": 103,
+            "referenceScore": 0.2572,
+            "referenceListingQ": 0.8506666666666667,
+            "referenceTxCount30d": 1,
+            "primaryResource": "https://datagate-x402.onrender.com/validate",
+            "serviceName": "DataGate x402"
+          },
+          "incumbent": {
+            "id": "1fdc8efe-c6ce-4eb5-999a-3340dc0a6e94",
+            "payeeAddress": "0x08b11ea90aeb253ef0f954be108a12e6783d8189",
+            "referenceRank": 62,
+            "referenceScore": 0.3323,
+            "primaryResource": "https://context-relay.contextrelay.workers.dev/api/v1/context",
+            "serviceName": "Context Relay"
+          },
+          "cdpMatch": {
+            "resourceUrl": null,
+            "position": null,
+            "cdpCalls30d": null,
+            "cdpPayers30d": null,
+            "cdpLastCalledAt": null
+          },
+          "verdict": "Both absent from CDP top-20 ( query may not target this niche )"
+        },
+        {
+          "query": "AI agent inference LLM embeddings",
+          "merchant": {
+            "id": "dccedb18-124b-4bdd-9eed-b7cfe9b78f42",
+            "payeeAddress": "0x5c08951b999cc133ee4161a3a2b299160f66c42e",
+            "referenceRank": 63,
+            "referenceScore": 0.331,
+            "referenceListingQ": 0.8455999999999999,
+            "referenceTxCount30d": 1,
+            "primaryResource": "https://agent-ready.dev/api/x402/scan",
+            "serviceName": "Agent Ready"
+          },
+          "incumbent": {
+            "id": "1fdc8efe-c6ce-4eb5-999a-3340dc0a6e94",
+            "payeeAddress": "0x08b11ea90aeb253ef0f954be108a12e6783d8189",
+            "referenceRank": 62,
+            "referenceScore": 0.3323,
+            "primaryResource": "https://context-relay.contextrelay.workers.dev/api/v1/context",
+            "serviceName": "Context Relay"
+          },
+          "cdpMatch": {
+            "resourceUrl": null,
+            "position": null,
+            "cdpCalls30d": null,
+            "cdpPayers30d": null,
+            "cdpLastCalledAt": null
+          },
+          "verdict": "Both absent from CDP top-20 ( query may not target this niche )"
+        },
+        {
+          "query": "AI agent inference LLM embeddings",
+          "merchant": {
+            "id": "41561770-b937-4dc4-98c7-456ab565d8b1",
+            "payeeAddress": "0xf9259b4324f77dd87728b1c1d15cdb8be1793cfe",
+            "referenceRank": 117,
+            "referenceScore": 0.2104,
+            "referenceListingQ": 0.8392,
+            "referenceTxCount30d": 1,
+            "primaryResource": "https://verdikt-worker.fly.dev/x402/verify",
+            "serviceName": "Verdikt deliverable verification"
+          },
+          "incumbent": {
+            "id": "1fdc8efe-c6ce-4eb5-999a-3340dc0a6e94",
+            "payeeAddress": "0x08b11ea90aeb253ef0f954be108a12e6783d8189",
+            "referenceRank": 62,
+            "referenceScore": 0.3323,
+            "primaryResource": "https://context-relay.contextrelay.workers.dev/api/v1/context",
+            "serviceName": "Context Relay"
+          },
+          "cdpMatch": {
+            "resourceUrl": null,
+            "position": null,
+            "cdpCalls30d": null,
+            "cdpPayers30d": null,
+            "cdpLastCalledAt": null
+          },
+          "verdict": "Both absent from CDP top-20 ( query may not target this niche )"
+        }
+      ]
+    },
+    {
+      "category": "Data & Enrichment",
+      "query": "data enrichment company people search",
+      "cdpResultCount": 11,
+      "cdpSearchMethod": "hybrid",
+      "incumbent": {
+        "query": "data enrichment company people search",
+        "merchant": {
+          "id": "c8e7a136-65e3-4cf7-b190-14b8fedb3378",
+          "payeeAddress": "0x7e4d786057930b66cb45e2017a587425ebade587",
+          "referenceRank": 59,
+          "referenceScore": 0.3316,
+          "referenceListingQ": 0,
+          "referenceTxCount30d": 0,
+          "primaryResource": "https://signalforgestudios.com/x402/prospect-qualifier",
+          "serviceName": "Signal Forge Prospect Qualifier"
+        },
+        "incumbent": {
+          "id": "c8e7a136-65e3-4cf7-b190-14b8fedb3378",
+          "payeeAddress": "0x7e4d786057930b66cb45e2017a587425ebade587",
+          "referenceRank": 59,
+          "referenceScore": 0.3316,
+          "primaryResource": "https://signalforgestudios.com/x402/prospect-qualifier",
+          "serviceName": "Signal Forge Prospect Qualifier"
+        },
+        "cdpMatch": {
+          "resourceUrl": null,
+          "position": null,
+          "cdpCalls30d": null,
+          "cdpPayers30d": null,
+          "cdpLastCalledAt": null
+        }
+      },
+      "buriedMerchants": [
+        {
+          "query": "data enrichment company people search",
+          "merchant": {
+            "id": "d848f466-770c-4e89-8501-82da6a8dd022",
+            "payeeAddress": "0xdd175adab7bbb4454e29da56db0614bc70c8d6a7",
+            "referenceRank": 85,
+            "referenceScore": 0.2576,
+            "referenceListingQ": 0.8536,
+            "referenceTxCount30d": 1,
+            "primaryResource": "https://pennyinpublic.com/api/local-schema",
+            "serviceName": "Penny API"
+          },
+          "incumbent": {
+            "id": "c8e7a136-65e3-4cf7-b190-14b8fedb3378",
+            "payeeAddress": "0x7e4d786057930b66cb45e2017a587425ebade587",
+            "referenceRank": 59,
+            "referenceScore": 0.3316,
+            "primaryResource": "https://signalforgestudios.com/x402/prospect-qualifier",
+            "serviceName": "Signal Forge Prospect Qualifier"
+          },
+          "cdpMatch": {
+            "resourceUrl": null,
+            "position": null,
+            "cdpCalls30d": null,
+            "cdpPayers30d": null,
+            "cdpLastCalledAt": null
+          },
+          "verdict": "Both absent from CDP top-20 ( query may not target this niche )"
+        },
+        {
+          "query": "data enrichment company people search",
+          "merchant": {
+            "id": "c8e7a136-65e3-4cf7-b190-14b8fedb3378",
+            "payeeAddress": "0x7e4d786057930b66cb45e2017a587425ebade587",
+            "referenceRank": 59,
+            "referenceScore": 0.3316,
+            "referenceListingQ": 0.8506666666666667,
+            "referenceTxCount30d": 1,
+            "primaryResource": "https://signalforgestudios.com/x402/prospect-qualifier",
+            "serviceName": "Signal Forge Prospect Qualifier"
+          },
+          "incumbent": {
+            "id": "c8e7a136-65e3-4cf7-b190-14b8fedb3378",
+            "payeeAddress": "0x7e4d786057930b66cb45e2017a587425ebade587",
+            "referenceRank": 59,
+            "referenceScore": 0.3316,
+            "primaryResource": "https://signalforgestudios.com/x402/prospect-qualifier",
+            "serviceName": "Signal Forge Prospect Qualifier"
+          },
+          "cdpMatch": {
+            "resourceUrl": null,
+            "position": null,
+            "cdpCalls30d": null,
+            "cdpPayers30d": null,
+            "cdpLastCalledAt": null
+          },
+          "verdict": "Both absent from CDP top-20 ( query may not target this niche )"
+        },
+        {
+          "query": "data enrichment company people search",
+          "merchant": {
+            "id": "9efb3cc7-ac41-4a03-befc-1d1fd53a50cc",
+            "payeeAddress": "0x1edb83ae95058663e7e5c054b5152d5a1db1ae58",
+            "referenceRank": 71,
+            "referenceScore": 0.2963,
+            "referenceListingQ": 0.8162666666666667,
+            "referenceTxCount30d": 1,
+            "primaryResource": "https://scrappa.co/api/maps/autocomplete",
+            "serviceName": "Scrappa"
+          },
+          "incumbent": {
+            "id": "c8e7a136-65e3-4cf7-b190-14b8fedb3378",
+            "payeeAddress": "0x7e4d786057930b66cb45e2017a587425ebade587",
+            "referenceRank": 59,
+            "referenceScore": 0.3316,
+            "primaryResource": "https://signalforgestudios.com/x402/prospect-qualifier",
+            "serviceName": "Signal Forge Prospect Qualifier"
+          },
+          "cdpMatch": {
+            "resourceUrl": null,
+            "position": null,
+            "cdpCalls30d": null,
+            "cdpPayers30d": null,
+            "cdpLastCalledAt": null
+          },
+          "verdict": "Both absent from CDP top-20 ( query may not target this niche )"
+        },
+        {
+          "query": "data enrichment company people search",
+          "merchant": {
+            "id": "8353b8da-8a33-4ff1-b900-f838fd8d82cb",
+            "payeeAddress": "0x5e635390931ac843c5071767cd180463268c6bcf",
+            "referenceRank": 87,
+            "referenceScore": 0.2496,
+            "referenceListingQ": 0.8,
+            "referenceTxCount30d": 1,
+            "primaryResource": "https://handle-strategies.vercel.app/report",
+            "serviceName": "ADA Handle Report"
+          },
+          "incumbent": {
+            "id": "c8e7a136-65e3-4cf7-b190-14b8fedb3378",
+            "payeeAddress": "0x7e4d786057930b66cb45e2017a587425ebade587",
+            "referenceRank": 59,
+            "referenceScore": 0.3316,
+            "primaryResource": "https://signalforgestudios.com/x402/prospect-qualifier",
+            "serviceName": "Signal Forge Prospect Qualifier"
+          },
+          "cdpMatch": {
+            "resourceUrl": null,
+            "position": null,
+            "cdpCalls30d": null,
+            "cdpPayers30d": null,
+            "cdpLastCalledAt": null
+          },
+          "verdict": "Both absent from CDP top-20 ( query may not target this niche )"
+        },
+        {
+          "query": "data enrichment company people search",
+          "merchant": {
+            "id": "ba77b3e3-79ee-4f87-a317-d36347c29be5",
+            "payeeAddress": "0x1c655df3b37c0f0545ab1910eab038a73ecf9ffd",
+            "referenceRank": 62,
+            "referenceScore": 0.3221,
+            "referenceListingQ": 0.7872,
+            "referenceTxCount30d": 1,
+            "primaryResource": "https://api.veyrly.com/v1/evidence",
+            "serviceName": "Veyrly"
+          },
+          "incumbent": {
+            "id": "c8e7a136-65e3-4cf7-b190-14b8fedb3378",
+            "payeeAddress": "0x7e4d786057930b66cb45e2017a587425ebade587",
+            "referenceRank": 59,
+            "referenceScore": 0.3316,
+            "primaryResource": "https://signalforgestudios.com/x402/prospect-qualifier",
+            "serviceName": "Signal Forge Prospect Qualifier"
+          },
+          "cdpMatch": {
+            "resourceUrl": null,
+            "position": null,
+            "cdpCalls30d": null,
+            "cdpPayers30d": null,
+            "cdpLastCalledAt": null
+          },
+          "verdict": "Both absent from CDP top-20 ( query may not target this niche )"
+        },
+        {
+          "query": "data enrichment company people search",
+          "merchant": {
+            "id": "784ac3b7-3ec0-467b-a9db-921b8a04ecca",
+            "payeeAddress": "0xb15467515f50da36ba249b1db2e4805f770f5510",
+            "referenceRank": 76,
+            "referenceScore": 0.2899,
+            "referenceListingQ": 0.7645333333333333,
+            "referenceTxCount30d": 1,
+            "primaryResource": "https://p01--boundary-evidence-catalogue--vm6w7rjm7xl2.code.run/v1/evidence-extract",
+            "serviceName": "BoundaryEvidenceCatalogue"
+          },
+          "incumbent": {
+            "id": "c8e7a136-65e3-4cf7-b190-14b8fedb3378",
+            "payeeAddress": "0x7e4d786057930b66cb45e2017a587425ebade587",
+            "referenceRank": 59,
+            "referenceScore": 0.3316,
+            "primaryResource": "https://signalforgestudios.com/x402/prospect-qualifier",
+            "serviceName": "Signal Forge Prospect Qualifier"
+          },
+          "cdpMatch": {
+            "resourceUrl": null,
+            "position": null,
+            "cdpCalls30d": null,
+            "cdpPayers30d": null,
+            "cdpLastCalledAt": null
+          },
+          "verdict": "Both absent from CDP top-20 ( query may not target this niche )"
+        },
+        {
+          "query": "data enrichment company people search",
+          "merchant": {
+            "id": "1c39cb2b-cf95-4027-b719-286bba3b5ea3",
+            "payeeAddress": "0x47fb01091ebae79b454a7ddff3f74f128fe17455",
+            "referenceRank": 64,
+            "referenceScore": 0.3189,
+            "referenceListingQ": 0.762,
+            "referenceTxCount30d": 1,
+            "primaryResource": "https://amalgam.cc/api/mediapipe/pose-landmarks",
+            "serviceName": null
+          },
+          "incumbent": {
+            "id": "c8e7a136-65e3-4cf7-b190-14b8fedb3378",
+            "payeeAddress": "0x7e4d786057930b66cb45e2017a587425ebade587",
+            "referenceRank": 59,
+            "referenceScore": 0.3316,
+            "primaryResource": "https://signalforgestudios.com/x402/prospect-qualifier",
+            "serviceName": "Signal Forge Prospect Qualifier"
+          },
+          "cdpMatch": {
+            "resourceUrl": null,
+            "position": null,
+            "cdpCalls30d": null,
+            "cdpPayers30d": null,
+            "cdpLastCalledAt": null
+          },
+          "verdict": "Both absent from CDP top-20 ( query may not target this niche )"
+        }
+      ]
+    },
+    {
+      "category": "Finance & Markets",
+      "query": "finance markets stock price news",
+      "cdpResultCount": 12,
+      "cdpSearchMethod": "hybrid",
+      "incumbent": {
+        "query": "finance markets stock price news",
+        "merchant": {
+          "id": "8b43ae1a-028a-4012-8553-35b3aeb3d7db",
+          "payeeAddress": "0xa98e17d26e1b3a51a10c79c2f52f78914e7d50eb",
+          "referenceRank": 42,
+          "referenceScore": 0.3273,
+          "referenceListingQ": 0,
+          "referenceTxCount30d": 0,
+          "primaryResource": "https://filedge.io/v1/parse",
+          "serviceName": "Filedge"
+        },
+        "incumbent": {
+          "id": "8b43ae1a-028a-4012-8553-35b3aeb3d7db",
+          "payeeAddress": "0xa98e17d26e1b3a51a10c79c2f52f78914e7d50eb",
+          "referenceRank": 42,
+          "referenceScore": 0.3273,
+          "primaryResource": "https://filedge.io/v1/parse",
+          "serviceName": "Filedge"
+        },
+        "cdpMatch": {
+          "resourceUrl": null,
+          "position": null,
+          "cdpCalls30d": null,
+          "cdpPayers30d": null,
+          "cdpLastCalledAt": null
+        }
+      },
+      "buriedMerchants": [
+        {
+          "query": "finance markets stock price news",
+          "merchant": {
+            "id": "2ad372f3-41dc-4a91-8846-ade572f8bf88",
+            "payeeAddress": "0xa93485f010f2751ee072cd3d25b3d918f4e0bb82",
+            "referenceRank": 51,
+            "referenceScore": 0.2801,
+            "referenceListingQ": 0.8352,
+            "referenceTxCount30d": 1,
+            "primaryResource": "https://api.auctiontrace.com/api/v1/datasets/auctiontrace-es-book-pressure-20250729-20260630-v1/access/coinbase",
+            "serviceName": "AuctionTrace by Algo Futures"
+          },
+          "incumbent": {
+            "id": "8b43ae1a-028a-4012-8553-35b3aeb3d7db",
+            "payeeAddress": "0xa98e17d26e1b3a51a10c79c2f52f78914e7d50eb",
+            "referenceRank": 42,
+            "referenceScore": 0.3273,
+            "primaryResource": "https://filedge.io/v1/parse",
+            "serviceName": "Filedge"
+          },
+          "cdpMatch": {
+            "resourceUrl": null,
+            "position": null,
+            "cdpCalls30d": null,
+            "cdpPayers30d": null,
+            "cdpLastCalledAt": null
+          },
+          "verdict": "Both absent from CDP top-20 ( query may not target this niche )"
+        },
+        {
+          "query": "finance markets stock price news",
+          "merchant": {
+            "id": "ac3a2b12-f4e9-4f21-8510-8164f075c045",
+            "payeeAddress": "0xf0efafed3bed84b12dc89ba80e62131faace0ecd",
+            "referenceRank": 53,
+            "referenceScore": 0.253,
+            "referenceListingQ": 0.8269333333333333,
+            "referenceTxCount30d": 1,
+            "primaryResource": "https://outcomescout.vercel.app/api/v1/news-to-markets",
+            "serviceName": "OutcomeScout"
+          },
+          "incumbent": {
+            "id": "8b43ae1a-028a-4012-8553-35b3aeb3d7db",
+            "payeeAddress": "0xa98e17d26e1b3a51a10c79c2f52f78914e7d50eb",
+            "referenceRank": 42,
+            "referenceScore": 0.3273,
+            "primaryResource": "https://filedge.io/v1/parse",
+            "serviceName": "Filedge"
+          },
+          "cdpMatch": {
+            "resourceUrl": null,
+            "position": null,
+            "cdpCalls30d": null,
+            "cdpPayers30d": null,
+            "cdpLastCalledAt": null
+          },
+          "verdict": "Both absent from CDP top-20 ( query may not target this niche )"
+        },
+        {
+          "query": "finance markets stock price news",
+          "merchant": {
+            "id": "d54939b6-8359-4da8-a297-92b293f75d73",
+            "payeeAddress": "0x5fa62365201ad373754c0a5cee69aa6167164a16",
+            "referenceRank": 46,
+            "referenceScore": 0.2975,
+            "referenceListingQ": 0.8237333333333333,
+            "referenceTxCount30d": 1,
+            "primaryResource": "https://entityresolver.xyz/resolve",
+            "serviceName": "x402 Entity-ID Resolver"
+          },
+          "incumbent": {
+            "id": "8b43ae1a-028a-4012-8553-35b3aeb3d7db",
+            "payeeAddress": "0xa98e17d26e1b3a51a10c79c2f52f78914e7d50eb",
+            "referenceRank": 42,
+            "referenceScore": 0.3273,
+            "primaryResource": "https://filedge.io/v1/parse",
+            "serviceName": "Filedge"
+          },
+          "cdpMatch": {
+            "resourceUrl": null,
+            "position": null,
+            "cdpCalls30d": null,
+            "cdpPayers30d": null,
+            "cdpLastCalledAt": null
+          },
+          "verdict": "Both absent from CDP top-20 ( query may not target this niche )"
+        },
+        {
+          "query": "finance markets stock price news",
+          "merchant": {
+            "id": "fd4b24d0-d660-46fd-b3c3-a320bc7b1608",
+            "payeeAddress": "HQXXTsNjxgCLbtE5Fzm3J3wKjJV3P9d36inMtZ95SntX",
+            "referenceRank": 56,
+            "referenceScore": 0.2069,
+            "referenceListingQ": 0.8194666666666667,
+            "referenceTxCount30d": 1,
+            "primaryResource": "https://agentforge.191-44-109-76.sslip.io/market/token-price",
+            "serviceName": "AgentForge Token Intelligence"
+          },
+          "incumbent": {
+            "id": "8b43ae1a-028a-4012-8553-35b3aeb3d7db",
+            "payeeAddress": "0xa98e17d26e1b3a51a10c79c2f52f78914e7d50eb",
+            "referenceRank": 42,
+            "referenceScore": 0.3273,
+            "primaryResource": "https://filedge.io/v1/parse",
+            "serviceName": "Filedge"
+          },
+          "cdpMatch": {
+            "resourceUrl": null,
+            "position": null,
+            "cdpCalls30d": null,
+            "cdpPayers30d": null,
+            "cdpLastCalledAt": null
+          },
+          "verdict": "Both absent from CDP top-20 ( query may not target this niche )"
+        },
+        {
+          "query": "finance markets stock price news",
+          "merchant": {
+            "id": "8b43ae1a-028a-4012-8553-35b3aeb3d7db",
+            "payeeAddress": "0xa98e17d26e1b3a51a10c79c2f52f78914e7d50eb",
+            "referenceRank": 42,
+            "referenceScore": 0.3273,
+            "referenceListingQ": 0.8181333333333334,
+            "referenceTxCount30d": 1,
+            "primaryResource": "https://filedge.io/v1/parse",
+            "serviceName": "Filedge"
+          },
+          "incumbent": {
+            "id": "8b43ae1a-028a-4012-8553-35b3aeb3d7db",
+            "payeeAddress": "0xa98e17d26e1b3a51a10c79c2f52f78914e7d50eb",
+            "referenceRank": 42,
+            "referenceScore": 0.3273,
+            "primaryResource": "https://filedge.io/v1/parse",
+            "serviceName": "Filedge"
+          },
+          "cdpMatch": {
+            "resourceUrl": null,
+            "position": null,
+            "cdpCalls30d": null,
+            "cdpPayers30d": null,
+            "cdpLastCalledAt": null
+          },
+          "verdict": "Both absent from CDP top-20 ( query may not target this niche )"
+        },
+        {
+          "query": "finance markets stock price news",
+          "merchant": {
+            "id": "979f972e-4bda-4d5d-928f-175067543b9e",
+            "payeeAddress": "0x051a0ba2235210c47ca1b8df68a137ef0d8caf85",
+            "referenceRank": 47,
+            "referenceScore": 0.2964,
+            "referenceListingQ": 0.8096333333333333,
+            "referenceTxCount30d": 0,
+            "primaryResource": "https://api.osf-master-server.com/x402/environment/data/:query",
+            "serviceName": "Open Source Filings"
+          },
+          "incumbent": {
+            "id": "8b43ae1a-028a-4012-8553-35b3aeb3d7db",
+            "payeeAddress": "0xa98e17d26e1b3a51a10c79c2f52f78914e7d50eb",
+            "referenceRank": 42,
+            "referenceScore": 0.3273,
+            "primaryResource": "https://filedge.io/v1/parse",
+            "serviceName": "Filedge"
+          },
+          "cdpMatch": {
+            "resourceUrl": null,
+            "position": null,
+            "cdpCalls30d": null,
+            "cdpPayers30d": null,
+            "cdpLastCalledAt": null
+          },
+          "verdict": "Both absent from CDP top-20 ( query may not target this niche )"
+        },
+        {
+          "query": "finance markets stock price news",
+          "merchant": {
+            "id": "10e7fffb-eb70-4452-bbc6-9a65a96de81c",
+            "payeeAddress": "0x9b0c27302c3993e8e524cc4452f613064e3d4004",
+            "referenceRank": 43,
+            "referenceScore": 0.323,
+            "referenceListingQ": 0.7941333333333332,
+            "referenceTxCount30d": 1,
+            "primaryResource": "https://agentstack-research-3bnlllaboa-ts.a.run.app/v1/us/announcements/:ticker",
+            "serviceName": "agentstack-research"
+          },
+          "incumbent": {
+            "id": "8b43ae1a-028a-4012-8553-35b3aeb3d7db",
+            "payeeAddress": "0xa98e17d26e1b3a51a10c79c2f52f78914e7d50eb",
+            "referenceRank": 42,
+            "referenceScore": 0.3273,
+            "primaryResource": "https://filedge.io/v1/parse",
+            "serviceName": "Filedge"
+          },
+          "cdpMatch": {
+            "resourceUrl": null,
+            "position": null,
+            "cdpCalls30d": null,
+            "cdpPayers30d": null,
+            "cdpLastCalledAt": null
+          },
+          "verdict": "Both absent from CDP top-20 ( query may not target this niche )"
+        }
+      ]
+    }
+  ],
+  "summary": {
+    "totalPairs": 32,
+    "totalBuriedFound": 0,
+    "totalBuriedNotInTop20": 28,
+    "totalIncumbentsFound": 0
+  }
+}
