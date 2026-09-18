@@ -20,3 +20,10 @@ dist/
 
 
 charts/
+chart_v2/
+
+# Local Python venv for chart rendering (matplotlib). Not part of the evidence base.
+.venv/
+
+__pycache__/
+*.pyc

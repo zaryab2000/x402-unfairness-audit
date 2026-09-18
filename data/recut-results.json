@@ -1,5 +1,5 @@
 {
-  "snapshotCollectedAt": "2026-07-25T11:41:43.541Z",
+  "snapshotCollectedAt": "2026-09-09T08:09:16.700Z",
   "quartileBoundariesFrom": "data/analysis-results.json",
   "analyzedCategories": [
     "Crypto & DeFi",
@@ -23,169 +23,169 @@
       "Crypto & DeFi": [
         {
           "label": "Q1",
-          "rankRange": "1–76",
-          "merchantCount": 76,
-          "sampleSize": 76,
+          "rankRange": "1–125",
+          "merchantCount": 125,
+          "sampleSize": 125,
           "inputSchemaPct": 100,
-          "outputExamplePct": 94.7,
-          "meanDescriptionLength": 270.5,
-          "meanTagCount": 4.42
-        },
-        {
-          "label": "Q2",
-          "rankRange": "77–152",
-          "merchantCount": 76,
-          "sampleSize": 76,
-          "inputSchemaPct": 100,
-          "outputExamplePct": 93.4,
-          "meanDescriptionLength": 191.7,
+          "outputExamplePct": 92.8,
+          "meanDescriptionLength": 276.5,
           "meanTagCount": 4.38
         },
         {
-          "label": "Q3",
-          "rankRange": "153–228",
-          "merchantCount": 76,
-          "sampleSize": 76,
+          "label": "Q2",
+          "rankRange": "126–250",
+          "merchantCount": 125,
+          "sampleSize": 125,
           "inputSchemaPct": 100,
-          "outputExamplePct": 14.5,
-          "meanDescriptionLength": 330.4,
-          "meanTagCount": 4.83
+          "outputExamplePct": 94.4,
+          "meanDescriptionLength": 206.6,
+          "meanTagCount": 4.34
+        },
+        {
+          "label": "Q3",
+          "rankRange": "251–375",
+          "merchantCount": 125,
+          "sampleSize": 125,
+          "inputSchemaPct": 100,
+          "outputExamplePct": 48,
+          "meanDescriptionLength": 276.1,
+          "meanTagCount": 4.48
         },
         {
           "label": "Q4",
-          "rankRange": "229–303",
-          "merchantCount": 75,
-          "sampleSize": 75,
+          "rankRange": "376–497",
+          "merchantCount": 122,
+          "sampleSize": 122,
           "inputSchemaPct": 100,
-          "outputExamplePct": 5.3,
-          "meanDescriptionLength": 331.7,
-          "meanTagCount": 4.88
+          "outputExamplePct": 33.6,
+          "meanDescriptionLength": 292.1,
+          "meanTagCount": 4.63
         }
       ],
       "AI & Agents": [
         {
           "label": "Q1",
-          "rankRange": "1–32",
-          "merchantCount": 32,
-          "sampleSize": 32,
+          "rankRange": "1–49",
+          "merchantCount": 49,
+          "sampleSize": 49,
           "inputSchemaPct": 100,
-          "outputExamplePct": 84.4,
-          "meanDescriptionLength": 260.8,
-          "meanTagCount": 4.28
+          "outputExamplePct": 87.8,
+          "meanDescriptionLength": 200.3,
+          "meanTagCount": 4.31
         },
         {
           "label": "Q2",
-          "rankRange": "33–64",
-          "merchantCount": 32,
-          "sampleSize": 32,
+          "rankRange": "50–98",
+          "merchantCount": 49,
+          "sampleSize": 49,
           "inputSchemaPct": 100,
-          "outputExamplePct": 56.3,
-          "meanDescriptionLength": 241.4,
-          "meanTagCount": 4.38
+          "outputExamplePct": 79.6,
+          "meanDescriptionLength": 229.8,
+          "meanTagCount": 4.06
         },
         {
           "label": "Q3",
-          "rankRange": "65–96",
-          "merchantCount": 32,
-          "sampleSize": 32,
+          "rankRange": "99–147",
+          "merchantCount": 49,
+          "sampleSize": 49,
           "inputSchemaPct": 100,
-          "outputExamplePct": 0,
-          "meanDescriptionLength": 320.8,
-          "meanTagCount": 4
+          "outputExamplePct": 38.8,
+          "meanDescriptionLength": 245.8,
+          "meanTagCount": 4.22
         },
         {
           "label": "Q4",
-          "rankRange": "97–128",
-          "merchantCount": 32,
-          "sampleSize": 32,
+          "rankRange": "148–194",
+          "merchantCount": 47,
+          "sampleSize": 47,
           "inputSchemaPct": 100,
           "outputExamplePct": 0,
-          "meanDescriptionLength": 106,
+          "meanDescriptionLength": 207.5,
           "meanTagCount": 4
         }
       ],
       "Data & Enrichment": [
         {
           "label": "Q1",
-          "rankRange": "1–9",
-          "merchantCount": 9,
-          "sampleSize": 9,
+          "rankRange": "1–23",
+          "merchantCount": 23,
+          "sampleSize": 23,
           "inputSchemaPct": 100,
-          "outputExamplePct": 88.9,
-          "meanDescriptionLength": 130.3,
-          "meanTagCount": 3.89
+          "outputExamplePct": 87,
+          "meanDescriptionLength": 190.3,
+          "meanTagCount": 4.48
         },
         {
           "label": "Q2",
-          "rankRange": "10–18",
-          "merchantCount": 9,
-          "sampleSize": 9,
+          "rankRange": "24–46",
+          "merchantCount": 23,
+          "sampleSize": 23,
           "inputSchemaPct": 100,
-          "outputExamplePct": 66.7,
-          "meanDescriptionLength": 206,
-          "meanTagCount": 3.67
+          "outputExamplePct": 82.6,
+          "meanDescriptionLength": 231.2,
+          "meanTagCount": 4.26
         },
         {
           "label": "Q3",
-          "rankRange": "19–27",
-          "merchantCount": 9,
-          "sampleSize": 9,
+          "rankRange": "47–69",
+          "merchantCount": 23,
+          "sampleSize": 23,
           "inputSchemaPct": 100,
-          "outputExamplePct": 88.9,
-          "meanDescriptionLength": 259,
-          "meanTagCount": 4.78
+          "outputExamplePct": 78.3,
+          "meanDescriptionLength": 232.6,
+          "meanTagCount": 4.57
         },
         {
           "label": "Q4",
-          "rankRange": "28–34",
-          "merchantCount": 7,
-          "sampleSize": 7,
+          "rankRange": "70–91",
+          "merchantCount": 22,
+          "sampleSize": 22,
           "inputSchemaPct": 100,
-          "outputExamplePct": 57.1,
-          "meanDescriptionLength": 224.4,
+          "outputExamplePct": 40.9,
+          "meanDescriptionLength": 200.6,
           "meanTagCount": 4.86
         }
       ],
       "Finance & Markets": [
         {
           "label": "Q1",
-          "rankRange": "1–8",
-          "merchantCount": 8,
-          "sampleSize": 8,
+          "rankRange": "1–15",
+          "merchantCount": 15,
+          "sampleSize": 15,
           "inputSchemaPct": 100,
-          "outputExamplePct": 87.5,
-          "meanDescriptionLength": 119.9,
-          "meanTagCount": 3.5
+          "outputExamplePct": 80,
+          "meanDescriptionLength": 178.3,
+          "meanTagCount": 3.93
         },
         {
           "label": "Q2",
-          "rankRange": "9–16",
-          "merchantCount": 8,
-          "sampleSize": 8,
+          "rankRange": "16–30",
+          "merchantCount": 15,
+          "sampleSize": 15,
           "inputSchemaPct": 100,
           "outputExamplePct": 100,
-          "meanDescriptionLength": 267.4,
-          "meanTagCount": 4.38
+          "meanDescriptionLength": 226.1,
+          "meanTagCount": 3.87
         },
         {
           "label": "Q3",
-          "rankRange": "17–24",
-          "merchantCount": 8,
-          "sampleSize": 8,
+          "rankRange": "31–45",
+          "merchantCount": 15,
+          "sampleSize": 15,
           "inputSchemaPct": 100,
-          "outputExamplePct": 100,
-          "meanDescriptionLength": 224.5,
-          "meanTagCount": 4.38
+          "outputExamplePct": 73.3,
+          "meanDescriptionLength": 250.2,
+          "meanTagCount": 3.93
         },
         {
           "label": "Q4",
-          "rankRange": "25–31",
-          "merchantCount": 7,
-          "sampleSize": 7,
+          "rankRange": "46–57",
+          "merchantCount": 12,
+          "sampleSize": 12,
           "inputSchemaPct": 100,
-          "outputExamplePct": 71.4,
-          "meanDescriptionLength": 171.4,
-          "meanTagCount": 4.14
+          "outputExamplePct": 91.7,
+          "meanDescriptionLength": 235.7,
+          "meanTagCount": 4.5
         }
       ]
     },
@@ -193,169 +193,169 @@
       "Crypto & DeFi": [
         {
           "label": "Q1",
-          "rankRange": "1–76",
-          "merchantCount": 76,
-          "sampleSize": 5954,
+          "rankRange": "1–125",
+          "merchantCount": 125,
+          "sampleSize": 12301,
           "inputSchemaPct": 100,
-          "outputExamplePct": 83.9,
-          "meanDescriptionLength": 255.1,
-          "meanTagCount": 4.5
+          "outputExamplePct": 82.9,
+          "meanDescriptionLength": 291.5,
+          "meanTagCount": 4.22
         },
         {
           "label": "Q2",
-          "rankRange": "77–152",
-          "merchantCount": 76,
-          "sampleSize": 345,
+          "rankRange": "126–250",
+          "merchantCount": 125,
+          "sampleSize": 2185,
           "inputSchemaPct": 100,
-          "outputExamplePct": 80.3,
-          "meanDescriptionLength": 165.2,
-          "meanTagCount": 4.25
+          "outputExamplePct": 90.3,
+          "meanDescriptionLength": 228.5,
+          "meanTagCount": 4.34
         },
         {
           "label": "Q3",
-          "rankRange": "153–228",
-          "merchantCount": 76,
-          "sampleSize": 87,
+          "rankRange": "251–375",
+          "merchantCount": 125,
+          "sampleSize": 626,
           "inputSchemaPct": 100,
-          "outputExamplePct": 16.1,
-          "meanDescriptionLength": 299.1,
-          "meanTagCount": 4.43
+          "outputExamplePct": 86.1,
+          "meanDescriptionLength": 190.3,
+          "meanTagCount": 4.26
         },
         {
           "label": "Q4",
-          "rankRange": "229–303",
-          "merchantCount": 75,
-          "sampleSize": 118,
+          "rankRange": "376–497",
+          "merchantCount": 122,
+          "sampleSize": 327,
           "inputSchemaPct": 100,
-          "outputExamplePct": 8.5,
-          "meanDescriptionLength": 319.2,
-          "meanTagCount": 3.61
+          "outputExamplePct": 54.4,
+          "meanDescriptionLength": 264.7,
+          "meanTagCount": 4.02
         }
       ],
       "AI & Agents": [
         {
           "label": "Q1",
-          "rankRange": "1–32",
-          "merchantCount": 32,
-          "sampleSize": 678,
+          "rankRange": "1–49",
+          "merchantCount": 49,
+          "sampleSize": 1175,
           "inputSchemaPct": 100,
-          "outputExamplePct": 64.9,
-          "meanDescriptionLength": 167.5,
-          "meanTagCount": 4.1
+          "outputExamplePct": 76.1,
+          "meanDescriptionLength": 176.9,
+          "meanTagCount": 3.55
         },
         {
           "label": "Q2",
-          "rankRange": "33–64",
-          "merchantCount": 32,
-          "sampleSize": 55,
+          "rankRange": "50–98",
+          "merchantCount": 49,
+          "sampleSize": 103,
           "inputSchemaPct": 100,
-          "outputExamplePct": 74.5,
-          "meanDescriptionLength": 194.4,
-          "meanTagCount": 4.36
+          "outputExamplePct": 80.6,
+          "meanDescriptionLength": 233.1,
+          "meanTagCount": 3.79
         },
         {
           "label": "Q3",
-          "rankRange": "65–96",
-          "merchantCount": 32,
-          "sampleSize": 32,
+          "rankRange": "99–147",
+          "merchantCount": 49,
+          "sampleSize": 122,
           "inputSchemaPct": 100,
-          "outputExamplePct": 0,
-          "meanDescriptionLength": 320.8,
-          "meanTagCount": 4
+          "outputExamplePct": 72.1,
+          "meanDescriptionLength": 256.3,
+          "meanTagCount": 4.13
         },
         {
           "label": "Q4",
-          "rankRange": "97–128",
-          "merchantCount": 32,
-          "sampleSize": 32,
+          "rankRange": "148–194",
+          "merchantCount": 47,
+          "sampleSize": 47,
           "inputSchemaPct": 100,
           "outputExamplePct": 0,
-          "meanDescriptionLength": 106,
+          "meanDescriptionLength": 207.5,
           "meanTagCount": 4
         }
       ],
       "Data & Enrichment": [
         {
           "label": "Q1",
-          "rankRange": "1–9",
-          "merchantCount": 9,
-          "sampleSize": 274,
+          "rankRange": "1–23",
+          "merchantCount": 23,
+          "sampleSize": 460,
           "inputSchemaPct": 100,
-          "outputExamplePct": 84.3,
-          "meanDescriptionLength": 102.4,
-          "meanTagCount": 2.57
+          "outputExamplePct": 85.7,
+          "meanDescriptionLength": 136,
+          "meanTagCount": 3.43
         },
         {
           "label": "Q2",
-          "rankRange": "10–18",
-          "merchantCount": 9,
-          "sampleSize": 112,
+          "rankRange": "24–46",
+          "merchantCount": 23,
+          "sampleSize": 180,
           "inputSchemaPct": 100,
-          "outputExamplePct": 78.6,
-          "meanDescriptionLength": 165,
-          "meanTagCount": 4.04
+          "outputExamplePct": 73.3,
+          "meanDescriptionLength": 226,
+          "meanTagCount": 2.81
         },
         {
           "label": "Q3",
-          "rankRange": "19–27",
-          "merchantCount": 9,
-          "sampleSize": 35,
+          "rankRange": "47–69",
+          "merchantCount": 23,
+          "sampleSize": 92,
           "inputSchemaPct": 100,
-          "outputExamplePct": 97.1,
-          "meanDescriptionLength": 222.5,
-          "meanTagCount": 4.2
+          "outputExamplePct": 76.1,
+          "meanDescriptionLength": 200.8,
+          "meanTagCount": 4.34
         },
         {
           "label": "Q4",
-          "rankRange": "28–34",
-          "merchantCount": 7,
-          "sampleSize": 9,
+          "rankRange": "70–91",
+          "merchantCount": 22,
+          "sampleSize": 36,
           "inputSchemaPct": 100,
-          "outputExamplePct": 44.4,
-          "meanDescriptionLength": 240.9,
-          "meanTagCount": 4.89
+          "outputExamplePct": 50,
+          "meanDescriptionLength": 209,
+          "meanTagCount": 4.92
         }
       ],
       "Finance & Markets": [
         {
           "label": "Q1",
-          "rankRange": "1–8",
-          "merchantCount": 8,
-          "sampleSize": 316,
+          "rankRange": "1–15",
+          "merchantCount": 15,
+          "sampleSize": 401,
           "inputSchemaPct": 100,
-          "outputExamplePct": 66.1,
-          "meanDescriptionLength": 130.4,
-          "meanTagCount": 2.04
+          "outputExamplePct": 69.8,
+          "meanDescriptionLength": 201.8,
+          "meanTagCount": 4.11
         },
         {
           "label": "Q2",
-          "rankRange": "9–16",
-          "merchantCount": 8,
-          "sampleSize": 59,
+          "rankRange": "16–30",
+          "merchantCount": 15,
+          "sampleSize": 199,
           "inputSchemaPct": 100,
-          "outputExamplePct": 100,
-          "meanDescriptionLength": 198.7,
-          "meanTagCount": 2.9
+          "outputExamplePct": 97.5,
+          "meanDescriptionLength": 149.2,
+          "meanTagCount": 2.34
         },
         {
           "label": "Q3",
-          "rankRange": "17–24",
-          "merchantCount": 8,
-          "sampleSize": 33,
+          "rankRange": "31–45",
+          "merchantCount": 15,
+          "sampleSize": 253,
           "inputSchemaPct": 100,
-          "outputExamplePct": 100,
-          "meanDescriptionLength": 151.4,
-          "meanTagCount": 3.24
+          "outputExamplePct": 25.3,
+          "meanDescriptionLength": 219.6,
+          "meanTagCount": 1.05
         },
         {
           "label": "Q4",
-          "rankRange": "25–31",
-          "merchantCount": 7,
-          "sampleSize": 26,
+          "rankRange": "46–57",
+          "merchantCount": 12,
+          "sampleSize": 48,
           "inputSchemaPct": 100,
-          "outputExamplePct": 80.8,
-          "meanDescriptionLength": 284.8,
-          "meanTagCount": 4.38
+          "outputExamplePct": 91.7,
+          "meanDescriptionLength": 228.4,
+          "meanTagCount": 3.73
         }
       ]
     },
@@ -363,169 +363,169 @@
       "Crypto & DeFi": [
         {
           "label": "Q1",
-          "rankRange": "1–76",
-          "merchantCount": 76,
-          "sampleSize": 76,
+          "rankRange": "1–125",
+          "merchantCount": 125,
+          "sampleSize": 125,
           "inputSchemaPct": 100,
-          "outputExamplePct": 97.4,
-          "meanDescriptionLength": 404.5,
-          "meanTagCount": 4.71
+          "outputExamplePct": 96.8,
+          "meanDescriptionLength": 453.5,
+          "meanTagCount": 4.77
         },
         {
           "label": "Q2",
-          "rankRange": "77–152",
-          "merchantCount": 76,
-          "sampleSize": 76,
+          "rankRange": "126–250",
+          "merchantCount": 125,
+          "sampleSize": 125,
           "inputSchemaPct": 100,
-          "outputExamplePct": 94.7,
-          "meanDescriptionLength": 233,
-          "meanTagCount": 4.55
+          "outputExamplePct": 96,
+          "meanDescriptionLength": 304.2,
+          "meanTagCount": 4.8
         },
         {
           "label": "Q3",
-          "rankRange": "153–228",
-          "merchantCount": 76,
-          "sampleSize": 76,
+          "rankRange": "251–375",
+          "merchantCount": 125,
+          "sampleSize": 125,
           "inputSchemaPct": 100,
-          "outputExamplePct": 14.5,
-          "meanDescriptionLength": 331.3,
-          "meanTagCount": 4.83
+          "outputExamplePct": 48.8,
+          "meanDescriptionLength": 298.4,
+          "meanTagCount": 4.68
         },
         {
           "label": "Q4",
-          "rankRange": "229–303",
-          "merchantCount": 75,
-          "sampleSize": 75,
+          "rankRange": "376–497",
+          "merchantCount": 122,
+          "sampleSize": 122,
           "inputSchemaPct": 100,
-          "outputExamplePct": 5.3,
-          "meanDescriptionLength": 338,
-          "meanTagCount": 4.93
+          "outputExamplePct": 34.4,
+          "meanDescriptionLength": 309.1,
+          "meanTagCount": 4.74
         }
       ],
       "AI & Agents": [
         {
           "label": "Q1",
-          "rankRange": "1–32",
-          "merchantCount": 32,
-          "sampleSize": 32,
+          "rankRange": "1–49",
+          "merchantCount": 49,
+          "sampleSize": 49,
           "inputSchemaPct": 100,
-          "outputExamplePct": 84.4,
-          "meanDescriptionLength": 316.7,
-          "meanTagCount": 4.44
+          "outputExamplePct": 87.8,
+          "meanDescriptionLength": 261,
+          "meanTagCount": 4.49
         },
         {
           "label": "Q2",
-          "rankRange": "33–64",
-          "merchantCount": 32,
-          "sampleSize": 32,
+          "rankRange": "50–98",
+          "merchantCount": 49,
+          "sampleSize": 49,
           "inputSchemaPct": 100,
-          "outputExamplePct": 56.3,
-          "meanDescriptionLength": 243.2,
-          "meanTagCount": 4.38
+          "outputExamplePct": 79.6,
+          "meanDescriptionLength": 246.4,
+          "meanTagCount": 4.24
         },
         {
           "label": "Q3",
-          "rankRange": "65–96",
-          "merchantCount": 32,
-          "sampleSize": 32,
+          "rankRange": "99–147",
+          "merchantCount": 49,
+          "sampleSize": 49,
           "inputSchemaPct": 100,
-          "outputExamplePct": 0,
-          "meanDescriptionLength": 320.8,
-          "meanTagCount": 4
+          "outputExamplePct": 38.8,
+          "meanDescriptionLength": 260.2,
+          "meanTagCount": 4.27
         },
         {
           "label": "Q4",
-          "rankRange": "97–128",
-          "merchantCount": 32,
-          "sampleSize": 32,
+          "rankRange": "148–194",
+          "merchantCount": 47,
+          "sampleSize": 47,
           "inputSchemaPct": 100,
           "outputExamplePct": 0,
-          "meanDescriptionLength": 106,
+          "meanDescriptionLength": 207.5,
           "meanTagCount": 4
         }
       ],
       "Data & Enrichment": [
         {
           "label": "Q1",
-          "rankRange": "1–9",
-          "merchantCount": 9,
-          "sampleSize": 9,
+          "rankRange": "1–23",
+          "merchantCount": 23,
+          "sampleSize": 23,
           "inputSchemaPct": 100,
-          "outputExamplePct": 100,
-          "meanDescriptionLength": 208.3,
-          "meanTagCount": 4
+          "outputExamplePct": 91.3,
+          "meanDescriptionLength": 266.5,
+          "meanTagCount": 4.57
         },
         {
           "label": "Q2",
-          "rankRange": "10–18",
-          "merchantCount": 9,
-          "sampleSize": 9,
+          "rankRange": "24–46",
+          "merchantCount": 23,
+          "sampleSize": 23,
           "inputSchemaPct": 100,
-          "outputExamplePct": 66.7,
-          "meanDescriptionLength": 293.9,
-          "meanTagCount": 3.67
+          "outputExamplePct": 91.3,
+          "meanDescriptionLength": 290.3,
+          "meanTagCount": 4.65
         },
         {
           "label": "Q3",
-          "rankRange": "19–27",
-          "merchantCount": 9,
-          "sampleSize": 9,
+          "rankRange": "47–69",
+          "merchantCount": 23,
+          "sampleSize": 23,
           "inputSchemaPct": 100,
-          "outputExamplePct": 100,
-          "meanDescriptionLength": 323.9,
-          "meanTagCount": 5
+          "outputExamplePct": 78.3,
+          "meanDescriptionLength": 281.5,
+          "meanTagCount": 4.7
         },
         {
           "label": "Q4",
-          "rankRange": "28–34",
-          "merchantCount": 7,
-          "sampleSize": 7,
+          "rankRange": "70–91",
+          "merchantCount": 22,
+          "sampleSize": 22,
           "inputSchemaPct": 100,
-          "outputExamplePct": 57.1,
-          "meanDescriptionLength": 224.4,
+          "outputExamplePct": 40.9,
+          "meanDescriptionLength": 227.3,
           "meanTagCount": 4.86
         }
       ],
       "Finance & Markets": [
         {
           "label": "Q1",
-          "rankRange": "1–8",
-          "merchantCount": 8,
-          "sampleSize": 8,
+          "rankRange": "1–15",
+          "merchantCount": 15,
+          "sampleSize": 15,
           "inputSchemaPct": 100,
-          "outputExamplePct": 100,
-          "meanDescriptionLength": 291,
-          "meanTagCount": 4.25
+          "outputExamplePct": 86.7,
+          "meanDescriptionLength": 316.7,
+          "meanTagCount": 4.2
         },
         {
           "label": "Q2",
-          "rankRange": "9–16",
-          "merchantCount": 8,
-          "sampleSize": 8,
+          "rankRange": "16–30",
+          "merchantCount": 15,
+          "sampleSize": 15,
           "inputSchemaPct": 100,
           "outputExamplePct": 100,
-          "meanDescriptionLength": 362.3,
-          "meanTagCount": 4.5
+          "meanDescriptionLength": 299.7,
+          "meanTagCount": 4.4
         },
         {
           "label": "Q3",
-          "rankRange": "17–24",
-          "merchantCount": 8,
-          "sampleSize": 8,
+          "rankRange": "31–45",
+          "merchantCount": 15,
+          "sampleSize": 15,
           "inputSchemaPct": 100,
-          "outputExamplePct": 100,
-          "meanDescriptionLength": 254.5,
-          "meanTagCount": 4.38
+          "outputExamplePct": 86.7,
+          "meanDescriptionLength": 305.3,
+          "meanTagCount": 4.53
         },
         {
           "label": "Q4",
-          "rankRange": "25–31",
-          "merchantCount": 7,
-          "sampleSize": 7,
+          "rankRange": "46–57",
+          "merchantCount": 12,
+          "sampleSize": 12,
           "inputSchemaPct": 100,
-          "outputExamplePct": 71.4,
-          "meanDescriptionLength": 205.4,
-          "meanTagCount": 4.14
+          "outputExamplePct": 91.7,
+          "meanDescriptionLength": 252.6,
+          "meanTagCount": 4.5
         }
       ]
     }

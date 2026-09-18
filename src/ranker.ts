@@ -1,18 +1,31 @@
 /**
  * Reference implementation of the merchant ranking score.
  *
- * This is the scoring path as it stood at the snapshot date (2026-07-25),
- * vendored from the transparent ranker at commit 5b327e0. It is dependency-free
+ * This is the scoring path as it stood at the snapshot date (2026-09-09),
+ * vendored from the transparent ranker at commit eca0195. It is dependency-free
  * on purpose: no database, no network, no framework. Everything the score needs
  * arrives as plain data read from `data/raw-data.json`.
  *
  * Only the scoring path is reproduced here. Report generation, comparators and
  * trend handling are out of scope for reproducing the published numbers.
  *
+ * WHAT CHANGED SINCE THE JULY SNAPSHOT. The July copy (commit 5b327e0) scored
+ * listing quality from surface facts: description length tiers, a flat bonus for
+ * any service name, and a tag-count tier. This copy grades the same fields for
+ * quality — keyword density and fluff in the description, name specificity, tag
+ * relevance to the merchant's category — and adds an icon-presence bonus. The
+ * normalisation constant moved from 3.6 to 3.75 to match. The four other
+ * components are unchanged, as are the weights.
+ *
  * WANT TO DISAGREE WITH THE FINDINGS? Change RANKER_WEIGHTS below and re-run
  * `npm run analyze`. The weights are the single place the formula encodes a
  * judgement call. See README, "How to disagree".
  */
+
+import { computeDescriptionQualityScore } from "./description-quality.ts";
+import { computeServiceNameQuality } from "./service-name-quality.ts";
+import { computeTagQualityScore } from "./tag-quality.ts";
+import type { ScorableCategory } from "./taxonomy.ts";
 
 /**
  * Component weights for the ranker score. Must sum to 1.0.
@@ -52,12 +65,10 @@ export interface ScorableResource {
   hasInputSchema: boolean;
   hasOutputExample: boolean;
   lastCalledAt: string | null;
-  /**
-   * Per-resource catalog update time. Absent from the published snapshot — the
-   * collector did not serialize it. See METHODOLOGY.md, "Known reproduction
-   * gap"; five merchants' recency cannot be reproduced because of this.
-   */
+  /** Per-resource catalog update time. Serialized by the September collector. */
   lastUpdated?: string | null;
+  /** Icon presence is a +0.15 term. Serialized by the September collector. */
+  iconUrl?: string | null;
 }
 
 /** The merchant fields the score actually reads. */
@@ -72,6 +83,12 @@ export interface ScorableMerchant {
 export interface MerchantData {
   merchant: ScorableMerchant;
   resources: ScorableResource[];
+  /**
+   * The merchant's category. Listing quality grades a description and its tags
+   * against the category's own vocabulary, so the same text scores differently
+   * in different categories. Null scores those two sub-signals at 0.
+   */
+  category: ScorableCategory | null;
 }
 
 /**
@@ -102,7 +119,7 @@ export function computeScoreBreakdown(
   data: MerchantData,
   now: ReferenceTimeMs,
 ): ScoreBreakdown {
-  const { merchant, resources } = data;
+  const { merchant, resources, category } = data;
 
   return {
     volumeSignal:
@@ -110,7 +127,7 @@ export function computeScoreBreakdown(
       0.5 * logNorm(Number(merchant.volume30d ?? 0)),
     buyerDiversity: computeBuyerDiversity(merchant.buyers30d ?? 0),
     reliability: computeReliability(),
-    listingQuality: computeListingQualityFromResources(resources),
+    listingQuality: computeListingQualityFromResources(resources, category),
     recency: computeRecency(resources, merchant.lastUpdated ?? null, now),
   };
 }
@@ -131,49 +148,71 @@ function computeBuyerDiversity(uniqueBuyers: number): number {
 /**
  * Reliability is a constant 0.5 for every merchant.
  *
- * No external source exposes per-service health, so the production code fell
- * back to 0.5 for every merchant in this snapshot (verified: all 1,132 rows
- * carry exactly 0.5). It is reproduced as a constant rather than as a lookup
- * over fields the snapshot does not contain.
+ * Production reads `reliabilityScore ?? apiSuccessRate` per resource and falls
+ * back to 0.5 when neither is positive. Both columns are unpopulated for all
+ * 42,201 resources in this snapshot, so every merchant takes the fallback.
+ * Verified: all rows carry exactly 0.5. It is reproduced as a constant rather
+ * than as a lookup over fields the snapshot does not contain.
  */
 function computeReliability(): number {
   return 0.5;
 }
 
 // Listing-quality scoring separates always-available structural signals
-// (schemas, description) from rare opt-in metadata (service name, tags). Raw
-// score is normalized by the theoretical max below.
+// (schemas, description) from rare opt-in metadata (service name, tags, icon),
+// so a merchant is rewarded for documentation effort rather than for verbosity
+// or tag spam. Raw score is normalized by the theoretical max below.
 //
 //   Structural (max 2.8): input schema +1.0, output example +1.0,
-//                         description tier (exclusive) >150 +0.8 / >50 +0.4
-//   Opt-in    (max 0.8):  service name +0.5, tags 3-5 +0.3 / otherwise >=1 +0.1
-const LISTING_QUALITY_MAX = 3.6;
+//                         description +0.8 (gated by quality)
+//   Opt-in    (max 0.95): service name +0.5 (gated by specificity),
+//                         tags +0.3 (gated by quality), icon +0.15
+const LISTING_QUALITY_MAX = 3.75;
 
-function computeListingQualityForResource(r: ScorableResource): number {
+function computeListingQualityForResource(
+  r: ScorableResource,
+  category: ScorableCategory | null,
+): number {
   let score = 0;
 
   if (r.hasInputSchema) score += 1.0;
   if (r.hasOutputExample) score += 1.0;
 
-  const descLen = r.description?.length ?? 0;
-  if (descLen > 150) score += 0.8;
-  else if (descLen > 50) score += 0.4;
+  // Description contributes up to 0.8, gated by a composite quality score
+  // (keyword density, category keyword presence, structural specificity, fluff)
+  // rather than raw length — a fluff-filled 200-char blurb scores below a dense
+  // 120-char API description.
+  const descQuality = computeDescriptionQualityScore(r.description ?? "", category);
+  score += 0.8 * descQuality.score;
 
-  if (r.serviceName && r.serviceName.length > 0) score += 0.5;
+  // Service name contributes up to 0.5, gated by name specificity — a generic
+  // "API" scores far below "Weather Forecast API".
+  score += 0.5 * computeServiceNameQuality(r.serviceName);
 
-  const tagCount = r.tags?.length ?? 0;
-  if (tagCount >= 3 && tagCount <= 5) score += 0.3;
-  else if (tagCount >= 1) score += 0.1;
+  // Tags contribute up to 0.3, gated by tag quality (taxonomy relevance,
+  // specificity, count, anti-spam) rather than raw count — 3 category-matching
+  // tags beat 5 generic ones. A resource with no tags contributes 0.
+  const tags = r.tags ?? [];
+  if (tags.length > 0) {
+    const tagQuality = computeTagQualityScore(tags, category);
+    score += 0.3 * tagQuality.score;
+  }
+
+  // Icon presence is a small metadata-completeness bonus.
+  if (r.iconUrl) score += 0.15;
 
   return Math.min(score / LISTING_QUALITY_MAX, 1);
 }
 
-function computeListingQualityFromResources(resources: ScorableResource[]): number {
+function computeListingQualityFromResources(
+  resources: ScorableResource[],
+  category: ScorableCategory | null,
+): number {
   if (resources.length === 0) return 0;
 
   let totalScore = 0;
   for (const r of resources) {
-    totalScore += computeListingQualityForResource(r);
+    totalScore += computeListingQualityForResource(r, category);
   }
 
   return totalScore / resources.length;
@@ -190,22 +229,16 @@ function computeRecency(
 ): number {
   let mostRecent = 0;
 
-  // The production code read a per-resource `lastUpdated` alongside
-  // `lastCalledAt`. The snapshot preserves only the merchant-level value, so it
-  // stands in per resource. Folding it in INSIDE the loop matters: a merchant
-  // with no resources scores 0, exactly as production did, rather than
-  // inheriting the merchant timestamp and scoring 1.0. Twenty-one merchants in
-  // this snapshot have no resources.
-  //
-  // This reproduces 1,127 of 1,132 merchants exactly; see METHODOLOGY.md for
-  // the five that cannot be reproduced from published artifacts.
+  // Production maxes over per-resource `lastCalledAt` and `lastUpdated`. The
+  // September collector serializes both, so the merchant-level timestamp is
+  // only a fallback for resources missing their own — it is folded in INSIDE
+  // the loop so a merchant with no resources scores 0, exactly as production
+  // does, rather than inheriting the merchant timestamp and scoring 1.0.
   const merchantTs = merchantLastUpdated ? new Date(merchantLastUpdated).getTime() : 0;
 
   for (const r of resources) {
     const lastCalled = r.lastCalledAt ? new Date(r.lastCalledAt).getTime() : 0;
-    const lastUpdated = r.lastUpdated
-      ? new Date(r.lastUpdated).getTime()
-      : merchantTs;
+    const lastUpdated = r.lastUpdated ? new Date(r.lastUpdated).getTime() : merchantTs;
     mostRecent = Math.max(mostRecent, lastCalled, lastUpdated);
   }
 

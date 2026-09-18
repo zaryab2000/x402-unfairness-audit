@@ -1,11 +1,11 @@
 {
-  "snapshot": "2026-07-25T11:41:43Z",
+  "snapshot": "2026-09-09T08:09:16Z",
   "note": "Every number cited in the report, with the artifact and path that produces it. `npm run verify` resolves each derivation and fails on any mismatch. Entries with source 'external' are reported by a third party and are NOT verified by this repo.",
   "derivationSyntax": "Dot/bracket path into the named artifact. `[key=value]` selects an array element by field. `|expr` applies a named transform documented in scripts/verify.ts.",
   "claims": [
     {
       "id": "dataset.merchants.total",
-      "value": 1212,
+      "value": 2252,
       "source": "data/raw-data.json",
       "derivation": "dbStats.totalMerchants",
       "cited_in": "Section 3"
@@ -19,21 +19,21 @@
     },
     {
       "id": "dataset.merchants.analysed",
-      "value": 496,
+      "value": 839,
       "source": "data/analysis-results.json",
       "derivation": "summary.totalMerchantsAnalyzed",
       "cited_in": "Section 3"
     },
     {
       "id": "dataset.merchants.other",
-      "value": 636,
+      "value": 1256,
       "source": "data/raw-data.json",
       "derivation": "categories[name=Other].merchantCount",
       "cited_in": "Section 3"
     },
     {
       "id": "dataset.volume30d.total",
-      "value": 52414.65,
+      "value": 38735.11,
       "source": "data/raw-data.json",
       "derivation": "merchants|sumVolume30dAcrossAnalysedCategories",
       "cited_in": "Section 3",
@@ -41,224 +41,224 @@
     },
     {
       "id": "dataset.resources.analysed",
-      "value": 8165,
+      "value": 18555,
       "source": "data/raw-data.json",
       "derivation": "merchants|countResourcesAcrossAnalysedCategories",
       "cited_in": "Section 3"
     },
     {
       "id": "population.transacted.count",
-      "value": 419,
+      "value": 760,
       "source": "data/raw-data.json",
       "derivation": "merchants|countAnalysedWithTxGreaterThan(0)",
       "cited_in": "Section 3"
     },
     {
       "id": "population.transacted.pct",
-      "value": 84.5,
+      "value": 90.6,
       "source": "data/raw-data.json",
       "derivation": "merchants|pctAnalysedWithTxGreaterThan(0)",
       "cited_in": "Section 3"
     },
     {
       "id": "population.above10tx.count",
-      "value": 161,
+      "value": 305,
       "source": "data/raw-data.json",
       "derivation": "merchants|countAnalysedWithTxGreaterThan(10)",
       "cited_in": "Section 3"
     },
     {
       "id": "population.above10tx.pct",
-      "value": 32.5,
+      "value": 36.4,
       "source": "data/raw-data.json",
       "derivation": "merchants|pctAnalysedWithTxGreaterThan(10)",
       "cited_in": "Section 3"
     },
     {
       "id": "concentration.crypto-defi.merchantCount",
-      "value": 303,
+      "value": 497,
       "source": "data/analysis-results.json",
       "derivation": "categories[categoryName=Crypto & DeFi].merchantCount",
       "cited_in": "Section 4.1"
     },
     {
       "id": "concentration.crypto-defi.gini",
-      "value": 0.9235,
+      "value": 0.8975,
       "source": "data/analysis-results.json",
       "derivation": "categories[categoryName=Crypto & DeFi].gini",
       "cited_in": "Section 4.1"
     },
     {
       "id": "concentration.crypto-defi.hhi",
-      "value": 816,
+      "value": 400,
       "source": "data/analysis-results.json",
       "derivation": "categories[categoryName=Crypto & DeFi].hhi",
       "cited_in": "Section 4.1"
     },
     {
       "id": "concentration.crypto-defi.top3Share",
-      "value": 0.4224,
+      "value": 0.2813,
       "source": "data/analysis-results.json",
       "derivation": "categories[categoryName=Crypto & DeFi].top3Share",
       "cited_in": "Section 4.1"
     },
     {
       "id": "concentration.crypto-defi.volume30d",
-      "value": 49844.8,
+      "value": 34673.65,
       "source": "data/analysis-results.json",
       "derivation": "categories[categoryName=Crypto & DeFi].totalVolume30d",
       "cited_in": "Section 4.1"
     },
     {
       "id": "concentration.crypto-defi.tx30d",
-      "value": 45290,
+      "value": 62863,
       "source": "data/analysis-results.json",
       "derivation": "categories[categoryName=Crypto & DeFi].totalTxCount30d",
       "cited_in": "Section 4.1"
     },
     {
       "id": "concentration.ai-agents.merchantCount",
-      "value": 128,
+      "value": 194,
       "source": "data/analysis-results.json",
       "derivation": "categories[categoryName=AI & Agents].merchantCount",
       "cited_in": "Section 4.1"
     },
     {
       "id": "concentration.ai-agents.gini",
-      "value": 0.9524,
+      "value": 0.963,
       "source": "data/analysis-results.json",
       "derivation": "categories[categoryName=AI & Agents].gini",
       "cited_in": "Section 4.1"
     },
     {
       "id": "concentration.ai-agents.hhi",
-      "value": 1841,
+      "value": 2440,
       "source": "data/analysis-results.json",
       "derivation": "categories[categoryName=AI & Agents].hhi",
       "cited_in": "Section 4.1"
     },
     {
       "id": "concentration.ai-agents.top3Share",
-      "value": 0.6529,
+      "value": 0.7718,
       "source": "data/analysis-results.json",
       "derivation": "categories[categoryName=AI & Agents].top3Share",
       "cited_in": "Section 4.1"
     },
     {
       "id": "concentration.ai-agents.volume30d",
-      "value": 916.61,
+      "value": 1014.46,
       "source": "data/analysis-results.json",
       "derivation": "categories[categoryName=AI & Agents].totalVolume30d",
       "cited_in": "Section 4.1"
     },
     {
       "id": "concentration.ai-agents.tx30d",
-      "value": 13912,
+      "value": 18766,
       "source": "data/analysis-results.json",
       "derivation": "categories[categoryName=AI & Agents].totalTxCount30d",
       "cited_in": "Section 4.1"
     },
     {
       "id": "concentration.data-enrichment.merchantCount",
-      "value": 34,
+      "value": 91,
       "source": "data/analysis-results.json",
       "derivation": "categories[categoryName=Data & Enrichment].merchantCount",
       "cited_in": "Section 4.1"
     },
     {
       "id": "concentration.data-enrichment.gini",
-      "value": 0.9244,
+      "value": 0.9766,
       "source": "data/analysis-results.json",
       "derivation": "categories[categoryName=Data & Enrichment].gini",
       "cited_in": "Section 4.1"
     },
     {
       "id": "concentration.data-enrichment.hhi",
-      "value": 6798,
+      "value": 8310,
       "source": "data/analysis-results.json",
       "derivation": "categories[categoryName=Data & Enrichment].hhi",
       "cited_in": "Section 4.1"
     },
     {
       "id": "concentration.data-enrichment.top3Share",
-      "value": 0.9118,
+      "value": 0.9544,
       "source": "data/analysis-results.json",
       "derivation": "categories[categoryName=Data & Enrichment].top3Share",
       "cited_in": "Section 4.1"
     },
     {
       "id": "concentration.data-enrichment.volume30d",
-      "value": 1020.12,
+      "value": 2166.29,
       "source": "data/analysis-results.json",
       "derivation": "categories[categoryName=Data & Enrichment].totalVolume30d",
       "cited_in": "Section 4.1"
     },
     {
       "id": "concentration.data-enrichment.tx30d",
-      "value": 20244,
+      "value": 69911,
       "source": "data/analysis-results.json",
       "derivation": "categories[categoryName=Data & Enrichment].totalTxCount30d",
       "cited_in": "Section 4.1"
     },
     {
       "id": "concentration.finance-markets.merchantCount",
-      "value": 31,
+      "value": 57,
       "source": "data/analysis-results.json",
       "derivation": "categories[categoryName=Finance & Markets].merchantCount",
       "cited_in": "Section 4.1"
     },
     {
       "id": "concentration.finance-markets.gini",
-      "value": 0.7809,
+      "value": 0.7371,
       "source": "data/analysis-results.json",
       "derivation": "categories[categoryName=Finance & Markets].gini",
       "cited_in": "Section 4.1"
     },
     {
       "id": "concentration.finance-markets.hhi",
-      "value": 1700,
+      "value": 783,
       "source": "data/analysis-results.json",
       "derivation": "categories[categoryName=Finance & Markets].hhi",
       "cited_in": "Section 4.1"
     },
     {
       "id": "concentration.finance-markets.top3Share",
-      "value": 0.6645,
+      "value": 0.3738,
       "source": "data/analysis-results.json",
       "derivation": "categories[categoryName=Finance & Markets].top3Share",
       "cited_in": "Section 4.1"
     },
     {
       "id": "concentration.finance-markets.volume30d",
-      "value": 633.11,
+      "value": 880.7,
       "source": "data/analysis-results.json",
       "derivation": "categories[categoryName=Finance & Markets].totalVolume30d",
       "cited_in": "Section 4.1"
     },
     {
       "id": "concentration.finance-markets.tx30d",
-      "value": 2614,
+      "value": 2175,
       "source": "data/analysis-results.json",
       "derivation": "categories[categoryName=Finance & Markets].totalTxCount30d",
       "cited_in": "Section 4.1"
     },
     {
       "id": "quartiles.data-enrichment.q1.meanScore",
-      "value": 0.5319,
+      "value": 0.4736,
       "source": "data/analysis-results.json",
       "derivation": "categories[categoryName=Data & Enrichment].quartiles.q1.meanScore",
       "cited_in": "Section 4.2"
     },
     {
       "id": "quartiles.data-enrichment.q1.volumeSignal",
-      "value": 0.2978,
+      "value": 0.2409,
       "source": "data/analysis-results.json",
       "derivation": "categories[categoryName=Data & Enrichment].quartiles.q1.volumeSignal",
       "cited_in": "Section 4.2"
     },
     {
       "id": "quartiles.data-enrichment.q1.buyerDiversity",
-      "value": 0.4552,
+      "value": 0.3606,
       "source": "data/analysis-results.json",
       "derivation": "categories[categoryName=Data & Enrichment].quartiles.q1.buyerDiversity",
       "cited_in": "Section 4.2"
@@ -272,35 +272,35 @@
     },
     {
       "id": "quartiles.data-enrichment.q1.listingQuality",
-      "value": 0.8264,
+      "value": 0.7561,
       "source": "data/analysis-results.json",
       "derivation": "categories[categoryName=Data & Enrichment].quartiles.q1.listingQuality",
       "cited_in": "Section 4.2"
     },
     {
       "id": "quartiles.data-enrichment.q1.recency",
-      "value": 1,
+      "value": 0.9913,
       "source": "data/analysis-results.json",
       "derivation": "categories[categoryName=Data & Enrichment].quartiles.q1.recency",
       "cited_in": "Section 4.2"
     },
     {
       "id": "quartiles.data-enrichment.q2.meanScore",
-      "value": 0.446,
+      "value": 0.3781,
       "source": "data/analysis-results.json",
       "derivation": "categories[categoryName=Data & Enrichment].quartiles.q2.meanScore",
       "cited_in": "Section 4.2"
     },
     {
       "id": "quartiles.data-enrichment.q2.volumeSignal",
-      "value": 0.1779,
+      "value": 0.1049,
       "source": "data/analysis-results.json",
       "derivation": "categories[categoryName=Data & Enrichment].quartiles.q2.volumeSignal",
       "cited_in": "Section 4.2"
     },
     {
       "id": "quartiles.data-enrichment.q2.buyerDiversity",
-      "value": 0.3208,
+      "value": 0.2027,
       "source": "data/analysis-results.json",
       "derivation": "categories[categoryName=Data & Enrichment].quartiles.q2.buyerDiversity",
       "cited_in": "Section 4.2"
@@ -314,7 +314,7 @@
     },
     {
       "id": "quartiles.data-enrichment.q2.listingQuality",
-      "value": 0.7975,
+      "value": 0.7364,
       "source": "data/analysis-results.json",
       "derivation": "categories[categoryName=Data & Enrichment].quartiles.q2.listingQuality",
       "cited_in": "Section 4.2"
@@ -328,21 +328,21 @@
     },
     {
       "id": "quartiles.data-enrichment.q3.meanScore",
-      "value": 0.3953,
+      "value": 0.3346,
       "source": "data/analysis-results.json",
       "derivation": "categories[categoryName=Data & Enrichment].quartiles.q3.meanScore",
       "cited_in": "Section 4.2"
     },
     {
       "id": "quartiles.data-enrichment.q3.volumeSignal",
-      "value": 0.0933,
+      "value": 0.0662,
       "source": "data/analysis-results.json",
       "derivation": "categories[categoryName=Data & Enrichment].quartiles.q3.volumeSignal",
       "cited_in": "Section 4.2"
     },
     {
       "id": "quartiles.data-enrichment.q3.buyerDiversity",
-      "value": 0.195,
+      "value": 0.1351,
       "source": "data/analysis-results.json",
       "derivation": "categories[categoryName=Data & Enrichment].quartiles.q3.buyerDiversity",
       "cited_in": "Section 4.2"
@@ -356,7 +356,7 @@
     },
     {
       "id": "quartiles.data-enrichment.q3.listingQuality",
-      "value": 0.895,
+      "value": 0.7364,
       "source": "data/analysis-results.json",
       "derivation": "categories[categoryName=Data & Enrichment].quartiles.q3.listingQuality",
       "cited_in": "Section 4.2",
@@ -364,28 +364,28 @@
     },
     {
       "id": "quartiles.data-enrichment.q3.recency",
-      "value": 1,
+      "value": 0.9261,
       "source": "data/analysis-results.json",
       "derivation": "categories[categoryName=Data & Enrichment].quartiles.q3.recency",
       "cited_in": "Section 4.2"
     },
     {
       "id": "quartiles.data-enrichment.q4.meanScore",
-      "value": 0.3434,
+      "value": 0.2677,
       "source": "data/analysis-results.json",
       "derivation": "categories[categoryName=Data & Enrichment].quartiles.q4.meanScore",
       "cited_in": "Section 4.2"
     },
     {
       "id": "quartiles.data-enrichment.q4.volumeSignal",
-      "value": 0.0524,
+      "value": 0.0413,
       "source": "data/analysis-results.json",
       "derivation": "categories[categoryName=Data & Enrichment].quartiles.q4.volumeSignal",
       "cited_in": "Section 4.2"
     },
     {
       "id": "quartiles.data-enrichment.q4.buyerDiversity",
-      "value": 0.1093,
+      "value": 0.0934,
       "source": "data/analysis-results.json",
       "derivation": "categories[categoryName=Data & Enrichment].quartiles.q4.buyerDiversity",
       "cited_in": "Section 4.2"
@@ -399,7 +399,7 @@
     },
     {
       "id": "quartiles.data-enrichment.q4.listingQuality",
-      "value": 0.8294,
+      "value": 0.6388,
       "source": "data/analysis-results.json",
       "derivation": "categories[categoryName=Data & Enrichment].quartiles.q4.listingQuality",
       "cited_in": "Section 4.2",
@@ -407,35 +407,35 @@
     },
     {
       "id": "quartiles.data-enrichment.q4.recency",
-      "value": 0.9714,
+      "value": 0.7136,
       "source": "data/analysis-results.json",
       "derivation": "categories[categoryName=Data & Enrichment].quartiles.q4.recency",
       "cited_in": "Section 4.2"
     },
     {
       "id": "quartiles.data-enrichment.q1.meanTxCount30d",
-      "value": 2175.7,
+      "value": 3014.7,
       "source": "data/analysis-results.json",
       "derivation": "categories[categoryName=Data & Enrichment].quartiles.q1.meanTxCount30d",
       "cited_in": "Section 4.2 Figure 4.2"
     },
     {
       "id": "quartiles.data-enrichment.q2.meanTxCount30d",
-      "value": 61.2,
+      "value": 13.7,
       "source": "data/analysis-results.json",
       "derivation": "categories[categoryName=Data & Enrichment].quartiles.q2.meanTxCount30d",
       "cited_in": "Section 4.2 Figure 4.2"
     },
     {
       "id": "quartiles.data-enrichment.q3.meanTxCount30d",
-      "value": 10,
+      "value": 8.8,
       "source": "data/analysis-results.json",
       "derivation": "categories[categoryName=Data & Enrichment].quartiles.q3.meanTxCount30d",
       "cited_in": "Section 4.2 Figure 4.2"
     },
     {
       "id": "quartiles.data-enrichment.q4.meanTxCount30d",
-      "value": 3.1,
+      "value": 2.5,
       "source": "data/analysis-results.json",
       "derivation": "categories[categoryName=Data & Enrichment].quartiles.q4.meanTxCount30d",
       "cited_in": "Section 4.2 Figure 4.2",
@@ -443,42 +443,42 @@
     },
     {
       "id": "quartiles.data-enrichment.q1.meanBuyers30d",
-      "value": 141.2,
+      "value": 65.2,
       "source": "data/analysis-results.json",
       "derivation": "categories[categoryName=Data & Enrichment].quartiles.q1.meanBuyers30d",
       "cited_in": "Section 4.2 Figure 4.2"
     },
     {
       "id": "quartiles.data-enrichment.q2.meanBuyers30d",
-      "value": 19.9,
+      "value": 6.3,
       "source": "data/analysis-results.json",
       "derivation": "categories[categoryName=Data & Enrichment].quartiles.q2.meanBuyers30d",
       "cited_in": "Section 4.2 Figure 4.2"
     },
     {
       "id": "quartiles.data-enrichment.q3.meanBuyers30d",
-      "value": 5.7,
+      "value": 4,
       "source": "data/analysis-results.json",
       "derivation": "categories[categoryName=Data & Enrichment].quartiles.q3.meanBuyers30d",
       "cited_in": "Section 4.2 Figure 4.2"
     },
     {
       "id": "quartiles.data-enrichment.q4.meanBuyers30d",
-      "value": 2,
+      "value": 1.6,
       "source": "data/analysis-results.json",
       "derivation": "categories[categoryName=Data & Enrichment].quartiles.q4.meanBuyers30d",
       "cited_in": "Section 4.2 Figure 4.2"
     },
     {
       "id": "gap.crypto-defi.volume",
-      "value": 0.4362,
+      "value": 0.3663,
       "source": "data/analysis-results.json",
       "derivation": "categories[categoryName=Crypto & DeFi].gapAnalysis.componentShares.volume",
       "cited_in": "Section 4.2"
     },
     {
       "id": "gap.crypto-defi.buyerDiversity",
-      "value": 0.4223,
+      "value": 0.3694,
       "source": "data/analysis-results.json",
       "derivation": "categories[categoryName=Crypto & DeFi].gapAnalysis.componentShares.buyerDiversity",
       "cited_in": "Section 4.2"
@@ -492,21 +492,21 @@
     },
     {
       "id": "gap.crypto-defi.listingQuality",
-      "value": 0.1321,
+      "value": 0.1037,
       "source": "data/analysis-results.json",
       "derivation": "categories[categoryName=Crypto & DeFi].gapAnalysis.componentShares.listingQuality",
       "cited_in": "Section 4.2"
     },
     {
       "id": "gap.crypto-defi.recency",
-      "value": 0.0093,
+      "value": 0.1602,
       "source": "data/analysis-results.json",
       "derivation": "categories[categoryName=Crypto & DeFi].gapAnalysis.componentShares.recency",
       "cited_in": "Section 4.2"
     },
     {
       "id": "gap.crypto-defi.volumePlusDiversity",
-      "value": 85.9,
+      "value": 73.57,
       "source": "data/analysis-results.json",
       "derivation": "categories[categoryName=Crypto & DeFi]|volumePlusDiversityPct",
       "cited_in": "Section 4.2",
@@ -514,14 +514,14 @@
     },
     {
       "id": "gap.ai-agents.volume",
-      "value": 0.3571,
+      "value": 0.245,
       "source": "data/analysis-results.json",
       "derivation": "categories[categoryName=AI & Agents].gapAnalysis.componentShares.volume",
       "cited_in": "Section 4.2"
     },
     {
       "id": "gap.ai-agents.buyerDiversity",
-      "value": 0.3466,
+      "value": 0.2244,
       "source": "data/analysis-results.json",
       "derivation": "categories[categoryName=AI & Agents].gapAnalysis.componentShares.buyerDiversity",
       "cited_in": "Section 4.2"
@@ -535,35 +535,35 @@
     },
     {
       "id": "gap.ai-agents.listingQuality",
-      "value": 0.169,
+      "value": 0.134,
       "source": "data/analysis-results.json",
       "derivation": "categories[categoryName=AI & Agents].gapAnalysis.componentShares.listingQuality",
       "cited_in": "Section 4.2"
     },
     {
       "id": "gap.ai-agents.recency",
-      "value": 0.1271,
+      "value": 0.3966,
       "source": "data/analysis-results.json",
       "derivation": "categories[categoryName=AI & Agents].gapAnalysis.componentShares.recency",
       "cited_in": "Section 4.2"
     },
     {
       "id": "gap.ai-agents.volumePlusDiversity",
-      "value": 70.4,
+      "value": 46.94,
       "source": "data/analysis-results.json",
       "derivation": "categories[categoryName=AI & Agents]|volumePlusDiversityPct",
       "cited_in": "Section 4.2"
     },
     {
       "id": "gap.data-enrichment.volume",
-      "value": 0.5207,
+      "value": 0.3878,
       "source": "data/analysis-results.json",
       "derivation": "categories[categoryName=Data & Enrichment].gapAnalysis.componentShares.volume",
       "cited_in": "Section 4.2"
     },
     {
       "id": "gap.data-enrichment.buyerDiversity",
-      "value": 0.4588,
+      "value": 0.3244,
       "source": "data/analysis-results.json",
       "derivation": "categories[categoryName=Data & Enrichment].gapAnalysis.componentShares.buyerDiversity",
       "cited_in": "Section 4.2"
@@ -577,7 +577,7 @@
     },
     {
       "id": "gap.data-enrichment.listingQuality",
-      "value": -0.0024,
+      "value": 0.0855,
       "source": "data/analysis-results.json",
       "derivation": "categories[categoryName=Data & Enrichment].gapAnalysis.componentShares.listingQuality",
       "cited_in": "Section 4.2",
@@ -585,28 +585,28 @@
     },
     {
       "id": "gap.data-enrichment.recency",
-      "value": 0.0228,
+      "value": 0.2023,
       "source": "data/analysis-results.json",
       "derivation": "categories[categoryName=Data & Enrichment].gapAnalysis.componentShares.recency",
       "cited_in": "Section 4.2"
     },
     {
       "id": "gap.data-enrichment.volumePlusDiversity",
-      "value": 98.0,
+      "value": 71.22,
       "source": "data/analysis-results.json",
       "derivation": "categories[categoryName=Data & Enrichment]|volumePlusDiversityPct",
       "cited_in": "Section 4.2"
     },
     {
       "id": "gap.finance-markets.volume",
-      "value": 0.5028,
+      "value": 0.2865,
       "source": "data/analysis-results.json",
       "derivation": "categories[categoryName=Finance & Markets].gapAnalysis.componentShares.volume",
       "cited_in": "Section 4.2"
     },
     {
       "id": "gap.finance-markets.buyerDiversity",
-      "value": 0.4333,
+      "value": 0.324,
       "source": "data/analysis-results.json",
       "derivation": "categories[categoryName=Finance & Markets].gapAnalysis.componentShares.buyerDiversity",
       "cited_in": "Section 4.2"
@@ -620,21 +620,21 @@
     },
     {
       "id": "gap.finance-markets.listingQuality",
-      "value": 0.0154,
+      "value": -0.0031,
       "source": "data/analysis-results.json",
       "derivation": "categories[categoryName=Finance & Markets].gapAnalysis.componentShares.listingQuality",
       "cited_in": "Section 4.2"
     },
     {
       "id": "gap.finance-markets.recency",
-      "value": 0.0484,
+      "value": 0.3926,
       "source": "data/analysis-results.json",
       "derivation": "categories[categoryName=Finance & Markets].gapAnalysis.componentShares.recency",
       "cited_in": "Section 4.2"
     },
     {
       "id": "gap.finance-markets.volumePlusDiversity",
-      "value": 93.6,
+      "value": 61.05,
       "source": "data/analysis-results.json",
       "derivation": "categories[categoryName=Finance & Markets]|volumePlusDiversityPct",
       "cited_in": "Section 4.2"
@@ -684,56 +684,56 @@
     },
     {
       "id": "ceiling.crypto-defi.top3Mean",
-      "value": 0.6577,
+      "value": 0.6504,
       "source": "data/analysis-results.json",
       "derivation": "categories[categoryName=Crypto & DeFi].coldStartCeiling.top3MeanScore",
       "cited_in": "Section 4.3"
     },
     {
       "id": "ceiling.crypto-defi.gap",
-      "value": 0.3327,
+      "value": 0.3254,
       "source": "data/analysis-results.json",
       "derivation": "categories[categoryName=Crypto & DeFi].coldStartCeiling.gap",
       "cited_in": "Section 4.3"
     },
     {
       "id": "ceiling.ai-agents.top3Mean",
-      "value": 0.5561,
+      "value": 0.5489,
       "source": "data/analysis-results.json",
       "derivation": "categories[categoryName=AI & Agents].coldStartCeiling.top3MeanScore",
       "cited_in": "Section 4.3"
     },
     {
       "id": "ceiling.ai-agents.gap",
-      "value": 0.2311,
+      "value": 0.2239,
       "source": "data/analysis-results.json",
       "derivation": "categories[categoryName=AI & Agents].coldStartCeiling.gap",
       "cited_in": "Section 4.3"
     },
     {
       "id": "ceiling.data-enrichment.top3Mean",
-      "value": 0.5877,
+      "value": 0.5951,
       "source": "data/analysis-results.json",
       "derivation": "categories[categoryName=Data & Enrichment].coldStartCeiling.top3MeanScore",
       "cited_in": "Section 4.3"
     },
     {
       "id": "ceiling.data-enrichment.gap",
-      "value": 0.2627,
+      "value": 0.2701,
       "source": "data/analysis-results.json",
       "derivation": "categories[categoryName=Data & Enrichment].coldStartCeiling.gap",
       "cited_in": "Section 4.3"
     },
     {
       "id": "ceiling.finance-markets.top3Mean",
-      "value": 0.5388,
+      "value": 0.5366,
       "source": "data/analysis-results.json",
       "derivation": "categories[categoryName=Finance & Markets].coldStartCeiling.top3MeanScore",
       "cited_in": "Section 4.3"
     },
     {
       "id": "ceiling.finance-markets.gap",
-      "value": 0.2138,
+      "value": 0.2116,
       "source": "data/analysis-results.json",
       "derivation": "categories[categoryName=Finance & Markets].coldStartCeiling.gap",
       "cited_in": "Section 4.3"
@@ -753,10 +753,10 @@
     {
       "id": "recut.primary.data-enrichment.outputExamplePct",
       "value": [
-        88.9,
-        66.7,
-        88.9,
-        57.1
+        87,
+        82.6,
+        78.3,
+        40.9
       ],
       "source": "data/recut-results.json",
       "derivation": "byRule.primary[Data & Enrichment]|field(outputExamplePct)",
@@ -765,10 +765,10 @@
     {
       "id": "recut.primary.data-enrichment.meanDescriptionLength",
       "value": [
-        130.3,
-        206,
-        259,
-        224.4
+        190.3,
+        231.2,
+        232.6,
+        200.6
       ],
       "source": "data/recut-results.json",
       "derivation": "byRule.primary[Data & Enrichment]|field(meanDescriptionLength)",
@@ -777,9 +777,9 @@
     {
       "id": "recut.primary.data-enrichment.meanTagCount",
       "value": [
-        3.89,
-        3.67,
-        4.78,
+        4.48,
+        4.26,
+        4.57,
         4.86
       ],
       "source": "data/recut-results.json",
@@ -789,10 +789,10 @@
     {
       "id": "recut.pooled.data-enrichment.outputExamplePct",
       "value": [
-        84.3,
-        78.6,
-        97.1,
-        44.4
+        85.7,
+        73.3,
+        76.1,
+        50
       ],
       "source": "data/recut-results.json",
       "derivation": "byRule.pooled[Data & Enrichment]|field(outputExamplePct)",
@@ -801,10 +801,10 @@
     {
       "id": "recut.pooled.data-enrichment.meanDescriptionLength",
       "value": [
-        102.4,
-        165,
-        222.5,
-        240.9
+        136,
+        226,
+        200.8,
+        209
       ],
       "source": "data/recut-results.json",
       "derivation": "byRule.pooled[Data & Enrichment]|field(meanDescriptionLength)",
@@ -813,10 +813,10 @@
     {
       "id": "recut.pooled.data-enrichment.meanTagCount",
       "value": [
-        2.57,
-        4.04,
-        4.2,
-        4.89
+        3.43,
+        2.81,
+        4.34,
+        4.92
       ],
       "source": "data/recut-results.json",
       "derivation": "byRule.pooled[Data & Enrichment]|field(meanTagCount)",
@@ -825,10 +825,10 @@
     {
       "id": "recut.max.data-enrichment.outputExamplePct",
       "value": [
-        100,
-        66.7,
-        100,
-        57.1
+        91.3,
+        91.3,
+        78.3,
+        40.9
       ],
       "source": "data/recut-results.json",
       "derivation": "byRule.max[Data & Enrichment]|field(outputExamplePct)",
@@ -837,10 +837,10 @@
     {
       "id": "recut.max.data-enrichment.meanDescriptionLength",
       "value": [
-        208.3,
-        293.9,
-        323.9,
-        224.4
+        266.5,
+        290.3,
+        281.5,
+        227.3
       ],
       "source": "data/recut-results.json",
       "derivation": "byRule.max[Data & Enrichment]|field(meanDescriptionLength)",
@@ -849,9 +849,9 @@
     {
       "id": "recut.max.data-enrichment.meanTagCount",
       "value": [
-        4,
-        3.67,
-        5,
+        4.57,
+        4.65,
+        4.7,
         4.86
       ],
       "source": "data/recut-results.json",
@@ -860,29 +860,29 @@
     },
     {
       "id": "recut.robustness.directionHoldsUnderAllRules",
-      "value": true,
+      "value": false,
       "source": "data/recut-results.json",
       "derivation": "byRule|directionAgreesAcrossRules(Data & Enrichment)",
       "cited_in": "Section 4.2 Pass 2",
-      "note": "For each of outputExamplePct, meanDescriptionLength and meanTagCount, the sign of (Q4 - Q1) is the same under all three aggregation rules. Magnitudes differ; direction does not."
+      "note": "The sign of (Q4 - Q1) agrees across all three aggregation rules for outputExamplePct and meanTagCount, but not for meanDescriptionLength: +10.3 primary, +73.0 pooled, -39.2 max. Hence false."
     },
     {
       "id": "merchant.basescout-feed.rank",
-      "value": 139,
+      "value": 466,
       "source": "data/raw-data.json",
       "derivation": "merchants[id=6b5f03cb-7d31-4633-8fa3-aa5e82ce8f38].rankPosition",
       "cited_in": "Section 5"
     },
     {
       "id": "merchant.basescout-feed.score",
-      "value": 0.3565,
+      "value": "0.2542",
       "source": "data/raw-data.json",
       "derivation": "merchants[id=6b5f03cb-7d31-4633-8fa3-aa5e82ce8f38].rankerScore",
       "cited_in": "Section 5"
     },
     {
       "id": "merchant.basescout-feed.listingQuality",
-      "value": 1,
+      "value": 0.8184,
       "source": "data/raw-data.json",
       "derivation": "merchants[id=6b5f03cb-7d31-4633-8fa3-aa5e82ce8f38].scoreBreakdown.listingQuality",
       "cited_in": "Section 5",
@@ -904,56 +904,56 @@
     },
     {
       "id": "merchant.business-change-intelligence.rank",
-      "value": 29,
+      "value": 65,
       "source": "data/raw-data.json",
       "derivation": "merchants[id=5986d582-924d-4277-8505-0790559bcc65].rankPosition",
       "cited_in": "Section 5"
     },
     {
       "id": "merchant.business-change-intelligence.score",
-      "value": 0.3541,
+      "value": "0.3182",
       "source": "data/raw-data.json",
       "derivation": "merchants[id=5986d582-924d-4277-8505-0790559bcc65].rankerScore",
       "cited_in": "Section 5"
     },
     {
       "id": "merchant.business-change-intelligence.listingQuality",
-      "value": 1,
+      "value": 0.8422666666666666,
       "source": "data/raw-data.json",
       "derivation": "merchants[id=5986d582-924d-4277-8505-0790559bcc65].scoreBreakdown.listingQuality",
       "cited_in": "Section 5"
     },
     {
       "id": "merchant.business-change-intelligence.txCount30d",
-      "value": 1,
+      "value": 2,
       "source": "data/raw-data.json",
       "derivation": "merchants[id=5986d582-924d-4277-8505-0790559bcc65].txCount30d",
       "cited_in": "Section 5"
     },
     {
       "id": "merchant.business-change-intelligence.buyers30d",
-      "value": 1,
+      "value": 2,
       "source": "data/raw-data.json",
       "derivation": "merchants[id=5986d582-924d-4277-8505-0790559bcc65].buyers30d",
       "cited_in": "Section 5"
     },
     {
       "id": "merchant.open-source-filings.rank",
-      "value": 30,
+      "value": 47,
       "source": "data/raw-data.json",
       "derivation": "merchants[id=979f972e-4bda-4d5d-928f-175067543b9e].rankPosition",
       "cited_in": "Section 5"
     },
     {
       "id": "merchant.open-source-filings.score",
-      "value": 0.3208,
+      "value": "0.2964",
       "source": "data/raw-data.json",
       "derivation": "merchants[id=979f972e-4bda-4d5d-928f-175067543b9e].rankerScore",
       "cited_in": "Section 5"
     },
     {
       "id": "merchant.open-source-filings.listingQuality",
-      "value": 0.9722,
+      "value": 0.8096333333333333,
       "source": "data/raw-data.json",
       "derivation": "merchants[id=979f972e-4bda-4d5d-928f-175067543b9e].scoreBreakdown.listingQuality",
       "cited_in": "Section 5"
@@ -981,14 +981,14 @@
     },
     {
       "id": "merchant.stableenrich.score",
-      "value": 0.6741,
+      "value": "0.6904",
       "source": "data/raw-data.json",
       "derivation": "merchants[id=e21f4e4f-5838-4a94-8209-c96b41ac8aca].rankerScore",
       "cited_in": "Section 5"
     },
     {
       "id": "merchant.stableenrich.listingQuality",
-      "value": 0.5205,
+      "value": 0.46877278911564624,
       "source": "data/raw-data.json",
       "derivation": "merchants[id=e21f4e4f-5838-4a94-8209-c96b41ac8aca].scoreBreakdown.listingQuality",
       "cited_in": "Section 5",
@@ -996,14 +996,14 @@
     },
     {
       "id": "merchant.stableenrich.txCount30d",
-      "value": 16625,
+      "value": 63684,
       "source": "data/raw-data.json",
       "derivation": "merchants[id=e21f4e4f-5838-4a94-8209-c96b41ac8aca].txCount30d",
       "cited_in": "Section 5"
     },
     {
       "id": "merchant.stableenrich.buyers30d",
-      "value": 841,
+      "value": 695,
       "source": "data/raw-data.json",
       "derivation": "merchants[id=e21f4e4f-5838-4a94-8209-c96b41ac8aca].buyers30d",
       "cited_in": "Section 5"
@@ -1060,56 +1060,50 @@
     },
     {
       "id": "equivalence.components.exactMatches",
-      "value": 1127,
+      "value": 2252,
       "source": "src/ranker.ts",
       "derivation": "merchants|recomputeAllFiveComponentsExact",
       "cited_in": "Methodology",
-      "note": "Of 1,132 merchants. The 5 shortfalls are recency-only and are caused by snapshot lossiness, not by the formula: the collector did not serialize per-resource lastUpdated. See METHODOLOGY.md."
+      "note": "All 2,252 merchants. Every component reproduces exactly: the September collector serializes per-resource lastUpdated, so the recency shortfall recorded against the July snapshot no longer arises. See METHODOLOGY.md."
     },
     {
       "id": "equivalence.volumeSignal.exactMatches",
-      "value": 1132,
+      "value": 2252,
       "source": "src/ranker.ts",
       "derivation": "merchants|recomputeComponentExact(volumeSignal)",
       "cited_in": "Methodology"
     },
     {
       "id": "equivalence.buyerDiversity.exactMatches",
-      "value": 1132,
+      "value": 2252,
       "source": "src/ranker.ts",
       "derivation": "merchants|recomputeComponentExact(buyerDiversity)",
       "cited_in": "Methodology"
     },
     {
       "id": "equivalence.reliability.exactMatches",
-      "value": 1132,
+      "value": 2252,
       "source": "src/ranker.ts",
       "derivation": "merchants|recomputeComponentExact(reliability)",
       "cited_in": "Methodology"
     },
     {
       "id": "equivalence.listingQuality.exactMatches",
-      "value": 1132,
+      "value": 2252,
       "source": "src/ranker.ts",
       "derivation": "merchants|recomputeComponentExact(listingQuality)",
       "cited_in": "Methodology"
     },
     {
       "id": "equivalence.recency.exactMatches",
-      "value": 1127,
+      "value": 2252,
       "source": "src/ranker.ts",
       "derivation": "merchants|recomputeComponentExact(recency)",
       "cited_in": "Methodology"
     },
     {
       "id": "equivalence.unreproducibleMerchantIds",
-      "value": [
-        "3e834ed9-2ebf-481b-98ad-5beac467c6cc",
-        "743b758a-cc36-456c-8f6f-f531f5a1e9c8",
-        "8a0208e0-73a3-45fb-b832-f5a8688ba043",
-        "a715d8fb-72fd-4d75-842f-ff25ef716f82",
-        "e8bfc7bd-2275-4dc3-b647-4a28a41bb3ca"
-      ],
+      "value": [],
       "source": "src/ranker.ts",
       "derivation": "merchants|unreproducibleMerchantIds",
       "cited_in": "Methodology",

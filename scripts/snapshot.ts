@@ -18,6 +18,10 @@ export interface RawResource {
   l30dCalls: number;
   l30dUniquePayers: number;
   lastCalledAt: string | null;
+  /** Per-resource catalog update time. Recency maxes over this and lastCalledAt. */
+  lastUpdated: string | null;
+  /** Icon presence is a +0.15 term in the listing-quality component. */
+  iconUrl: string | null;
   descriptionLength: number;
   tagCount: number;
 }

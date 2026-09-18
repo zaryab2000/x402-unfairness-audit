@@ -26,22 +26,14 @@ import {
 const CLAIMS_FILE = "claims.json";
 
 /**
- * Merchants whose recency cannot be reproduced from the published snapshot.
+ * Merchants whose components cannot be reproduced from the published snapshot.
  *
- * The collector serialized a merchant-level `lastUpdated` but dropped the
- * per-resource one that the production formula also read. For these five, the
- * per-resource value was the more recent of the two, so the reproduction lands
- * one rung down the decay ladder (0.8 instead of 1.0). The missing input is not
- * recoverable from published artifacts, so this is documented rather than
- * papered over. None is a merchant named in the report.
+ * Empty for the 2026-09-09 snapshot. The July collector dropped the
+ * per-resource `lastUpdated` that the formula reads alongside `lastCalledAt`,
+ * leaving five merchants unreproducible on recency; the September collector
+ * serializes it, so all five components now reproduce for every merchant.
  */
-const UNREPRODUCIBLE_MERCHANT_IDS = [
-  "3e834ed9-2ebf-481b-98ad-5beac467c6cc",
-  "743b758a-cc36-456c-8f6f-f531f5a1e9c8",
-  "8a0208e0-73a3-45fb-b832-f5a8688ba043",
-  "a715d8fb-72fd-4d75-842f-ff25ef716f82",
-  "e8bfc7bd-2275-4dc3-b647-4a28a41bb3ca",
-] as const;
+const UNREPRODUCIBLE_MERCHANT_IDS = [] as const;
 
 /** Merchants named in the report, by snapshot id. */
 const NAMED_MERCHANT_IDS = [
@@ -111,8 +103,20 @@ function resolvePath(root: unknown, path: string): unknown {
   return current;
 }
 
-/** Recompute the five components for one merchant from raw snapshot fields. */
-function recompute(m: RawMerchant, now: number): ScoreBreakdown {
+/**
+ * Recompute the five components for one merchant from raw snapshot fields.
+ *
+ * `slugById` supplies the merchant's category slug. Listing quality grades a
+ * description and its tags against the category's own vocabulary, so the same
+ * text scores differently in different categories — passing null here would
+ * silently zero two sub-signals.
+ */
+function recompute(
+  m: RawMerchant,
+  now: number,
+  slugById: Map<string, string>,
+): ScoreBreakdown {
+  const slug = slugById.get(m.categoryId);
   const data: MerchantData = {
     merchant: {
       txCount30d: m.txCount30d,
@@ -127,9 +131,19 @@ function recompute(m: RawMerchant, now: number): ScoreBreakdown {
       hasInputSchema: r.hasInputSchema,
       hasOutputExample: r.hasOutputExample,
       lastCalledAt: r.lastCalledAt,
+      lastUpdated: r.lastUpdated,
+      iconUrl: r.iconUrl,
     })),
+    category: slug ? { slug } : null,
   };
   return computeScoreBreakdown(data, now);
+}
+
+/** Category id -> slug, for the listing-quality category lookup. */
+function categorySlugById(snapshot: RawSnapshot): Map<string, string> {
+  const m = new Map<string, string>();
+  for (const c of snapshot.categories) m.set(c.id, c.slug);
+  return m;
 }
 
 function analysedMerchants(snapshot: RawSnapshot): RawMerchant[] {
@@ -231,18 +245,20 @@ function applyTransform(
 
     case "recomputeComponentExact": {
       const comp = arg as (typeof COMPONENTS)[number];
+      const slugs = categorySlugById(snapshot);
       let matches = 0;
       for (const m of snapshot.merchants) {
-        const got = recompute(m, now)[comp];
+        const got = recompute(m, now, slugs)[comp];
         if (exactlyEqual(got, m.scoreBreakdown[comp])) matches++;
       }
       return matches;
     }
 
     case "recomputeAllFiveComponentsExact": {
+      const slugs = categorySlugById(snapshot);
       let matches = 0;
       for (const m of snapshot.merchants) {
-        const got = recompute(m, now);
+        const got = recompute(m, now, slugs);
         if (COMPONENTS.every((c) => exactlyEqual(got[c], m.scoreBreakdown[c]))) {
           matches++;
         }
@@ -251,9 +267,10 @@ function applyTransform(
     }
 
     case "unreproducibleMerchantIds": {
+      const slugs = categorySlugById(snapshot);
       const ids: string[] = [];
       for (const m of snapshot.merchants) {
-        const got = recompute(m, now);
+        const got = recompute(m, now, slugs);
         if (!COMPONENTS.every((c) => exactlyEqual(got[c], m.scoreBreakdown[c]))) {
           ids.push(m.id);
         }
@@ -387,6 +404,22 @@ async function main(): Promise<void> {
     });
   }
 
+  // ── optional: emit computed values as JSON, for mechanically rebuilding
+  // claims.json. The values come from the same resolver that verifies them,
+  // so a regenerated claims file cannot drift from what verify computes.
+  if (process.argv.includes("--emit-computed")) {
+    const emitted: Record<string, unknown> = {};
+    for (const r of results) {
+      if (r.status === "EXTERNAL") continue;
+      emitted[r.claim.id] = r.actual;
+    }
+    await fs.writeFile(
+      "data/computed-claims.json",
+      JSON.stringify({ snapshot: claimsFile.snapshot, computed: emitted }, null, 2),
+    );
+    console.log(`Wrote data/computed-claims.json (${Object.keys(emitted).length} claims)`);
+  }
+
   // ── report ──
   const pass = results.filter((r) => r.status === "PASS").length;
   const fail = results.filter((r) => r.status === "FAIL");
@@ -445,15 +478,16 @@ async function main(): Promise<void> {
     );
   }
   console.log("");
-  console.log(
-    `    Four components reproduce for all ${snapshot.merchants.length} merchants. Recency reproduces`,
-  );
-  console.log(
-    `    for ${snapshot.merchants.length - UNREPRODUCIBLE_MERCHANT_IDS.length}: the collector dropped per-resource lastUpdated, so the`,
-  );
-  console.log(
-    `    input for ${UNREPRODUCIBLE_MERCHANT_IDS.length} merchants is not in the published snapshot.`,
-  );
+  if (UNREPRODUCIBLE_MERCHANT_IDS.length === 0) {
+    console.log(
+      `    All five components reproduce exactly for all ${snapshot.merchants.length} merchants.`,
+    );
+  } else {
+    console.log(
+      `    ${UNREPRODUCIBLE_MERCHANT_IDS.length} of ${snapshot.merchants.length} merchants do not reproduce on every component;`,
+    );
+    console.log("    see METHODOLOGY.md for which input the snapshot omits.");
+  }
   console.log("");
 
   if (fail.length > 0) {
