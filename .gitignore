@@ -27,3 +27,5 @@ chart_v2/
 
 __pycache__/
 *.pyc
+
+docs-internal/

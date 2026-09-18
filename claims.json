@@ -360,7 +360,7 @@
       "source": "data/analysis-results.json",
       "derivation": "categories[categoryName=Data & Enrichment].quartiles.q3.listingQuality",
       "cited_in": "Section 4.2",
-      "note": "Q3 has the HIGHEST listing quality of any quartile — above Q1. This is the inversion the report builds on."
+      "note": "Q3 ties Q2 at 0.7364. Listing quality declines monotonically across the quartiles; Q1 is the best-documented at 0.7561."
     },
     {
       "id": "quartiles.data-enrichment.q3.recency",
@@ -403,7 +403,7 @@
       "source": "data/analysis-results.json",
       "derivation": "categories[categoryName=Data & Enrichment].quartiles.q4.listingQuality",
       "cited_in": "Section 4.2",
-      "note": "Q4 listing quality exceeds Q1's 0.8264 — the bottom quartile documents marginally better than the top."
+      "note": "Q4 sits 0.1173 below Q1's 0.7561 — the bottom quartile is the least documented, and listing quality falls with rank at roughly 57% of the rate the score does."
     },
     {
       "id": "quartiles.data-enrichment.q4.recency",
@@ -439,7 +439,7 @@
       "source": "data/analysis-results.json",
       "derivation": "categories[categoryName=Data & Enrichment].quartiles.q4.meanTxCount30d",
       "cited_in": "Section 4.2 Figure 4.2",
-      "note": "Mean 30-day settled transactions fall from 2175.7 in Q1 to 3.1 in Q4 — the separation the score is actually reading."
+      "note": "Mean 30-day settled transactions fall from 3,014.7 in Q1 to 2.5 in Q4 — the separation the score is actually reading."
     },
     {
       "id": "quartiles.data-enrichment.q1.meanBuyers30d",
@@ -510,7 +510,7 @@
       "source": "data/analysis-results.json",
       "derivation": "categories[categoryName=Crypto & DeFi]|volumePlusDiversityPct",
       "cited_in": "Section 4.2",
-      "note": "Computed from the unrounded component shares, then rounded once for display. The two displayed shares (0.4362 and 0.4223) are themselves rounded, so summing them by hand need not reproduce this figure exactly."
+      "note": "Computed from the unrounded component shares, then rounded once for display. The two displayed shares (0.3663 and 0.3694) are themselves rounded, so summing them by hand need not reproduce this figure exactly."
     },
     {
       "id": "gap.ai-agents.volume",
@@ -581,7 +581,7 @@
       "source": "data/analysis-results.json",
       "derivation": "categories[categoryName=Data & Enrichment].gapAnalysis.componentShares.listingQuality",
       "cited_in": "Section 4.2",
-      "note": "Negative: listing quality works slightly AGAINST the top quartile in this category."
+      "note": "Positive: listing quality moves with rank in this category, contributing 8.55% of the Q1-Q4 gap. The negative share is now in Finance & Markets."
     },
     {
       "id": "gap.data-enrichment.recency",
@@ -886,7 +886,7 @@
       "source": "data/raw-data.json",
       "derivation": "merchants[id=6b5f03cb-7d31-4633-8fa3-aa5e82ce8f38].scoreBreakdown.listingQuality",
       "cited_in": "Section 5",
-      "note": "Stored as 0.9999999999999999 (float accumulation); the ceiling of the listing-quality component is 1."
+      "note": "Under the September formula the listing-quality component grades each field rather than counting it; no merchant in the catalog reaches 1.0, and the maximum observed is 0.9253."
     },
     {
       "id": "merchant.basescout-feed.txCount30d",
@@ -992,7 +992,7 @@
       "source": "data/raw-data.json",
       "derivation": "merchants[id=e21f4e4f-5838-4a94-8209-c96b41ac8aca].scoreBreakdown.listingQuality",
       "cited_in": "Section 5",
-      "note": "The rank-1 merchant documents markedly worse than the rank-29 and rank-139 merchants above."
+      "note": "The rank-1 merchant is the least-documented merchant in its category: all 90 other Data & Enrichment merchants score higher on listing quality and every one of them ranks below it."
     },
     {
       "id": "merchant.stableenrich.txCount30d",

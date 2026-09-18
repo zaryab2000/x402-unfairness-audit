@@ -259,8 +259,9 @@ async function main(): Promise<void> {
 
   const results = {
     // Pinned to the snapshot, not the wall clock: re-running must produce a
-    // byte-identical file.
-    analyzedAt: "2026-07-25T11:48:24.528Z",
+    // byte-identical file. Derived from the snapshot rather than typed, so it
+    // cannot drift out of step with the data it describes.
+    analyzedAt: snapshot.collectedAt,
     snapshotCollectedAt: snapshot.collectedAt,
     rankerWeights: snapshot.rankerWeights,
     analyzedCategories: ANALYZED_CATEGORIES,
