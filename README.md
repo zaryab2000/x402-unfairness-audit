@@ -1,45 +1,41 @@
 # x402-unfairness-audit
 
-Reproducible evidence base for an empirical audit of merchant discovery ranking in the x402 ecosystem.
-Frozen snapshot, published scoring code, and a machine-checkable manifest of every figure the report cites.
-
-**Report:** *The x402 Unfairness Report — An Empirical Audit of the Cold-Start Problem for x402 Merchants* — [read it here](https://zaryab2000.notion.site/x402-Unfairness-Report-A-Study-of-1212-merchants-in-an-unfair-x402-agentic-market-3b3a13cdb21f80179d7ee9ed6a20f9fb)
-**Snapshot:** 2026-09-09 · 2,252 merchants · 839 analysed across four categories
-**Verify:** `npm install && npm run all` — no configuration, no network, no API keys
+An open, reproducible audit of how x402 discovery indexes rank merchants for AI agents.
+It tests one question: can a new merchant earn a place in the rankings, or does ranking only reward merchants that are already selling?
 
 ---
 
-## What the audit found
+## Audit details
 
-**1 — Volume is concentrated past the thresholds regulators use.**
-Gini runs 0.74–0.98 across all four categories. Data & Enrichment posts an HHI of 8,310, where 3 of 91 merchants take 95.4% of every payment. US merger guidelines call a market highly concentrated above 2,500.
-
-**2 — Listing quality explains little of the gap between the top and bottom of the catalog.**
-Volume and buyer diversity explain 46.9–73.6% of the gap between a category's top and bottom rank quartiles, and recency a further 16.0–39.7%. Listing quality explains at most 13.4%, and −0.3% in Finance & Markets, where the bottom quartile is documented marginally *better* than the top. Documentation does move with rank — it is not unrelated to it — but at roughly half the rate the score moves.
-
-**3 — The resulting gap cannot be closed by a new merchant.**
-A merchant with flawless metadata and no trading history has a hard ceiling of **0.3250**. Incumbent top-three means run 0.5366 to 0.6504. The smallest gap in the dataset is 0.2116 — larger than the entire value of perfect documentation, which is 0.150. Of the 79 zero-transaction merchants in the analysed set, **not one scores above 0.3250**; the highest observed is 0.2965.
-
-| Category          | Merchants | 30d txs |   Gini |   HHI | Top-3 share | Incumbent top-3 mean | Gap to ceiling |
-| ----------------- | --------: | ------: | -----: | ----: | ----------: | -------------------: | -------------: |
-| Crypto & DeFi     |       497 |  62,863 | 0.8975 |   400 |       28.1% |               0.6504 |         0.3254 |
-| AI & Agents       |       194 |  18,766 | 0.9630 | 2,440 |       77.2% |               0.5489 |         0.2239 |
-| Data & Enrichment |        91 |  69,911 | 0.9766 | 8,310 |       95.4% |               0.5951 |         0.2701 |
-| Finance & Markets |        57 |   2,175 | 0.7371 |   783 |       37.4% |               0.5366 |         0.2116 |
-
-Every figure above resolves against a committed artifact via `claims.json`.
-
-### What the audit does not claim
-
-- **Documentation is not worthless.** It governs whether a service is indexed at all. Every merchant here is in the dataset because its listing parsed.
-- **The incumbents are not undeserving.** This study measures no service quality directly, because no discovery index reads it.
-- **Nothing here is a forecast.** No growth model was built. This is one instant, 2026-09-09.
-
-The claim is narrower than any of those: the mechanism selects on volume, and it compounds.
+- **Snapshot:** the full x402 merchant catalog, frozen on 9 Sep 2026. It covers 2,252 merchants, 42,201 resources and 13 categories.
+- **Analysed:** 839 merchants, with $38,735 in combined 30-day volume.
+- **Categories:** Crypto & DeFi (497), AI & Agents (194), Data & Enrichment (91), Finance & Markets (57).
+- **Excluded:** 1,256 merchants in the uncategorised "Other" bucket and 157 in categories too thin to measure.
+- **Method:** every merchant is scored with a reconstructed ranking formula, then the top of each category is compared with the bottom.
 
 ---
 
-## Reproduce it
+## Key findings
+
+- **New merchants can't get started.** Rankings are driven by sales, and a new merchant has none. That means it can't rank, so agents don't find it, so it never makes the sales it needs to rank.
+- **A perfect listing isn't enough.** A merchant with zero sales and a flawless listing scores at most 0.3250, and none of the 79 zero-sale merchants got past it.
+- **Incumbents sit far above that.** The top 3 merchants in each category average 0.5366–0.6504, beyond anything a newcomer can reach.
+- **Better listings barely move the rank.** Listing quality explains at most 13.4% of the gap between a category's top and bottom, and −0.3% in Finance & Markets.
+- **Example:** Honeyguide Verified Router has the best listing in Crypto & DeFi and ranks 250th of 497, with 3 sales in 30 days.
+
+---
+
+## Why this exists
+
+- AI agents pay x402 merchants per request, and they find them through discovery indexes: CDP Bazaar, x402scan and AgentCash.
+- Those indexes return a short ranked list, so the ranking decides who gets paid.
+- If that ranking locks new merchants out, the agent economy concentrates before it has even started. This repo measures whether it does.
+
+---
+
+## Quick start
+
+**Requires Node 22+.** The only dependencies are `tsx` and `typescript`.
 
 ```bash
 git clone https://github.com/zaryab2000/x402-unfairness-audit
@@ -48,9 +44,17 @@ npm install
 npm run all
 ```
 
-`npm run all` runs `analyze` → `recut` → `verify`. Expected output ends with:
+`npm run all` runs three steps in a few minutes:
+
+1. **`analyze`** computes concentration, the quartile gap breakdown and the cold-start ceiling from the snapshot.
+2. **`recut`** repeats the core comparison on raw listing fields with no scoring formula, as a robustness check.
+3. **`verify`** checks every figure in `claims.json` against the data and exits non-zero on any mismatch.
+
+**What to expect.** A clean run ends like this:
 
 ```
+  150 passed, 0 failed, 2 external (not verified here)
+
     component        exact matches   of
     volumeSignal              2252   2252
     buyerDiversity            2252   2252
@@ -61,96 +65,63 @@ npm run all
   All verifiable claims reproduce from the committed artifacts.
 ```
 
-Exit code 0 means every claim in `claims.json` resolved to its cited value. Any mismatch prints the claimed value beside the computed one and exits non-zero.
+- **150 passed:** every claim resolves to its stated value. The 2 external claims are third-party figures and are labelled as such.
+- **2252 of 2252:** the formula in `src/ranker.ts` reproduces every stored score for every merchant exactly.
 
-Requires Node 22+. The only dependencies are `tsx` and `typescript`.
+**Checking a single number.** Each figure is an entry in `claims.json`, recording its value, the source file and the path that derives it. To inspect one merchant directly:
 
----
-
-## The population, stated precisely
-
-The three numbers that recur in this repo are not interchangeable, so they are set out here once:
-
-|    Number | What it counts                                                                                                                               |
-| --------: | -------------------------------------------------------------------------------------------------------------------------------------------- |
-| **2,252** | Merchants in the frozen catalog snapshot, across 13 categories. Every one carries a stored score breakdown, so this is also the population the equivalence test runs against. |
-|   **839** | Merchants in the four categories with coherent market identity and non-trivial settled volume. **Every finding above is computed on these.** |
-
-The 1,413 merchants outside the analysed set break down as 1,256 in the uncategorised "Other" fallback bucket, plus 157 in named categories too thin to analyse. Category selection and the exclusion rule are in [`docs/METHODOLOGY.md`](docs/METHODOLOGY.md) §2.
-
----
-
-## What each artifact is
-
-| file                         | what it is                                                                                                                                                  |
-| ---------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `data/raw-data.json`         | Frozen catalog snapshot, collected **2026-09-09T08:09:16.700Z**. 34.7 MB, 2,252 merchants, 42,201 resources. **Never regenerated by this repo** — it is evidence. |
-| `data/analysis-results.json` | Concentration, quartile decomposition, cold-start ceiling. Regenerated by `npm run analyze`, byte-identical to the committed copy.                          |
-| `data/recut-results.json`    | Pass 2 raw-field re-cut under three aggregation rules. Regenerated by `npm run recut`.                                                                      |
-| `data/cdp-probes.json`       | Live discovery-endpoint probes, collected **2026-07-25T11:52:13Z**. Retained from the July run; superseded by `data/probes-2026-09-09.json`.                |
-| `data/probes-2026-09-09.json` | Live discovery-endpoint probes from the September run. The current probe record.                                                                          |
-| `claims.json`                | Every number cited in the report, with the artifact and path that produces it.                                                                              |
-| `src/ranker.ts`              | The scoring formula, dependency-free. Reads the four quality modules below.                                                                                  |
-| `src/taxonomy.ts`, `src/description-quality.ts`, `src/tag-quality.ts`, `src/service-name-quality.ts` | Vendored from the same commit; the listing-quality term depends on all four.               |
-| `docs/METHODOLOGY.md`        | Definitions, assumptions, and disclosed limitations.                                                                                                        |
-
----
-
-## The scoring formula
-
-```
-score = 0.40·volume
-      + 0.25·buyerDiversity
-      + 0.05·reliability
-      + 0.15·listingQuality
-      + 0.15·recency
+```bash
+node -e '
+const { merchants } = require("./data/raw-data.json");
+const m = merchants.find(m => m.resources.some(r => /honeyguide/i.test(r.serviceName ?? "")));
+console.log(m.categoryName, "rank", m.rankPosition, "| txs", m.txCount30d, "| usd", m.volume30d,
+  "| listingQuality", m.scoreBreakdown.listingQuality);'
+# Crypto & DeFi rank 250 | txs 3 | usd 0.023103 | listingQuality 0.9077333333333333
 ```
 
-Each component is normalised to [0, 1]. Volume is log-scaled 30-day transactions and USD volume; buyerDiversity is log-scaled unique 30-day buyers; listingQuality scores schemas, description length, service name and tags; recency is a decay ladder on last activity. **Reliability is a constant 0.5 for every merchant** — no source exposes service health, so it differentiates nobody and contributes exactly 0 to every gap decomposition.
+That merchant has the best listing in Crypto & DeFi, and it ranks 250th of 497.
 
-Three things to be clear about:
+---
 
-1. **This is a reference implementation**, vendored from the ranking implementation as of the snapshot date (commit `eca0195`, 2026-09-09) — the version that produced the scores stored in the snapshot. Ranking formulas move under operators' feet: the July edition of this study was pinned to an earlier commit whose listing-quality component has since been rewritten.
-2. **Production index weights are unpublished.** These are the weights this study's index used, not a disclosure of any third-party ranking system.
-3. **The structural result does not depend on the exact weights.** It depends only on volume being the largest term. Any formula that ranks primarily on transaction history reproduces the cold-start trap, because a merchant with no history scores zero on that term by construction.
+## The ranking formula
+
+```
+score = 0.40·volume + 0.25·buyerDiversity + 0.05·reliability + 0.15·listingQuality + 0.15·recency
+```
+
+| Component      | What it measures                                                       |
+| -------------- | ---------------------------------------------------------------------- |
+| volume         | 30-day transactions and USD volume, log-scaled                         |
+| buyerDiversity | 30-day distinct paying wallets, log-scaled                             |
+| reliability    | Service health. It is a constant 0.5, because no index exposes it.     |
+| listingQuality | Input schema, output example, description, service name, tags, icon    |
+| recency        | Decay ladder on last activity: <1d 1.0 · <7d 0.8 · <30d 0.5 · <90d 0.2 |
+
+### How it was derived
+
+- **Signals:** taken from CDP Bazaar's docs and the x402scan and AgentCash source. All three read transactions and recency, and two read buyers and metadata.
+- **Weights:** this study's own judgement, since no index publishes its weights. Transaction signals get 65%, metadata and recency get 15% each, and reliability gets a 5% placeholder.
+- **Robustness:** any formula where transaction history is the largest term gives the same result, and `npm run recut` confirms it with no formula at all.
+- **Ceiling:** 0.15 (perfect listing) + 0.15 (full recency) + 0.025 (reliability) = 0.3250.
+
+**Disagree with the weights?** Edit `RANKER_WEIGHTS`, run `npm run analyze`, and compare. Definitions and edge cases are in [`docs/METHODOLOGY.md`](docs/METHODOLOGY.md).
 
 ---
 
 ## Known limitations
 
-Carried over from the report rather than re-litigated here:
-
-- **Market scale.** ~$38,735 of 30-day volume across the four analysed categories, of which Crypto & DeFi alone is 89.5%. Concentration measures over a market this small are real but fragile. Smallness bounds the confidence interval around every figure; it does not change the direction.
-- **Reliability is a constant placeholder.** At 0.5 for everyone it differentiates nobody; any claim about its 0.05 weight is a claim about a placeholder.
-- **Single-query probe design.** One representative query per category. A different phrasing surfaces a different result set.
-- **No forward projection.** This is one instant, 2026-09-09. Nothing here forecasts how concentration evolves.
-- **Findings describe four categories, not the ecosystem in aggregate.** 1,413 of 2,252 merchants are outside the analysed set — see the population table above.
-
-All five score components reproduce exactly for all 2,252 merchants. The July edition of this study carried a recency shortfall caused by a field the collector dropped at collection time; the September collector serializes it, so `equivalence.unreproducibleMerchantIds` in `claims.json` is empty and a verification transform asserts that it is.
-
----
-
-## The optional probe
-
-`npm run probe` re-runs the discovery-endpoint probes. It is **not** part of `npm run all` and not part of verification.
-
-It queries a live catalog, so it is non-deterministic: re-running will **not** reproduce the committed `data/cdp-probes.json`.
-
-It never writes to that file. Output goes to `data/probes-<UTC date>.json`, so the frozen records survive any number of probe runs — compare a fresh run against it rather than replacing it. The endpoint is free, unauthenticated and read-only; no credentials, payments, or API keys are involved.
+- **The market is small and the analysis covers four categories.** The concentration findings cover 839 of the 2,252 merchants in Crypto & DeFi, AI & Agents, Data & Enrichment and Finance & Markets, with about $38,735 of 30-day volume between them. The remaining 1,413 sit in the uncategorised "Other" bucket or in categories too thin to measure.
+- **The snapshot is one moment.** Everything describes 9 September 2026, and nothing here forecasts how rankings evolve.
+- **The formula is a reference model.** Production weights are unpublished, and reliability is a placeholder that separates no one.
 
 ---
 
 ## Disclosure
 
-The author builds a merchant-analytics service for the x402 ecosystem. That is a commercial interest in how x402 discovery is ranked. The scoring implementation measured here is the author's own, which is precisely why it is published at the exact commit used, alongside the raw snapshot — so that every figure can be re-derived, re-weighted, or refuted independently. The core finding is additionally re-cut on raw catalog fields with no scoring applied, and holds.
+The author builds a merchant-analytics service for the x402 ecosystem, which is a commercial interest in how discovery gets ranked. That interest is why the full snapshot and the scoring code are published, so every figure can be re-derived or refuted independently. The author's own listing sits in the excluded "Other" bucket and affects no analysed figure.
 
----
+Found an error? [Open an issue](https://github.com/zaryab2000/x402-unfairness-audit/issues) and include the `claims.json` id.
 
 ## Licence
 
-Dual-licensed:
-
-- **Code** (`src/`, `scripts/`) — MIT, see `LICENSE-CODE`.
-- **Data** (`data/`, `claims.json`) — CC0-1.0 (public domain dedication), see `LICENSE-DATA`.
-
-The data is CC0 so that reproducing, re-cutting or extending this analysis carries no attribution friction.
+Code (`src/`, `scripts/`) is MIT. Data (`data/`, `claims.json`) is CC0-1.0.
