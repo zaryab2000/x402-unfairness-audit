@@ -25,6 +25,20 @@ It tests one question: can a new merchant earn a place in the rankings, or does 
 
 ---
 
+## What the market looks like
+
+Ranking decides who gets paid, and this is what there is to be paid.
+
+![What an x402 merchant actually earns](docs/img/r2_earnings_distribution.png)
+
+Four out of five merchants earned less than a dollar in thirty days. The median merchant earned six cents.
+
+![Where the money goes](docs/img/r1_revenue_concentration.png)
+
+Ten merchants, 0.4% of the catalog, hold 69% of every dollar paid. Both figures are regenerated from the snapshot by `charts/r2_earnings_distribution.py` and `charts/r1_revenue_concentration.py`.
+
+---
+
 ## Why this exists
 
 - AI agents pay x402 merchants per request, and they find them through discovery indexes: CDP Bazaar, x402scan and AgentCash.
