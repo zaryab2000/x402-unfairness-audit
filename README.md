@@ -1,7 +1,8 @@
 # x402-unfairness-audit
 
-An open, reproducible audit of how x402 discovery indexes rank merchants for AI agents.
-It tests one question: can a new merchant earn a place in the rankings, or does ranking only reward merchants that are already selling?
+An open, reproducible audit of how x402 discovery indexes rank merchants for AI agents, in open agentic markets.
+
+<img width="3000" height="1200" alt="banner_x402_market_unfairness_report" src="https://github.com/user-attachments/assets/2d3f42c2-f581-4748-a15e-bfeef38b0215" />
 
 ---
 
